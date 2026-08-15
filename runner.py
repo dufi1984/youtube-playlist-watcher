@@ -45,16 +45,15 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
     if not to_emails:
         to_emails = ["tamas.duffek@gmail.com"]
 
-    # Ensure to_emails is list of strings
     if isinstance(to_emails, str):
         to_emails = [to_emails]
 
     html_content = build_minimal_email(playlist_title, text_content)
 
-    # 1. Option: Resend API
-    resend_key = os.environ.get('RESEND_API_KEY', '')
+    resend_key = os.environ.get('RESEND_API_KEY', '').strip()
     from_email = os.environ.get('FROM_EMAIL', 'YouTube Watcher <onboarding@resend.dev>')
 
+    print(f"Resend Key configured: {'YES (len=' + str(len(resend_key)) + ')' if resend_key else 'NO (empty)'}")
     if resend_key:
         print(f"Attempting to send email via Resend API to {to_emails}...")
         try:
@@ -81,40 +80,14 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
                 print(f"❌ Resend API error: {resp.status_code} - {resp.text}")
         except Exception as e:
             print(f"❌ Exception calling Resend API: {e}")
+    else:
+        print("⚠️ RESEND_API_KEY is not set in GitHub Secrets.")
 
-    # 2. Option: SMTP Server fallback
-    smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
-    smtp_port = int(os.environ.get('SMTP_PORT', '587'))
-    smtp_user = os.environ.get('SMTP_USER', '')
-    smtp_password = os.environ.get('SMTP_PASSWORD', '')
-
-    if smtp_user and smtp_password:
-        try:
-            msg = MIMEMultipart('alternative')
-            msg['From'] = smtp_user
-            msg['To'] = ", ".join(to_emails)
-            msg['Subject'] = 'YouTube playlist watcher'
-
-            msg.attach(MIMEText(f"{playlist_title}\n\n{text_content}", 'plain', 'utf-8'))
-            msg.attach(MIMEText(html_content, 'html', 'utf-8'))
-
-            server = smtplib.SMTP(smtp_server, smtp_port, timeout=15)
-            server.starttls()
-            server.login(smtp_user, smtp_password)
-            server.send_message(msg)
-            server.quit()
-            print(f"✅ Direct SMTP email successfully sent to {to_emails}")
-            return True
-        except Exception as e:
-            print(f"❌ Error sending SMTP email: {e}")
-            return False
-
-    print(f"ℹ️ No email provider configured (set RESEND_API_KEY in GitHub Secrets).")
     return False
 
 def main():
-    api_key = os.environ.get('YOUTUBE_API_KEY', 'AIzaSyBYo0Njuk7Jl7miT2cYPonwoKyKUPU9NUw')
-    force_test = os.environ.get('FORCE_TEST_ALERT', 'false').lower() == 'true'
+    api_key = os.environ.get('YOUTUBE_API_KEY', '').strip()
+    force_test = os.environ.get('FORCE_TEST_ALERT', 'true').lower() in ['true', '1', 'yes', '']
 
     config = load_config()
     playlists = config.get('playlists', [])
@@ -138,62 +111,57 @@ def main():
         print(f"Processing playlist: {title} ({pid})")
         print(f"==========================================")
 
-        # 1. Dump current playlist state
-        code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" dump --youtube-api-key "{api_key}"')
-        if code != 0:
-            print(f"Error dumping playlist {pid}: {err}")
+        if api_key:
+            # 1. Dump current playlist state
+            code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" dump --youtube-api-key "{api_key}"')
+            if code != 0:
+                print(f"Error dumping playlist {pid}: {err}")
+            else:
+                # 2. Compare with previous dump
+                code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
+                
+                has_changes = bool(out and "Changes detected" in out)
+                
+                playlist_result = {
+                    "id": pid,
+                    "title": title,
+                    "has_changes": has_changes,
+                    "report": out if has_changes else "No changes detected."
+                }
+                status_data["results"].append(playlist_result)
+
+                if has_changes:
+                    print(f"⚠️ Changes detected in playlist '{title}'!")
+                    all_changes.append(f"{title}\n{out}\n{'-'*40}")
+                    send_email_notification(
+                        target_emails,
+                        'YouTube playlist watcher',
+                        out,
+                        playlist_title=title,
+                        playlist_id=pid
+                    )
+
+                # 3. Purge old dumps
+                run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
         else:
-            # 2. Compare with previous dump
-            code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
-            
-            has_changes = bool(out and "Changes detected" in out)
-            
-            playlist_result = {
-                "id": pid,
-                "title": title,
-                "has_changes": has_changes,
-                "report": out if has_changes else "No changes detected."
-            }
-            status_data["results"].append(playlist_result)
+            print("YOUTUBE_API_KEY not set, skipping dump/compare.")
 
-            if has_changes:
-                print(f"⚠️ Changes detected in playlist '{title}'!")
-                all_changes.append(f"{title}\n{out}\n{'-'*40}")
-                send_email_notification(
-                    target_emails,
-                    'YouTube playlist watcher',
-                    out,
-                    playlist_title=title,
-                    playlist_id=pid
-                )
-
-            # 3. Purge old dumps
-            run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
-
-    # If force test mode is requested
-    if force_test:
+    # Send guaranteed test email if testing or initial run
+    if force_test or not all_changes:
         test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nhttps://www.youtube.com/results?search_query=The+Cure+-+Burn+1994+HQ\nPozíció a listán: 42."
-        print("\n--- Generating Clean Test Alert ---")
-        all_changes.append(f"Teszt\n{test_msg}")
-        for item in playlists:
-            target_emails = item.get('emails', [])
-            if not target_emails:
-                target_emails = ["tamas.duffek@gmail.com"]
-            title = item.get('title', 'Saját teszt lista')
-            pid = item.get('id', '')
-            send_email_notification(
-                target_emails,
-                'YouTube playlist watcher',
-                test_msg,
-                playlist_title=title,
-                playlist_id=pid
-            )
+        print("\n--- Sending Guaranteed Resend Test Email ---")
+        send_email_notification(
+            ["tamas.duffek@gmail.com"],
+            'YouTube playlist watcher',
+            test_msg,
+            playlist_title="Saját teszt lista",
+            playlist_id=playlists[0]['id'] if playlists else "PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8"
+        )
 
     # Save latest status summary for Web UI
     with open(STATUS_FILE, 'w', encoding='utf-8') as f:
         json.dump(status_data, f, indent=2, ensure_ascii=False)
 
-    # Save combined changes report
     if all_changes:
         with open('changes_report.txt', 'w', encoding='utf-8') as f:
             f.write("\n\n".join(all_changes))
