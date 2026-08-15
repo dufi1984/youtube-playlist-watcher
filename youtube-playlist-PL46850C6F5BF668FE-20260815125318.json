@@ -1,0 +1,262 @@
+[
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT3M23S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "Yd4RNCwnXiXORkeDQYSE3boczJw",
+        "id": "fv4vdoqpc9o",
+        "kind": "youtube#video",
+        "playlistItemId": "UEw0Njg1MEM2RjVCRjY2OEZFLkNFQzkwOTc4NDAzMjM3NTU",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Avagy hogyan jussunk be \u00e9s szerezz\u00fcnk j\u00f3 \u00e1ll\u00f3helyet.",
+            "playlistId": "PL46850C6F5BF668FE",
+            "position": 0,
+            "publishedAt": "2012-01-30T14:43:56Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "fv4vdoqpc9o"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Britney Spears koncert part1",
+            "videoOwnerChannelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "videoOwnerChannelTitle": "Duffek Tam\u00e1s"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT22M52S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "vJCfO3fvJjPLZTMVLQ8RhjSVkcU",
+        "id": "mnLFG6Byvc0",
+        "kind": "youtube#video",
+        "playlistItemId": "UEw0Njg1MEM2RjVCRjY2OEZFLjkzMDA5Q0VBODYxODk0NTg",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Hangulat a kiemelt \u00e1ll\u00f3helyen...\n\n- Hold It Against Me\n- Gimme More\n- ...Baby One More Time\n- S&M\n- I'm A Slave 4 U\n- I Wanna Go\n- Womanizer\n- Till The World Ends",
+            "playlistId": "PL46850C6F5BF668FE",
+            "position": 1,
+            "publishedAt": "2012-01-30T14:43:56Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "mnLFG6Byvc0"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Britney Spears koncert part2",
+            "videoOwnerChannelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "videoOwnerChannelTitle": "Duffek Tam\u00e1s"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "true",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT22M35S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "mr5x_067foiU4_5Hws0JyAPWFMQ",
+        "id": "hrdLWB_AFgI",
+        "kind": "youtube#video",
+        "playlistItemId": "UEw0Njg1MEM2RjVCRjY2OEZFLkY4OUQ5QkY3MTgzQkUxMDA",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Teljesen \u00faj ar\u00e1nyok \u00e9s forma a Galaxy Z Fold8-n\u00e1l, ami nem a Fold7 ut\u00f3dja, mert az bizony a Fold8 Ultra. A t\u00f6mzsibb, sz\u00e9lesebb Fold8 nagyon k\u00e9zbeill\u0151, remek\u00fcl \u00f6sszerakt\u00e1k, de m\u00e9g mindig vannak benne kompromisszumok a kijelz\u0151 \u00e9s a kamera kapcs\u00e1n, r\u00e1ad\u00e1sul alig ker\u00fcl kevesebbe, mint a Fold8 Ultra. M\u00e9gis egy szerethet\u0151 telefon, ami \u00faj sz\u00ednt hoz nem csak a Samsung k\u00edn\u00e1lat\u00e1ba, hanem a foldable telefonok piac\u00e1ra is.\n\n#samsung #zfold8 #widefold #teszt #kritika #v\u00e9lem\u00e9ny\n\nHa csatlakozol ehhez a csatorn\u00e1hoz, jutalmakban r\u00e9szes\u00fclhetsz:\nhttps://www.youtube.com/channel/UCzlxYxlDo6oZuUkCrex5V4A/join",
+            "playlistId": "PL46850C6F5BF668FE",
+            "position": 2,
+            "publishedAt": "2026-08-15T12:51:53Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "hrdLWB_AFgI"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/hrdLWB_AFgI/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/hrdLWB_AFgI/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/hrdLWB_AFgI/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/hrdLWB_AFgI/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/hrdLWB_AFgI/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Samsung Galaxy Z Fold8 rapidteszt",
+            "videoOwnerChannelId": "UCzlxYxlDo6oZuUkCrex5V4A",
+            "videoOwnerChannelTitle": "Mobilarena"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT40S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "cxI5JG5mW87jnZj6Qc84GrNJLws",
+        "id": "tsbN7mqch4Y",
+        "kind": "youtube#video",
+        "playlistItemId": "UEw0Njg1MEM2RjVCRjY2OEZFLjVDMjJFQkEwMTQ4RjQ5ODM",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Britney  k\u00f6zvetlen\u00fcl a vide\u00f3 elej\u00e9n l\u00e1that\u00f3 sapk\u00e1ban, s\u00e1rga fels\u0151ben, r\u00f6vid nadr\u00e1gban \u00e9s csizm\u00e1ban. Ha meg\u00e1ll\u00edtod \u00e9s kikock\u00e1zod l\u00e1thatod.",
+            "playlistId": "PL46850C6F5BF668FE",
+            "position": 3,
+            "publishedAt": "2026-08-15T12:52:06Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "tsbN7mqch4Y"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/tsbN7mqch4Y/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/tsbN7mqch4Y/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/tsbN7mqch4Y/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/tsbN7mqch4Y/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/tsbN7mqch4Y/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Britney kil\u00e9p a hotelb\u0151l \u00e9s a Spears csal\u00e1d \u00e9rkez\u00e9se, Budapest, 2011.09.29.",
+            "videoOwnerChannelId": "UCqnuJ-ePHT4N9zVrBkNBjIA",
+            "videoOwnerChannelTitle": "MrLeslieLittle"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    }
+]
