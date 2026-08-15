@@ -149,7 +149,7 @@
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="fw-bold m-0 text-white"><i class="bi bi-list-check me-2 text-info"></i>Figyelt lejátszási listák</h5>
                 <button class="btn btn-sm btn-outline-light" onclick="downloadConfigFile()">
-                    <i class="bi bi-download me-1"></i> Beállítások mentése (playlists_config.json)
+                    <i class="bi bi-download me-1"></i> Beállítások letöltése (playlists_config.json)
                 </button>
             </div>
             <div class="table-responsive">
@@ -257,7 +257,22 @@ Nincs még jelentési adat.
             return Array.from(new Uint8Array(digest)).map(b => b.toString(16).padStart(2, '0')).join('');
         }
 
+        function saveLocalState() {
+            localStorage.setItem('yt_watcher_config', JSON.stringify(currentConfig));
+        }
+
         async function loadData() {
+            // First check LocalStorage for user-saved edits
+            const localSaved = localStorage.getItem('yt_watcher_config');
+            if (localSaved) {
+                try {
+                    currentConfig = JSON.parse(localSaved);
+                    renderTable();
+                    loadStatus();
+                    return;
+                } catch (e) {}
+            }
+
             try {
                 const res = await fetch('playlists_config.json');
                 if (res.ok) {
@@ -321,7 +336,7 @@ Nincs még jelentési adat.
                 return;
             }
 
-            // Remove if existing with same ID to update emails
+            // Remove existing with same ID to update emails & title
             currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
 
             currentConfig.playlists.push({
@@ -330,8 +345,9 @@ Nincs még jelentési adat.
                 emails: email ? [email] : []
             });
 
+            saveLocalState();
             renderTable();
-            alert(`A "${title}" lista hozzáadva! Kattints a "Beállítások mentése" gombra a véglegesítéshez.`);
+            alert(`A "${title}" lista elmentve a böngésződben!`);
             document.getElementById('newPlaylistUrl').value = "";
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
@@ -340,6 +356,7 @@ Nincs még jelentési adat.
         function deletePlaylist(pid) {
             if (confirm("Biztosan törölni szeretnéd ezt a listát a figyelésből?")) {
                 currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
+                saveLocalState();
                 renderTable();
             }
         }
@@ -352,7 +369,7 @@ Nincs még jelentési adat.
             document.body.appendChild(downloadAnchor);
             downloadAnchor.click();
             downloadAnchor.remove();
-            alert("A frissített playlists_config.json fájl letöltődött! Töltsd fel a GitHub repódba a módosítások véglegesítéséhez.");
+            alert("A frissített playlists_config.json letöltődött! Töltsd fel a GitHub repódba a szerveroldali frissítéshez.");
         }
 
         function triggerTestEmail(title, email) {
@@ -424,6 +441,7 @@ Nincs még jelentési adat.
             const hash = await sha256(newPin);
             document.getElementById('generatedHash').value = hash;
             currentConfig.pin_hash = hash;
+            saveLocalState();
             alert("Az új PIN kód kriptográfiai hash-je elkészült!");
             closePinModal();
         }
