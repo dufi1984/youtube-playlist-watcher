@@ -170,9 +170,14 @@
         <div class="card p-4 mb-4 shadow">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="fw-bold m-0 text-white"><i class="bi bi-list-check me-2 text-info"></i>Figyelt lejátszási listák</h5>
-                <button class="btn btn-sm btn-outline-light" onclick="downloadConfigFile()">
-                    <i class="bi bi-download me-1"></i> Beállítások letöltése (playlists_config.json)
-                </button>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-primary" onclick="syncDirectToGitHub()">
+                        <i class="bi bi-cloud-upload me-1"></i> Mentés a felhőbe (GitHub szinkron)
+                    </button>
+                    <button class="btn btn-sm btn-outline-light" onclick="downloadConfigFile()">
+                        <i class="bi bi-download me-1"></i> JSON letöltése
+                    </button>
+                </div>
             </div>
             <div class="table-responsive">
                 <table class="table table-dark table-hover align-middle m-0">
@@ -255,10 +260,10 @@ Nincs még jelentési adat.
             <div class="card modal-content p-4">
                 <h5 class="modal-title mb-3 text-white"><i class="bi bi-gear-fill text-primary me-2"></i>Admin beállítások</h5>
                 <p class="text-muted small">
-                    Ha megadod a GitHub Personal Access Token-edet (finomhangolt vagy klasszikus token <code>workflow</code> / <code>repo</code> jogosultsággal), a weboldal <strong>1 kattintással automatikusan elindítja a felhős futtatást a háttérben</strong>!
+                    Ha megadod a GitHub Personal Access Token-edet (<code>repo</code> és <code>workflow</code> jogosultsággal), a weboldal <strong>automatikusan szinkronizálja az új listákat a felhőbe, és 1 kattintással indítja a teszteket</strong>!
                 </p>
                 <div class="mb-3">
-                    <label class="form-label">GitHub Token (opcionális az 1-kattintásos indításhoz):</label>
+                    <label class="form-label">GitHub Token:</label>
                     <input type="password" id="ghTokenInput" class="form-control" placeholder="ghp_...">
                     <small class="text-muted">A token kizárólag a te saját böngésződben tárolódik titkosan.</small>
                 </div>
@@ -293,6 +298,53 @@ Nincs még jelentési adat.
 
         function saveLocalState() {
             localStorage.setItem('yt_watcher_config', JSON.stringify(currentConfig));
+        }
+
+        async function syncDirectToGitHub() {
+            const ghToken = localStorage.getItem('yt_watcher_gh_token');
+            if (!ghToken) {
+                openSettingsModal();
+                showToast("Kérjük, add meg a GitHub Tokenedet a felhős szinkronizáláshoz!", 'bg-warning');
+                return;
+            }
+
+            showToast("Szinkronizálás a GitHubbal...", 'bg-primary');
+            try {
+                // 1. Get current SHA of playlists_config.json
+                let sha = null;
+                const getResp = await fetch('https://api.github.com/repos/dufi1984/youtube-playlist-watcher/contents/playlists_config.json', {
+                    headers: { 'Authorization': `Bearer ${ghToken}`, 'Accept': 'application/vnd.github.v3+json' }
+                });
+                if (getResp.ok) {
+                    const data = await getResp.json();
+                    sha = data.sha;
+                }
+
+                // 2. Put updated JSON
+                const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(currentConfig, null, 2))));
+                const putResp = await fetch('https://api.github.com/repos/dufi1984/youtube-playlist-watcher/contents/playlists_config.json', {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${ghToken}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: "Update playlists_config.json from Web Admin",
+                        content: contentEncoded,
+                        sha: sha
+                    })
+                });
+
+                if (putResp.ok) {
+                    showToast("✅ Sikeresen elmentve a GitHub felhőbe!", 'bg-success');
+                } else {
+                    showToast("Hiba történt a felhős mentés során. Ellenőrizd a tokent!", 'bg-danger');
+                }
+            } catch (e) {
+                console.error("Sync error", e);
+                showToast("Hálózati hiba a szinkronizáláskor.", 'bg-danger');
+            }
         }
 
         async function loadData() {
@@ -358,10 +410,10 @@ Nincs még jelentési adat.
             return urlOrId.trim();
         }
 
-        function addPlaylist() {
+        async function addPlaylist() {
             const rawUrl = document.getElementById('newPlaylistUrl').value;
             const title = document.getElementById('newPlaylistTitle').value || "Új lista";
-            const email = document.getElementById('newPlaylistEmail').value;
+            const email = document.getElementById('newPlaylistEmail').value || "tamas.duffek@gmail.com";
 
             const pid = extractPlaylistId(rawUrl);
             if (!pid) {
@@ -374,23 +426,32 @@ Nincs még jelentési adat.
             currentConfig.playlists.push({
                 id: pid,
                 title: title,
-                emails: email ? [email] : []
+                emails: [email]
             });
 
             saveLocalState();
             renderTable();
-            showToast(`A "${title}" lista elmentve a böngésződben!`, 'bg-success');
+            showToast(`A "${title}" lista hozzáadva!`, 'bg-success');
             document.getElementById('newPlaylistUrl').value = "";
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
+
+            // Auto-sync if token is configured
+            if (localStorage.getItem('yt_watcher_gh_token')) {
+                syncDirectToGitHub();
+            }
         }
 
-        function deletePlaylist(pid) {
+        async function deletePlaylist(pid) {
             if (confirm("Biztosan törölni szeretnéd ezt a listát a figyelésből?")) {
                 currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
                 saveLocalState();
                 renderTable();
                 showToast("Lista törölve a figyelésből.", 'bg-warning');
+
+                if (localStorage.getItem('yt_watcher_gh_token')) {
+                    syncDirectToGitHub();
+                }
             }
         }
 
@@ -429,8 +490,6 @@ Nincs még jelentési adat.
                         showToast(`✅ A teszt futtatás sikeresen elindult a háttérben! Értesítés küldve ide: ${targetEmail}`, 'bg-success');
                         return;
                     } else {
-                        const errText = await resp.text();
-                        console.error("Dispatch error", errText);
                         showToast("A token jogosultsága érvénytelen. Megnyitjuk a futtató oldalt...", 'bg-warning');
                     }
                 } catch (e) {
@@ -438,9 +497,8 @@ Nincs még jelentési adat.
                 }
             }
 
-            // Fallback if no token configured
             const runUrl = "https://github.com/dufi1984/youtube-playlist-watcher/actions/workflows/daily_watcher.yml";
-            if (confirm(`Teszt e-mail indítása a(z) "${title}" listához!\n\nCímzett: ${targetEmail}\n\nMegnyitjuk a GitHub futtató oldalt. (Tipp: a Beállításokban megadhatsz GitHub Tokent, és akkor 1 kattintással elindul háttérben).`)) {
+            if (confirm(`Teszt e-mail indítása a(z) "${title}" listához!\n\nCímzett: ${targetEmail}\n\nMegnyitjuk a GitHub futtató oldalt.`)) {
                 window.open(runUrl, '_blank');
             }
         }
@@ -511,6 +569,7 @@ Nincs még jelentési adat.
             if (token) {
                 localStorage.setItem('yt_watcher_gh_token', token);
                 showToast("GitHub Token sikeresen elmentve a böngésződben!", 'bg-success');
+                syncDirectToGitHub();
             } else {
                 localStorage.removeItem('yt_watcher_gh_token');
                 showToast("GitHub Token törölve.", 'bg-secondary');
