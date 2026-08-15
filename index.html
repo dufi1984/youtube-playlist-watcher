@@ -4,81 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Playlist Watcher Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
+        :root {
+            --bg-primary: #0A0F12;
+            --bg-surface: #11181D;
+            --bg-elevated: #1A2228;
+            --border: #2A3338;
+            --border-subtle: #1E262B;
+            --text-primary: #F5F7F8;
+            --text-muted: #8B9499;
+            --text-faint: #6B7378;
+            --action: #1DC7B7;
+            --action-hover: #25A8A2;
+            --accent-deep: #0A6E68;
+            --celebration: #22C55E;
+            --danger: #EF4444;
+            --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+        }
+
+        /* Custom SevenGrid Scrollbar */
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: #1DC7B7 transparent;
+        }
+        ::-webkit-scrollbar { width: 10px; height: 10px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--border);
+            border-radius: 999px;
+            border: 2px solid var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb:hover { background-color: var(--action); }
+
         body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background:
+                radial-gradient(85% 42% at 50% -6%, rgba(29, 199, 183, 0.09) 0%, transparent 65%),
+                var(--bg-primary);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: var(--text-primary);
+            font-family: var(--font-ui);
+            font-size: 15px;
+            line-height: 1.6;
             min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
+
         .card {
-            background: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            color: #f8fafc;
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            color: var(--text-primary);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
         }
+
         .form-label {
-            color: #e2e8f0 !important;
-            font-weight: 600 !important;
-            font-size: 0.9rem;
+            color: var(--text-muted) !important;
+            font-weight: 500 !important;
+            font-size: 0.86rem;
             margin-bottom: 0.4rem;
         }
+
         .text-muted {
-            color: #94a3b8 !important;
+            color: var(--text-muted) !important;
         }
+
         .form-control {
-            background-color: #0f172a !important;
-            border-color: #475569 !important;
-            color: #ffffff !important;
+            background-color: var(--bg-primary) !important;
+            border: 1px solid var(--border) !important;
+            color: var(--text-primary) !important;
+            border-radius: 8px;
+            padding: 0.55rem 0.85rem;
+            font-size: 0.92rem;
+            transition: all 0.18s ease;
         }
+
         .form-control::placeholder {
-            color: #64748b !important;
+            color: var(--text-faint) !important;
         }
+
         .form-control:focus {
-            background-color: #0f172a !important;
-            border-color: #3b82f6 !important;
-            color: #ffffff !important;
-            box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+            background-color: var(--bg-primary) !important;
+            border-color: var(--action) !important;
+            color: var(--text-primary) !important;
+            box-shadow: 0 0 0 3px rgba(29, 199, 183, 0.18) !important;
         }
-        .badge-status {
-            font-size: 0.85rem;
-            padding: 0.5em 0.8em;
-            border-radius: 20px;
+
+        /* Buttons */
+        .btn-sg-primary {
+            background-color: var(--action) !important;
+            border: 1px solid var(--action) !important;
+            color: #0A0F12 !important;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.45rem 1rem;
+            transition: all 0.18s ease;
         }
+        .btn-sg-primary:hover {
+            background-color: var(--action-hover) !important;
+            border-color: var(--action-hover) !important;
+            color: #0A0F12 !important;
+            transform: translateY(-1px);
+        }
+
+        .btn-sg-outline {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.18s ease;
+        }
+        .btn-sg-outline:hover {
+            border-color: var(--action);
+            color: var(--action);
+            background-color: var(--bg-elevated);
+        }
+
+        .btn-sg-action {
+            background-color: rgba(29, 199, 183, 0.1);
+            border: 1px solid rgba(29, 199, 183, 0.3);
+            color: var(--action);
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.82rem;
+            transition: all 0.18s ease;
+        }
+        .btn-sg-action:hover {
+            background-color: var(--action);
+            color: #0A0F12;
+            border-color: var(--action);
+        }
+
+        .btn-sg-danger {
+            background-color: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.25);
+            color: #F87171;
+            border-radius: 6px;
+            transition: all 0.18s ease;
+        }
+        .btn-sg-danger:hover {
+            background-color: #EF4444;
+            color: #ffffff;
+            border-color: #EF4444;
+        }
+
+        /* Table Styling */
+        .table {
+            --bs-table-bg: transparent;
+            --bs-table-color: var(--text-primary);
+            --bs-table-hover-bg: rgba(29, 199, 183, 0.03);
+            margin: 0;
+        }
+        .table thead th {
+            color: var(--text-muted);
+            font-size: 0.76rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border);
+            padding: 12px 14px;
+            background: transparent;
+        }
+        .table tbody td {
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 13px 14px;
+            vertical-align: middle;
+        }
+        .table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
         code.playlist-code {
-            color: #38bdf8 !important;
-            background: #0f172a;
+            color: var(--action) !important;
+            background: var(--bg-primary);
             padding: 4px 8px;
             border-radius: 6px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            border: 1px solid #1e293b;
+            font-weight: 500;
+            font-size: 0.84rem;
+            border: 1px solid var(--border);
+            font-family: var(--font-mono);
         }
+
         .pin-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(15, 23, 42, 0.96);
-            backdrop-filter: blur(12px);
+            background: rgba(10, 15, 18, 0.97);
+            backdrop-filter: blur(14px);
             z-index: 9999;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .email-preview-box {
             background: #ffffff;
             color: #111827;
-            border-radius: 6px;
-            padding: 16px;
+            border-radius: 8px;
+            padding: 18px;
             font-family: Arial, sans-serif;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border);
         }
+
         .toast-container {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 10000;
+        }
+        .toast-sg {
+            background: var(--bg-elevated) !important;
+            border: 1px solid var(--action) !important;
+            color: var(--text-primary) !important;
+            border-radius: 8px;
+        }
+
+        pre#reportLog {
+            background: var(--bg-primary) !important;
+            border: 1px solid var(--border);
+            color: var(--action) !important;
+            border-radius: 8px;
+            font-family: var(--font-mono);
         }
     </style>
 </head>
@@ -86,7 +238,7 @@
 
     <!-- Toast Notification -->
     <div class="toast-container">
-        <div id="actionToast" class="toast align-items-center text-white bg-primary border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+        <div id="actionToast" class="toast align-items-center toast-sg shadow-lg border-0" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body" id="toastMessage">
                     Művelet folyamatban...
@@ -100,43 +252,43 @@
     <div id="pinOverlay" class="pin-overlay">
         <div class="card p-4 shadow-lg text-center" style="max-width: 380px; width: 90%;">
             <div class="mb-3">
-                <i class="bi bi-shield-lock-fill text-primary display-4"></i>
+                <i class="bi bi-shield-lock-fill display-4" style="color: var(--action);"></i>
             </div>
-            <h4 class="text-white fw-bold">Kriptográfiailag védett belépés</h4>
+            <h4 class="text-white fw-bold mb-1">Kriptográfiailag védett belépés</h4>
             <p class="text-muted small mb-3">Adj meg a PIN kódot a felület eléréséhez:</p>
             <input type="password" id="pinInput" class="form-control text-center fs-4 mb-3" placeholder="" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
-            <button class="btn btn-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
+            <button class="btn btn-sg-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
             <div id="pinError" class="text-danger small mt-2 d-none">Hibás PIN kód! Próbáld újra.</div>
         </div>
     </div>
 
     <!-- Main Web Dashboard -->
-    <div class="container py-4">
+    <div class="container py-4" style="max-width: 1040px;">
         <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary">
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-3" style="border-bottom: 1px solid var(--border);">
             <div>
                 <h2 class="fw-bold m-0 text-white"><i class="bi bi-youtube text-danger me-2"></i>YouTube playlist watcher</h2>
-                <span class="text-muted">Automatikus lejátszási lista változás-figyelő és mentő</span>
+                <span class="text-muted small">Automatikus lejátszási lista változás-figyelő és mentő</span>
             </div>
             <div class="d-flex gap-2">
-                <button class="btn btn-outline-info btn-sm" onclick="openEmailPreviewModal()">
+                <button class="btn btn-sg-outline btn-sm" onclick="openEmailPreviewModal()">
                     <i class="bi bi-envelope-paper me-1"></i> E-mail minta
                 </button>
-                <button class="btn btn-outline-warning btn-sm" onclick="openPinModal()">
+                <button class="btn btn-sg-outline btn-sm" onclick="openPinModal()">
                     <i class="bi bi-key me-1"></i> PIN módosítás
                 </button>
-                <button class="btn btn-outline-light btn-sm" onclick="openSettingsModal()">
+                <button class="btn btn-sg-outline btn-sm" onclick="openSettingsModal()">
                     <i class="bi bi-gear me-1"></i> Beállítások
                 </button>
-                <button class="btn btn-outline-secondary btn-sm" onclick="location.reload()">
+                <button class="btn btn-sg-outline btn-sm" onclick="location.reload()">
                     <i class="bi bi-arrow-clockwise me-1"></i> Frissítés
                 </button>
             </div>
         </div>
 
         <!-- Add New Playlist Card -->
-        <div class="card p-4 mb-4 shadow">
-            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-plus-circle-fill text-success me-2"></i>Új lejátszási lista hozzáadása</h5>
+        <div class="card p-4 mb-4">
+            <h5 class="fw-bold mb-3 text-white">Új lejátszási lista hozzáadása</h5>
             
             <!-- Row 1: Full width URL -->
             <div class="row g-3 mb-2">
@@ -160,30 +312,30 @@
 
             <!-- Action buttons -->
             <div class="d-flex justify-content-end gap-2">
-                <button class="btn btn-success fw-bold px-4" onclick="addPlaylist()">
-                    <i class="bi bi-check-circle me-1"></i> Lista hozzáadása
+                <button class="btn btn-sg-primary fw-bold px-4" onclick="addPlaylist()">
+                    <i class="bi bi-plus-lg me-1"></i> Lista hozzáadása
                 </button>
             </div>
         </div>
 
         <!-- Monitored Playlists Card -->
-        <div class="card p-4 mb-4 shadow">
+        <div class="card p-4 mb-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="fw-bold m-0 text-white">Figyelt lejátszási listák</h5>
                 <div class="d-flex gap-2">
-                    <button class="btn btn-sm btn-primary fw-bold" onclick="syncAndRunWorkflow()">
+                    <button class="btn btn-sm btn-sg-primary fw-bold" onclick="syncAndRunWorkflow()">
                         <i class="bi bi-cloud-arrow-up-fill me-1"></i> Mentés a felhőbe & Azonnali ellenőrzés
                     </button>
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="table table-dark table-hover align-middle m-0">
+                <table class="table align-middle m-0">
                     <thead>
-                        <tr class="text-muted small">
-                            <th class="text-white">LISTA NEVE</th>
-                            <th class="text-white">PLAYLIST ID</th>
-                            <th class="text-white">ÉRTESÍTENDŐ E-MAIL</th>
-                            <th class="text-white">MŰVELETEK</th>
+                        <tr>
+                            <th>LISTA NEVE</th>
+                            <th>PLAYLIST ID</th>
+                            <th>ÉRTESÍTENDŐ E-MAIL</th>
+                            <th>MŰVELETEK</th>
                         </tr>
                     </thead>
                     <tbody id="playlistTableBody">
@@ -194,10 +346,10 @@
         </div>
 
         <!-- Latest Status & Report Log -->
-        <div class="card p-4 shadow">
+        <div class="card p-4">
             <h5 class="fw-bold mb-3 text-white">Legutóbbi ellenőrzési jelentés</h5>
             <div id="lastRunTime" class="text-muted small mb-2">Utolsó futás: Töltés...</div>
-            <pre id="reportLog" class="p-3 rounded bg-dark text-success font-monospace small" style="max-height: 250px; overflow-y: auto;">
+            <pre id="reportLog" class="p-3 font-monospace small" style="max-height: 250px; overflow-y: auto;">
 Nincs még jelentési adat.
             </pre>
         </div>
@@ -231,7 +383,7 @@ Nincs még jelentési adat.
                 </div>
 
                 <div class="text-end">
-                    <button class="btn btn-secondary" onclick="closeEmailPreviewModal()">Bezárás</button>
+                    <button class="btn btn-sg-outline" onclick="closeEmailPreviewModal()">Bezárás</button>
                 </div>
             </div>
         </div>
@@ -241,7 +393,7 @@ Nincs még jelentési adat.
     <div id="pinModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="card modal-content p-4">
-                <h5 class="modal-title mb-3 text-white"><i class="bi bi-key-fill text-warning me-2"></i>Új PIN kód beállítása</h5>
+                <h5 class="modal-title mb-3 text-white"><i class="bi bi-key-fill me-2" style="color: var(--action);"></i>Új PIN kód beállítása</h5>
                 <p class="text-muted small">A megadott PIN kódból a rendszer egy visszafejthetetlen SHA-256 kriptográfiai hash-t képez.</p>
                 <div class="mb-3">
                     <label class="form-label">Új PIN kód:</label>
@@ -252,8 +404,8 @@ Nincs még jelentési adat.
                     <input type="text" id="generatedHash" class="form-control font-monospace small" readonly placeholder="">
                 </div>
                 <div class="d-flex justify-content-end gap-2">
-                    <button class="btn btn-secondary" onclick="closePinModal()">Mégse</button>
-                    <button class="btn btn-primary" onclick="generateAndSavePinHash()">Hash generálása</button>
+                    <button class="btn btn-sg-outline" onclick="closePinModal()">Mégse</button>
+                    <button class="btn btn-sg-primary" onclick="generateAndSavePinHash()">Hash generálása</button>
                 </div>
             </div>
         </div>
@@ -263,7 +415,7 @@ Nincs még jelentési adat.
     <div id="settingsModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="card modal-content p-4">
-                <h5 class="modal-title mb-3 text-white"><i class="bi bi-gear-fill text-primary me-2"></i>Admin beállítások</h5>
+                <h5 class="modal-title mb-3 text-white"><i class="bi bi-gear-fill me-2" style="color: var(--action);"></i>Admin beállítások</h5>
                 <p class="text-muted small">
                     Ha megadod a GitHub Personal Access Token-edet (<code>repo</code> és <code>workflow</code> jogosultsággal), a weboldal <strong>automatikusan elvégzi a felhős mentést és a háttérbeli azonnali ellenőrzést</strong>!
                 </p>
@@ -273,8 +425,8 @@ Nincs még jelentési adat.
                     <small class="text-muted">A token kizárólag a te saját böngésződben tárolódik titkosan.</small>
                 </div>
                 <div class="d-flex justify-content-end gap-2">
-                    <button class="btn btn-secondary" onclick="closeSettingsModal()">Mégse</button>
-                    <button class="btn btn-primary" onclick="saveSettings()">Mentés</button>
+                    <button class="btn btn-sg-outline" onclick="closeSettingsModal()">Mégse</button>
+                    <button class="btn btn-sg-primary" onclick="saveSettings()">Mentés</button>
                 </div>
             </div>
         </div>
@@ -291,7 +443,6 @@ Nincs még jelentési adat.
         function showToast(msg, bgClass = 'bg-primary') {
             const toastEl = document.getElementById('actionToast');
             document.getElementById('toastMessage').innerText = msg;
-            toastEl.className = `toast align-items-center text-white ${bgClass} border-0 shadow-lg`;
             const toast = new bootstrap.Toast(toastEl, { delay: 4000 });
             toast.show();
         }
@@ -408,7 +559,7 @@ Nincs még jelentési adat.
 
         async function loadStatus() {
             try {
-                const res = await fetch('latest_status.json');
+                const res = await fetch('latest_status.json?' + new Date().getTime());
                 if (res.ok) {
                     const statusData = await res.json();
                     document.getElementById('lastRunTime').innerText = "Utolsó ellenőrzés: " + (statusData.last_run || "Nemrég");
@@ -507,17 +658,6 @@ Nincs még jelentési adat.
             }
         }
 
-        function downloadConfigFile() {
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(currentConfig, null, 2));
-            const downloadAnchor = document.createElement('a');
-            downloadAnchor.setAttribute("href", dataStr);
-            downloadAnchor.setAttribute("download", "playlists_config.json");
-            document.body.appendChild(downloadAnchor);
-            downloadAnchor.click();
-            downloadAnchor.remove();
-            showToast("A playlists_config.json letöltődött!", 'bg-info');
-        }
-
         async function triggerTestEmail(title, email) {
             const ghToken = localStorage.getItem('yt_watcher_gh_token');
             const targetEmail = email || "a beállított e-mail címedre";
@@ -572,17 +712,17 @@ Nincs még jelentési adat.
                 const tr = document.createElement('tr');
                 const targetEmail = (p.emails || [])[0] || 'Nincs megadva';
                 tr.innerHTML = `
-                    <td class="fw-bold text-white">${p.title || 'Névtelen'}</td>
+                    <td class="fw-semibold text-white">${p.title || 'Névtelen'}</td>
                     <td><code class="playlist-code">${p.id}</code></td>
-                    <td class="text-light">${targetEmail}</td>
+                    <td style="color: var(--text-muted);">${targetEmail}</td>
                     <td>
-                        <button class="btn btn-sm btn-outline-info me-1" onclick="triggerTestEmail('${p.title}', '${targetEmail}')" title="Teszt e-mail küldése">
+                        <button class="btn btn-sm btn-sg-action me-1" onclick="triggerTestEmail('${p.title}', '${targetEmail}')" title="Teszt e-mail küldése">
                             <i class="bi bi-send me-1"></i> Teszt e-mail
                         </button>
-                        <a href="https://www.youtube.com/playlist?list=${p.id}" target="_blank" class="btn btn-sm btn-outline-primary me-1">
+                        <a href="https://www.youtube.com/playlist?list=${p.id}" target="_blank" class="btn btn-sm btn-sg-outline me-1">
                             <i class="bi bi-box-arrow-up-right"></i> Megnyitás
                         </a>
-                        <button class="btn btn-sm btn-outline-danger" onclick="deletePlaylist('${p.id}')">
+                        <button class="btn btn-sm btn-sg-danger" onclick="deletePlaylist('${p.id}')">
                             <i class="bi bi-trash"></i>
                         </button>
                     </td>
