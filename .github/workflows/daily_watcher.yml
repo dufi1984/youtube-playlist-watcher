@@ -39,6 +39,8 @@ jobs:
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         PLAYLIST_ID: ${{ secrets.PLAYLIST_ID }}
+        RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
         SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
         SMTP_PORT: ${{ secrets.SMTP_PORT }}
         SMTP_USER: ${{ secrets.SMTP_USER }}
@@ -52,7 +54,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         if [ -s changes_report.txt ]; then
-          echo "Changes or test report detected! Creating a GitHub Issue for email notification..."
+          echo "Changes or test report detected! Creating a GitHub Issue for notification..."
           gh issue create --title "⚠️ YouTube Playlist Értesítő / Teszt" --body-file changes_report.txt
         else
           echo "No playlist changes detected and test not requested."

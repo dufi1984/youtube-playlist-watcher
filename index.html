@@ -73,9 +73,27 @@
             padding: 20px;
             font-family: Arial, sans-serif;
         }
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Toast Notification -->
+    <div class="toast-container">
+        <div id="actionToast" class="toast align-items-center text-white bg-primary border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessage">
+                    Művelet folyamatban...
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
 
     <!-- PIN Code Overlay -->
     <div id="pinOverlay" class="pin-overlay">
@@ -99,12 +117,15 @@
                 <h2 class="fw-bold m-0 text-white"><i class="bi bi-youtube text-danger me-2"></i>YouTube playlist watcher</h2>
                 <span class="text-muted">Automatikus lejátszási lista változás-figyelő és mentő</span>
             </div>
-            <div>
-                <button class="btn btn-outline-info btn-sm me-2" onclick="openEmailPreviewModal()">
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-info btn-sm" onclick="openEmailPreviewModal()">
                     <i class="bi bi-envelope-paper me-1"></i> E-mail minta
                 </button>
-                <button class="btn btn-outline-warning btn-sm me-2" onclick="openPinModal()">
+                <button class="btn btn-outline-warning btn-sm" onclick="openPinModal()">
                     <i class="bi bi-key me-1"></i> PIN módosítás
+                </button>
+                <button class="btn btn-outline-light btn-sm" onclick="openSettingsModal()">
+                    <i class="bi bi-gear me-1"></i> Beállítások
                 </button>
                 <button class="btn btn-outline-secondary btn-sm" onclick="location.reload()">
                     <i class="bi bi-arrow-clockwise me-1"></i> Frissítés
@@ -244,12 +265,41 @@ Nincs még jelentési adat.
         </div>
     </div>
 
+    <!-- Settings Modal (GitHub Token for 1-Click Execution) -->
+    <div id="settingsModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="card modal-content p-4">
+                <h5 class="modal-title mb-3 text-white"><i class="bi bi-gear-fill text-primary me-2"></i>Admin beállítások</h5>
+                <p class="text-muted small">
+                    Ha megadod a GitHub Personal Access Token-edet (finomhangolt vagy klasszikus token <code>workflow</code> / <code>repo</code> jogosultsággal), a weboldal <strong>1 kattintással automatikusan elindítja a felhős futtatást a háttérben</strong>!
+                </p>
+                <div class="mb-3">
+                    <label class="form-label">GitHub Token (opcionális az 1-kattintásos indításhoz):</label>
+                    <input type="password" id="ghTokenInput" class="form-control" placeholder="ghp_...">
+                    <small class="text-muted">A token kizárólag a te saját böngésződben tárolódik titkosan.</small>
+                </div>
+                <div class="d-flex justify-content-end gap-2">
+                    <button class="btn btn-secondary" onclick="closeSettingsModal()">Mégse</button>
+                    <button class="btn btn-primary" onclick="saveSettings()">Mentés</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         let currentConfig = {
             pin_hash: "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
             playlists: []
         };
+
+        function showToast(msg, bgClass = 'bg-primary') {
+            const toastEl = document.getElementById('actionToast');
+            document.getElementById('toastMessage').innerText = msg;
+            toastEl.className = `toast align-items-center text-white ${bgClass} border-0 shadow-lg`;
+            const toast = new bootstrap.Toast(toastEl, { delay: 4000 });
+            toast.show();
+        }
 
         async function sha256(str) {
             const buffer = new TextEncoder().encode(str);
@@ -262,7 +312,6 @@ Nincs még jelentési adat.
         }
 
         async function loadData() {
-            // First check LocalStorage for user-saved edits
             const localSaved = localStorage.getItem('yt_watcher_config');
             if (localSaved) {
                 try {
@@ -336,7 +385,6 @@ Nincs még jelentési adat.
                 return;
             }
 
-            // Remove existing with same ID to update emails & title
             currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
 
             currentConfig.playlists.push({
@@ -347,7 +395,7 @@ Nincs még jelentési adat.
 
             saveLocalState();
             renderTable();
-            alert(`A "${title}" lista elmentve a böngésződben!`);
+            showToast(`A "${title}" lista elmentve a böngésződben!`, 'bg-success');
             document.getElementById('newPlaylistUrl').value = "";
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
@@ -358,6 +406,7 @@ Nincs még jelentési adat.
                 currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
                 saveLocalState();
                 renderTable();
+                showToast("Lista törölve a figyelésből.", 'bg-warning');
             }
         }
 
@@ -369,14 +418,45 @@ Nincs még jelentési adat.
             document.body.appendChild(downloadAnchor);
             downloadAnchor.click();
             downloadAnchor.remove();
-            alert("A frissített playlists_config.json letöltődött! Töltsd fel a GitHub repódba a szerveroldali frissítéshez.");
+            showToast("A playlists_config.json letöltődött!", 'bg-info');
         }
 
-        function triggerTestEmail(title, email) {
+        async function triggerTestEmail(title, email) {
+            const ghToken = localStorage.getItem('yt_watcher_gh_token');
             const targetEmail = email || "a beállított e-mail címedre";
+
+            if (ghToken) {
+                showToast(`🚀 Teszt e-mail indítása a GitHub felhőben (${title})...`, 'bg-primary');
+                try {
+                    const resp = await fetch('https://api.github.com/repos/dufi1984/youtube-playlist-watcher/actions/workflows/daily_watcher.yml/dispatches', {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${ghToken}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            ref: 'main',
+                            inputs: { send_test_notification: true }
+                        })
+                    });
+
+                    if (resp.status === 204 || resp.ok) {
+                        showToast(`✅ A teszt futtatás sikeresen elindult a háttérben! Értesítés küldve ide: ${targetEmail}`, 'bg-success');
+                        return;
+                    } else {
+                        const errText = await resp.text();
+                        console.error("Dispatch error", errText);
+                        showToast("A token jogosultsága érvénytelen. Megnyitjuk a futtató oldalt...", 'bg-warning');
+                    }
+                } catch (e) {
+                    console.error("API error", e);
+                }
+            }
+
+            // Fallback if no token configured
             const runUrl = "https://github.com/dufi1984/youtube-playlist-watcher/actions/workflows/daily_watcher.yml";
-            
-            if (confirm(`Teszt e-mail indítása a(z) "${title}" listához!\n\nÉrtesítendő e-mail: ${targetEmail}\n\nMegnyitjuk a GitHub futtató oldalt, ahol 1 kattintással elindíthatod a teszt e-mail kiküldését. Folytatod?`)) {
+            if (confirm(`Teszt e-mail indítása a(z) "${title}" listához!\n\nCímzett: ${targetEmail}\n\nMegnyitjuk a GitHub futtató oldalt. (Tipp: a Beállításokban megadhatsz GitHub Tokent, és akkor 1 kattintással elindul háttérben).`)) {
                 window.open(runUrl, '_blank');
             }
         }
@@ -432,6 +512,28 @@ Nincs még jelentési adat.
             if (emailPreviewModalObj) emailPreviewModalObj.hide();
         }
 
+        let settingsModalObj = null;
+        function openSettingsModal() {
+            if (!settingsModalObj) settingsModalObj = new bootstrap.Modal(document.getElementById('settingsModal'));
+            document.getElementById('ghTokenInput').value = localStorage.getItem('yt_watcher_gh_token') || '';
+            settingsModalObj.show();
+        }
+        function closeSettingsModal() {
+            if (settingsModalObj) settingsModalObj.hide();
+        }
+
+        function saveSettings() {
+            const token = document.getElementById('ghTokenInput').value.trim();
+            if (token) {
+                localStorage.setItem('yt_watcher_gh_token', token);
+                showToast("GitHub Token sikeresen elmentve a böngésződben!", 'bg-success');
+            } else {
+                localStorage.removeItem('yt_watcher_gh_token');
+                showToast("GitHub Token törölve.", 'bg-secondary');
+            }
+            closeSettingsModal();
+        }
+
         async function generateAndSavePinHash() {
             const newPin = document.getElementById('newPinInput').value;
             if (!newPin) {
@@ -442,7 +544,7 @@ Nincs még jelentési adat.
             document.getElementById('generatedHash').value = hash;
             currentConfig.pin_hash = hash;
             saveLocalState();
-            alert("Az új PIN kód kriptográfiai hash-je elkészült!");
+            showToast("Az új PIN kód kriptográfiai hash-je elkészült!", 'bg-success');
             closePinModal();
         }
 
