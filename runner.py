@@ -51,11 +51,11 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
     html_content = build_minimal_email(playlist_title, text_content)
 
     resend_key = os.environ.get('RESEND_API_KEY', '').strip()
-    from_email = os.environ.get('FROM_EMAIL', 'onboarding@resend.dev').strip() or 'onboarding@resend.dev'
+    from_email = os.environ.get('FROM_EMAIL', 'YouTube watcher <onboarding@resend.dev>').strip() or 'YouTube watcher <onboarding@resend.dev>'
 
     print(f"Resend Key configured: {'YES' if resend_key else 'NO'}")
     if resend_key:
-        print(f"Sending email via Resend API to {to_emails} from {from_email}...")
+        print(f"Sending email via Resend API to {to_emails} from '{from_email}'...")
         try:
             resp = requests.post(
                 'https://api.resend.com/emails',
@@ -84,7 +84,6 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
     return False
 
 def clean_report_text(report):
-    # Strip redundant search links and format cleanly
     lines = [line.strip() for line in report.split('\n') if line.strip()]
     cleaned = []
     for l in lines:
