@@ -51,11 +51,11 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
     html_content = build_minimal_email(playlist_title, text_content)
 
     resend_key = os.environ.get('RESEND_API_KEY', '').strip()
-    from_email = os.environ.get('FROM_EMAIL', 'YouTube Watcher <onboarding@resend.dev>')
+    from_email = 'onboarding@resend.dev'
 
     print(f"Resend Key configured: {'YES (len=' + str(len(resend_key)) + ')' if resend_key else 'NO (empty)'}")
     if resend_key:
-        print(f"Attempting to send email via Resend API to {to_emails}...")
+        print(f"Attempting to send email via Resend API to {to_emails} from {from_email}...")
         try:
             resp = requests.post(
                 'https://api.resend.com/emails',
@@ -72,7 +72,8 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
                 },
                 timeout=15
             )
-            print(f"Resend response status: {resp.status_code}, body: {resp.text}")
+            print(f"Resend HTTP Status: {resp.status_code}")
+            print(f"Resend Response Body: {resp.text}")
             if resp.status_code in [200, 201]:
                 print(f"✅ Email successfully sent via Resend API to {to_emails}!")
                 return True
