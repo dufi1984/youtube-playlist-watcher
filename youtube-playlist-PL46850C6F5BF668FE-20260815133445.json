@@ -1,0 +1,197 @@
+[
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT3M23S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "Yd4RNCwnXiXORkeDQYSE3boczJw",
+        "id": "fv4vdoqpc9o",
+        "kind": "youtube#video",
+        "playlistItemId": "UEw0Njg1MEM2RjVCRjY2OEZFLkNFQzkwOTc4NDAzMjM3NTU",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Avagy hogyan jussunk be \u00e9s szerezz\u00fcnk j\u00f3 \u00e1ll\u00f3helyet.",
+            "playlistId": "PL46850C6F5BF668FE",
+            "position": 0,
+            "publishedAt": "2012-01-30T14:43:56Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "fv4vdoqpc9o"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/fv4vdoqpc9o/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Britney Spears koncert part1",
+            "videoOwnerChannelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "videoOwnerChannelTitle": "Duffek Tam\u00e1s"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT22M52S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "vJCfO3fvJjPLZTMVLQ8RhjSVkcU",
+        "id": "mnLFG6Byvc0",
+        "kind": "youtube#video",
+        "playlistItemId": "UEw0Njg1MEM2RjVCRjY2OEZFLjkzMDA5Q0VBODYxODk0NTg",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Hangulat a kiemelt \u00e1ll\u00f3helyen...\n\n- Hold It Against Me\n- Gimme More\n- ...Baby One More Time\n- S&M\n- I'm A Slave 4 U\n- I Wanna Go\n- Womanizer\n- Till The World Ends",
+            "playlistId": "PL46850C6F5BF668FE",
+            "position": 1,
+            "publishedAt": "2012-01-30T14:43:56Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "mnLFG6Byvc0"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/mnLFG6Byvc0/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Britney Spears koncert part2",
+            "videoOwnerChannelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "videoOwnerChannelTitle": "Duffek Tam\u00e1s"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT8M43S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "mgh6aStSfUWMWyvFTEj3xdEn5X8",
+        "id": "JxKG3dRdmP4",
+        "kind": "youtube#video",
+        "playlistItemId": "UEw0Njg1MEM2RjVCRjY2OEZFLjI2NzI4MDE5ODgyRTA2QTA",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "00:00 Bevezet\u0151\n00:28 Eddigi bev\u00e9telszerz\u00e9si felt\u00e9telek\n01:19 Mi v\u00e1ltozik, \u00e9s mi nem?\n02:30 V\u00e1ltoz\u00e1sok az inaktivit\u00e1s kapcs\u00e1n\n03:04 Mi\u00e9rt csin\u00e1lta ezt a Youtube?\n04:10 Youtube Premium Lite\n05:05 Youtube Shorts update\n07:00 Mikor l\u00e9pnek ezek \u00e9letbe? & \u00f6sszegz\u00e9s\n\nForr\u00e1sok, linkek, felhaszn\u00e1lt anyagok, ilyenek:\nhttps://www.youtube.com/creators/earn/youtube-partner-program/\nhttps://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn/\nhttps://youtu.be/D7iVs62tkLs\nhttps://www.youtube.com/watch?v=BozYSBSLIp0\n\n\ud83c\udf1f Csatlakozz a TAGOK k\u00f6z\u00e9: https://www.youtube.com/channel/UCbb944bcjsXWF4xOLoOVH_Q/join\n\ud83c\udfac Iratkozz fel a csatorn\u00e1ra: https://www.youtube.com/c/szaboviktoryt?sub_confirmation=1\n\n\ud83d\udc8e T\u00e1mogatn\u00e1d a csatorna m\u0171k\u00f6d\u00e9s\u00e9t? Itt tudod megtenni:\nYoutube: Szuperk\u00f6sz\u00f6net \u00e9s tags\u00e1g form\u00e1j\u00e1ban.\nStreamelements: https://streamelements.com/szaboviktoryt/tip\nPaypal: https://www.paypal.me/szaboviktor\n\n\ud83d\udcca Szem\u00e9lyes Youtube tan\u00e1csad\u00e1s:\nhttps://youtubetippek.hu\n\n\ud83c\udfa7 L\u00e9pj szintet a Musicbeddel! Haszn\u00e1lj premium dalokat a vide\u00f3s projektjeidhez.\nRegisztr\u00e1lj, \u00e9s pr\u00f3b\u00e1ld INGYENESEN 14 napig:\nhttps://fm.pxf.io/szaboviktorfreetrial\n\n\ud83c\udf0d Social media & Contact\nDiscord https://discord.gg/hKHZkJs\nTwitch https://www.twitch.tv/szaboviktoryt\nInstagram http://instagram.com/szvinsta\nPortf\u00f3li\u00f3 http://szaboviktor.com\nE-mail viktor@youtubetippek.hu\n\n\ud83d\udcc8 Youtube SEO kieg\u00e9sz\u00edt\u0151k\nTubeBuddy https://www.tubebuddy.com/szaboviktor\nVidIQ https://vidiq.com/szaboviktor\n\n\ud83d\udda5 Fot\u00f3, vide\u00f3 \u00e9s egy\u00e9b programok\nEnvato Elements https://1.envato.market/VyGEbj\nNotion  https://affiliate.notion.so/ak7u0v0tlsec\nMulti stream? Restream https://restream.io/join/zm656Z\nClickup https://clickup.com/?fp_ref=ae9qu\nVide\u00f3 feliratkoz\u00e1sra: Descript https://www.descript.com/?lmref=moWuYg\n\n(A le\u00edr\u00e1s tartalmaz affiliate linkeket is. Haszn\u00e1latukkal p\u00e1r esetben t\u00e1mogatod a csatorna m\u0171k\u00f6d\u00e9s\u00e9t, \u00e9s te is kedvezm\u00e9nyekben r\u00e9szes\u00fclsz.)",
+            "playlistId": "PL46850C6F5BF668FE",
+            "position": 2,
+            "publishedAt": "2026-08-15T13:34:35Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "JxKG3dRdmP4"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/JxKG3dRdmP4/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/JxKG3dRdmP4/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/JxKG3dRdmP4/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/JxKG3dRdmP4/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/JxKG3dRdmP4/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "A Youtube meg\u00f6li a kis csatorn\u00e1kat... \ud83e\udd40",
+            "videoOwnerChannelId": "UCbb944bcjsXWF4xOLoOVH_Q",
+            "videoOwnerChannelTitle": "Szab\u00f3 Viktor"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": false,
+            "uploadStatus": "processed"
+        }
+    }
+]
