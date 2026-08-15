@@ -62,14 +62,14 @@ def run_command(cmd):
     return result.returncode, result.stdout, result.stderr
 
 def send_combined_email(recipient_email, subject, html_content, plain_content):
-    # 1. Primary Option: Direct SMTP (Gmail App Password - works for ANY recipient address!)
+    # 1. Primary Option: Direct SMTP (Gmail App Password)
     smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com').strip()
     smtp_port = int(os.environ.get('SMTP_PORT', '587'))
     smtp_user = os.environ.get('SMTP_USER', '').strip()
-    smtp_password = os.environ.get('SMTP_PASSWORD', '').strip()
+    smtp_password = os.environ.get('SMTP_PASSWORD', '').strip().replace(" ", "")
 
     if smtp_user and smtp_password:
-        print(f"Sending combined email via Gmail SMTP to {recipient_email}...")
+        print(f"Attempting to send email via Gmail SMTP to {recipient_email}...")
         try:
             msg = MIMEMultipart('alternative')
             msg['From'] = f"YouTube watcher <{smtp_user}>"
@@ -80,14 +80,16 @@ def send_combined_email(recipient_email, subject, html_content, plain_content):
             msg.attach(MIMEText(html_content, 'html', 'utf-8'))
 
             server = smtplib.SMTP(smtp_server, smtp_port, timeout=20)
+            server.ehlo()
             server.starttls()
+            server.ehlo()
             server.login(smtp_user, smtp_password)
             server.send_message(msg)
             server.quit()
             print(f"✅ Combined email successfully sent via Gmail SMTP to {recipient_email}!")
             return True
         except Exception as e:
-            print(f"❌ Error sending via SMTP: {e}")
+            print(f"⚠️ SMTP send failed ({e}), falling back to Resend API...")
 
     # 2. Fallback Option: Resend API
     resend_key = os.environ.get('RESEND_API_KEY', '').strip()
