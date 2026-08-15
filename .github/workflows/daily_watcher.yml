@@ -49,15 +49,13 @@ jobs:
       run: |
         python runner.py
 
-    - name: Create GitHub Issue notification on change or test
+    - name: Create GitHub Issue fallback notification
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         if [ -s changes_report.txt ]; then
-          echo "Changes or test report detected! Creating a GitHub Issue for notification..."
-          gh issue create --title "⚠️ YouTube Playlist Értesítő / Teszt" --body-file changes_report.txt
-        else
-          echo "No playlist changes detected and test not requested."
+          echo "Changes or test report detected! Creating GitHub Issue fallback..."
+          gh issue create --title "YouTube playlist watcher" --body-file changes_report.txt || true
         fi
 
     - name: Commit and push changes back to repository
@@ -69,5 +67,6 @@ jobs:
           echo "No changes in playlist dump files."
         else
           git commit -m "Automated daily playlist dump & status update"
-          git push
+          git pull --rebase origin main || true
+          git push || true
         fi

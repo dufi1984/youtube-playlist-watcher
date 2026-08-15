@@ -5,6 +5,7 @@ import json
 import smtplib
 import requests
 import subprocess
+from datetime import datetime, timezone
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -118,8 +119,9 @@ def main():
     config = load_config()
     playlists = config.get('playlists', [])
     
+    current_utc = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
     status_data = {
-        "last_run": subprocess.check_output(['date', '-u', '+%Y-%m-%d %H:%M:%S UTC']).decode().strip() if os.name != 'nt' else "Recently",
+        "last_run": current_utc,
         "results": []
     }
 
