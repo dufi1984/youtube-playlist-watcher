@@ -53,7 +53,7 @@ def load_config(api_key=""):
     return {
         "pin_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "playlists": playlists_from_config if playlists_from_config else [
-            {"id": "PL46850C6F5BF668FE", "title": "próba lista", "emails": ["tamas.duffek@gmail.com"]}
+            {"id": "PL46850C6F5BF668FE", "title": "BS koncert", "emails": ["tamas.duffek@gmail.com"]}
         ]
     }
 
@@ -106,6 +106,10 @@ def format_hungarian_alert(raw_output):
         if line.startswith('ADDED:'):
             continue
 
+        # Ignore regional restriction blocks (they are playable in Europe/Hungary)
+        if line.startswith('IS BLOCKED IN REGION'):
+            continue
+
         # REMOVED / DELETED
         if line.startswith('REMOVED:') or line.startswith('DELETED:'):
             m_pos = re.search(r'(?:was\s+)?(\d+)(?:th|st|nd|rd)?\s+video', line)
@@ -115,6 +119,8 @@ def format_hungarian_alert(raw_output):
             clean_line = re.sub(r'https?://\S+', '', clean_line)
             clean_line = re.sub(r'\((?:was\s+)?\d+(?:th|st|nd|rd)?\s+video[^)]*\)', '', clean_line)
             title = clean_line.strip()
+            if title == 'NOT_FOUND':
+                title = "Korábban törölt videó"
             
             alert_parts = ["<b>Törölt videó</b>", title]
             if pos_str:
@@ -128,16 +134,12 @@ def format_hungarian_alert(raw_output):
             clean_line = re.sub(r'https?://\S+', '', clean_line)
             clean_line = re.sub(r'\(\d+(?:th|st|nd|rd)?\s+video[^)]*\)', '', clean_line)
             title = clean_line.strip()
+            if title == 'NOT_FOUND':
+                title = "Korábban priváttá tett videó"
             alert_parts = ["<b>Privát videó</b>", title]
             if pos_str:
                 alert_parts.append(pos_str)
             alerts.append("\n".join(alert_parts))
-
-        elif line.startswith('IS BLOCKED IN REGION'):
-            clean_line = re.sub(r'^IS BLOCKED IN REGION[^:]*:\s*', '', line)
-            clean_line = re.sub(r'https?://\S+', '', clean_line)
-            title = clean_line.strip()
-            alerts.append(f"<b>Blokkolt videó</b>\n{title}")
 
     return "\n\n".join(alerts)
 
@@ -155,7 +157,6 @@ def main():
     }
 
     all_changes = []
-    # Group alerts by recipient email: email -> list of (playlist_title, hungarian_alert)
     pending_notifications_by_email = {}
 
     for item in playlists:
@@ -175,8 +176,8 @@ def main():
             if code != 0:
                 print(f"Error dumping playlist {pid}: {err}")
             else:
-                # 2. Compare with previous dump
-                code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
+                # 2. Compare with previous dump - strictly ignore region blocks
+                code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST --alert-on DELETED,REMOVED,IS_PRIVATE')
                 
                 hungarian_alert = format_hungarian_alert(out) if out else ""
                 has_actual_alert = bool(hungarian_alert)
