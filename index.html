@@ -357,7 +357,11 @@ Nincs még jelentési adat.
 
         function triggerTestEmail(title, email) {
             const targetEmail = email || "a beállított e-mail címedre";
-            alert(`Teszt indítása!\n\nAmikor elindítod a futtatást a GitHub Actions fülön, a rendszer egy teszt e-mailt küld ide: ${targetEmail}`);
+            const runUrl = "https://github.com/dufi1984/youtube-playlist-watcher/actions/workflows/daily_watcher.yml";
+            
+            if (confirm(`Teszt e-mail indítása a(z) "${title}" listához!\n\nÉrtesítendő e-mail: ${targetEmail}\n\nMegnyitjuk a GitHub futtató oldalt, ahol 1 kattintással elindíthatod a teszt e-mail kiküldését. Folytatod?`)) {
+                window.open(runUrl, '_blank');
+            }
         }
 
         function renderTable() {
