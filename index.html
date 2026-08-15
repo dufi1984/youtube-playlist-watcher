@@ -142,14 +142,14 @@
             <div class="row g-3 mb-2">
                 <div class="col-12">
                     <label class="form-label">YouTube lejátszási lista link vagy ID:</label>
-                    <input type="text" id="newPlaylistUrl" class="form-control form-control-lg" placeholder="">
+                    <input type="text" id="newPlaylistUrl" class="form-control form-control-lg" placeholder="" oninput="autoFetchPlaylistTitle()">
                 </div>
             </div>
 
             <!-- Row 2: Title and Email side by side -->
             <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                    <label class="form-label">Lista neve:</label>
+                    <label class="form-label">Lista neve (automatikusan beolvasva a YouTube-ról):</label>
                     <input type="text" id="newPlaylistTitle" class="form-control" placeholder="">
                 </div>
                 <div class="col-md-6">
@@ -219,10 +219,10 @@ Nincs még jelentési adat.
                 
                 <!-- Email Render Box -->
                 <div class="email-preview-box shadow-sm mb-3">
-                    <div style="font-weight: bold; margin-bottom: 6px;">Barátom kedvenc zenéi</div>
+                    <div style="font-weight: bold; margin-bottom: 6px;">BS koncert</div>
                     <div style="font-weight: bold; margin-bottom: 4px;">Törölt videó</div>
-                    <div style="margin-bottom: 4px;">The Cure - Burn 1994 HQ (The Crow)</div>
-                    <div>Pozíció a listán: 42.</div>
+                    <div style="margin-bottom: 4px;">Britney kilép a hotelből és a Spears család érkezése, Budapest, 2011.09.29.</div>
+                    <div>Pozíció a listán: 3.</div>
                 </div>
 
                 <div class="text-end">
@@ -277,6 +277,7 @@ Nincs még jelentési adat.
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        const YT_API_KEY = "AIzaSyBYo0Njuk7Jl7miT2cYPonwoKyKUPU9NUw";
         let currentConfig = {
             pin_hash: "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
             playlists: []
@@ -298,6 +299,26 @@ Nincs még jelentési adat.
 
         function saveLocalState() {
             localStorage.setItem('yt_watcher_config', JSON.stringify(currentConfig));
+        }
+
+        async function autoFetchPlaylistTitle() {
+            const rawUrl = document.getElementById('newPlaylistUrl').value;
+            const pid = extractPlaylistId(rawUrl);
+            if (!pid) return;
+
+            try {
+                const resp = await fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&id=${pid}&key=${YT_API_KEY}`);
+                if (resp.ok) {
+                    const data = await resp.json();
+                    if (data.items && data.items.length > 0) {
+                        const fetchedTitle = data.items[0].snippet.title;
+                        document.getElementById('newPlaylistTitle').value = fetchedTitle;
+                        showToast(`Cím beolvasva a YouTube-ról: "${fetchedTitle}"`, 'bg-info');
+                    }
+                }
+            } catch (e) {
+                console.log("Could not auto-fetch title", e);
+            }
         }
 
         async function syncAndRunWorkflow() {
@@ -426,7 +447,7 @@ Nincs még jelentési adat.
 
         async function addPlaylist() {
             const rawUrl = document.getElementById('newPlaylistUrl').value;
-            const title = document.getElementById('newPlaylistTitle').value || "Új lista";
+            let title = document.getElementById('newPlaylistTitle').value;
             const email = document.getElementById('newPlaylistEmail').value || "tamas.duffek@gmail.com";
 
             const pid = extractPlaylistId(rawUrl);
@@ -434,6 +455,20 @@ Nincs még jelentési adat.
                 alert("Kérjük, adj meg egy érvényes YouTube lejátszási lista linket!");
                 return;
             }
+
+            if (!title) {
+                try {
+                    const resp = await fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&id=${pid}&key=${YT_API_KEY}`);
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        if (data.items && data.items.length > 0) {
+                            title = data.items[0].snippet.title;
+                        }
+                    }
+                } catch (e) {}
+            }
+
+            title = title || "YouTube lista";
 
             currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
 
