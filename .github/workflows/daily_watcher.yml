@@ -1,0 +1,81 @@
+name: YouTube Playlist Watcher Daily Check
+
+on:
+  schedule:
+    # Runs automatically every day at midnight (UTC)
+    - cron: '0 0 * * *'
+  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Process playlists
+      env:
+        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        PLAYLIST_IDS: ${{ secrets.PLAYLIST_ID }}
+      run: |
+        # Clear previous report file
+        rm -f changes_report.txt
+        
+        IFS=', ' read -r -a id_list <<< "$PLAYLIST_IDS"
+        
+        for pid in "${id_list[@]}"; do
+          pid=$(echo "$pid" | xargs)
+          if [ -n "$pid" ]; then
+            echo "=========================================="
+            echo "Processing playlist: $pid"
+            echo "=========================================="
+            
+            echo "--- Downloading current data (Dump) ---"
+            python youtube_playlist_watcher.py --playlist-id "$pid" dump --youtube-api-key "$YOUTUBE_API_KEY"
+            
+            echo "--- Comparing with previous dump ---"
+            # Run comparison and append output to changes_report.txt if changes exist
+            python youtube_playlist_watcher.py --playlist-id "$pid" compare SECOND_TO_LAST LATEST >> changes_report.txt 2>&1 || true
+            
+            echo "--- Purging old dumps ---"
+            python youtube_playlist_watcher.py --playlist-id "$pid" purge-dumps --keep-count 30
+          fi
+        done
+
+    - name: Create GitHub Issue notification on change
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        if [ -s changes_report.txt ] && grep -q "Changes detected" changes_report.txt; then
+          echo "Changes detected! Creating a GitHub Issue for notification..."
+          gh issue create --title "⚠️ YouTube Playlist Változás Értesítő" --body-file changes_report.txt
+        else
+          echo "No playlist changes detected."
+        fi
+
+    - name: Commit and push changes back to repository
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add *.json || true
+        if git diff --staged --quiet; then
+          echo "No changes in playlist dump files."
+        else
+          git commit -m "Automated daily playlist dump update"
+          git push
+        fi
