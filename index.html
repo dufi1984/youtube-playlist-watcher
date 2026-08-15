@@ -186,7 +186,6 @@
                             <th class="text-white">LISTA NEVE</th>
                             <th class="text-white">PLAYLIST ID</th>
                             <th class="text-white">ÉRTESÍTENDŐ E-MAIL</th>
-                            <th class="text-white">ÁLLAPOT</th>
                             <th class="text-white">MŰVELETEK</th>
                         </tr>
                     </thead>
@@ -557,7 +556,7 @@ Nincs még jelentési adat.
             tbody.innerHTML = "";
 
             if (currentConfig.playlists.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" class="text-center text-muted py-4">Nincs még hozzáadott lejátszási lista.</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="4" class="text-center text-muted py-4">Nincs még hozzáadott lejátszási lista.</td></tr>`;
                 return;
             }
 
@@ -568,7 +567,6 @@ Nincs még jelentési adat.
                     <td class="fw-bold text-white">${p.title || 'Névtelen'}</td>
                     <td><code class="playlist-code">${p.id}</code></td>
                     <td class="text-light">${targetEmail}</td>
-                    <td><span class="badge bg-success badge-status">Aktív</span></td>
                     <td>
                         <button class="btn btn-sm btn-outline-info me-1" onclick="triggerTestEmail('${p.title}', '${targetEmail}')" title="Teszt e-mail küldése">
                             <i class="bi bi-send me-1"></i> Teszt e-mail
