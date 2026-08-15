@@ -254,8 +254,8 @@
             <div class="mb-3">
                 <i class="bi bi-shield-lock-fill display-4" style="color: var(--action);"></i>
             </div>
-            <h4 class="text-white fw-bold mb-1">Kriptográfiailag védett belépés</h4>
-            <p class="text-muted small mb-3">Adj meg a PIN kódot a felület eléréséhez:</p>
+            <h4 class="text-white fw-bold mb-1">Biztonsági belépés</h4>
+            <p class="text-muted small mb-3">Add meg a PIN kódot a folytatáshoz:</p>
             <input type="password" id="pinInput" class="form-control text-center fs-4 mb-3" placeholder="" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
             <button class="btn btn-sg-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
             <div id="pinError" class="text-danger small mt-2 d-none">Hibás PIN kód! Próbáld újra.</div>
@@ -394,7 +394,7 @@ Nincs még jelentési adat.
         <div class="modal-dialog">
             <div class="card modal-content p-4">
                 <h5 class="modal-title mb-3 text-white"><i class="bi bi-key-fill me-2" style="color: var(--action);"></i>Új PIN kód beállítása</h5>
-                <p class="text-muted small">A megadott PIN kódból a rendszer egy visszafejthetetlen SHA-256 kriptográfiai hash-t képez.</p>
+                <p class="text-muted small">Itt tudod megváltoztatni a vezérlőpult belépési PIN kódját.</p>
                 <div class="mb-3">
                     <label class="form-label">Új PIN kód:</label>
                     <input type="password" id="newPinInput" class="form-control" placeholder="">
