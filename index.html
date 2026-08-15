@@ -142,7 +142,7 @@
             <div class="row g-3 mb-2">
                 <div class="col-12">
                     <label class="form-label">YouTube lejátszási lista link vagy ID:</label>
-                    <input type="text" id="newPlaylistUrl" class="form-control form-control-lg" placeholder="" oninput="autoFetchPlaylistTitle()">
+                    <input type="text" id="newPlaylistUrl" class="form-control form-control-lg" placeholder="" oninput="autoFetchPlaylistTitle()" onpaste="setTimeout(autoFetchPlaylistTitle, 100)" onchange="autoFetchPlaylistTitle()" onblur="autoFetchPlaylistTitle()">
                 </div>
             </div>
 
@@ -442,11 +442,13 @@ Nincs még jelentési adat.
 
         function extractPlaylistId(urlOrId) {
             if (!urlOrId) return "";
-            if (urlOrId.includes("list=")) {
-                const match = urlOrId.match(/list=([a-zA-Z0-9_-]+)/);
-                return match ? match[1] : urlOrId.trim();
+            urlOrId = urlOrId.trim();
+            const match = urlOrId.match(/[?&]list=([a-zA-Z0-9_-]+)/) || urlOrId.match(/list=([a-zA-Z0-9_-]+)/);
+            if (match) return match[1];
+            if (urlOrId.startsWith("PL") || urlOrId.startsWith("UU") || urlOrId.startsWith("FL") || urlOrId.startsWith("OL")) {
+                return urlOrId.split('&')[0].split('?')[0];
             }
-            return urlOrId.trim();
+            return urlOrId;
         }
 
         async function addPlaylist() {
