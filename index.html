@@ -19,21 +19,42 @@
             border-radius: 12px;
             color: #f8fafc;
         }
+        .form-label {
+            color: #e2e8f0 !important;
+            font-weight: 600 !important;
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
+        .text-muted {
+            color: #94a3b8 !important;
+        }
         .form-control {
-            background-color: #0f172a;
-            border-color: #334155;
-            color: #f8fafc;
+            background-color: #0f172a !important;
+            border-color: #475569 !important;
+            color: #ffffff !important;
+        }
+        .form-control::placeholder {
+            color: #64748b !important;
         }
         .form-control:focus {
-            background-color: #0f172a;
-            border-color: #3b82f6;
-            color: #f8fafc;
+            background-color: #0f172a !important;
+            border-color: #3b82f6 !important;
+            color: #ffffff !important;
             box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
         }
         .badge-status {
             font-size: 0.85rem;
             padding: 0.5em 0.8em;
             border-radius: 20px;
+        }
+        code.playlist-code {
+            color: #38bdf8 !important;
+            background: #0f172a;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #1e293b;
         }
         .pin-overlay {
             position: fixed;
@@ -45,6 +66,13 @@
             align-items: center;
             justify-content: center;
         }
+        .email-preview-box {
+            background: #ffffff;
+            color: #1e293b;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -55,7 +83,7 @@
             <div class="mb-3">
                 <i class="bi bi-shield-lock-fill text-primary display-4"></i>
             </div>
-            <h4>Kriptográfiailag Védett Belépés</h4>
+            <h4 class="text-white fw-bold">Biztonsági Belépés</h4>
             <p class="text-muted small mb-3">Adj meg a PIN kódot a felület eléréséhez:</p>
             <input type="password" id="pinInput" class="form-control text-center fs-4 mb-3" placeholder="••••" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
             <button class="btn btn-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
@@ -68,55 +96,66 @@
         <!-- Header -->
         <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary">
             <div>
-                <h2 class="fw-bold m-0"><i class="bi bi-youtube text-danger me-2"></i>YouTube Playlist Watcher</h2>
-                <small class="text-muted">Automatikus lejátszási lista változás-figyelő és mentő</small>
+                <h2 class="fw-bold m-0 text-white"><i class="bi bi-youtube text-danger me-2"></i>YouTube Playlist Watcher</h2>
+                <span class="text-muted">Automatikus lejátszási lista változás-figyelő és mentő</span>
             </div>
             <div>
-                <button class="btn btn-outline-secondary btn-sm me-2" onclick="location.reload()">
-                    <i class="bi bi-arrow-clockwise me-1"></i> Frissítés
+                <button class="btn btn-outline-info btn-sm me-2" onclick="openEmailPreviewModal()">
+                    <i class="bi bi-envelope-paper me-1"></i> E-mail Minta
                 </button>
-                <button class="btn btn-outline-warning btn-sm" onclick="openPinModal()">
+                <button class="btn btn-outline-warning btn-sm me-2" onclick="openPinModal()">
                     <i class="bi bi-key me-1"></i> PIN Módosítás
+                </button>
+                <button class="btn btn-outline-secondary btn-sm" onclick="location.reload()">
+                    <i class="bi bi-arrow-clockwise me-1"></i> Frissítés
                 </button>
             </div>
         </div>
 
         <!-- Add New Playlist Card -->
         <div class="card p-4 mb-4 shadow">
-            <h5 class="fw-bold mb-3"><i class="bi bi-plus-circle-fill text-success me-2"></i>Új Lejátszási Lista Hozzáadása</h5>
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label class="form-label small text-muted">YouTube Lejátszási Lista Link vagy ID:</label>
-                    <input type="text" id="newPlaylistUrl" class="form-control" placeholder="https://www.youtube.com/playlist?list=PLSfXEq...">
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label small text-muted">Lista Neve (Elnevezés):</label>
-                    <input type="text" id="newPlaylistTitle" class="form-control" placeholder="pl. Kedvenc Zenéim">
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label small text-muted">Értesítendő E-mail Cím:</label>
-                    <input type="email" id="newPlaylistEmail" class="form-control" placeholder="barat@gmail.com">
+            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-plus-circle-fill text-success me-2"></i>Új Lejátszási Lista Hozzáadása</h5>
+            
+            <!-- Row 1: Full width URL -->
+            <div class="row g-3 mb-2">
+                <div class="col-12">
+                    <label class="form-label">YouTube Lejátszási Lista Link vagy ID (Teljes Szélességben):</label>
+                    <input type="text" id="newPlaylistUrl" class="form-control form-control-lg" placeholder="https://www.youtube.com/playlist?list=PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8">
                 </div>
             </div>
-            <div class="mt-3 text-end">
-                <button class="btn btn-primary fw-bold" onclick="addPlaylist()">
-                    <i class="bi bi-save me-1"></i> Lista Hozzáadása
+
+            <!-- Row 2: Title and Email side by side -->
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Lista Neve (Kedvenc Neve):</label>
+                    <input type="text" id="newPlaylistTitle" class="form-control" placeholder="pl. Barátom Kedvenc Zenéi">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Értesítendő E-mail Cím:</label>
+                    <input type="email" id="newPlaylistEmail" class="form-control" placeholder="baratom@gmail.com">
+                </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-success fw-bold px-4" onclick="addPlaylist()">
+                    <i class="bi bi-check-circle me-1"></i> Lista Hozzáadása
                 </button>
             </div>
         </div>
 
         <!-- Monitored Playlists Card -->
         <div class="card p-4 mb-4 shadow">
-            <h5 class="fw-bold mb-3"><i class="bi bi-list-check me-2 text-info"></i>Figyelt Lejátszási Listák</h5>
+            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-list-check me-2 text-info"></i>Figyelt Lejátszási Listák</h5>
             <div class="table-responsive">
                 <table class="table table-dark table-hover align-middle m-0">
                     <thead>
                         <tr class="text-muted small">
-                            <th>LISTA NEVE</th>
-                            <th>PLAYLIST ID</th>
-                            <th>ÉRTESÍTENDŐ E-MAIL</th>
-                            <th>ÁLLAPOT</th>
-                            <th>MŰVELETEK</th>
+                            <th class="text-white">LISTA NEVE</th>
+                            <th class="text-white">PLAYLIST ID</th>
+                            <th class="text-white">ÉRTESÍTENDŐ E-MAIL</th>
+                            <th class="text-white">ÁLLAPOT</th>
+                            <th class="text-white">MŰVELETEK</th>
                         </tr>
                     </thead>
                     <tbody id="playlistTableBody">
@@ -128,7 +167,7 @@
 
         <!-- Latest Status & Report Log -->
         <div class="card p-4 shadow">
-            <h5 class="fw-bold mb-3"><i class="bi bi-file-earmark-text me-2 text-warning"></i>Legutóbbi Ellenőrzési Jelentés</h5>
+            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-file-earmark-text me-2 text-warning"></i>Legutóbbi Ellenőrzési Jelentés</h5>
             <div id="lastRunTime" class="text-muted small mb-2">Utolsó futás: Töltés...</div>
             <pre id="reportLog" class="p-3 rounded bg-dark text-success font-monospace small" style="max-height: 250px; overflow-y: auto;">
 Nincs még jelentési adat.
@@ -136,23 +175,65 @@ Nincs még jelentési adat.
         </div>
     </div>
 
+    <!-- Email Preview Modal -->
+    <div id="emailPreviewModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="card modal-content p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="modal-title fw-bold text-white"><i class="bi bi-envelope-paper-fill text-info me-2"></i>E-mail Értesítés Minta (Így néz ki az E-mail)</h5>
+                    <button type="button" class="btn-close btn-close-white" onclick="closeEmailPreviewModal()"></button>
+                </div>
+                <p class="text-muted small">Ha egy videó eltűnik vagy megváltozik a lejátszási listán, a megadott e-mail címre egy ilyen jól olvasható, formázott értesítés érkezik:</p>
+                
+                <!-- Email Render Box -->
+                <div class="email-preview-box shadow-sm mb-3">
+                    <div style="background-color: #cc0000; color: #ffffff; padding: 15px 20px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 18px;">
+                        🚨 YouTube Playlist Változás Értesítő
+                    </div>
+                    <div style="padding: 20px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 6px 6px; background-color: #f8fafc; color: #1e293b;">
+                        <p style="font-size: 15px; margin-bottom: 15px;">Kedves Felhasználó!</p>
+                        <p style="font-size: 14px; color: #475569;">Változás történt a(z) <strong>"Barátom Kedvenc Zenéi"</strong> nevű YouTube lejátszási listán:</p>
+                        
+                        <!-- Sample alert block -->
+                        <div style="background-color: #fff1f2; border-left: 4px solid #e11d48; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+                            <span style="background-color: #be123c; color: #ffffff; padding: 2px 8px; border-radius: 3px; font-size: 12px; font-weight: bold;">TÖRÖLT / PRIVÁT VIDEÓ</span>
+                            <h4 style="margin: 8px 0 4px 0; color: #881337; font-size: 16px;">The Cure - Burn (HQ Official Audio)</h4>
+                            <p style="margin: 0; color: #9f1239; font-size: 13px;">Pozíció a listán: 42. videó</p>
+                            <div style="margin-top: 12px;">
+                                <a href="https://www.youtube.com/results?search_query=The+Cure+-+Burn+%28HQ+Official+Audio%29" target="_blank" style="display: inline-block; background-color: #0284c7; color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: bold;">
+                                    🔎 Videó Megkeresése a YouTube-on
+                                </a>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 12px; color: #94a3b8; margin-0;">Ezt az automatikus értesítést a YouTube Playlist Watcher küldte.</p>
+                    </div>
+                </div>
+
+                <div class="text-end">
+                    <button class="btn btn-secondary" onclick="closeEmailPreviewModal()">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- PIN Change Modal -->
     <div id="pinModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="card modal-content p-4">
-                <h5 class="modal-title mb-3"><i class="bi bi-key-fill text-warning me-2"></i>Új PIN Kód Beállítása</h5>
-                <p class="text-muted small">A megadott PIN kódból a rendszer egy vissafejthetetlen SHA-256 kriptográfiai hash-t képez.</p>
+                <h5 class="modal-title mb-3 text-white"><i class="bi bi-key-fill text-warning me-2"></i>Új PIN Kód Beállítása</h5>
+                <p class="text-muted small">A megadott PIN kódból a rendszer egy visszafejthetetlen SHA-256 kriptográfiai hash-t képez.</p>
                 <div class="mb-3">
-                    <label class="form-label small">Új PIN Kód:</label>
+                    <label class="form-label">Új PIN Kód:</label>
                     <input type="password" id="newPinInput" class="form-control" placeholder="••••">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label small">Generált Titkos Hash:</label>
+                    <label class="form-label">Generált Titkos Hash:</label>
                     <input type="text" id="generatedHash" class="form-control font-monospace small" readonly placeholder="Generált hash helye...">
                 </div>
                 <div class="d-flex justify-content-end gap-2">
                     <button class="btn btn-secondary" onclick="closePinModal()">Mégse</button>
-                    <button class="btn btn-primary" onclick="generateAndSavePinHash()">Hash Generálása & Másolás</button>
+                    <button class="btn btn-primary" onclick="generateAndSavePinHash()">Hash Generálása</button>
                 </div>
             </div>
         </div>
@@ -160,7 +241,6 @@ Nincs még jelentési adat.
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // SHA-256 hash of default PIN "1234"
         let currentConfig = {
             pin_hash: "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
             playlists: []
@@ -274,9 +354,9 @@ Nincs még jelentési adat.
             currentConfig.playlists.forEach(p => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td class="fw-bold">${p.title || 'Névtelen'}</td>
-                    <td><code>${p.id}</code></td>
-                    <td>${(p.emails || []).join(', ') || '<span class="text-muted">Nincs megadva</span>'}</td>
+                    <td class="fw-bold text-white">${p.title || 'Névtelen'}</td>
+                    <td><code class="playlist-code">${p.id}</code></td>
+                    <td class="text-light">${(p.emails || []).join(', ') || '<span class="text-muted">Nincs megadva</span>'}</td>
                     <td><span class="badge bg-success badge-status">Aktív</span></td>
                     <td>
                         <a href="https://www.youtube.com/playlist?list=${p.id}" target="_blank" class="btn btn-sm btn-outline-primary me-1">
@@ -293,13 +373,20 @@ Nincs még jelentési adat.
 
         let pinModalObj = null;
         function openPinModal() {
-            if (!pinModalObj) {
-                pinModalObj = new bootstrap.Modal(document.getElementById('pinModal'));
-            }
+            if (!pinModalObj) pinModalObj = new bootstrap.Modal(document.getElementById('pinModal'));
             pinModalObj.show();
         }
         function closePinModal() {
             if (pinModalObj) pinModalObj.hide();
+        }
+
+        let emailPreviewModalObj = null;
+        function openEmailPreviewModal() {
+            if (!emailPreviewModalObj) emailPreviewModalObj = new bootstrap.Modal(document.getElementById('emailPreviewModal'));
+            emailPreviewModalObj.show();
+        }
+        function closeEmailPreviewModal() {
+            if (emailPreviewModalObj) emailPreviewModalObj.hide();
         }
 
         async function generateAndSavePinHash() {
@@ -311,7 +398,7 @@ Nincs még jelentési adat.
             const hash = await sha256(newPin);
             document.getElementById('generatedHash').value = hash;
             currentConfig.pin_hash = hash;
-            alert("Az új PIN kód kriptográfiai hash-je elkészült! Ezentúl az új PIN kódoddal tudsz belépni.");
+            alert("Az új PIN kód kriptográfiai hash-je elkészült!");
             closePinModal();
         }
 
