@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-08-15 13:08:40 UTC",
+  "last_run": "2026-08-15 13:09:16 UTC",
   "results": [
     {
       "id": "PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P",
       "title": "Chillout",
       "has_changes": true,
-      "report": "<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 21.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 90.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 85.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 98.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 46.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 79.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 31.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 100.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 77.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 82.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 99.\n\n<b>Blokkolt videó</b>\nChicane - Behind The Sun [Full Album]"
+      "report": "<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 90.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 21.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 100.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 79.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 31.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 98.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 46.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 85.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 77.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 82.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 99.\n\n<b>Blokkolt videó</b>\nChicane - Behind The Sun [Full Album]"
     },
     {
       "id": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
@@ -28,12 +28,18 @@
     {
       "id": "PLEp1TbprxuxIGBHGZGdDA8X758qApkdHv",
       "title": "Flight",
-      "has_changes": false,
-      "report": "Minden videó elérhető és változatlan."
+      "has_changes": true,
+      "report": "<b>Blokkolt videó</b>\nNever Look Back\n\n<b>Blokkolt videó</b>\nSpicy"
     },
     {
       "id": "PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq",
       "title": "Music",
+      "has_changes": true,
+      "report": "<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 16.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 61.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 69.\n\n<b>Blokkolt videó</b>\nArmin van Buuren feat. Conrad Sewell - Sex, Love & Water (Official Music Video)\n\n<b>Blokkolt videó</b>\nFreemasons Feat. Katherine Ellis - When You Touch Me\n\n<b>Blokkolt videó</b>\nJohn Legend - All Of Me (De Hofnar Bootleg)\n\n<b>Blokkolt videó</b>\nReflekt - Need To Feel Loved (Adam K & Soha Vocal Mix) FULL HD\n\n<b>Blokkolt videó</b>\nLilly Wood & The Prick and Robin Schulz - Prayer In C (Robin Schulz Remix) (Official)\n\n<b>Blokkolt videó</b>\nDeepest Blue - Deepest Blue (Music Video)\n\n<b>Blokkolt videó</b>\nAlanis Morissette - Guardian (Official Music Video)\n\n<b>Blokkolt videó</b>\nTHE CARBONFOOLS – Opened Doors | Official Music Video\n\n<b>Blokkolt videó</b>\nCompact Disco - Im in love - HD\n\n<b>Blokkolt videó</b>\nJoan Osborne - One of us HD\n\n<b>Blokkolt videó</b>\nCHRIS BROWN & BENNY BENASSI - BEAUTIFUL PEOPLE [OFFICIAL VIDEO HD]"
+    },
+    {
+      "id": "FLTzXZxtf2LfnbL16cxiwDrw",
+      "title": "Favorites",
       "has_changes": false,
       "report": "Minden videó elérhető és változatlan."
     }
