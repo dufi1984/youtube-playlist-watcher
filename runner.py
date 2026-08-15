@@ -293,7 +293,17 @@ def main():
         if not target_email:
             target_email = "tamas.duffek@gmail.com"
 
-        test_msg = "Nincs változás"
+        # Check if this playlist had actual live detected changes during this run
+        playlist_report = None
+        for res in status_data.get("results", []):
+            if res.get("title") == target_title and res.get("has_changes"):
+                playlist_report = res.get("report")
+                break
+
+        if playlist_report:
+            test_msg = playlist_report
+        else:
+            test_msg = "Nincs változás"
 
         test_html = f"""
         <!DOCTYPE html>
@@ -301,7 +311,7 @@ def main():
         <head><meta charset="utf-8"></head>
         <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
             <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{target_title}</div>
-            <div>{test_msg}</div>
+            <div>{test_msg.replace(chr(10), '<br>')}</div>
         </body>
         </html>
         """
