@@ -180,10 +180,10 @@ Nincs még jelentési adat.
         <div class="modal-dialog modal-lg">
             <div class="card modal-content p-4">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h5 class="modal-title fw-bold text-white"><i class="bi bi-envelope-paper-fill text-info me-2"></i>E-mail Értesítés Minta (Így néz ki az E-mail)</h5>
+                    <h5 class="modal-title fw-bold text-white"><i class="bi bi-envelope-paper-fill text-info me-2"></i>E-mail Értesítés Minta</h5>
                     <button type="button" class="btn-close btn-close-white" onclick="closeEmailPreviewModal()"></button>
                 </div>
-                <p class="text-muted small">Ha egy videó eltűnik vagy megváltozik a lejátszási listán, a megadott e-mail címre egy ilyen jól olvasható, formázott értesítés érkezik:</p>
+                <p class="text-muted small">Amikor a rendszer tesztet vagy éles értesítést küld a megadott e-mail címre, ilyen formázott HTML üzenet érkezik:</p>
                 
                 <!-- Email Render Box -->
                 <div class="email-preview-box shadow-sm mb-3">
@@ -192,7 +192,7 @@ Nincs még jelentési adat.
                     </div>
                     <div style="padding: 20px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 6px 6px; background-color: #f8fafc; color: #1e293b;">
                         <p style="font-size: 15px; margin-bottom: 15px;">Kedves Felhasználó!</p>
-                        <p style="font-size: 14px; color: #475569;">Változás történt a(z) <strong>"Barátom Kedvenc Zenéi"</strong> nevű YouTube lejátszási listán:</p>
+                        <p style="font-size: 14px; color: #475569;">Ez egy értesítés a(z) <strong>"Barátom Kedvenc Zenéi"</strong> nevű YouTube lejátszási listához:</p>
                         
                         <!-- Sample alert block -->
                         <div style="background-color: #fff1f2; border-left: 4px solid #e11d48; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
@@ -206,7 +206,7 @@ Nincs még jelentési adat.
                             </div>
                         </div>
 
-                        <p style="font-size: 12px; color: #94a3b8; margin-0;">Ezt az automatikus értesítést a YouTube Playlist Watcher küldte.</p>
+                        <p style="font-size: 12px; color: #94a3b8; margin: 0;">Ezt az automatikus értesítést a YouTube Playlist Watcher küldte.</p>
                     </div>
                 </div>
 
@@ -329,7 +329,7 @@ Nincs még jelentési adat.
             });
 
             renderTable();
-            alert(`A "${title}" lista hozzáadva!`);
+            alert(`A "${title}" lista hozzáadva! Az e-mail értesítések erre a címre fognak érkezni: ${email || 'Admin e-mail'}`);
             document.getElementById('newPlaylistUrl').value = "";
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
@@ -340,6 +340,11 @@ Nincs még jelentési adat.
                 currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
                 renderTable();
             }
+        }
+
+        function triggerTestEmail(title, email) {
+            const targetEmail = email || "a beállított e-mail címedre";
+            alert(`Teszt indítása!\n\nAmikor elindítod a futtatást a GitHub Actions fülön, a rendszer egy teszt e-mailt küld ide: ${targetEmail}`);
         }
 
         function renderTable() {
@@ -353,12 +358,16 @@ Nincs még jelentési adat.
 
             currentConfig.playlists.forEach(p => {
                 const tr = document.createElement('tr');
+                const targetEmail = (p.emails || [])[0] || 'Nincs megadva';
                 tr.innerHTML = `
                     <td class="fw-bold text-white">${p.title || 'Névtelen'}</td>
                     <td><code class="playlist-code">${p.id}</code></td>
-                    <td class="text-light">${(p.emails || []).join(', ') || '<span class="text-muted">Nincs megadva</span>'}</td>
+                    <td class="text-light">${targetEmail}</td>
                     <td><span class="badge bg-success badge-status">Aktív</span></td>
                     <td>
+                        <button class="btn btn-sm btn-outline-info me-1" onclick="triggerTestEmail('${p.title}', '${targetEmail}')" title="Teszt E-mail küldése">
+                            <i class="bi bi-send me-1"></i> Teszt E-mail
+                        </button>
                         <a href="https://www.youtube.com/playlist?list=${p.id}" target="_blank" class="btn btn-sm btn-outline-primary me-1">
                             <i class="bi bi-box-arrow-up-right"></i> Megnyitás
                         </a>
