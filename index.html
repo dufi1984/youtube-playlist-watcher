@@ -391,23 +391,19 @@ Nincs még jelentési adat.
         }
 
         async function loadData() {
-            const localSaved = localStorage.getItem('yt_watcher_config');
-            if (localSaved) {
-                try {
-                    currentConfig = JSON.parse(localSaved);
-                    renderTable();
-                    loadStatus();
-                    return;
-                } catch (e) {}
-            }
-
             try {
-                const res = await fetch('playlists_config.json');
+                const res = await fetch('playlists_config.json?' + new Date().getTime());
                 if (res.ok) {
                     currentConfig = await res.json();
+                    saveLocalState();
                 }
             } catch (e) {
-                console.log("Config load fallback");
+                const localSaved = localStorage.getItem('yt_watcher_config');
+                if (localSaved) {
+                    try {
+                        currentConfig = JSON.parse(localSaved);
+                    } catch (err) {}
+                }
             }
             renderTable();
             loadStatus();
