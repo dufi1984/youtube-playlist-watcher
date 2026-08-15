@@ -69,7 +69,7 @@
             color: var(--text-muted) !important;
             font-weight: 500 !important;
             font-size: 0.86rem;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.25rem;
         }
 
         .text-muted {
@@ -308,7 +308,7 @@
             <div class="mb-3">
                 <i class="bi bi-shield-lock-fill display-4" style="color: var(--action);"></i>
             </div>
-            <h4 class="text-white fw-bold mb-1">Biztonsági belépés</h4>
+            <h4 class="fw-semibold text-white fs-5 mb-1">Biztonsági belépés</h4>
             <p class="text-muted small mb-3">Add meg a PIN kódot a folytatáshoz:</p>
             <input type="password" id="pinInput" class="form-control text-center mb-3" placeholder="" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
             <button class="btn btn-sg-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
@@ -378,7 +378,7 @@
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="fw-bold m-0 text-white">Figyelt lejátszási listák</h5>
                 <div class="d-flex gap-2">
-                    <button class="btn btn-sg-primary fw-bold" onclick="syncAndRunWorkflow()">
+                    <button class="btn btn-sg-outline fw-semibold" onclick="syncAndRunWorkflow()">
                         <i class="bi bi-arrow-repeat me-1"></i> Szinkronizálás
                     </button>
                 </div>
