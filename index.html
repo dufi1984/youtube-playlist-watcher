@@ -140,11 +140,19 @@
             padding: 7px 16px !important;
             transition: all 0.18s ease;
         }
-        .btn-sg-primary:hover {
+        .btn-sg-primary:hover:not(:disabled) {
             background-color: var(--action-hover) !important;
             border-color: var(--action-hover) !important;
             color: #0A0F12 !important;
             transform: translateY(-1px);
+        }
+        .btn-sg-primary:disabled {
+            background-color: var(--bg-elevated) !important;
+            border-color: var(--border) !important;
+            color: var(--text-faint) !important;
+            cursor: not-allowed !important;
+            opacity: 0.6;
+            transform: none !important;
         }
 
         .btn-sg-outline {
@@ -390,11 +398,12 @@
                 <div class="col-12">
                     <label class="form-label">YouTube lejátszási lista link vagy ID:</label>
                     <div class="input-group">
-                        <input type="text" id="newPlaylistUrl" class="form-control" placeholder="" oninput="autoFetchPlaylistTitle()" onpaste="setTimeout(autoFetchPlaylistTitle, 100)" onchange="autoFetchPlaylistTitle()" onblur="autoFetchPlaylistTitle()">
+                        <input type="text" id="newPlaylistUrl" class="form-control" placeholder="https://www.youtube.com/playlist?list=PL..." oninput="autoFetchPlaylistTitle()" onpaste="setTimeout(autoFetchPlaylistTitle, 100)" onchange="autoFetchPlaylistTitle()" onblur="autoFetchPlaylistTitle()">
                         <button class="btn btn-sg-outline" type="button" onclick="pasteFromClipboard()" title="Beillesztés a vágólapról">
                             <i class="bi bi-clipboard"></i>
                         </button>
                     </div>
+                    <div id="urlValidationFeedback" class="mt-1 d-none" style="font-size: 13px;"></div>
                 </div>
             </div>
 
@@ -412,7 +421,7 @@
 
             <!-- Action buttons -->
             <div class="d-flex justify-content-end gap-2">
-                <button class="btn btn-sg-primary fw-bold" onclick="addPlaylist()">
+                <button id="addPlaylistBtn" class="btn btn-sg-primary fw-bold" onclick="addPlaylist()" disabled>
                     <i class="bi bi-plus-lg me-1"></i> Lista hozzáadása
                 </button>
             </div>
@@ -566,10 +575,49 @@ Nincs még jelentési adat.
             }
         }
 
+        function extractPlaylistId(urlOrId) {
+            if (!urlOrId) return "";
+            urlOrId = urlOrId.trim();
+            const match = urlOrId.match(/[?&]list=([a-zA-Z0-9_-]+)/) || urlOrId.match(/list=([a-zA-Z0-9_-]+)/);
+            if (match) return match[1];
+            if (urlOrId.startsWith("PL") || urlOrId.startsWith("UU") || urlOrId.startsWith("FL") || urlOrId.startsWith("OL") || urlOrId.startsWith("RD")) {
+                return urlOrId.split('&')[0].split('?')[0];
+            }
+            return "";
+        }
+
         async function autoFetchPlaylistTitle() {
-            const rawUrl = document.getElementById('newPlaylistUrl').value;
+            const rawUrl = document.getElementById('newPlaylistUrl').value.trim();
+            const feedbackEl = document.getElementById('urlValidationFeedback');
+            const addBtn = document.getElementById('addPlaylistBtn');
+            const titleInput = document.getElementById('newPlaylistTitle');
+
+            if (!rawUrl) {
+                feedbackEl.className = "mt-1 d-none";
+                feedbackEl.innerHTML = "";
+                addBtn.disabled = true;
+                return;
+            }
+
+            // Detect single video links (e.g. watch?v= or youtu.be/ without list=)
+            const isSingleVideo = (rawUrl.includes('watch?v=') || rawUrl.includes('youtu.be/') || rawUrl.includes('youtube.com/shorts/')) && !rawUrl.includes('list=');
+            if (isSingleVideo) {
+                feedbackEl.className = "mt-1 d-block text-warning";
+                feedbackEl.innerHTML = '<i class="bi bi-exclamation-triangle-fill me-1"></i> Ez egy sima videó link, nem lejátszási lista. Kérjük, másolj be egy lejátszási lista (playlist) linket!';
+                addBtn.disabled = true;
+                return;
+            }
+
             const pid = extractPlaylistId(rawUrl);
-            if (!pid) return;
+            if (!pid) {
+                feedbackEl.className = "mt-1 d-block text-danger";
+                feedbackEl.innerHTML = '<i class="bi bi-x-circle-fill me-1"></i> Nem található lejátszási lista azonosító a linkben.';
+                addBtn.disabled = true;
+                return;
+            }
+
+            feedbackEl.className = "mt-1 d-block text-muted";
+            feedbackEl.innerHTML = '<span class="spinner-border spinner-border-sm me-1" role="status" style="width: 12px; height: 12px;"></span> Lejátszási lista ellenőrzése a YouTube-on...';
 
             try {
                 const resp = await fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&id=${pid}&key=${YT_API_KEY}`);
@@ -577,13 +625,27 @@ Nincs még jelentési adat.
                     const data = await resp.json();
                     if (data.items && data.items.length > 0) {
                         const fetchedTitle = data.items[0].snippet.title;
-                        document.getElementById('newPlaylistTitle').value = fetchedTitle;
-                        showToast(`Cím beolvasva a YouTube-ról: "${fetchedTitle}"`, 'bg-info');
+                        titleInput.value = fetchedTitle;
+                        feedbackEl.className = "mt-1 d-block";
+                        feedbackEl.style.color = "var(--action)";
+                        feedbackEl.innerHTML = `<i class="bi bi-check-circle-fill me-1"></i> Lejátszási lista azonosítva: "<strong>${fetchedTitle}</strong>"`;
+                        addBtn.disabled = false;
+                        return;
+                    } else {
+                        // Empty items means private playlist or invalid
+                        feedbackEl.className = "mt-1 d-block text-warning";
+                        feedbackEl.innerHTML = '<i class="bi bi-lock-fill me-1"></i> A lista privát vagy nem található. Kérjük, győződj meg róla, hogy a lista „Nem listázott” (Unlisted) vagy „Nyilvános” állapotú a YouTube-on!';
+                        addBtn.disabled = false;
+                        return;
                     }
                 }
             } catch (e) {
                 console.log("Could not auto-fetch title", e);
             }
+
+            feedbackEl.className = "mt-1 d-block text-muted";
+            feedbackEl.innerText = `Playlist ID: ${pid}`;
+            addBtn.disabled = false;
         }
 
         async function syncAndRunWorkflow() {
