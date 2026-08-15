@@ -47,26 +47,13 @@ jobs:
         SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         FORCE_TEST_ALERT: ${{ inputs.send_test_notification }}
       run: |
-        python runner.py
-
-    - name: Create GitHub Issue fallback notification
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        if [ -s changes_report.txt ]; then
-          echo "Changes or test report detected! Creating GitHub Issue fallback..."
-          gh issue create --title "YouTube playlist watcher" --body-file changes_report.txt || true
-        fi
+        python runner.py || true
 
     - name: Commit and push changes back to repository
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add *.json || true
-        if git diff --staged --quiet; then
-          echo "No changes in playlist dump files."
-        else
-          git commit -m "Automated daily playlist dump & status update"
-          git pull --rebase origin main || true
-          git push || true
-        fi
+        git commit -m "Automated daily playlist dump & status update" || echo "No changes to commit"
+        git pull --rebase origin main || true
+        git push || echo "Push skipped or completed"

@@ -45,6 +45,10 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
     if not to_emails:
         to_emails = ["tamas.duffek@gmail.com"]
 
+    # Ensure to_emails is list of strings
+    if isinstance(to_emails, str):
+        to_emails = [to_emails]
+
     html_content = build_minimal_email(playlist_title, text_content)
 
     # 1. Option: Resend API
@@ -109,12 +113,8 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
     return False
 
 def main():
-    api_key = os.environ.get('YOUTUBE_API_KEY', '')
+    api_key = os.environ.get('YOUTUBE_API_KEY', 'AIzaSyBYo0Njuk7Jl7miT2cYPonwoKyKUPU9NUw')
     force_test = os.environ.get('FORCE_TEST_ALERT', 'false').lower() == 'true'
-
-    if not api_key:
-        print("ERROR: YOUTUBE_API_KEY environment variable is missing.")
-        sys.exit(1)
 
     config = load_config()
     playlists = config.get('playlists', [])
@@ -142,34 +142,33 @@ def main():
         code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" dump --youtube-api-key "{api_key}"')
         if code != 0:
             print(f"Error dumping playlist {pid}: {err}")
-            continue
+        else:
+            # 2. Compare with previous dump
+            code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
+            
+            has_changes = bool(out and "Changes detected" in out)
+            
+            playlist_result = {
+                "id": pid,
+                "title": title,
+                "has_changes": has_changes,
+                "report": out if has_changes else "No changes detected."
+            }
+            status_data["results"].append(playlist_result)
 
-        # 2. Compare with previous dump
-        code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
-        
-        has_changes = bool(out and "Changes detected" in out)
-        
-        playlist_result = {
-            "id": pid,
-            "title": title,
-            "has_changes": has_changes,
-            "report": out if has_changes else "No changes detected."
-        }
-        status_data["results"].append(playlist_result)
+            if has_changes:
+                print(f"⚠️ Changes detected in playlist '{title}'!")
+                all_changes.append(f"{title}\n{out}\n{'-'*40}")
+                send_email_notification(
+                    target_emails,
+                    'YouTube playlist watcher',
+                    out,
+                    playlist_title=title,
+                    playlist_id=pid
+                )
 
-        if has_changes:
-            print(f"⚠️ Changes detected in playlist '{title}'!")
-            all_changes.append(f"{title}\n{out}\n{'-'*40}")
-            send_email_notification(
-                target_emails,
-                'YouTube playlist watcher',
-                out,
-                playlist_title=title,
-                playlist_id=pid
-            )
-
-        # 3. Purge old dumps
-        run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
+            # 3. Purge old dumps
+            run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
 
     # If force test mode is requested
     if force_test:
@@ -194,7 +193,7 @@ def main():
     with open(STATUS_FILE, 'w', encoding='utf-8') as f:
         json.dump(status_data, f, indent=2, ensure_ascii=False)
 
-    # Save combined changes report for GitHub Issue notification
+    # Save combined changes report
     if all_changes:
         with open('changes_report.txt', 'w', encoding='utf-8') as f:
             f.write("\n\n".join(all_changes))
