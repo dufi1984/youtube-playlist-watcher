@@ -16,7 +16,6 @@ def load_config():
         with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
             return json.load(f)
     
-    # Fallback to environment variables
     env_playlists = os.environ.get('PLAYLIST_ID', '')
     p_ids = [p.strip() for p in env_playlists.split(',') if p.strip()]
     return {
@@ -28,48 +27,27 @@ def run_command(cmd):
     result = subprocess.run(cmd, capture_output=True, text=True, shell=True)
     return result.returncode, result.stdout, result.stderr
 
-def build_html_email(title, playlist_id, body_text):
+def build_minimal_email(title, body_text):
     formatted_body = body_text.replace("\n", "<br>")
     return f"""
     <!DOCTYPE html>
     <html>
     <head><meta charset="utf-8"></head>
-    <body style="font-family: Arial, sans-serif; background-color: #f1f5f9; padding: 20px; margin: 0;">
-        <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-            <div style="background-color: #cc0000; color: #ffffff; padding: 18px 24px; font-weight: bold; font-size: 20px;">
-                🚨 YouTube Playlist Változás Értesítő
-            </div>
-            <div style="padding: 24px; color: #1e293b;">
-                <p style="font-size: 16px; margin-top: 0;">Kedves Felhasználó!</p>
-                <p style="font-size: 14px; color: #475569;">
-                    Változás vagy tesztértesítés érkezett a(z) <strong>"{title}"</strong> lejátszási listához.
-                </p>
-                <div style="background-color: #fff1f2; border-left: 4px solid #e11d48; padding: 16px; border-radius: 4px; margin: 20px 0; font-family: monospace; font-size: 13px; line-height: 1.6; color: #881337;">
-                    {formatted_body}
-                </div>
-                <p style="margin-top: 20px;">
-                    <a href="https://www.youtube.com/playlist?list={playlist_id}" style="display: inline-block; background-color: #0284c7; color: #ffffff; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-size: 14px; font-weight: bold;">
-                        ▶️ Lejátszási lista megnyitása a YouTube-on
-                    </a>
-                </p>
-                <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;">
-                <p style="font-size: 12px; color: #94a3b8; margin: 0;">
-                    Ezt az automatikus értesítést a YouTube Playlist Watcher küldte (noreply rendszer).
-                </p>
-            </div>
-        </div>
+    <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
+        <div style="font-size: 16px; font-weight: bold; margin-bottom: 8px;">{title}</div>
+        <div>{formatted_body}</div>
     </body>
     </html>
     """
 
-def send_email_notification(to_emails, subject, text_content, playlist_title="YouTube Playlist", playlist_id=""):
+def send_email_notification(to_emails, subject, text_content, playlist_title="YouTube playlist watcher", playlist_id=""):
     if not to_emails:
         print("No target emails provided. Skipping email send.")
         return False
 
-    html_content = build_html_email(playlist_title, playlist_id, text_content)
+    html_content = build_minimal_email(playlist_title, text_content)
 
-    # 1. Option: Resend API (No-reply transactional email API)
+    # 1. Option: Resend API
     resend_key = os.environ.get('RESEND_API_KEY', '')
     from_email = os.environ.get('FROM_EMAIL', 'YouTube Watcher <onboarding@resend.dev>')
 
@@ -85,9 +63,9 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
                 json={
                     'from': from_email,
                     'to': to_emails,
-                    'subject': subject,
+                    'subject': 'YouTube playlist watcher',
                     'html': html_content,
-                    'text': text_content
+                    'text': f"{playlist_title}\n\n{text_content}"
                 },
                 timeout=15
             )
@@ -110,9 +88,9 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
             msg = MIMEMultipart('alternative')
             msg['From'] = smtp_user
             msg['To'] = ", ".join(to_emails)
-            msg['Subject'] = subject
+            msg['Subject'] = 'YouTube playlist watcher'
 
-            msg.attach(MIMEText(text_content, 'plain', 'utf-8'))
+            msg.attach(MIMEText(f"{playlist_title}\n\n{text_content}", 'plain', 'utf-8'))
             msg.attach(MIMEText(html_content, 'html', 'utf-8'))
 
             server = smtplib.SMTP(smtp_server, smtp_port, timeout=15)
@@ -157,14 +135,12 @@ def main():
         print(f"==========================================")
 
         # 1. Dump current playlist state
-        print("--- Downloading current data ---")
         code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" dump --youtube-api-key "{api_key}"')
         if code != 0:
             print(f"Error dumping playlist {pid}: {err}")
             continue
 
         # 2. Compare with previous dump
-        print("--- Comparing with previous dump ---")
         code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
         
         has_changes = bool(out and "Changes detected" in out)
@@ -179,12 +155,12 @@ def main():
 
         if has_changes:
             print(f"⚠️ Changes detected in playlist '{title}'!")
-            all_changes.append(f"Playlist: {title} ({pid})\n{out}\n{'-'*40}")
+            all_changes.append(f"{title}\n{out}\n{'-'*40}")
             
             if target_emails:
                 send_email_notification(
                     target_emails,
-                    f"⚠️ YouTube Playlist Változás: {title}",
+                    'YouTube playlist watcher',
                     out,
                     playlist_title=title,
                     playlist_id=pid
@@ -195,17 +171,17 @@ def main():
 
     # If force test mode is requested
     if force_test:
-        test_msg = "Ez egy sikeres teszt üzenet a YouTube Playlist Watcher rendszertől!\nAz automatikus ellenőrző és értesítő rendszer 100%-ban üzemkész."
-        print("\n--- Generating GUARANTEED Test Alert ---")
-        all_changes.append(test_msg)
+        test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nhttps://www.youtube.com/results?search_query=The+Cure+-+Burn+1994+HQ\nPozíció a listán: 42."
+        print("\n--- Generating Clean Test Alert ---")
+        all_changes.append(f"Teszt\n{test_msg}")
         for item in playlists:
             target_emails = item.get('emails', [])
-            title = item.get('title', 'Lejátszási lista')
+            title = item.get('title', 'Saját lista')
             pid = item.get('id', '')
             if target_emails:
                 send_email_notification(
                     target_emails,
-                    f"🧪 Teszt Értesítés: {title}",
+                    'YouTube playlist watcher',
                     test_msg,
                     playlist_title=title,
                     playlist_id=pid
