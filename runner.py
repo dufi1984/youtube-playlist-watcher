@@ -12,6 +12,15 @@ from email.mime.multipart import MIMEMultipart
 
 CONFIG_FILE = 'playlists_config.json'
 STATUS_FILE = 'latest_status.json'
+DEBUG_FILE = 'debug_log.txt'
+
+def log_msg(msg):
+    print(msg, flush=True)
+    try:
+        with open(DEBUG_FILE, 'a', encoding='utf-8') as f:
+            f.write(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')}] {msg}\n")
+    except Exception:
+        pass
 
 def get_youtube_playlist_title(api_key, playlist_id):
     try:
@@ -23,7 +32,7 @@ def get_youtube_playlist_title(api_key, playlist_id):
             if items:
                 return items[0]['snippet']['title']
     except Exception as e:
-        print(f"Could not fetch title for playlist {playlist_id}: {e}")
+        log_msg(f"Could not fetch title for playlist {playlist_id}: {e}")
     return f"Playlist ({playlist_id[:8]}...)"
 
 def load_config(api_key=""):
@@ -34,7 +43,7 @@ def load_config(api_key=""):
                 cfg = json.load(f)
                 playlists_from_config = cfg.get('playlists', [])
         except Exception as e:
-            print(f"Error reading {CONFIG_FILE}: {e}")
+            log_msg(f"Error reading {CONFIG_FILE}: {e}")
     
     env_playlists = os.environ.get('PLAYLIST_ID', '')
     p_ids = [p.strip() for p in env_playlists.split(',') if p.strip()]
@@ -63,13 +72,18 @@ def run_command(cmd):
 
 def send_combined_email(recipient_email, subject, html_content, plain_content):
     # 1. Primary Option: Direct SMTP (Gmail App Password)
-    smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com').strip() or 'smtp.gmail.com'
-    smtp_port = int(os.environ.get('SMTP_PORT', '587'))
+    smtp_server = (os.environ.get('SMTP_SERVER', '').strip()) or 'smtp.gmail.com'
+    
+    raw_port = os.environ.get('SMTP_PORT', '').strip()
+    smtp_port = int(raw_port) if (raw_port and raw_port.isdigit()) else 587
+
     smtp_user = os.environ.get('SMTP_USER', '').strip()
     smtp_password = os.environ.get('SMTP_PASSWORD', '').strip().replace(" ", "")
 
+    log_msg(f"Initiating send_combined_email to: '{recipient_email}' (SMTP_USER configured: '{smtp_user}', SMTP_SERVER: '{smtp_server}:{smtp_port}')")
+
     if smtp_user and smtp_password:
-        print(f"Attempting to send email via Gmail SMTP to {recipient_email}...")
+        log_msg(f"Connecting to Gmail SMTP server {smtp_server}:{smtp_port} for {recipient_email}...")
         try:
             msg = MIMEMultipart('alternative')
             msg['From'] = f"YouTube watcher <{smtp_user}>"
@@ -79,24 +93,24 @@ def send_combined_email(recipient_email, subject, html_content, plain_content):
             msg.attach(MIMEText(plain_content, 'plain', 'utf-8'))
             msg.attach(MIMEText(html_content, 'html', 'utf-8'))
 
-            server = smtplib.SMTP(smtp_server, smtp_port, timeout=20)
+            server = smtplib.SMTP(smtp_server, smtp_port, timeout=25)
             server.ehlo()
             server.starttls()
             server.ehlo()
             server.login(smtp_user, smtp_password)
             server.send_message(msg)
             server.quit()
-            print(f"✅ Combined email successfully sent via Gmail SMTP to {recipient_email}!")
+            log_msg(f"✅ Combined email successfully sent via Gmail SMTP to {recipient_email}!")
             return True
         except Exception as e:
-            print(f"⚠️ SMTP send failed ({e}), falling back to Resend API...")
+            log_msg(f"⚠️ SMTP send failed ({e}), falling back to Resend API...")
 
     # 2. Fallback Option: Resend API
     resend_key = os.environ.get('RESEND_API_KEY', '').strip()
-    from_email = os.environ.get('FROM_EMAIL', 'YouTube watcher <onboarding@resend.dev>').strip() or 'YouTube watcher <onboarding@resend.dev>'
+    from_email = (os.environ.get('FROM_EMAIL', '').strip()) or 'YouTube watcher <onboarding@resend.dev>'
 
     if resend_key:
-        print(f"Sending combined email via Resend API to {recipient_email} from '{from_email}'...")
+        log_msg(f"Calling Resend API fallback for {recipient_email} from '{from_email}'...")
         try:
             resp = requests.post(
                 'https://api.resend.com/emails',
@@ -113,14 +127,16 @@ def send_combined_email(recipient_email, subject, html_content, plain_content):
                 },
                 timeout=15
             )
-            print(f"Resend HTTP Status: {resp.status_code}, Body: {resp.text}")
+            log_msg(f"Resend HTTP Status: {resp.status_code}, Response: {resp.text}")
             if resp.status_code in [200, 201]:
-                print(f"✅ Combined email successfully sent via Resend to {recipient_email}!")
+                log_msg(f"✅ Combined email successfully sent via Resend to {recipient_email}!")
                 return True
             else:
-                print(f"❌ Resend API error: {resp.status_code} - {resp.text}")
+                log_msg(f"❌ Resend API error: {resp.status_code} - {resp.text}")
         except Exception as e:
-            print(f"❌ Exception calling Resend API: {e}")
+            log_msg(f"❌ Exception calling Resend API: {e}")
+    else:
+        log_msg("⚠️ Neither SMTP credentials nor RESEND_API_KEY succeeded.")
 
     return False
 
@@ -174,8 +190,15 @@ def format_hungarian_alert(raw_output):
     return "\n\n".join(alerts)
 
 def main():
+    # Clear debug log for this run
+    with open(DEBUG_FILE, 'w', encoding='utf-8') as f:
+        f.write(f"=== Runner Execution Log at {datetime.now(timezone.utc).isoformat()} ===\n")
+
     api_key = os.environ.get('YOUTUBE_API_KEY', '').strip()
-    force_test = os.environ.get('FORCE_TEST_ALERT', 'false').lower() in ['true', '1', 'yes']
+    force_test_raw = os.environ.get('FORCE_TEST_ALERT', 'false').strip()
+    force_test = force_test_raw.lower() in ['true', '1', 'yes']
+
+    log_msg(f"Starting runner with force_test={force_test} (raw: '{force_test_raw}')")
 
     config = load_config(api_key)
     playlists = config.get('playlists', [])
@@ -196,17 +219,15 @@ def main():
         if not target_emails:
             target_emails = ["tamas.duffek@gmail.com"]
 
-        print(f"\n==========================================")
-        print(f"Processing playlist: {title} ({pid})")
-        print(f"==========================================")
+        log_msg(f"Processing playlist: {title} ({pid})")
 
         if api_key:
             # 1. Dump current playlist state
             code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" dump --youtube-api-key "{api_key}"')
             if code != 0:
-                print(f"Error dumping playlist {pid}: {err}")
+                log_msg(f"Error dumping playlist {pid}: {err}")
             else:
-                # 2. Compare with previous dump - strictly ignore region blocks
+                # 2. Compare with previous dump
                 code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST --alert-on DELETED,REMOVED,IS_PRIVATE')
                 
                 hungarian_alert = format_hungarian_alert(out) if out else ""
@@ -221,7 +242,7 @@ def main():
                 status_data["results"].append(playlist_result)
 
                 if has_actual_alert:
-                    print(f"⚠️ Értesítendő törlés/változás a '{title}' listában!")
+                    log_msg(f"⚠️ Change detected in '{title}'!")
                     all_changes.append(f"{title}\n{hungarian_alert}\n{'-'*40}")
                     for email in target_emails:
                         email = email.strip()
@@ -233,9 +254,9 @@ def main():
                 # 3. Purge old dumps
                 run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
         else:
-            print("YOUTUBE_API_KEY not set, skipping dump/compare.")
+            log_msg("YOUTUBE_API_KEY not set, skipping dump/compare.")
 
-    # 4. Dispatch exactly ONE combined email per recipient
+    # 4. Dispatch combined email per recipient if real changes detected
     for email, items in pending_notifications_by_email.items():
         combined_html_blocks = []
         combined_plain_blocks = []
@@ -261,35 +282,30 @@ def main():
         """
         full_plain = ("\n\n" + "-"*40 + "\n\n").join(combined_plain_blocks)
 
-        print(f"\n📧 Sending 1 combined email to {email} with {len(items)} playlist alert(s)...")
+        log_msg(f"Sending live combined email to {email} with {len(items)} alert(s)...")
         send_combined_email(email, 'YouTube playlist watcher', full_html, full_plain)
 
-    # If force test mode is explicitly requested
+    # 5. If force test mode is explicitly requested
     if force_test:
         test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nPozíció a listán: 42."
         target_email = os.environ.get('TEST_EMAIL', '').strip()
         target_title = os.environ.get('TEST_TITLE', '').strip() or "BS koncert"
 
-        # If specific email was specified from UI button
-        if target_email:
-            target_list = [target_email]
-        else:
-            # Fallback to tamas.duffek@gmail.com
-            target_list = ["tamas.duffek@gmail.com"]
+        if not target_email:
+            target_email = "tamas.duffek@gmail.com"
 
-        for email in target_list:
-            test_html = f"""
-            <!DOCTYPE html>
-            <html>
-            <head><meta charset="utf-8"></head>
-            <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
-                <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{target_title}</div>
-                <div>{test_msg.replace(chr(10), '<br>')}</div>
-            </body>
-            </html>
-            """
-            print(f"Sending targeted test notification to {email} ({target_title})...")
-            send_combined_email(email, 'YouTube playlist watcher', test_html, f"{target_title}\n{test_msg}")
+        test_html = f"""
+        <!DOCTYPE html>
+        <html>
+        <head><meta charset="utf-8"></head>
+        <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{target_title}</div>
+            <div>{test_msg.replace(chr(10), '<br>')}</div>
+        </body>
+        </html>
+        """
+        log_msg(f"Executing targeted test email to: '{target_email}' for '{target_title}'...")
+        send_combined_email(target_email, 'YouTube playlist watcher', test_html, f"{target_title}\n{test_msg}")
 
     # Save latest status summary for Web UI
     with open(STATUS_FILE, 'w', encoding='utf-8') as f:
