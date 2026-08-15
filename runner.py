@@ -156,16 +156,20 @@ def main():
         else:
             print("YOUTUBE_API_KEY not set, skipping dump/compare.")
 
-    # Send clean test email if force_test is explicitly enabled
+    # Send clean test email if force_test is enabled, using dynamic playlist title
     if force_test:
         test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nPozíció a listán: 42."
-        print("\n--- Sending Minimalist Test Email ---")
+        dynamic_title = playlists[0].get('title', 'Lejátszási lista') if playlists else "Lejátszási lista"
+        dynamic_id = playlists[0].get('id', '') if playlists else ""
+        dynamic_emails = playlists[0].get('emails', ["tamas.duffek@gmail.com"]) if playlists else ["tamas.duffek@gmail.com"]
+
+        print(f"\n--- Sending Test Email with dynamic title: '{dynamic_title}' ---")
         send_email_notification(
-            ["tamas.duffek@gmail.com"],
+            dynamic_emails,
             'YouTube playlist watcher',
             test_msg,
-            playlist_title="Saját teszt lista",
-            playlist_id=playlists[0]['id'] if playlists else "PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8"
+            playlist_title=dynamic_title,
+            playlist_id=dynamic_id
         )
 
     # Save latest status summary for Web UI
