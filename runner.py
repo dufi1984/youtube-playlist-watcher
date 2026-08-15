@@ -211,23 +211,24 @@ def main():
         for p_title, p_alert in items:
             p_alert_html = p_alert.replace("\n", "<br>")
             combined_html_blocks.append(f"""
-            <div style="margin-bottom: 20px;">
+            <div>
                 <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{p_title}</div>
                 <div>{p_alert_html}</div>
             </div>
             """)
             combined_plain_blocks.append(f"{p_title}\n{p_alert}")
 
+        separator_html = '<hr style="border: 0; border-top: 1px solid #cbd5e1; margin: 20px 0;">'
         full_html = f"""
         <!DOCTYPE html>
         <html>
         <head><meta charset="utf-8"></head>
         <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
-            {"".join(combined_html_blocks)}
+            {separator_html.join(combined_html_blocks)}
         </body>
         </html>
         """
-        full_plain = "\n\n".join(combined_plain_blocks)
+        full_plain = ("\n\n" + "-"*40 + "\n\n").join(combined_plain_blocks)
 
         print(f"\n📧 Sending 1 combined email to {email} with {len(items)} playlist alert(s)...")
         send_combined_email(email, 'YouTube playlist watcher', full_html, full_plain)
