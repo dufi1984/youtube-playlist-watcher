@@ -156,7 +156,61 @@
             border-color: #EF4444;
         }
 
+        /* Action 3-dots More Menu */
+        .btn-more {
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.18s ease;
+        }
+        .btn-more:hover, .btn-more[aria-expanded="true"] {
+            border-color: var(--action);
+            color: var(--action);
+            background: var(--bg-elevated);
+        }
+        .dropdown-menu {
+            background-color: var(--bg-surface) !important;
+            border: 1px solid var(--border) !important;
+            border-radius: 10px;
+            padding: 6px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+        }
+        .dropdown-item {
+            color: var(--text-primary) !important;
+            border-radius: 6px;
+            font-size: 0.86rem;
+            font-weight: 500;
+            padding: 8px 12px;
+            transition: all 0.15s ease;
+        }
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: var(--bg-elevated) !important;
+            color: var(--action) !important;
+        }
+        .dropdown-item.text-danger:hover {
+            color: #F87171 !important;
+            background-color: rgba(239, 68, 68, 0.12) !important;
+        }
+        .dropdown-divider {
+            border-color: var(--border-subtle) !important;
+        }
+        .dropdown-toggle::after {
+            display: none !important;
+        }
+
         /* Table Styling */
+        .table-responsive {
+            overflow-x: auto;
+            overflow-y: visible;
+        }
         .table {
             --bs-table-bg: transparent;
             --bs-table-color: var(--text-primary);
@@ -335,7 +389,7 @@
                             <th>LISTA NEVE</th>
                             <th>PLAYLIST ID</th>
                             <th>ÉRTESÍTENDŐ E-MAIL</th>
-                            <th>MŰVELETEK</th>
+                            <th class="text-end">MŰVELETEK</th>
                         </tr>
                     </thead>
                     <tbody id="playlistTableBody">
@@ -711,20 +765,37 @@ Nincs még jelentési adat.
             currentConfig.playlists.forEach(p => {
                 const tr = document.createElement('tr');
                 const targetEmail = (p.emails || [])[0] || 'Nincs megadva';
+                const safeTitle = (p.title || 'Névtelen').replace(/'/g, "\\'");
+                const safeEmail = targetEmail.replace(/'/g, "\\'");
+
                 tr.innerHTML = `
                     <td class="fw-semibold text-white">${p.title || 'Névtelen'}</td>
                     <td><code class="playlist-code">${p.id}</code></td>
                     <td style="color: var(--text-muted);">${targetEmail}</td>
-                    <td>
-                        <button class="btn btn-sm btn-sg-action me-1" onclick="triggerTestEmail('${p.title}', '${targetEmail}')" title="Teszt e-mail küldése">
-                            <i class="bi bi-send me-1"></i> Teszt e-mail
-                        </button>
-                        <a href="https://www.youtube.com/playlist?list=${p.id}" target="_blank" class="btn btn-sm btn-sg-outline me-1">
-                            <i class="bi bi-box-arrow-up-right"></i> Megnyitás
-                        </a>
-                        <button class="btn btn-sm btn-sg-danger" onclick="deletePlaylist('${p.id}')">
-                            <i class="bi bi-trash"></i>
-                        </button>
+                    <td class="text-end">
+                        <div class="dropdown d-inline-block">
+                            <button class="btn-more" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Műveletek">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li>
+                                    <button class="dropdown-item d-flex align-items-center" onclick="triggerTestEmail('${safeTitle}', '${safeEmail}')">
+                                        <i class="bi bi-send me-2" style="color: var(--action);"></i> Teszt e-mail
+                                    </button>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="https://www.youtube.com/playlist?list=${p.id}" target="_blank">
+                                        <i class="bi bi-box-arrow-up-right me-2 text-muted"></i> Megnyitás YouTube-on
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider my-1"></li>
+                                <li>
+                                    <button class="dropdown-item d-flex align-items-center text-danger" onclick="deletePlaylist('${p.id}')">
+                                        <i class="bi bi-trash me-2 text-danger"></i> Törlés a figyelésből
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                     </td>
                 `;
                 tbody.appendChild(tr);
