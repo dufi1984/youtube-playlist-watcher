@@ -4,8 +4,13 @@ on:
   schedule:
     # Runs automatically every day at midnight (UTC)
     - cron: '0 0 * * *'
-  # Allows manual trigger from GitHub Actions tab
+  # Allows manual trigger with optional test notification check
   workflow_dispatch:
+    inputs:
+      send_test_notification:
+        description: 'Send test notification (GitHub Issue)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -28,14 +33,19 @@ jobs:
       run: |
         pip install -r requirements.txt
 
+    - name: Send test notification if requested
+      if: ${{ inputs.send_test_notification }}
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue create --title "🧪 Teszt Értesítés - YouTube Playlist Watcher" --body "Ez egy teszt értesítés! Ha ezt az értesítést megkaptad e-mailben (vagy mobil push értesítésként a GitHub appban), az azt jelenti, hogy az értesítési rendszer 100%-ban működik."
+
     - name: Process playlists
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         PLAYLIST_IDS: ${{ secrets.PLAYLIST_ID }}
       run: |
-        # Clear previous report file
         rm -f changes_report.txt
-        
         IFS=', ' read -r -a id_list <<< "$PLAYLIST_IDS"
         
         for pid in "${id_list[@]}"; do
@@ -49,7 +59,6 @@ jobs:
             python youtube_playlist_watcher.py --playlist-id "$pid" dump --youtube-api-key "$YOUTUBE_API_KEY"
             
             echo "--- Comparing with previous dump ---"
-            # Run comparison and append output to changes_report.txt if changes exist
             python youtube_playlist_watcher.py --playlist-id "$pid" compare SECOND_TO_LAST LATEST >> changes_report.txt 2>&1 || true
             
             echo "--- Purging old dumps ---"
