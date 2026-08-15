@@ -35,7 +35,7 @@ def build_minimal_email(title, body_text):
     <html>
     <head><meta charset="utf-8"></head>
     <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
-        <div style="font-size: 16px; font-weight: bold; margin-bottom: 8px;">{title}</div>
+        <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{title}</div>
         <div>{formatted_body}</div>
     </body>
     </html>
@@ -51,11 +51,11 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
     html_content = build_minimal_email(playlist_title, text_content)
 
     resend_key = os.environ.get('RESEND_API_KEY', '').strip()
-    from_email = 'onboarding@resend.dev'
+    from_email = os.environ.get('FROM_EMAIL', 'onboarding@resend.dev').strip() or 'onboarding@resend.dev'
 
-    print(f"Resend Key configured: {'YES (len=' + str(len(resend_key)) + ')' if resend_key else 'NO (empty)'}")
+    print(f"Resend Key configured: {'YES' if resend_key else 'NO'}")
     if resend_key:
-        print(f"Attempting to send email via Resend API to {to_emails} from {from_email}...")
+        print(f"Sending email via Resend API to {to_emails} from {from_email}...")
         try:
             resp = requests.post(
                 'https://api.resend.com/emails',
@@ -72,8 +72,7 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
                 },
                 timeout=15
             )
-            print(f"Resend HTTP Status: {resp.status_code}")
-            print(f"Resend Response Body: {resp.text}")
+            print(f"Resend HTTP Status: {resp.status_code}, Body: {resp.text}")
             if resp.status_code in [200, 201]:
                 print(f"✅ Email successfully sent via Resend API to {to_emails}!")
                 return True
@@ -81,14 +80,24 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
                 print(f"❌ Resend API error: {resp.status_code} - {resp.text}")
         except Exception as e:
             print(f"❌ Exception calling Resend API: {e}")
-    else:
-        print("⚠️ RESEND_API_KEY is not set in GitHub Secrets.")
 
     return False
 
+def clean_report_text(report):
+    # Strip redundant search links and format cleanly
+    lines = [line.strip() for line in report.split('\n') if line.strip()]
+    cleaned = []
+    for l in lines:
+        if l.startswith('-> find another video') or l.startswith('https://www.youtube.com/results'):
+            continue
+        if l.startswith('[YPW] Changes detected'):
+            continue
+        cleaned.append(l)
+    return '\n'.join(cleaned)
+
 def main():
     api_key = os.environ.get('YOUTUBE_API_KEY', '').strip()
-    force_test = os.environ.get('FORCE_TEST_ALERT', 'true').lower() in ['true', '1', 'yes', '']
+    force_test = os.environ.get('FORCE_TEST_ALERT', 'false').lower() in ['true', '1', 'yes']
 
     config = load_config()
     playlists = config.get('playlists', [])
@@ -122,22 +131,23 @@ def main():
                 code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
                 
                 has_changes = bool(out and "Changes detected" in out)
+                cleaned_out = clean_report_text(out) if has_changes else "No changes detected."
                 
                 playlist_result = {
                     "id": pid,
                     "title": title,
                     "has_changes": has_changes,
-                    "report": out if has_changes else "No changes detected."
+                    "report": cleaned_out
                 }
                 status_data["results"].append(playlist_result)
 
                 if has_changes:
                     print(f"⚠️ Changes detected in playlist '{title}'!")
-                    all_changes.append(f"{title}\n{out}\n{'-'*40}")
+                    all_changes.append(f"{title}\n{cleaned_out}\n{'-'*40}")
                     send_email_notification(
                         target_emails,
                         'YouTube playlist watcher',
-                        out,
+                        cleaned_out,
                         playlist_title=title,
                         playlist_id=pid
                     )
@@ -147,10 +157,10 @@ def main():
         else:
             print("YOUTUBE_API_KEY not set, skipping dump/compare.")
 
-    # Send guaranteed test email if testing or initial run
-    if force_test or not all_changes:
-        test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nhttps://www.youtube.com/results?search_query=The+Cure+-+Burn+1994+HQ\nPozíció a listán: 42."
-        print("\n--- Sending Guaranteed Resend Test Email ---")
+    # Send clean test email if force_test is explicitly enabled
+    if force_test:
+        test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nPozíció a listán: 42."
+        print("\n--- Sending Minimalist Test Email ---")
         send_email_notification(
             ["tamas.duffek@gmail.com"],
             'YouTube playlist watcher',
