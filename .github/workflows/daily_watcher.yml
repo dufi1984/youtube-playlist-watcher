@@ -15,6 +15,8 @@ on:
 permissions:
   contents: write
   issues: write
+  pages: write
+  id-token: write
 
 jobs:
   watch:
@@ -40,31 +42,16 @@ jobs:
       run: |
         gh issue create --title "🧪 Teszt Értesítés - YouTube Playlist Watcher" --body "Ez egy teszt értesítés! Ha ezt az értesítést megkaptad e-mailben (vagy mobil push értesítésként a GitHub appban), az azt jelenti, hogy az értesítési rendszer 100%-ban működik."
 
-    - name: Process playlists
+    - name: Run multi-playlist watcher runner
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        PLAYLIST_IDS: ${{ secrets.PLAYLIST_ID }}
+        PLAYLIST_ID: ${{ secrets.PLAYLIST_ID }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SMTP_USER: ${{ secrets.SMTP_USER }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
       run: |
-        rm -f changes_report.txt
-        IFS=', ' read -r -a id_list <<< "$PLAYLIST_IDS"
-        
-        for pid in "${id_list[@]}"; do
-          pid=$(echo "$pid" | xargs)
-          if [ -n "$pid" ]; then
-            echo "=========================================="
-            echo "Processing playlist: $pid"
-            echo "=========================================="
-            
-            echo "--- Downloading current data (Dump) ---"
-            python youtube_playlist_watcher.py --playlist-id "$pid" dump --youtube-api-key "$YOUTUBE_API_KEY"
-            
-            echo "--- Comparing with previous dump ---"
-            python youtube_playlist_watcher.py --playlist-id "$pid" compare SECOND_TO_LAST LATEST >> changes_report.txt 2>&1 || true
-            
-            echo "--- Purging old dumps ---"
-            python youtube_playlist_watcher.py --playlist-id "$pid" purge-dumps --keep-count 30
-          fi
-        done
+        python runner.py
 
     - name: Create GitHub Issue notification on change
       env:
@@ -85,6 +72,6 @@ jobs:
         if git diff --staged --quiet; then
           echo "No changes in playlist dump files."
         else
-          git commit -m "Automated daily playlist dump update"
+          git commit -m "Automated daily playlist dump & status update"
           git push
         fi
