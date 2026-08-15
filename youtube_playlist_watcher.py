@@ -234,20 +234,23 @@ def get_changes(dump1, dump2, region_watched):
     dump1_by_vid = {get_video_id(item): item for item in dump1}
     dump2_by_vid = {get_video_id(item): item for item in dump2}
     common_vids = [(dump1_by_vid[vid], dump2_by_vid[vid]) for vid in set(dump2_by_vid.keys())&set(dump1_by_vid.keys())]
-    changes['IS_PRIVATE'] = [(new_item, old_item) for (old_item, new_item) in common_vids if is_video_private(new_item)]
+    
+    # Only detect newly privated videos
+    changes['IS_PRIVATE'] = [(new_item, old_item) for (old_item, new_item) in common_vids if is_video_private(new_item) and not is_video_private(old_item)]
+    
     added_vids = dump2_by_vid.keys() - dump1_by_vid.keys()
     changes['ADDED'] = [dump2_by_vid[vid] for vid in added_vids]
-    changes['DELETED'] = [_add_current_index(dump1_by_vid[vid], dump2_by_vid[vid]) for vid in dump2_by_vid.keys() if is_video_deleted(dump2_by_vid[vid])]
+    
+    # Only detect newly deleted videos (was active in dump1, became deleted in dump2)
+    changes['DELETED'] = [_add_current_index(dump1_by_vid[vid], dump2_by_vid[vid]) for vid in dump2_by_vid.keys() if is_video_deleted(dump2_by_vid[vid]) and (vid in dump1_by_vid and not is_video_deleted(dump1_by_vid[vid]))]
+    
     removed_vids = dump1_by_vid.keys() - dump2_by_vid.keys()
     def should_ignore_removed_video(item):
         return any([
-            region_watched and is_video_blocked_in_region(item, region_watched),
             is_video_deleted(item),
             is_video_private(item),
         ])
     changes['REMOVED'] = [dump1_by_vid[vid] for vid in removed_vids if not should_ignore_removed_video(dump1_by_vid[vid])]
-    if region_watched:
-        changes['IS_BLOCKED_IN_REGION'] = [(item, region_watched) for item in dump2 if is_video_blocked_in_region(item, region_watched)]
     return changes
 
 def _add_current_index(old_vid, new_vid):
