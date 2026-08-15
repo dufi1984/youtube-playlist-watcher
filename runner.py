@@ -264,31 +264,32 @@ def main():
         print(f"\n📧 Sending 1 combined email to {email} with {len(items)} playlist alert(s)...")
         send_combined_email(email, 'YouTube playlist watcher', full_html, full_plain)
 
-    # If force test mode is explicitly requested (send to ALL recipients!)
+    # If force test mode is explicitly requested
     if force_test:
         test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nPozíció a listán: 42."
-        all_recipient_emails = set()
-        for p in playlists:
-            for em in p.get('emails', []):
-                if em.strip():
-                    all_recipient_emails.add(em.strip())
-        if not all_recipient_emails:
-            all_recipient_emails.add("tamas.duffek@gmail.com")
+        target_email = os.environ.get('TEST_EMAIL', '').strip()
+        target_title = os.environ.get('TEST_TITLE', '').strip() or "BS koncert"
 
-        for email in all_recipient_emails:
-            sample_title = ([p['title'] for p in playlists if email in p.get('emails', []) and p.get('title')] or ["BS koncert"])[0]
+        # If specific email was specified from UI button
+        if target_email:
+            target_list = [target_email]
+        else:
+            # Fallback to tamas.duffek@gmail.com
+            target_list = ["tamas.duffek@gmail.com"]
+
+        for email in target_list:
             test_html = f"""
             <!DOCTYPE html>
             <html>
             <head><meta charset="utf-8"></head>
             <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
-                <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{sample_title}</div>
+                <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{target_title}</div>
                 <div>{test_msg.replace(chr(10), '<br>')}</div>
             </body>
             </html>
             """
-            print(f"Sending test notification to {email}...")
-            send_combined_email(email, 'YouTube playlist watcher', test_html, f"{sample_title}\n{test_msg}")
+            print(f"Sending targeted test notification to {email} ({target_title})...")
+            send_combined_email(email, 'YouTube playlist watcher', test_html, f"{target_title}\n{test_msg}")
 
     # Save latest status summary for Web UI
     with open(STATUS_FILE, 'w', encoding='utf-8') as f:

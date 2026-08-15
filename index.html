@@ -537,7 +537,11 @@ Nincs még jelentési adat.
                         },
                         body: JSON.stringify({
                             ref: 'main',
-                            inputs: { send_test_notification: true }
+                            inputs: {
+                                send_test_notification: true,
+                                test_email: email,
+                                test_title: title
+                            }
                         })
                     });
 

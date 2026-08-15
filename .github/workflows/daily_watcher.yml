@@ -11,6 +11,14 @@ on:
         description: 'Send test notification email (FORCE TEST ALERT)'
         type: boolean
         default: false
+      test_email:
+        description: 'Target email for test'
+        type: string
+        default: ''
+      test_title:
+        description: 'Playlist title for test'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -46,6 +54,8 @@ jobs:
         SMTP_USER: ${{ secrets.SMTP_USER }}
         SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         FORCE_TEST_ALERT: ${{ inputs.send_test_notification }}
+        TEST_EMAIL: ${{ inputs.test_email }}
+        TEST_TITLE: ${{ inputs.test_title }}
       run: |
         python runner.py || true
 
