@@ -83,9 +83,9 @@
             <div class="mb-3">
                 <i class="bi bi-shield-lock-fill text-primary display-4"></i>
             </div>
-            <h4 class="text-white fw-bold">Biztonsági Belépés</h4>
+            <h4 class="text-white fw-bold">Kriptográfiailag védett belépés</h4>
             <p class="text-muted small mb-3">Adj meg a PIN kódot a felület eléréséhez:</p>
-            <input type="password" id="pinInput" class="form-control text-center fs-4 mb-3" placeholder="••••" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
+            <input type="password" id="pinInput" class="form-control text-center fs-4 mb-3" placeholder="" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
             <button class="btn btn-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
             <div id="pinError" class="text-danger small mt-2 d-none">Hibás PIN kód! Próbáld újra.</div>
         </div>
@@ -96,15 +96,15 @@
         <!-- Header -->
         <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary">
             <div>
-                <h2 class="fw-bold m-0 text-white"><i class="bi bi-youtube text-danger me-2"></i>YouTube Playlist Watcher</h2>
+                <h2 class="fw-bold m-0 text-white"><i class="bi bi-youtube text-danger me-2"></i>YouTube playlist watcher</h2>
                 <span class="text-muted">Automatikus lejátszási lista változás-figyelő és mentő</span>
             </div>
             <div>
                 <button class="btn btn-outline-info btn-sm me-2" onclick="openEmailPreviewModal()">
-                    <i class="bi bi-envelope-paper me-1"></i> E-mail Minta
+                    <i class="bi bi-envelope-paper me-1"></i> E-mail minta
                 </button>
                 <button class="btn btn-outline-warning btn-sm me-2" onclick="openPinModal()">
-                    <i class="bi bi-key me-1"></i> PIN Módosítás
+                    <i class="bi bi-key me-1"></i> PIN módosítás
                 </button>
                 <button class="btn btn-outline-secondary btn-sm" onclick="location.reload()">
                     <i class="bi bi-arrow-clockwise me-1"></i> Frissítés
@@ -114,39 +114,44 @@
 
         <!-- Add New Playlist Card -->
         <div class="card p-4 mb-4 shadow">
-            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-plus-circle-fill text-success me-2"></i>Új Lejátszási Lista Hozzáadása</h5>
+            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-plus-circle-fill text-success me-2"></i>Új lejátszási lista hozzáadása</h5>
             
             <!-- Row 1: Full width URL -->
             <div class="row g-3 mb-2">
                 <div class="col-12">
-                    <label class="form-label">YouTube Lejátszási Lista Link vagy ID (Teljes Szélességben):</label>
-                    <input type="text" id="newPlaylistUrl" class="form-control form-control-lg" placeholder="https://www.youtube.com/playlist?list=PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8">
+                    <label class="form-label">YouTube lejátszási lista link vagy ID:</label>
+                    <input type="text" id="newPlaylistUrl" class="form-control form-control-lg" placeholder="">
                 </div>
             </div>
 
             <!-- Row 2: Title and Email side by side -->
             <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                    <label class="form-label">Lista Neve (Kedvenc Neve):</label>
-                    <input type="text" id="newPlaylistTitle" class="form-control" placeholder="pl. Barátom Kedvenc Zenéi">
+                    <label class="form-label">Lista neve:</label>
+                    <input type="text" id="newPlaylistTitle" class="form-control" placeholder="">
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Értesítendő E-mail Cím:</label>
-                    <input type="email" id="newPlaylistEmail" class="form-control" placeholder="baratom@gmail.com">
+                    <label class="form-label">Értesítendő e-mail cím:</label>
+                    <input type="email" id="newPlaylistEmail" class="form-control" placeholder="">
                 </div>
             </div>
 
             <!-- Action buttons -->
             <div class="d-flex justify-content-end gap-2">
                 <button class="btn btn-success fw-bold px-4" onclick="addPlaylist()">
-                    <i class="bi bi-check-circle me-1"></i> Lista Hozzáadása
+                    <i class="bi bi-check-circle me-1"></i> Lista hozzáadása
                 </button>
             </div>
         </div>
 
         <!-- Monitored Playlists Card -->
         <div class="card p-4 mb-4 shadow">
-            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-list-check me-2 text-info"></i>Figyelt Lejátszási Listák</h5>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-bold m-0 text-white"><i class="bi bi-list-check me-2 text-info"></i>Figyelt lejátszási listák</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="downloadConfigFile()">
+                    <i class="bi bi-download me-1"></i> Beállítások mentése (playlists_config.json)
+                </button>
+            </div>
             <div class="table-responsive">
                 <table class="table table-dark table-hover align-middle m-0">
                     <thead>
@@ -167,7 +172,7 @@
 
         <!-- Latest Status & Report Log -->
         <div class="card p-4 shadow">
-            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-file-earmark-text me-2 text-warning"></i>Legutóbbi Ellenőrzési Jelentés</h5>
+            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-file-earmark-text me-2 text-warning"></i>Legutóbbi ellenőrzési jelentés</h5>
             <div id="lastRunTime" class="text-muted small mb-2">Utolsó futás: Töltés...</div>
             <pre id="reportLog" class="p-3 rounded bg-dark text-success font-monospace small" style="max-height: 250px; overflow-y: auto;">
 Nincs még jelentési adat.
@@ -180,7 +185,7 @@ Nincs még jelentési adat.
         <div class="modal-dialog modal-lg">
             <div class="card modal-content p-4">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h5 class="modal-title fw-bold text-white"><i class="bi bi-envelope-paper-fill text-info me-2"></i>E-mail Értesítés Minta</h5>
+                    <h5 class="modal-title fw-bold text-white"><i class="bi bi-envelope-paper-fill text-info me-2"></i>E-mail értesítés minta</h5>
                     <button type="button" class="btn-close btn-close-white" onclick="closeEmailPreviewModal()"></button>
                 </div>
                 <p class="text-muted small">Amikor a rendszer tesztet vagy éles értesítést küld a megadott e-mail címre, ilyen formázott HTML üzenet érkezik:</p>
@@ -188,11 +193,11 @@ Nincs még jelentési adat.
                 <!-- Email Render Box -->
                 <div class="email-preview-box shadow-sm mb-3">
                     <div style="background-color: #cc0000; color: #ffffff; padding: 15px 20px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 18px;">
-                        🚨 YouTube Playlist Változás Értesítő
+                        🚨 YouTube playlist változás értesítő
                     </div>
                     <div style="padding: 20px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 6px 6px; background-color: #f8fafc; color: #1e293b;">
                         <p style="font-size: 15px; margin-bottom: 15px;">Kedves Felhasználó!</p>
-                        <p style="font-size: 14px; color: #475569;">Ez egy értesítés a(z) <strong>"Barátom Kedvenc Zenéi"</strong> nevű YouTube lejátszási listához:</p>
+                        <p style="font-size: 14px; color: #475569;">Ez egy értesítés a(z) <strong>"Barátom kedvenc zenéi"</strong> nevű YouTube lejátszási listához:</p>
                         
                         <!-- Sample alert block -->
                         <div style="background-color: #fff1f2; border-left: 4px solid #e11d48; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
@@ -201,12 +206,12 @@ Nincs még jelentési adat.
                             <p style="margin: 0; color: #9f1239; font-size: 13px;">Pozíció a listán: 42. videó</p>
                             <div style="margin-top: 12px;">
                                 <a href="https://www.youtube.com/results?search_query=The+Cure+-+Burn+%28HQ+Official+Audio%29" target="_blank" style="display: inline-block; background-color: #0284c7; color: #ffffff; text-decoration: none; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: bold;">
-                                    🔎 Videó Megkeresése a YouTube-on
+                                    🔎 Videó megkeresése a YouTube-on
                                 </a>
                             </div>
                         </div>
 
-                        <p style="font-size: 12px; color: #94a3b8; margin: 0;">Ezt az automatikus értesítést a YouTube Playlist Watcher küldte.</p>
+                        <p style="font-size: 12px; color: #94a3b8; margin: 0;">Ezt az automatikus értesítést a YouTube playlist watcher küldte.</p>
                     </div>
                 </div>
 
@@ -221,19 +226,19 @@ Nincs még jelentési adat.
     <div id="pinModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="card modal-content p-4">
-                <h5 class="modal-title mb-3 text-white"><i class="bi bi-key-fill text-warning me-2"></i>Új PIN Kód Beállítása</h5>
+                <h5 class="modal-title mb-3 text-white"><i class="bi bi-key-fill text-warning me-2"></i>Új PIN kód beállítása</h5>
                 <p class="text-muted small">A megadott PIN kódból a rendszer egy visszafejthetetlen SHA-256 kriptográfiai hash-t képez.</p>
                 <div class="mb-3">
-                    <label class="form-label">Új PIN Kód:</label>
-                    <input type="password" id="newPinInput" class="form-control" placeholder="••••">
+                    <label class="form-label">Új PIN kód:</label>
+                    <input type="password" id="newPinInput" class="form-control" placeholder="">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Generált Titkos Hash:</label>
-                    <input type="text" id="generatedHash" class="form-control font-monospace small" readonly placeholder="Generált hash helye...">
+                    <label class="form-label">Generált titkos hash:</label>
+                    <input type="text" id="generatedHash" class="form-control font-monospace small" readonly placeholder="">
                 </div>
                 <div class="d-flex justify-content-end gap-2">
                     <button class="btn btn-secondary" onclick="closePinModal()">Mégse</button>
-                    <button class="btn btn-primary" onclick="generateAndSavePinHash()">Hash Generálása</button>
+                    <button class="btn btn-primary" onclick="generateAndSavePinHash()">Hash generálása</button>
                 </div>
             </div>
         </div>
@@ -307,7 +312,7 @@ Nincs még jelentési adat.
 
         function addPlaylist() {
             const rawUrl = document.getElementById('newPlaylistUrl').value;
-            const title = document.getElementById('newPlaylistTitle').value || "Új Lista";
+            const title = document.getElementById('newPlaylistTitle').value || "Új lista";
             const email = document.getElementById('newPlaylistEmail').value;
 
             const pid = extractPlaylistId(rawUrl);
@@ -316,11 +321,8 @@ Nincs még jelentési adat.
                 return;
             }
 
-            const existing = currentConfig.playlists.find(p => p.id === pid);
-            if (existing) {
-                alert("Ez a lejátszási lista már hozzá van adva!");
-                return;
-            }
+            // Remove if existing with same ID to update emails
+            currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
 
             currentConfig.playlists.push({
                 id: pid,
@@ -329,7 +331,7 @@ Nincs még jelentési adat.
             });
 
             renderTable();
-            alert(`A "${title}" lista hozzáadva! Az e-mail értesítések erre a címre fognak érkezni: ${email || 'Admin e-mail'}`);
+            alert(`A "${title}" lista hozzáadva! Kattints a "Beállítások mentése" gombra a véglegesítéshez.`);
             document.getElementById('newPlaylistUrl').value = "";
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
@@ -340,6 +342,17 @@ Nincs még jelentési adat.
                 currentConfig.playlists = currentConfig.playlists.filter(p => p.id !== pid);
                 renderTable();
             }
+        }
+
+        function downloadConfigFile() {
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(currentConfig, null, 2));
+            const downloadAnchor = document.createElement('a');
+            downloadAnchor.setAttribute("href", dataStr);
+            downloadAnchor.setAttribute("download", "playlists_config.json");
+            document.body.appendChild(downloadAnchor);
+            downloadAnchor.click();
+            downloadAnchor.remove();
+            alert("A frissített playlists_config.json fájl letöltődött! Töltsd fel a GitHub repódba a módosítások véglegesítéséhez.");
         }
 
         function triggerTestEmail(title, email) {
@@ -365,8 +378,8 @@ Nincs még jelentési adat.
                     <td class="text-light">${targetEmail}</td>
                     <td><span class="badge bg-success badge-status">Aktív</span></td>
                     <td>
-                        <button class="btn btn-sm btn-outline-info me-1" onclick="triggerTestEmail('${p.title}', '${targetEmail}')" title="Teszt E-mail küldése">
-                            <i class="bi bi-send me-1"></i> Teszt E-mail
+                        <button class="btn btn-sm btn-outline-info me-1" onclick="triggerTestEmail('${p.title}', '${targetEmail}')" title="Teszt e-mail küldése">
+                            <i class="bi bi-send me-1"></i> Teszt e-mail
                         </button>
                         <a href="https://www.youtube.com/playlist?list=${p.id}" target="_blank" class="btn btn-sm btn-outline-primary me-1">
                             <i class="bi bi-box-arrow-up-right"></i> Megnyitás
