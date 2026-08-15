@@ -1,115 +1,91 @@
-[![build status](https://github.com/lucas-c/youtube_playlist_watcher/workflows/build/badge.svg)](https://github.com/lucas-c/youtube_playlist_watcher/actions?query=branch%3Amaster)
-[![Known Vulnerabilities](https://snyk.io/test/github/lucas-c/youtube_playlist_watcher/badge.svg)](https://snyk.io/test/github/lucas-c/youtube_playlist_watcher)
+# YouTube Playlist Watcher 🎵
 
-Do you get frustrated by videos disappearing from your Youtube playlist,
-because of copyright infringement, new region restrictions or just because the guy who uploaded them removed it ?
-With no way for you to find out which where those clips:
-because Youtube does not keep trace of those dead videos,
-your only chance to recall what were their names is a Google search based on their video ids.
+[![YouTube Playlist Watcher](https://img.shields.io/badge/YouTube-Playlist%20Watcher-1DC7B7?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/dufi1984/youtube-playlist-watcher)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Hourly%20Runner-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/dufi1984/youtube-playlist-watcher/actions)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
-But no more !
+Automatizált, felhőalapú YouTube lejátszási lista változás-figyelő és mentő rendszer.  
+Ha egy dal törlődik, priváttá válik vagy eltűnik bármelyik figyelt listádról, a rendszer azonnal megkeresi a mentett adatbázisból a dal **valódi, teljes címét és előadóját**, és közvetlen e-mail értesítést küld a megadott címzettnek.
 
-This Python script will keep JSON backups of your playlists on your computer,
-detect changes like disappearing videos,
-and alert you with console messages or emails like this:
+---
 
-    SUBJECT: [YPW] Change detected in Youtube playlist FLF8xTv55ZmwikWWmWLPEAZQ
-    Playlist: https://www.youtube.com/playlist?list=FLF8xTv55ZmwikWWmWLPEAZQ
-    REGION RESTRICTIONS CHANGED for Sade - The Best Of Sade | Full Album : {"blocked": ["DE"]}-> {} https://www.youtube.com/watch?v=zX8nZI8U9XY
-    -> find another video named like that: https://www.youtube.com/results?search_query=Sade+-+The+Best+Of+Sade+%7C+Full+Album
-    BECAME PRIVATE: https://www.youtube.com/watch?v=T4ZCJzjufYs
-    -> find another video named like that: https://www.youtube.com/results?search_query=Patrick+Bruel+%22J%27te+l%27dis+quand+m%C3%AAme%22
-    DELETED: The Cure - Burn 1994 HQ (The Crow)
-    -> find another video named like that: https://www.youtube.com/results?search_query=The+Cure+-+Burn+1994+HQ+%28The+Crow%29
+## ✨ Főbb funkciók
 
-![](https://chezsoi.org/lucas/wwcb/photos/NinjaTurtlesPowerRangers.gif)
+- 🌌 **SevenGrid Aurora Dark Mode Vezérlőpult:**  
+  Modern, letisztult webes admin felület (GitHub Pages alapú), pixel-pontos tipográfiával és finom fényeffektekkel.
+- 📋 **Intelligens Link-ellenőrzés & Vágólap beillesztés:**  
+  Valós idejű YouTube Data API integráció: egyetlen kattintással beilleszti a másolt linket, azonnal beolvassa a lista hivatalos nevét, és kiszűri a téves, sima videó linkeket vagy a privát listákat.
+- 👥 **Több Lejátszási Lista & Címzett kezelése:**  
+  Tetszőleges számú lejátszási lista felvétele, listánként egyedi értesítési e-mail címmel (pl. saját és ismerősök listái külön-külön).
+- 📬 **Összevont (Consolidated) Értesítő E-mailek:**  
+  Ha egy címzetthez tartozó több listában is történik változás, nem küld külön-külön leveleket, hanem 1 db elegáns, elválasztóvonalakkal tagolt összefoglaló e-mailt kézbesít.
+- 🕒 **Nappali Óránkénti Ellenőrzés (07:00 – 20:00):**  
+  A GitHub Actions felhőben reggel 7 és este 8 között óránként automatikusan lefut az ellenőrzés. Éjszaka (20:00 és 07:00 között) csendben marad, nem zavarja az alvást.
+- 🛡️ **Új Változások Intelligens Észlelése:**  
+  A rendszer különbséget tesz a már régen törölt videók és az **újonnan eltűnő dalok** között. A már meglévő szürke elemekről nem küld felesleges értesítést, de amint egy jelenleg élő dal törlődik, a tegnapi mentésből azonnal kinyeri a dal **pontos címét**.
+- ✉️ **Gmail SMTP & Resend API Kézbesítés:**  
+  Közvetlen Gmail SMTP kézbesítés (App Password hitelesítéssel), tartalék Resend API támogatással.
+- 🧹 **Automatikus Tárhely- és Mentéskezelés:**  
+  A beépített `purge-dumps` mechanizmus mindig csak a legutolsó 30 db JSON mentést tartja meg, így a GitHub repó mérete mindössze pár megabájt marad, és soha nem telik meg.
 
+---
 
-## Requirements
-A computer with:
+## 🏗️ Rendszerarchitektúra és Működés
 
-- Python 3.7 at least
-- a [Youtube Data API key](https://developers.google.com/youtube/v3/getting-started) (it's free)
-- and either:
-    * the ability to run daily jobs (e.g. standard Linux cron jobs) + `mail`, `mutt` or any other command-line email client
-    * a Bash-based console (Cygwin is ok) that you open frequently, so you'll see the reports inside
+```mermaid
+flowchart TD
+    A[Webes Vezérlőpult - index.html] -->|1-Kattintásos Mentés| B[GitHub Repository: playlists_config.json]
+    C[GitHub Actions Időzítő: 07:00 - 20:00 Óránként] --> D[runner.py]
+    B --> D
+    D -->|YouTube Data API v3| E[YouTube Lejátszási Listák Letöltése]
+    E --> F[youtube_playlist_watcher.py: Új Változások Keresése]
+    F -->|Nincs új változás| G[Csendes naplózás - latest_status.json]
+    F -->|Új törlés észlelve| H[Összevont HTML Levél Generálása]
+    H -->|Gmail SMTP / Resend| I[Címzett Postaládája]
+    D -->|JSON Mentések mentése| B
+```
 
+---
 
-## Installation in .bashrc to get reports in your temrinal
+## 📁 Projekt Fájlszerkezet
 
-If installed this way, YPW will do the following:
-- each time you'll open a new terminal, it'll check if it has already been executed today,
-and else launch a background task to dump & check your playlist for changes.
-- the next time you'll open a console after this task completed,
-you'll see the report at the top of your terminal (it can be empty if no changes were detected).
+| Fájl | Leírás |
+| :--- | :--- |
+| **`index.html`** | A SevenGrid Dark Mode stílusú webes vezérlőpult. Kezeli a lejátszási listák hozzáadását, törlését, a PIN kóddal védett belépést, és a GitHub API szinkronizációt. |
+| **`runner.py`** | A központi vezérlő Python script. Beolvassa a `playlists_config.json` konfigurációt, meghívja a figyelő motort az összes listára, csoportosítja a változásokat címzettek szerint, és kiküldi az e-maileket. |
+| **`youtube_playlist_watcher.py`** | A YouTube Data API v3 letöltő és diff-összehasonlító motorja. Kezeli a JSON pillanatképeket és detektálja az állapotváltozásokat. |
+| **`playlists_config.json`** | A figyelt lejátszási listák és a hozzájuk rendelt e-mail címek központi adatbázisa. |
+| **`latest_status.json`** | A legutóbbi felhőbeli futás állapotjelentése (a webes felület ezen keresztül mutatja a legfrissebb logot). |
+| **`.github/workflows/daily_watcher.yml`** | A GitHub Actions automatizációs munkafolyamat, amely óránként lefut a felhőben. |
 
-To install it, run the following in a console (just remember to substitute the `...` on the last line by real values) :
+---
 
-    cd /path/to/your/installation/directory # the JSON dumps will be stored there by default
-    wget https://rawgit.com/Lucas-C/youtube_playlist_watcher/master/youtube_playlist_watcher.py
-    wget https://rawgit.com/Lucas-C/youtube_playlist_watcher/master/install_bashrc_banner.sh
-    wget https://rawgit.com/Lucas-C/youtube_playlist_watcher/master/requirements.txt
-    chmod u+x *.sh *.py
-    pip install -r requirements.txt
-    ./install_bashrc_banner.sh YOUTUBE_API_KEY=... PLAYLIST_ID=...
+## ⚙️ Beállítás & Környezeti Változók (GitHub Secrets)
 
-This last script will append some lines to your ~/.bashrc, that implement the logic detailed above.
-It will also define a `ypw_check` shell function that you can invoke manually if you want.
+A rendszer teljes körű működéséhez a GitHub repository **Settings ➡️ Secrets and variables ➡️ Actions** menüpontjában az alábbi kulcsok vannak beállítva:
 
-If you want to watch multiple playlists, keep more or less JSON dumps in history
-or change the kind of playlist changes watched, simply edit this section of your ~/.bashrc manually.
+| Secret Név | Leírás |
+| :--- | :--- |
+| `YOUTUBE_API_KEY` | Google Cloud YouTube Data API v3 kulcs a listák lekéréséhez. |
+| `SMTP_SERVER` | `smtp.gmail.com` |
+| `SMTP_PORT` | `587` |
+| `SMTP_USER` | A küldő Gmail címe (pl. `tamas.duffek@gmail.com`). |
+| `SMTP_PASSWORD` | A Google Fiókban generált 16 jegyű **Alkalmazásjelszó** (*App Password*). |
+| `FROM_EMAIL` | Feladó megjelenített címe (`YouTube watcher <tamas.duffek@gmail.com>`). |
+| `RESEND_API_KEY` | *(Opcionális)* Tartalék Resend API kulcs. |
 
+---
 
-## Installation as a cron job sending emails
+## 🔒 Webes Adminisztráció & GitHub Token
 
-Run the following in a console (just remember to substitute the `...` on the last line by real values) :
+A weboldal (**GitHub Pages**) közvetlenül képes kommunikálni a GitHub API-val:
+1. Nyisd meg a weboldalt a böngésződben.
+2. A **`Beállítások`** menüpontban add meg a GitHub Personal Access Token-edet (`repo` és `workflow` jogosultsággal).
+3. A token kizárólag a te saját böngésződben tárolódik (`localStorage`).
+4. Így a **`Szinkronizálás`** gomb vagy az új listák hozzáadása azonnal frissíti a felhőt és a háttérben elindítja az ellenőrzést.
 
-    cd /path/to/your/installation/directory # the JSON dumps will be stored there by default
-    wget https://rawgit.com/Lucas-C/youtube_playlist_watcher/master/youtube_playlist_watcher.py
-    wget https://rawgit.com/Lucas-C/youtube_playlist_watcher/master/install_crontask.sh
-    wget https://rawgit.com/Lucas-C/youtube_playlist_watcher/master/requirements.txt
-    chmod u+x *.sh *.py
-    pip install -r requirements.txt
-    ./install_crontask.sh YOUTUBE_API_KEY=... PLAYLIST_ID=... EMAIL_DEST=...
+---
 
-This last script will generate a `youtube_playlist_watcher_crontask.sh` script that will be invoked by a cron job,
-running every day at midnight.
+## 📜 Licenc
 
-If you want to watch multiple playlists, use another email client command (the default is `mail`),
-keep more or less JSON dumps in history or change the kind of playlist changes watched,
-simply edit this file manually.
-
-
-## Python script manual usage
-
-To compare a dump taken at any date with the latest one:
-
-    ./youtube_playlist_watcher.py --playlist $playlist_id compare 2015-01-01 LATEST
-
-Want to find more secret features ? The `--help` flag is your friend.
-
-Or use the power Luke: READ THE SOURCE !
-
-
-## Removing "ghost" playlist items
-
-If you repeatedly get reports like this:
-
-    IS PRIVATE: AURORA - All Is Soft Inside - LYRICS https://www.youtube.com/watch?v=tUiWQiUvWas (217th video in the playlist)
-     -> find another video named like that: https://www.youtube.com/results?search_query=AURORA+-+All+Is+Soft+Inside+-+LYRICS
-    DELETED: Deleted video https://www.youtube.com/watch?v=Y9QHak8h1AQ (437th video in the playlist)
-     -> find another video named like that: https://www.youtube.com/results?search_query=Nujabes+-+Lady+Brown
-
-Use Youtube Data API web "shooter" (the right _APIs Explorer_ side-pannel) to remove the corresponding playlist items: https://developers.google.com/youtube/v3/docs/playlistItems/delete
-
-Or generate a OAuth client with scope `https://www.googleapis.com/auth/youtube.force-ssl`, download the corresponding `client_secret_CLIENTID.json` file, and then call `playlistItems_delete.py`.
-
-
-## Contributing
-
-Bug reports or features suggestions are warmly welcome !
-
-For the devs:
-
-    pip install -r dev-requirements.txt
-    pre-commit install
+MIT License.
