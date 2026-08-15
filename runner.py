@@ -12,16 +12,49 @@ from email.mime.multipart import MIMEMultipart
 CONFIG_FILE = 'playlists_config.json'
 STATUS_FILE = 'latest_status.json'
 
-def load_config():
+def get_youtube_playlist_title(api_key, playlist_id):
+    try:
+        url = f"https://www.googleapis.com/youtube/v3/playlists?part=snippet&id={playlist_id}&key={api_key}"
+        resp = requests.get(url, timeout=10)
+        if resp.ok:
+            data = resp.json()
+            items = data.get('items', [])
+            if items:
+                return items[0]['snippet']['title']
+    except Exception as e:
+        print(f"Could not fetch title for playlist {playlist_id}: {e}")
+    return f"Playlist ({playlist_id[:8]}...)"
+
+def load_config(api_key=""):
+    playlists_from_config = []
     if os.path.exists(CONFIG_FILE):
-        with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
+        try:
+            with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
+                cfg = json.load(f)
+                playlists_from_config = cfg.get('playlists', [])
+        except Exception as e:
+            print(f"Error reading {CONFIG_FILE}: {e}")
     
+    # Also merge any playlists from PLAYLIST_ID secret/env
     env_playlists = os.environ.get('PLAYLIST_ID', '')
     p_ids = [p.strip() for p in env_playlists.split(',') if p.strip()]
+    
+    existing_ids = {p['id'] for p in playlists_from_config}
+    for pid in p_ids:
+        if pid not in existing_ids:
+            title = get_youtube_playlist_title(api_key, pid) if api_key else pid
+            playlists_from_config.append({
+                "id": pid,
+                "title": title,
+                "emails": ["tamas.duffek@gmail.com"]
+            })
+            existing_ids.add(pid)
+
     return {
         "pin_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "playlists": [{"id": pid, "title": f"Playlist {pid[:6]}...", "emails": ["tamas.duffek@gmail.com"]} for pid in p_ids]
+        "playlists": playlists_from_config if playlists_from_config else [
+            {"id": "PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8", "title": "Saját lista", "emails": ["tamas.duffek@gmail.com"]}
+        ]
     }
 
 def run_command(cmd):
@@ -98,7 +131,7 @@ def main():
     api_key = os.environ.get('YOUTUBE_API_KEY', '').strip()
     force_test = os.environ.get('FORCE_TEST_ALERT', 'false').lower() in ['true', '1', 'yes']
 
-    config = load_config()
+    config = load_config(api_key)
     playlists = config.get('playlists', [])
     
     current_utc = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
@@ -156,10 +189,10 @@ def main():
         else:
             print("YOUTUBE_API_KEY not set, skipping dump/compare.")
 
-    # Send clean test email if force_test is enabled, using dynamic playlist title
+    # Send clean test email if force_test is explicitly enabled
     if force_test:
         test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nPozíció a listán: 42."
-        dynamic_title = playlists[0].get('title', 'Lejátszási lista') if playlists else "Lejátszási lista"
+        dynamic_title = playlists[0].get('title', 'Saját lista') if playlists else "Saját lista"
         dynamic_id = playlists[0].get('id', '') if playlists else ""
         dynamic_emails = playlists[0].get('emails', ["tamas.duffek@gmail.com"]) if playlists else ["tamas.duffek@gmail.com"]
 
