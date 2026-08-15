@@ -50,11 +50,28 @@
             background-attachment: fixed;
             color: var(--text-primary);
             font-family: var(--font-ui);
-            font-size: 15px;
-            line-height: 1.6;
+            font-size: 14px;
+            line-height: 1.5;
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Unified Pixel-Perfect Typography Classes */
+        .title-main {
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            letter-spacing: -0.01em;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .title-card {
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            letter-spacing: -0.01em;
+            margin-bottom: 12px;
+            color: #ffffff;
         }
 
         .card {
@@ -68,12 +85,13 @@
         .form-label {
             color: var(--text-muted) !important;
             font-weight: 500 !important;
-            font-size: 0.86rem;
-            margin-bottom: 0.25rem;
+            font-size: 13px !important;
+            margin-bottom: 0.25rem !important;
         }
 
-        .text-muted {
+        .text-muted, .small {
             color: var(--text-muted) !important;
+            font-size: 13px !important;
         }
 
         .form-control {
@@ -81,8 +99,8 @@
             border: 1px solid var(--border) !important;
             color: var(--text-primary) !important;
             border-radius: 8px;
-            padding: 0.55rem 0.85rem;
-            font-size: 0.92rem;
+            padding: 7px 12px !important;
+            font-size: 14px !important;
             transition: all 0.18s ease;
         }
 
@@ -103,8 +121,9 @@
             border: 1px solid var(--action) !important;
             color: #0A0F12 !important;
             font-weight: 600;
+            font-size: 14px !important;
             border-radius: 8px;
-            padding: 0.45rem 1rem;
+            padding: 7px 16px !important;
             transition: all 0.18s ease;
         }
         .btn-sg-primary:hover {
@@ -119,7 +138,9 @@
             border: 1px solid var(--border);
             color: var(--text-muted);
             border-radius: 8px;
+            font-size: 14px !important;
             font-weight: 500;
+            padding: 7px 14px !important;
             transition: all 0.18s ease;
         }
         .btn-sg-outline:hover {
@@ -128,13 +149,18 @@
             background-color: var(--bg-elevated);
         }
 
+        .btn-sm {
+            font-size: 13px !important;
+            padding: 5px 10px !important;
+        }
+
         .btn-sg-action {
             background-color: rgba(29, 199, 183, 0.1);
             border: 1px solid rgba(29, 199, 183, 0.3);
             color: var(--action);
             border-radius: 6px;
             font-weight: 500;
-            font-size: 0.82rem;
+            font-size: 13px !important;
             transition: all 0.18s ease;
         }
         .btn-sg-action:hover {
@@ -148,6 +174,7 @@
             border: 1px solid rgba(239, 68, 68, 0.25);
             color: #F87171;
             border-radius: 6px;
+            font-size: 13px !important;
             transition: all 0.18s ease;
         }
         .btn-sg-danger:hover {
@@ -158,8 +185,8 @@
 
         /* Action 3-dots More Menu */
         .btn-more {
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             padding: 0;
             display: inline-flex;
             align-items: center;
@@ -186,7 +213,7 @@
         .dropdown-item {
             color: var(--text-primary) !important;
             border-radius: 6px;
-            font-size: 0.86rem;
+            font-size: 13px !important;
             font-weight: 500;
             padding: 8px 12px;
             transition: all 0.15s ease;
@@ -219,16 +246,17 @@
         }
         .table thead th {
             color: var(--text-muted);
-            font-size: 0.76rem;
+            font-size: 12px !important;
             font-weight: 600;
             letter-spacing: 0.05em;
             border-bottom: 1px solid var(--border);
-            padding: 12px 14px;
+            padding: 10px 14px;
             background: transparent;
         }
         .table tbody td {
+            font-size: 14px !important;
             border-bottom: 1px solid var(--border-subtle);
-            padding: 13px 14px;
+            padding: 12px 14px;
             vertical-align: middle;
         }
         .table tbody tr:last-child td {
@@ -238,10 +266,10 @@
         code.playlist-code {
             color: var(--action) !important;
             background: var(--bg-primary);
-            padding: 4px 8px;
+            padding: 3px 7px;
             border-radius: 6px;
             font-weight: 500;
-            font-size: 0.84rem;
+            font-size: 13px !important;
             border: 1px solid var(--border);
             font-family: var(--font-mono);
         }
@@ -261,9 +289,10 @@
             background: #ffffff;
             color: #111827;
             border-radius: 8px;
-            padding: 18px;
+            padding: 16px;
             font-family: Arial, sans-serif;
             border: 1px solid var(--border);
+            font-size: 14px;
         }
 
         .toast-container {
@@ -277,6 +306,7 @@
             border: 1px solid var(--action) !important;
             color: var(--text-primary) !important;
             border-radius: 8px;
+            font-size: 14px !important;
         }
 
         pre#reportLog {
@@ -284,6 +314,7 @@
             border: 1px solid var(--border);
             color: var(--action) !important;
             border-radius: 8px;
+            font-size: 13px !important;
             font-family: var(--font-mono);
         }
     </style>
@@ -308,7 +339,7 @@
             <div class="mb-3">
                 <i class="bi bi-shield-lock-fill display-4" style="color: var(--action);"></i>
             </div>
-            <h4 class="fw-semibold text-white fs-5 mb-1">Biztonsági belépés</h4>
+            <h4 class="title-main mb-1">Biztonsági belépés</h4>
             <p class="text-muted small mb-3">Add meg a PIN kódot a folytatáshoz:</p>
             <input type="password" id="pinInput" class="form-control text-center mb-3" placeholder="" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
             <button class="btn btn-sg-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
@@ -321,7 +352,7 @@
         <!-- Header -->
         <div class="d-flex justify-content-between align-items-center mb-4 pb-3" style="border-bottom: 1px solid var(--border);">
             <div>
-                <h4 class="fw-semibold m-0 text-white fs-5"><i class="bi bi-youtube text-danger me-2"></i>YouTube playlist watcher</h4>
+                <h1 class="title-main"><i class="bi bi-youtube text-danger me-2"></i>YouTube playlist watcher</h1>
             </div>
             <div class="d-flex gap-2">
                 <button class="btn btn-sg-outline btn-sm" onclick="openPinModal()">
@@ -338,7 +369,7 @@
 
         <!-- Add New Playlist Card -->
         <div class="card p-4 mb-4">
-            <h5 class="fw-bold mb-3 text-white">Új lejátszási lista hozzáadása</h5>
+            <h2 class="title-card">Új lejátszási lista hozzáadása</h2>
             
             <!-- Row 1: Full width URL with Paste button -->
             <div class="row g-3 mb-2">
@@ -376,7 +407,7 @@
         <!-- Monitored Playlists Card -->
         <div class="card p-4 mb-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="fw-bold m-0 text-white">Figyelt lejátszási listák</h5>
+                <h2 class="title-card m-0">Figyelt lejátszási listák</h2>
                 <div class="d-flex gap-2">
                     <button class="btn btn-sg-outline fw-semibold" onclick="syncAndRunWorkflow()">
                         <i class="bi bi-arrow-repeat me-1"></i> Szinkronizálás
@@ -402,7 +433,7 @@
 
         <!-- Latest Status & Report Log -->
         <div class="card p-4">
-            <h5 class="fw-bold mb-3 text-white">Legutóbbi ellenőrzési jelentés</h5>
+            <h2 class="title-card">Legutóbbi ellenőrzési jelentés</h2>
             <div id="lastRunTime" class="text-muted small mb-2">Utolsó futás: Töltés...</div>
             <pre id="reportLog" class="p-3 font-monospace small" style="max-height: 250px; overflow-y: auto;">
 Nincs még jelentési adat.
