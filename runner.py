@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import sys
+import re
 import json
 import smtplib
 import requests
@@ -53,7 +54,7 @@ def load_config(api_key=""):
     return {
         "pin_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "playlists": playlists_from_config if playlists_from_config else [
-            {"id": "PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8", "title": "Saját lista", "emails": ["tamas.duffek@gmail.com"]}
+            {"id": "PL46850C6F5BF668FE", "title": "próba lista", "emails": ["tamas.duffek@gmail.com"]}
         ]
     }
 
@@ -116,16 +117,52 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
 
     return False
 
-def clean_report_text(report):
-    lines = [line.strip() for line in report.split('\n') if line.strip()]
-    cleaned = []
-    for l in lines:
-        if l.startswith('-> find another video') or l.startswith('https://www.youtube.com/results'):
+def format_hungarian_alert(raw_output):
+    alerts = []
+    lines = raw_output.split('\n')
+    for line in lines:
+        line = line.strip()
+        if not line:
             continue
-        if l.startswith('[YPW] Changes detected'):
+
+        # Ignore ADDED items completely (no alert on new additions)
+        if line.startswith('ADDED:'):
             continue
-        cleaned.append(l)
-    return '\n'.join(cleaned)
+
+        # REMOVED / DELETED
+        if line.startswith('REMOVED:') or line.startswith('DELETED:'):
+            m_pos = re.search(r'(?:was\s+)?(\d+)(?:th|st|nd|rd)?\s+video', line)
+            pos_str = f"Pozíció a listán: {m_pos.group(1)}." if m_pos else ""
+            
+            clean_line = re.sub(r'^(?:REMOVED|DELETED):\s*', '', line)
+            clean_line = re.sub(r'https?://\S+', '', clean_line)
+            clean_line = re.sub(r'\((?:was\s+)?\d+(?:th|st|nd|rd)?\s+video[^)]*\)', '', clean_line)
+            title = clean_line.strip()
+            
+            alert_parts = ["<b>Törölt videó</b>", title]
+            if pos_str:
+                alert_parts.append(pos_str)
+            alerts.append("\n".join(alert_parts))
+
+        elif line.startswith('IS PRIVATE:'):
+            m_pos = re.search(r'(\d+)(?:th|st|nd|rd)?\s+video', line)
+            pos_str = f"Pozíció a listán: {m_pos.group(1)}." if m_pos else ""
+            clean_line = re.sub(r'^IS PRIVATE:\s*', '', line)
+            clean_line = re.sub(r'https?://\S+', '', clean_line)
+            clean_line = re.sub(r'\(\d+(?:th|st|nd|rd)?\s+video[^)]*\)', '', clean_line)
+            title = clean_line.strip()
+            alert_parts = ["<b>Privát videó</b>", title]
+            if pos_str:
+                alert_parts.append(pos_str)
+            alerts.append("\n".join(alert_parts))
+
+        elif line.startswith('IS BLOCKED IN REGION'):
+            clean_line = re.sub(r'^IS BLOCKED IN REGION[^:]*:\s*', '', line)
+            clean_line = re.sub(r'https?://\S+', '', clean_line)
+            title = clean_line.strip()
+            alerts.append(f"<b>Blokkolt videó</b>\n{title}")
+
+    return "\n\n".join(alerts)
 
 def main():
     api_key = os.environ.get('YOUTUBE_API_KEY', '').strip()
@@ -162,24 +199,24 @@ def main():
                 # 2. Compare with previous dump
                 code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST')
                 
-                has_changes = bool(out and "Changes detected" in out)
-                cleaned_out = clean_report_text(out) if has_changes else "No changes detected."
+                hungarian_alert = format_hungarian_alert(out) if out else ""
+                has_actual_alert = bool(hungarian_alert)
                 
                 playlist_result = {
                     "id": pid,
                     "title": title,
-                    "has_changes": has_changes,
-                    "report": cleaned_out
+                    "has_changes": has_actual_alert,
+                    "report": hungarian_alert if has_actual_alert else "Minden videó elérhető és változatlan."
                 }
                 status_data["results"].append(playlist_result)
 
-                if has_changes:
-                    print(f"⚠️ Changes detected in playlist '{title}'!")
-                    all_changes.append(f"{title}\n{cleaned_out}\n{'-'*40}")
+                if has_actual_alert:
+                    print(f"⚠️ Értesítendő törlés/változás a '{title}' listában!")
+                    all_changes.append(f"{title}\n{hungarian_alert}\n{'-'*40}")
                     send_email_notification(
                         target_emails,
                         'YouTube playlist watcher',
-                        cleaned_out,
+                        hungarian_alert,
                         playlist_title=title,
                         playlist_id=pid
                     )
