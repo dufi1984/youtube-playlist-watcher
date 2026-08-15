@@ -1,35 +1,31 @@
-=== Runner Execution Log at 2026-08-15T13:51:51.095735+00:00 ===
-[13:51:51] Starting runner with force_test=True (raw: 'true')
-[13:51:51] Processing playlist: Chillout (PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P)
-[13:51:53] ⚠️ Change detected in 'Chillout'!
-[13:51:53] Processing playlist: Fitness (PLEp1TbprxuxK5fOQ30gcabwid4nngT57-)
-[13:51:55] ⚠️ Change detected in 'Fitness'!
-[13:51:55] Processing playlist: Retro (PLEp1TbprxuxKNFlIHUXCnX48NGBtB2hOe)
-[13:51:59] ⚠️ Change detected in 'Retro'!
-[13:51:59] Processing playlist: Magyarok (PLEp1TbprxuxKKRbeARugb9IzPW0EYKPqy)
-[13:52:00] Processing playlist: Flight (PLEp1TbprxuxIGBHGZGdDA8X758qApkdHv)
-[13:52:01] Processing playlist: Music (PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq)
-[13:52:07] ⚠️ Change detected in 'Music'!
-[13:52:07] Processing playlist: Favorites (FLTzXZxtf2LfnbL16cxiwDrw)
-[13:52:13] ⚠️ Change detected in 'Favorites'!
-[13:52:13] Processing playlist: Best Progressive House (PLSRw4jWUUP6pEtzzSmXW1ZaxrunPU2SAb)
-[13:52:14] Processing playlist: Chill (PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8)
-[13:52:15] ⚠️ Change detected in 'Chill'!
-[13:52:16] Processing playlist: Chill vids (PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe)
-[13:52:16] ⚠️ Change detected in 'Chill vids'!
-[13:52:16] Processing playlist: Disco (PLSfXEqbVqKrnzqjQkyGBvj23Pzk740E7I)
-[13:52:17] Processing playlist: Music (PLSfXEqbVqKrl_eA0Ssg9WFP3N0hZ9G4vA)
-[13:52:19] ⚠️ Change detected in 'Music'!
-[13:52:19] Processing playlist: BS koncert (PL46850C6F5BF668FE)
-[13:52:19] Sending live combined email to gyusz83@gmail.com with 5 alert(s)...
-[13:52:19] Initiating send_combined_email to: 'gyusz83@gmail.com' (SMTP_USER configured: 'tamas.duffek@gmail.com', SMTP_SERVER: 'smtp.gmail.com:587')
-[13:52:19] Connecting to Gmail SMTP server smtp.gmail.com:587 for gyusz83@gmail.com...
-[13:52:21] ✅ Combined email successfully sent via Gmail SMTP to gyusz83@gmail.com!
-[13:52:21] Sending live combined email to tamas.duffek@gmail.com with 3 alert(s)...
-[13:52:21] Initiating send_combined_email to: 'tamas.duffek@gmail.com' (SMTP_USER configured: 'tamas.duffek@gmail.com', SMTP_SERVER: 'smtp.gmail.com:587')
-[13:52:21] Connecting to Gmail SMTP server smtp.gmail.com:587 for tamas.duffek@gmail.com...
-[13:52:22] ✅ Combined email successfully sent via Gmail SMTP to tamas.duffek@gmail.com!
-[13:52:22] Executing targeted test email to: 'tamas.duffek@gmail.com' for 'BS koncert'...
-[13:52:22] Initiating send_combined_email to: 'tamas.duffek@gmail.com' (SMTP_USER configured: 'tamas.duffek@gmail.com', SMTP_SERVER: 'smtp.gmail.com:587')
-[13:52:22] Connecting to Gmail SMTP server smtp.gmail.com:587 for tamas.duffek@gmail.com...
-[13:52:23] ✅ Combined email successfully sent via Gmail SMTP to tamas.duffek@gmail.com!
+=== Runner Execution Log at 2026-08-15T13:58:51.751960+00:00 ===
+[13:58:51] Starting runner with force_test=False (raw: 'false')
+[13:58:51] Processing playlist: Chillout (PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P)
+[13:58:53] ⚠️ Change detected in 'Chillout'!
+[13:58:53] Processing playlist: Fitness (PLEp1TbprxuxK5fOQ30gcabwid4nngT57-)
+[13:58:55] ⚠️ Change detected in 'Fitness'!
+[13:58:55] Processing playlist: Retro (PLEp1TbprxuxKNFlIHUXCnX48NGBtB2hOe)
+[13:59:00] ⚠️ Change detected in 'Retro'!
+[13:59:00] Processing playlist: Magyarok (PLEp1TbprxuxKKRbeARugb9IzPW0EYKPqy)
+[13:59:01] Processing playlist: Flight (PLEp1TbprxuxIGBHGZGdDA8X758qApkdHv)
+[13:59:02] Processing playlist: Music (PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq)
+[13:59:08] ⚠️ Change detected in 'Music'!
+[13:59:08] Processing playlist: Favorites (FLTzXZxtf2LfnbL16cxiwDrw)
+[13:59:14] ⚠️ Change detected in 'Favorites'!
+[13:59:14] Processing playlist: Best Progressive House (PLSRw4jWUUP6pEtzzSmXW1ZaxrunPU2SAb)
+[13:59:15] Processing playlist: Chill (PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8)
+[13:59:16] ⚠️ Change detected in 'Chill'!
+[13:59:16] Processing playlist: Chill vids (PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe)
+[13:59:17] ⚠️ Change detected in 'Chill vids'!
+[13:59:17] Processing playlist: Disco (PLSfXEqbVqKrnzqjQkyGBvj23Pzk740E7I)
+[13:59:18] Processing playlist: Music (PLSfXEqbVqKrl_eA0Ssg9WFP3N0hZ9G4vA)
+[13:59:20] ⚠️ Change detected in 'Music'!
+[13:59:20] Processing playlist: BS koncert (PL46850C6F5BF668FE)
+[13:59:21] Sending live combined email to gyusz83@gmail.com with 5 alert(s)...
+[13:59:21] Initiating send_combined_email to: 'gyusz83@gmail.com' (SMTP_USER configured: 'tamas.duffek@gmail.com', SMTP_SERVER: 'smtp.gmail.com:587')
+[13:59:21] Connecting to Gmail SMTP server smtp.gmail.com:587 for gyusz83@gmail.com...
+[13:59:23] ✅ Combined email successfully sent via Gmail SMTP to gyusz83@gmail.com!
+[13:59:23] Sending live combined email to tamas.duffek@gmail.com with 3 alert(s)...
+[13:59:23] Initiating send_combined_email to: 'tamas.duffek@gmail.com' (SMTP_USER configured: 'tamas.duffek@gmail.com', SMTP_SERVER: 'smtp.gmail.com:587')
+[13:59:23] Connecting to Gmail SMTP server smtp.gmail.com:587 for tamas.duffek@gmail.com...
+[13:59:24] ✅ Combined email successfully sent via Gmail SMTP to tamas.duffek@gmail.com!
