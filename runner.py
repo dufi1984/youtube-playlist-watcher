@@ -287,12 +287,13 @@ def main():
 
     # 5. If force test mode is explicitly requested
     if force_test:
-        test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nPozíció a listán: 42."
         target_email = os.environ.get('TEST_EMAIL', '').strip()
         target_title = os.environ.get('TEST_TITLE', '').strip() or "BS koncert"
 
         if not target_email:
             target_email = "tamas.duffek@gmail.com"
+
+        test_msg = "Nincs változás"
 
         test_html = f"""
         <!DOCTYPE html>
@@ -300,7 +301,7 @@ def main():
         <head><meta charset="utf-8"></head>
         <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
             <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{target_title}</div>
-            <div>{test_msg.replace(chr(10), '<br>')}</div>
+            <div>{test_msg}</div>
         </body>
         </html>
         """
