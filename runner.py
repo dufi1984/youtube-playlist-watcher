@@ -20,7 +20,7 @@ def load_config():
     p_ids = [p.strip() for p in env_playlists.split(',') if p.strip()]
     return {
         "pin_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "playlists": [{"id": pid, "title": f"Playlist {pid[:6]}...", "emails": []} for pid in p_ids]
+        "playlists": [{"id": pid, "title": f"Playlist {pid[:6]}...", "emails": ["tamas.duffek@gmail.com"]} for pid in p_ids]
     }
 
 def run_command(cmd):
@@ -42,8 +42,7 @@ def build_minimal_email(title, body_text):
 
 def send_email_notification(to_emails, subject, text_content, playlist_title="YouTube playlist watcher", playlist_id=""):
     if not to_emails:
-        print("No target emails provided. Skipping email send.")
-        return False
+        to_emails = ["tamas.duffek@gmail.com"]
 
     html_content = build_minimal_email(playlist_title, text_content)
 
@@ -69,13 +68,14 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
                 },
                 timeout=15
             )
+            print(f"Resend response status: {resp.status_code}, body: {resp.text}")
             if resp.status_code in [200, 201]:
                 print(f"✅ Email successfully sent via Resend API to {to_emails}!")
                 return True
             else:
-                print(f"Resend API error: {resp.status_code} - {resp.text}")
+                print(f"❌ Resend API error: {resp.status_code} - {resp.text}")
         except Exception as e:
-            print(f"Exception calling Resend API: {e}")
+            print(f"❌ Exception calling Resend API: {e}")
 
     # 2. Option: SMTP Server fallback
     smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
@@ -101,10 +101,10 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
             print(f"✅ Direct SMTP email successfully sent to {to_emails}")
             return True
         except Exception as e:
-            print(f"Error sending SMTP email: {e}")
+            print(f"❌ Error sending SMTP email: {e}")
             return False
 
-    print(f"ℹ️ No email provider configured (set RESEND_API_KEY or SMTP_USER/SMTP_PASSWORD in Secrets).")
+    print(f"ℹ️ No email provider configured (set RESEND_API_KEY in GitHub Secrets).")
     return False
 
 def main():
@@ -129,6 +129,8 @@ def main():
         pid = item['id']
         title = item.get('title', pid)
         target_emails = item.get('emails', [])
+        if not target_emails:
+            target_emails = ["tamas.duffek@gmail.com"]
 
         print(f"\n==========================================")
         print(f"Processing playlist: {title} ({pid})")
@@ -156,15 +158,13 @@ def main():
         if has_changes:
             print(f"⚠️ Changes detected in playlist '{title}'!")
             all_changes.append(f"{title}\n{out}\n{'-'*40}")
-            
-            if target_emails:
-                send_email_notification(
-                    target_emails,
-                    'YouTube playlist watcher',
-                    out,
-                    playlist_title=title,
-                    playlist_id=pid
-                )
+            send_email_notification(
+                target_emails,
+                'YouTube playlist watcher',
+                out,
+                playlist_title=title,
+                playlist_id=pid
+            )
 
         # 3. Purge old dumps
         run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
@@ -176,16 +176,17 @@ def main():
         all_changes.append(f"Teszt\n{test_msg}")
         for item in playlists:
             target_emails = item.get('emails', [])
-            title = item.get('title', 'Saját lista')
+            if not target_emails:
+                target_emails = ["tamas.duffek@gmail.com"]
+            title = item.get('title', 'Saját teszt lista')
             pid = item.get('id', '')
-            if target_emails:
-                send_email_notification(
-                    target_emails,
-                    'YouTube playlist watcher',
-                    test_msg,
-                    playlist_title=title,
-                    playlist_id=pid
-                )
+            send_email_notification(
+                target_emails,
+                'YouTube playlist watcher',
+                test_msg,
+                playlist_title=title,
+                playlist_id=pid
+            )
 
     # Save latest status summary for Web UI
     with open(STATUS_FILE, 'w', encoding='utf-8') as f:
