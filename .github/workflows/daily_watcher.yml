@@ -1,9 +1,9 @@
-name: YouTube Playlist Watcher Daily Check
+name: YouTube Playlist Watcher Hourly Check
 
 on:
   schedule:
-    # Runs automatically every day at midnight (UTC)
-    - cron: '0 0 * * *'
+    # Runs hourly every day from 07:00 to 20:00 Hungarian time (05:00-18:00 UTC)
+    - cron: '0 5-18 * * *'
   # Allows manual trigger with optional test notification check
   workflow_dispatch:
     inputs:
