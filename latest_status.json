@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-08-15 13:08:10 UTC",
+  "last_run": "2026-08-15 13:08:40 UTC",
   "results": [
     {
       "id": "PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P",
       "title": "Chillout",
       "has_changes": true,
-      "report": "<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 46.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 98.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 100.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 90.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 85.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 31.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 79.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 21.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 77.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 82.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 99.\n\n<b>Blokkolt videó</b>\nChicane - Behind The Sun [Full Album]"
+      "report": "<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 21.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 90.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 85.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 98.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 46.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 79.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 31.\n\n<b>Privát videó</b>\nNOT_FOUND\nPozíció a listán: 100.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 77.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 82.\n\n<b>Törölt videó</b>\nNOT_FOUND\nPozíció a listán: 99.\n\n<b>Blokkolt videó</b>\nChicane - Behind The Sun [Full Album]"
     },
     {
       "id": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
@@ -22,6 +22,18 @@
     {
       "id": "PLEp1TbprxuxKKRbeARugb9IzPW0EYKPqy",
       "title": "Magyarok",
+      "has_changes": false,
+      "report": "Minden videó elérhető és változatlan."
+    },
+    {
+      "id": "PLEp1TbprxuxIGBHGZGdDA8X758qApkdHv",
+      "title": "Flight",
+      "has_changes": false,
+      "report": "Minden videó elérhető és változatlan."
+    },
+    {
+      "id": "PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq",
+      "title": "Music",
       "has_changes": false,
       "report": "Minden videó elérhető és változatlan."
     }
