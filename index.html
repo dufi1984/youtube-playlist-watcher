@@ -415,7 +415,7 @@
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Értesítendő e-mail cím:</label>
-                    <input type="email" id="newPlaylistEmail" class="form-control" placeholder="">
+                    <input type="email" id="newPlaylistEmail" class="form-control" placeholder="" oninput="validateAddForm()">
                 </div>
             </div>
 
@@ -586,6 +586,22 @@ Nincs még jelentési adat.
             return "";
         }
 
+        function validateAddForm() {
+            const rawUrl = document.getElementById('newPlaylistUrl').value.trim();
+            const email = document.getElementById('newPlaylistEmail').value.trim();
+            const addBtn = document.getElementById('addPlaylistBtn');
+
+            const isSingleVideo = (rawUrl.includes('watch?v=') || rawUrl.includes('youtu.be/') || rawUrl.includes('youtube.com/shorts/')) && !rawUrl.includes('list=');
+            const pid = extractPlaylistId(rawUrl);
+            const isEmailValid = email.length > 0 && email.includes('@');
+
+            if (pid && !isSingleVideo && isEmailValid) {
+                addBtn.disabled = false;
+            } else {
+                addBtn.disabled = true;
+            }
+        }
+
         async function autoFetchPlaylistTitle() {
             const rawUrl = document.getElementById('newPlaylistUrl').value.trim();
             const feedbackEl = document.getElementById('urlValidationFeedback');
@@ -595,7 +611,7 @@ Nincs még jelentési adat.
             if (!rawUrl) {
                 feedbackEl.className = "mt-1 d-none";
                 feedbackEl.innerHTML = "";
-                addBtn.disabled = true;
+                validateAddForm();
                 return;
             }
 
@@ -604,7 +620,7 @@ Nincs még jelentési adat.
             if (isSingleVideo) {
                 feedbackEl.className = "mt-1 d-block text-warning";
                 feedbackEl.innerHTML = '<i class="bi bi-exclamation-triangle-fill me-1"></i> Ez egy sima videó link, nem lejátszási lista. Kérjük, másolj be egy lejátszási lista (playlist) linket!';
-                addBtn.disabled = true;
+                validateAddForm();
                 return;
             }
 
@@ -612,7 +628,7 @@ Nincs még jelentési adat.
             if (!pid) {
                 feedbackEl.className = "mt-1 d-block text-danger";
                 feedbackEl.innerHTML = '<i class="bi bi-x-circle-fill me-1"></i> Nem található lejátszási lista azonosító a linkben.';
-                addBtn.disabled = true;
+                validateAddForm();
                 return;
             }
 
@@ -629,13 +645,13 @@ Nincs még jelentési adat.
                         feedbackEl.className = "mt-1 d-block";
                         feedbackEl.style.color = "var(--action)";
                         feedbackEl.innerHTML = `<i class="bi bi-check-circle-fill me-1"></i> Lejátszási lista azonosítva: "<strong>${fetchedTitle}</strong>"`;
-                        addBtn.disabled = false;
+                        validateAddForm();
                         return;
                     } else {
                         // Empty items means private playlist or invalid
                         feedbackEl.className = "mt-1 d-block text-warning";
                         feedbackEl.innerHTML = '<i class="bi bi-lock-fill me-1"></i> A lista privát vagy nem található. Kérjük, győződj meg róla, hogy a lista „Nem listázott” (Unlisted) vagy „Nyilvános” állapotú a YouTube-on!';
-                        addBtn.disabled = false;
+                        validateAddForm();
                         return;
                     }
                 }
@@ -645,7 +661,7 @@ Nincs még jelentési adat.
 
             feedbackEl.className = "mt-1 d-block text-muted";
             feedbackEl.innerText = `Playlist ID: ${pid}`;
-            addBtn.disabled = false;
+            validateAddForm();
         }
 
         async function syncAndRunWorkflow() {
@@ -771,9 +787,14 @@ Nincs még jelentési adat.
         }
 
         async function addPlaylist() {
-            const rawUrl = document.getElementById('newPlaylistUrl').value;
-            let title = document.getElementById('newPlaylistTitle').value;
-            const email = document.getElementById('newPlaylistEmail').value || "tamas.duffek@gmail.com";
+            const rawUrl = document.getElementById('newPlaylistUrl').value.trim();
+            let title = document.getElementById('newPlaylistTitle').value.trim();
+            const email = document.getElementById('newPlaylistEmail').value.trim();
+
+            if (!email || !email.includes('@')) {
+                alert("Kérjük, add meg az értesítendő e-mail címet!");
+                return;
+            }
 
             const pid = extractPlaylistId(rawUrl);
             if (!pid) {
@@ -809,6 +830,8 @@ Nincs még jelentési adat.
             document.getElementById('newPlaylistUrl').value = "";
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
+            document.getElementById('urlValidationFeedback').className = "mt-1 d-none";
+            document.getElementById('addPlaylistBtn').disabled = true;
 
             // Auto-sync & trigger workflow in background
             if (localStorage.getItem('yt_watcher_gh_token')) {
