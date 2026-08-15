@@ -8,9 +8,9 @@ on:
   workflow_dispatch:
     inputs:
       send_test_notification:
-        description: 'Send test notification (GitHub Issue)'
+        description: 'Send test notification email (FORCE TEST ALERT)'
         type: boolean
-        default: false
+        default: true
 
 permissions:
   contents: write
@@ -35,13 +35,6 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Send test notification if requested
-      if: ${{ inputs.send_test_notification }}
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        gh issue create --title "🧪 Teszt Értesítés - YouTube Playlist Watcher" --body "Ez egy teszt értesítés! Ha ezt az értesítést megkaptad e-mailben (vagy mobil push értesítésként a GitHub appban), az azt jelenti, hogy az értesítési rendszer 100%-ban működik."
-
     - name: Run multi-playlist watcher runner
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
@@ -50,18 +43,19 @@ jobs:
         SMTP_PORT: ${{ secrets.SMTP_PORT }}
         SMTP_USER: ${{ secrets.SMTP_USER }}
         SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        FORCE_TEST_ALERT: ${{ inputs.send_test_notification }}
       run: |
         python runner.py
 
-    - name: Create GitHub Issue notification on change
+    - name: Create GitHub Issue notification on change or test
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        if [ -s changes_report.txt ] && grep -q "Changes detected" changes_report.txt; then
-          echo "Changes detected! Creating a GitHub Issue for notification..."
-          gh issue create --title "⚠️ YouTube Playlist Változás Értesítő" --body-file changes_report.txt
+        if [ -s changes_report.txt ]; then
+          echo "Changes or test report detected! Creating a GitHub Issue for email notification..."
+          gh issue create --title "⚠️ YouTube Playlist Értesítő / Teszt" --body-file changes_report.txt
         else
-          echo "No playlist changes detected."
+          echo "No playlist changes detected and test not requested."
         fi
 
     - name: Commit and push changes back to repository
