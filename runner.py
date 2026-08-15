@@ -36,7 +36,6 @@ def load_config(api_key=""):
         except Exception as e:
             print(f"Error reading {CONFIG_FILE}: {e}")
     
-    # Also merge any playlists from PLAYLIST_ID secret/env
     env_playlists = os.environ.get('PLAYLIST_ID', '')
     p_ids = [p.strip() for p in env_playlists.split(',') if p.strip()]
     
@@ -62,34 +61,12 @@ def run_command(cmd):
     result = subprocess.run(cmd, capture_output=True, text=True, shell=True)
     return result.returncode, result.stdout, result.stderr
 
-def build_minimal_email(title, body_text):
-    formatted_body = body_text.replace("\n", "<br>")
-    return f"""
-    <!DOCTYPE html>
-    <html>
-    <head><meta charset="utf-8"></head>
-    <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
-        <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{title}</div>
-        <div>{formatted_body}</div>
-    </body>
-    </html>
-    """
-
-def send_email_notification(to_emails, subject, text_content, playlist_title="YouTube playlist watcher", playlist_id=""):
-    if not to_emails:
-        to_emails = ["tamas.duffek@gmail.com"]
-
-    if isinstance(to_emails, str):
-        to_emails = [to_emails]
-
-    html_content = build_minimal_email(playlist_title, text_content)
-
+def send_combined_email(recipient_email, subject, html_content, plain_content):
     resend_key = os.environ.get('RESEND_API_KEY', '').strip()
     from_email = os.environ.get('FROM_EMAIL', 'YouTube watcher <onboarding@resend.dev>').strip() or 'YouTube watcher <onboarding@resend.dev>'
 
-    print(f"Resend Key configured: {'YES' if resend_key else 'NO'}")
     if resend_key:
-        print(f"Sending email via Resend API to {to_emails} from '{from_email}'...")
+        print(f"Sending combined email via Resend API to {recipient_email} from '{from_email}'...")
         try:
             resp = requests.post(
                 'https://api.resend.com/emails',
@@ -99,16 +76,16 @@ def send_email_notification(to_emails, subject, text_content, playlist_title="Yo
                 },
                 json={
                     'from': from_email,
-                    'to': to_emails,
-                    'subject': 'YouTube playlist watcher',
+                    'to': [recipient_email],
+                    'subject': subject,
                     'html': html_content,
-                    'text': f"{playlist_title}\n\n{text_content}"
+                    'text': plain_content
                 },
                 timeout=15
             )
             print(f"Resend HTTP Status: {resp.status_code}, Body: {resp.text}")
             if resp.status_code in [200, 201]:
-                print(f"✅ Email successfully sent via Resend API to {to_emails}!")
+                print(f"✅ Combined email successfully sent via Resend to {recipient_email}!")
                 return True
             else:
                 print(f"❌ Resend API error: {resp.status_code} - {resp.text}")
@@ -178,6 +155,8 @@ def main():
     }
 
     all_changes = []
+    # Group alerts by recipient email: email -> list of (playlist_title, hungarian_alert)
+    pending_notifications_by_email = {}
 
     for item in playlists:
         pid = item['id']
@@ -213,34 +192,63 @@ def main():
                 if has_actual_alert:
                     print(f"⚠️ Értesítendő törlés/változás a '{title}' listában!")
                     all_changes.append(f"{title}\n{hungarian_alert}\n{'-'*40}")
-                    send_email_notification(
-                        target_emails,
-                        'YouTube playlist watcher',
-                        hungarian_alert,
-                        playlist_title=title,
-                        playlist_id=pid
-                    )
+                    for email in target_emails:
+                        email = email.strip()
+                        if email:
+                            if email not in pending_notifications_by_email:
+                                pending_notifications_by_email[email] = []
+                            pending_notifications_by_email[email].append((title, hungarian_alert))
 
                 # 3. Purge old dumps
                 run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
         else:
             print("YOUTUBE_API_KEY not set, skipping dump/compare.")
 
-    # Send clean test email if force_test is explicitly enabled
+    # 4. Dispatch exactly ONE combined email per recipient
+    for email, items in pending_notifications_by_email.items():
+        combined_html_blocks = []
+        combined_plain_blocks = []
+        for p_title, p_alert in items:
+            p_alert_html = p_alert.replace("\n", "<br>")
+            combined_html_blocks.append(f"""
+            <div style="margin-bottom: 20px;">
+                <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{p_title}</div>
+                <div>{p_alert_html}</div>
+            </div>
+            """)
+            combined_plain_blocks.append(f"{p_title}\n{p_alert}")
+
+        full_html = f"""
+        <!DOCTYPE html>
+        <html>
+        <head><meta charset="utf-8"></head>
+        <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
+            {"".join(combined_html_blocks)}
+        </body>
+        </html>
+        """
+        full_plain = "\n\n".join(combined_plain_blocks)
+
+        print(f"\n📧 Sending 1 combined email to {email} with {len(items)} playlist alert(s)...")
+        send_combined_email(email, 'YouTube playlist watcher', full_html, full_plain)
+
+    # If force test mode is explicitly requested
     if force_test:
         test_msg = "<b>Törölt videó</b>\nThe Cure - Burn 1994 HQ (The Crow)\nPozíció a listán: 42."
         dynamic_title = playlists[0].get('title', 'Saját lista') if playlists else "Saját lista"
-        dynamic_id = playlists[0].get('id', '') if playlists else ""
         dynamic_emails = playlists[0].get('emails', ["tamas.duffek@gmail.com"]) if playlists else ["tamas.duffek@gmail.com"]
-
-        print(f"\n--- Sending Test Email with dynamic title: '{dynamic_title}' ---")
-        send_email_notification(
-            dynamic_emails,
-            'YouTube playlist watcher',
-            test_msg,
-            playlist_title=dynamic_title,
-            playlist_id=dynamic_id
-        )
+        for email in dynamic_emails:
+            test_html = f"""
+            <!DOCTYPE html>
+            <html>
+            <head><meta charset="utf-8"></head>
+            <body style="font-family: Arial, sans-serif; color: #111827; line-height: 1.6; font-size: 15px; padding: 10px;">
+                <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">{dynamic_title}</div>
+                <div>{test_msg.replace(chr(10), '<br>')}</div>
+            </body>
+            </html>
+            """
+            send_combined_email(email, 'YouTube playlist watcher', test_html, f"{dynamic_title}\n{test_msg}")
 
     # Save latest status summary for Web UI
     with open(STATUS_FILE, 'w', encoding='utf-8') as f:
