@@ -38,8 +38,8 @@
         .pin-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(12px);
             z-index: 9999;
             display: flex;
             align-items: center;
@@ -53,11 +53,11 @@
     <div id="pinOverlay" class="pin-overlay">
         <div class="card p-4 shadow-lg text-center" style="max-width: 380px; width: 90%;">
             <div class="mb-3">
-                <i class="bi bi-shield-lock text-primary display-4"></i>
+                <i class="bi bi-shield-lock-fill text-primary display-4"></i>
             </div>
-            <h4>Biztonsági Belépés</h4>
+            <h4>Kriptográfiailag Védett Belépés</h4>
             <p class="text-muted small mb-3">Adj meg a PIN kódot a felület eléréséhez:</p>
-            <input type="password" id="pinInput" class="form-control text-center fs-4 mb-3" placeholder="••••" maxlength="8">
+            <input type="password" id="pinInput" class="form-control text-center fs-4 mb-3" placeholder="••••" maxlength="12" onkeyup="if(event.key==='Enter') checkPin()">
             <button class="btn btn-primary w-100 fw-bold" onclick="checkPin()">Belépés</button>
             <div id="pinError" class="text-danger small mt-2 d-none">Hibás PIN kód! Próbáld újra.</div>
         </div>
@@ -72,8 +72,11 @@
                 <small class="text-muted">Automatikus lejátszási lista változás-figyelő és mentő</small>
             </div>
             <div>
-                <button class="btn btn-outline-secondary btn-sm" onclick="location.reload()">
+                <button class="btn btn-outline-secondary btn-sm me-2" onclick="location.reload()">
                     <i class="bi bi-arrow-clockwise me-1"></i> Frissítés
+                </button>
+                <button class="btn btn-outline-warning btn-sm" onclick="openPinModal()">
+                    <i class="bi bi-key me-1"></i> PIN Módosítás
                 </button>
             </div>
         </div>
@@ -133,11 +136,41 @@ Nincs még jelentési adat.
         </div>
     </div>
 
+    <!-- PIN Change Modal -->
+    <div id="pinModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="card modal-content p-4">
+                <h5 class="modal-title mb-3"><i class="bi bi-key-fill text-warning me-2"></i>Új PIN Kód Beállítása</h5>
+                <p class="text-muted small">A megadott PIN kódból a rendszer egy vissafejthetetlen SHA-256 kriptográfiai hash-t képez.</p>
+                <div class="mb-3">
+                    <label class="form-label small">Új PIN Kód:</label>
+                    <input type="password" id="newPinInput" class="form-control" placeholder="••••">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small">Generált Titkos Hash:</label>
+                    <input type="text" id="generatedHash" class="form-control font-monospace small" readonly placeholder="Generált hash helye...">
+                </div>
+                <div class="d-flex justify-content-end gap-2">
+                    <button class="btn btn-secondary" onclick="closePinModal()">Mégse</button>
+                    <button class="btn btn-primary" onclick="generateAndSavePinHash()">Hash Generálása & Másolás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // SHA-256 hash of default PIN "1234"
         let currentConfig = {
-            pin_code: "1234",
+            pin_hash: "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
             playlists: []
         };
+
+        async function sha256(str) {
+            const buffer = new TextEncoder().encode(str);
+            const digest = await crypto.subtle.digest('SHA-256', buffer);
+            return Array.from(new Uint8Array(digest)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
 
         async function loadData() {
             try {
@@ -171,9 +204,12 @@ Nincs még jelentési adat.
             } catch (e) {}
         }
 
-        function checkPin() {
+        async function checkPin() {
             const input = document.getElementById('pinInput').value;
-            if (input === (currentConfig.pin_code || "1234")) {
+            const hashedInput = await sha256(input);
+            const targetHash = currentConfig.pin_hash || "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4";
+
+            if (hashedInput === targetHash) {
                 document.getElementById('pinOverlay').style.display = 'none';
             } else {
                 document.getElementById('pinError').classList.remove('d-none');
@@ -213,7 +249,7 @@ Nincs még jelentési adat.
             });
 
             renderTable();
-            alert(`A "${title}" lista hozzáadva! Ne felejtsd el elmenteni a módosítást.`);
+            alert(`A "${title}" lista hozzáadva!`);
             document.getElementById('newPlaylistUrl').value = "";
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
@@ -253,6 +289,30 @@ Nincs még jelentési adat.
                 `;
                 tbody.appendChild(tr);
             });
+        }
+
+        let pinModalObj = null;
+        function openPinModal() {
+            if (!pinModalObj) {
+                pinModalObj = new bootstrap.Modal(document.getElementById('pinModal'));
+            }
+            pinModalObj.show();
+        }
+        function closePinModal() {
+            if (pinModalObj) pinModalObj.hide();
+        }
+
+        async function generateAndSavePinHash() {
+            const newPin = document.getElementById('newPinInput').value;
+            if (!newPin) {
+                alert("Adj meg egy új PIN kódot!");
+                return;
+            }
+            const hash = await sha256(newPin);
+            document.getElementById('generatedHash').value = hash;
+            currentConfig.pin_hash = hash;
+            alert("Az új PIN kód kriptográfiai hash-je elkészült! Ezentúl az új PIN kódoddal tudsz belépni.");
+            closePinModal();
         }
 
         window.onload = loadData;
