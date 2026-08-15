@@ -171,8 +171,8 @@
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="fw-bold m-0 text-white"><i class="bi bi-list-check me-2 text-info"></i>Figyelt lejátszási listák</h5>
                 <div class="d-flex gap-2">
-                    <button class="btn btn-sm btn-primary" onclick="syncDirectToGitHub()">
-                        <i class="bi bi-cloud-upload me-1"></i> Mentés a felhőbe (GitHub szinkron)
+                    <button class="btn btn-sm btn-primary fw-bold" onclick="syncAndRunWorkflow()">
+                        <i class="bi bi-cloud-arrow-up-fill me-1"></i> Mentés a felhőbe & Azonnali ellenőrzés
                     </button>
                     <button class="btn btn-sm btn-outline-light" onclick="downloadConfigFile()">
                         <i class="bi bi-download me-1"></i> JSON letöltése
@@ -260,7 +260,7 @@ Nincs még jelentési adat.
             <div class="card modal-content p-4">
                 <h5 class="modal-title mb-3 text-white"><i class="bi bi-gear-fill text-primary me-2"></i>Admin beállítások</h5>
                 <p class="text-muted small">
-                    Ha megadod a GitHub Personal Access Token-edet (<code>repo</code> és <code>workflow</code> jogosultsággal), a weboldal <strong>automatikusan szinkronizálja az új listákat a felhőbe, és 1 kattintással indítja a teszteket</strong>!
+                    Ha megadod a GitHub Personal Access Token-edet (<code>repo</code> és <code>workflow</code> jogosultsággal), a weboldal <strong>automatikusan elvégzi a felhős mentést és a háttérbeli azonnali ellenőrzést</strong>!
                 </p>
                 <div class="mb-3">
                     <label class="form-label">GitHub Token:</label>
@@ -300,15 +300,15 @@ Nincs még jelentési adat.
             localStorage.setItem('yt_watcher_config', JSON.stringify(currentConfig));
         }
 
-        async function syncDirectToGitHub() {
+        async function syncAndRunWorkflow() {
             const ghToken = localStorage.getItem('yt_watcher_gh_token');
             if (!ghToken) {
                 openSettingsModal();
-                showToast("Kérjük, add meg a GitHub Tokenedet a felhős szinkronizáláshoz!", 'bg-warning');
+                showToast("Kérjük, egyszer add meg a GitHub Tokenedet az automatikus mentéshez!", 'bg-warning');
                 return;
             }
 
-            showToast("Szinkronizálás a GitHubbal...", 'bg-primary');
+            showToast("⏳ Felhős mentés és ellenőrzés indítása...", 'bg-primary');
             try {
                 // 1. Get current SHA of playlists_config.json
                 let sha = null;
@@ -320,9 +320,9 @@ Nincs még jelentési adat.
                     sha = data.sha;
                 }
 
-                // 2. Put updated JSON
+                // 2. Put updated JSON config to GitHub
                 const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(currentConfig, null, 2))));
-                const putResp = await fetch('https://api.github.com/repos/dufi1984/youtube-playlist-watcher/contents/playlists_config.json', {
+                await fetch('https://api.github.com/repos/dufi1984/youtube-playlist-watcher/contents/playlists_config.json', {
                     method: 'PUT',
                     headers: {
                         'Authorization': `Bearer ${ghToken}`,
@@ -336,14 +336,28 @@ Nincs még jelentési adat.
                     })
                 });
 
-                if (putResp.ok) {
-                    showToast("✅ Sikeresen elmentve a GitHub felhőbe!", 'bg-success');
+                // 3. Trigger GitHub Actions workflow in the background (Live check, no dummy test)
+                const runResp = await fetch('https://api.github.com/repos/dufi1984/youtube-playlist-watcher/actions/workflows/daily_watcher.yml/dispatches', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${ghToken}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ref: 'main',
+                        inputs: { send_test_notification: false }
+                    })
+                });
+
+                if (runResp.ok || runResp.status === 204) {
+                    showToast("✅ A beállítások elmentve és az ellenőrzés sikeresen elindult a háttérben!", 'bg-success');
                 } else {
-                    showToast("Hiba történt a felhős mentés során. Ellenőrizd a tokent!", 'bg-danger');
+                    showToast("✅ Beállítások elmentve! (A futtatáshoz ellenőrizd a workflow jogosultságot)", 'bg-info');
                 }
             } catch (e) {
                 console.error("Sync error", e);
-                showToast("Hálózati hiba a szinkronizáláskor.", 'bg-danger');
+                showToast("Hálózati hiba a mentés során.", 'bg-danger');
             }
         }
 
@@ -436,9 +450,9 @@ Nincs még jelentési adat.
             document.getElementById('newPlaylistTitle').value = "";
             document.getElementById('newPlaylistEmail').value = "";
 
-            // Auto-sync if token is configured
+            // Auto-sync & trigger workflow in background
             if (localStorage.getItem('yt_watcher_gh_token')) {
-                syncDirectToGitHub();
+                syncAndRunWorkflow();
             }
         }
 
@@ -450,7 +464,7 @@ Nincs még jelentési adat.
                 showToast("Lista törölve a figyelésből.", 'bg-warning');
 
                 if (localStorage.getItem('yt_watcher_gh_token')) {
-                    syncDirectToGitHub();
+                    syncAndRunWorkflow();
                 }
             }
         }
@@ -569,7 +583,7 @@ Nincs még jelentési adat.
             if (token) {
                 localStorage.setItem('yt_watcher_gh_token', token);
                 showToast("GitHub Token sikeresen elmentve a böngésződben!", 'bg-success');
-                syncDirectToGitHub();
+                syncAndRunWorkflow();
             } else {
                 localStorage.removeItem('yt_watcher_gh_token');
                 showToast("GitHub Token törölve.", 'bg-secondary');
