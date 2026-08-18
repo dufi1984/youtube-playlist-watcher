@@ -1413,7 +1413,7 @@
                 ]
             }
         },
-        "etag": "aaO_GWiMs4LFBLYoFgbJIfyTYko",
+        "etag": "biXruw7qIK6LLPgBoiPyEF_Ll9w",
         "id": "d8fCSOY6cR4",
         "kind": "youtube#video",
         "playlistItemId": "UExTZlhFcWJWcUtybnpxalFreUdCdmoyM1B6azc0MEU3SS4xMkVGQjNCMUM1N0RFNEUx",
@@ -1463,7 +1463,7 @@
             "embeddable": true,
             "license": "youtube",
             "madeForKids": false,
-            "privacyStatus": "unlisted",
+            "privacyStatus": "public",
             "publicStatsViewable": true,
             "uploadStatus": "processed"
         }
@@ -7562,8 +7562,8 @@
                 }
             },
             "title": "Derp",
-            "videoOwnerChannelId": "UCW_kpaE81HoubSV611k55HA",
-            "videoOwnerChannelTitle": "MAKJ - Topic"
+            "videoOwnerChannelId": "UC3dnpNWwAvBxGaN1RLRawtg",
+            "videoOwnerChannelTitle": "Bassjackers - Topic"
         },
         "status": {
             "embeddable": true,
