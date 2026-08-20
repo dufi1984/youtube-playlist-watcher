@@ -961,7 +961,7 @@
                 ]
             }
         },
-        "etag": "YfiDXOAMRhZfpC8yHYZ004o-mDA",
+        "etag": "hcCv4-SfLH1zpUGt1fP4tQUo8nw",
         "id": "82VhX6AS3t4",
         "kind": "youtube#video",
         "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS4yRjU0MzcwMkYwRkVDNDhC",
@@ -1011,7 +1011,7 @@
             "embeddable": true,
             "license": "youtube",
             "madeForKids": false,
-            "privacyStatus": "public",
+            "privacyStatus": "unlisted",
             "publicStatsViewable": true,
             "uploadStatus": "processed"
         }
