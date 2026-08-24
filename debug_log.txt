@@ -1,15 +1,20 @@
-=== Runner Execution Log at 2026-08-24T07:48:31.331174+00:00 ===
-[07:48:31] Starting runner with force_test=False (raw: '')
-[07:48:31] Processing playlist: Chillout (PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P)
-[07:48:33] Processing playlist: Fitness (PLEp1TbprxuxK5fOQ30gcabwid4nngT57-)
-[07:48:35] Processing playlist: Retro (PLEp1TbprxuxKNFlIHUXCnX48NGBtB2hOe)
-[07:48:38] Processing playlist: Magyarok (PLEp1TbprxuxKKRbeARugb9IzPW0EYKPqy)
-[07:48:39] Processing playlist: Flight (PLEp1TbprxuxIGBHGZGdDA8X758qApkdHv)
-[07:48:40] Processing playlist: Music (PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq)
-[07:48:45] Processing playlist: Favorites (FLTzXZxtf2LfnbL16cxiwDrw)
-[07:48:50] Processing playlist: Best Progressive House (PLSRw4jWUUP6pEtzzSmXW1ZaxrunPU2SAb)
-[07:48:51] Processing playlist: Chill (PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8)
-[07:48:53] Processing playlist: Chill vids (PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe)
-[07:48:54] Processing playlist: Disco (PLSfXEqbVqKrnzqjQkyGBvj23Pzk740E7I)
-[07:48:55] Processing playlist: Music (PLSfXEqbVqKrl_eA0Ssg9WFP3N0hZ9G4vA)
-[07:48:56] Processing playlist: BS koncert (PL46850C6F5BF668FE)
+=== Runner Execution Log at 2026-08-24T08:34:37.124912+00:00 ===
+[08:34:37] Starting runner with force_test=False (raw: '')
+[08:34:37] Processing playlist: Chillout (PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P)
+[08:34:38] ⚠️ Change detected in 'Chillout'!
+[08:34:39] Processing playlist: Fitness (PLEp1TbprxuxK5fOQ30gcabwid4nngT57-)
+[08:34:40] Processing playlist: Retro (PLEp1TbprxuxKNFlIHUXCnX48NGBtB2hOe)
+[08:34:43] Processing playlist: Magyarok (PLEp1TbprxuxKKRbeARugb9IzPW0EYKPqy)
+[08:34:44] Processing playlist: Flight (PLEp1TbprxuxIGBHGZGdDA8X758qApkdHv)
+[08:34:46] Processing playlist: Music (PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq)
+[08:34:51] Processing playlist: Favorites (FLTzXZxtf2LfnbL16cxiwDrw)
+[08:34:55] Processing playlist: Best Progressive House (PLSRw4jWUUP6pEtzzSmXW1ZaxrunPU2SAb)
+[08:34:56] Processing playlist: Chill (PLSfXEqbVqKrlZnCwypEnM7Aa4o15rknR8)
+[08:34:58] Processing playlist: Chill vids (PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe)
+[08:34:59] Processing playlist: Disco (PLSfXEqbVqKrnzqjQkyGBvj23Pzk740E7I)
+[08:35:00] Processing playlist: Music (PLSfXEqbVqKrl_eA0Ssg9WFP3N0hZ9G4vA)
+[08:35:01] Processing playlist: BS koncert (PL46850C6F5BF668FE)
+[08:35:02] Sending live combined email to gyusz83@gmail.com with 1 alert(s)...
+[08:35:02] Initiating send_combined_email to: 'gyusz83@gmail.com' (SMTP_USER configured: 'tamas.duffek@gmail.com', SMTP_SERVER: 'smtp.gmail.com:587')
+[08:35:02] Connecting to Gmail SMTP server smtp.gmail.com:587 for gyusz83@gmail.com...
+[08:35:04] ✅ Combined email successfully sent via Gmail SMTP to gyusz83@gmail.com!
