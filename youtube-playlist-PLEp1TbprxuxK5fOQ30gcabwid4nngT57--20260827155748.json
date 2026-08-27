@@ -45,6 +45,11 @@
                     "url": "https://i.ytimg.com/vi/6cv79n0tDlk/mqdefault.jpg",
                     "width": 320
                 },
+                "qhd": {
+                    "height": 1440,
+                    "url": "https://i.ytimg.com/vi/6cv79n0tDlk/qhddefault.jpg",
+                    "width": 2560
+                },
                 "standard": {
                     "height": 480,
                     "url": "https://i.ytimg.com/vi/6cv79n0tDlk/sddefault.jpg",
@@ -1370,6 +1375,11 @@
                     "url": "https://i.ytimg.com/vi/ET_hnPChkGw/default.jpg",
                     "width": 120
                 },
+                "fhd": {
+                    "height": 1080,
+                    "url": "https://i.ytimg.com/vi/ET_hnPChkGw/fhddefault.jpg",
+                    "width": 1920
+                },
                 "high": {
                     "height": 360,
                     "url": "https://i.ytimg.com/vi/ET_hnPChkGw/hqdefault.jpg",
@@ -1434,6 +1444,11 @@
                     "height": 90,
                     "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/default.jpg",
                     "width": 120
+                },
+                "fhd": {
+                    "height": 1080,
+                    "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/fhddefault.jpg",
+                    "width": 1920
                 },
                 "high": {
                     "height": 360,
