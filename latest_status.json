@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-28 00:43:28 UTC",
+  "last_run": "2026-08-28 16:58:33 UTC",
   "results": [
     {
       "id": "PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P",
@@ -34,14 +34,14 @@
     {
       "id": "PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq",
       "title": "Music",
-      "has_changes": false,
-      "report": "Minden videó elérhető és változatlan."
+      "has_changes": true,
+      "report": "<b>Törölt videó</b>\nAxwell /\\ Ingrosso - Something New (Lyric Video)\nPozíció a listán: 201."
     },
     {
       "id": "FLTzXZxtf2LfnbL16cxiwDrw",
       "title": "Favorites",
-      "has_changes": false,
-      "report": "Minden videó elérhető és változatlan."
+      "has_changes": true,
+      "report": "<b>Törölt videó</b>\nAxwell /\\ Ingrosso - Something New (Lyric Video)\nPozíció a listán: 160."
     },
     {
       "id": "PLSRw4jWUUP6pEtzzSmXW1ZaxrunPU2SAb",
