@@ -49,6 +49,11 @@
                     "height": 480,
                     "url": "https://i.ytimg.com/vi/kUa8nKWXkdI/sddefault.jpg",
                     "width": 640
+                },
+                "uhd": {
+                    "height": 2160,
+                    "url": "https://i.ytimg.com/vi/kUa8nKWXkdI/uhddefault.jpg",
+                    "width": 3840
                 }
             },
             "title": "Fresh Morning Vibes | Feel Good Chillout & Deep House Music 2026",
@@ -110,6 +115,11 @@
                     "url": "https://i.ytimg.com/vi/WPUHD_rumyc/mqdefault.jpg",
                     "width": 320
                 },
+                "qhd": {
+                    "height": 1440,
+                    "url": "https://i.ytimg.com/vi/WPUHD_rumyc/qhddefault.jpg",
+                    "width": 2560
+                },
                 "standard": {
                     "height": 480,
                     "url": "https://i.ytimg.com/vi/WPUHD_rumyc/sddefault.jpg",
@@ -159,6 +169,11 @@
                     "height": 90,
                     "url": "https://i.ytimg.com/vi/yYof2uTP1TM/default.jpg",
                     "width": 120
+                },
+                "fhd": {
+                    "height": 1080,
+                    "url": "https://i.ytimg.com/vi/yYof2uTP1TM/fhddefault.jpg",
+                    "width": 1920
                 },
                 "high": {
                     "height": 360,
