@@ -223,12 +223,12 @@ def main():
 
         if api_key:
             # 1. Dump current playlist state
-            code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" dump --youtube-api-key "{api_key}"')
+            code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" --backup-dir dumps dump --youtube-api-key "{api_key}"')
             if code != 0:
                 log_msg(f"Error dumping playlist {pid}: {err}")
             else:
                 # 2. Compare with previous dump
-                code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" compare SECOND_TO_LAST LATEST --alert-on DELETED,REMOVED,IS_PRIVATE')
+                code, out, err = run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" --backup-dir dumps compare SECOND_TO_LAST LATEST --alert-on DELETED,REMOVED,IS_PRIVATE')
                 
                 hungarian_alert = format_hungarian_alert(out) if out else ""
                 has_actual_alert = bool(hungarian_alert)
@@ -251,8 +251,8 @@ def main():
                                 pending_notifications_by_email[email] = []
                             pending_notifications_by_email[email].append((title, hungarian_alert))
 
-                # 3. Purge old dumps
-                run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" purge-dumps --keep-count 30')
+                # 3. Purge old dumps (keep last 5 per playlist)
+                run_command(f'python youtube_playlist_watcher.py --playlist-id "{pid}" --backup-dir dumps purge-dumps --keep-count 5')
         else:
             log_msg("YOUTUBE_API_KEY not set, skipping dump/compare.")
 

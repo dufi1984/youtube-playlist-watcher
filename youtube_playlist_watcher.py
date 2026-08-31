@@ -16,6 +16,7 @@ ISO8601_TIMESTAMP_FORMAT = '%Y%m%d%H%M%S'
 PLAYLIST_ITEMS_REQUEST_BATCH_SIZE = 50
 VIDEOS_DETAILS_REQUEST_BATCH_SIZE = 50
 THIS_SCRIPT_PARENT_DIR = os.path.dirname(os.path.realpath(__file__))
+DEFAULT_BACKUP_DIR = os.path.join(THIS_SCRIPT_PARENT_DIR, 'dumps')
 NO_DETAILS_AVAILABLE_KEY = 'no_details_available'
 
 def main(argv):
@@ -30,7 +31,7 @@ def parse_args(argv):
                                      fromfile_prefix_chars='@',
                                      formatter_class=ArgparseHelpFormatter)
     parser.add_argument('--playlist-id', required=True)
-    parser.add_argument('--backup-dir', default=THIS_SCRIPT_PARENT_DIR, help='folder where dumps are stored')
+    parser.add_argument('--backup-dir', default=DEFAULT_BACKUP_DIR, help='folder where dumps are stored')
     subparsers = parser.add_subparsers()
     compare_parser = subparsers.add_parser('compare', formatter_class=ArgparseHelpFormatter)
     compare_parser.set_defaults(exec_cmd=compare_command)
@@ -262,6 +263,7 @@ def _add_current_index(old_vid, new_vid):
 ### JSON Dumps management
 
 def dump_to_file(playlist, playlist_id, backup_dir):
+    os.makedirs(backup_dir, exist_ok=True)
     timestamp = time.strftime(ISO8601_TIMESTAMP_FORMAT, time.gmtime())
     filename = DUMP_FILENAME_TEMPLATE.format(playlist_id=playlist_id, timestamp=timestamp)
     filepath = os.path.join(backup_dir, filename)
