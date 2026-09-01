@@ -1485,23 +1485,13 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT3M35S",
-            "licensedContent": true,
-            "projection": "rectangular"
-        },
-        "etag": "1lS8GEJQpRWK-dp_sDMwFp85QXk",
-        "id": "6Ldkj-KmQao",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5FRUEzOUYxQTE4OEIyMTI3",
+        "etag": "F5hdZMKLqsS5JFDDXIJJufvppvI",
+        "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5FRUEzOUYxQTE4OEIyMTI3",
+        "kind": "youtube#playlistItem",
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
-            "description": "\ud83c\udfb6 DJ.ILHAM - DIGIDI DIGIDI (Lyrics)\n\ud83d\udd14 Subscribe and turn on notifications to stay updated with new uploads.\n\ud83d\udc4d\ud83c\udffd Please leave a like and appreciate all the support!\n\n\ud83d\udc47\ud83c\udffc Follow DJ.ILHAM\nhttps://www.youtube.com/@DJ.ILHAM-AU\n\nFor business inquiries, music submissions or video takedowns please contact\u25b8vibesonlysubmissions@gmail.com",
+            "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
             "position": 13,
             "publishedAt": "2026-05-21T19:34:20Z",
@@ -1509,49 +1499,8 @@
                 "kind": "youtube#video",
                 "videoId": "6Ldkj-KmQao"
             },
-            "thumbnails": {
-                "default": {
-                    "height": 90,
-                    "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/default.jpg",
-                    "width": 120
-                },
-                "fhd": {
-                    "height": 1080,
-                    "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/fhddefault.jpg",
-                    "width": 1920
-                },
-                "high": {
-                    "height": 360,
-                    "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/hqdefault.jpg",
-                    "width": 480
-                },
-                "maxres": {
-                    "height": 720,
-                    "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/maxresdefault.jpg",
-                    "width": 1280
-                },
-                "medium": {
-                    "height": 180,
-                    "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/mqdefault.jpg",
-                    "width": 320
-                },
-                "standard": {
-                    "height": 480,
-                    "url": "https://i.ytimg.com/vi/6Ldkj-KmQao/sddefault.jpg",
-                    "width": 640
-                }
-            },
-            "title": "DIGIDI DIGIDI - DJ.ILHAM (Lyrics)",
-            "videoOwnerChannelId": "UCKI8WnM4EvHoKf9r5DVo7uw",
-            "videoOwnerChannelTitle": "VibesOnly"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
+            "thumbnails": {},
+            "title": "Deleted video"
         }
     },
     {
