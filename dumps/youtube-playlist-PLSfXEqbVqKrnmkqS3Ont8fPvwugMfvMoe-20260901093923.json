@@ -1,0 +1,1771 @@
+[
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT50M57S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "00MLNxaSumAHlGjwOKJcVzqDgIs",
+        "id": "J2BA1VBwaiM",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS45RTgxNDRBMzUwRjQ0MDhC",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Minimal Techno & Minimal House Mix 2021- Best Dark Monkeys #5 [Trippy Set] By Patrick Slayer\n\ud83d\udfe2 Spotify Playlist: https://linktr.ee/trippyspotifyplaylist\n\n\n\u26ab\ufe0f | Follow Dark Monkey Music\n\u2192 https://taplink.cc/darkmonkeymusic\n\n\ud83c\udfb5 | POPULAR YOUTUBE PLAYLISTS\n\u2192 https://linktr.ee/playlistyoutube\n\n\ud83d\udc55 | Dark Monkey merch: \n\u2192 http://bit.ly/darkmonkeymerch\n\n\u25cf Support (Join the channel): https://bit.ly/3kIHIAA\n(Loyalty badges next to your name in comments and live chat + custom emojis)\n\n\n\n\u26ab\ufe0f | Dark Monkey Music Owner by Trippy Code Records\n\n\ud83c\udf0e | Follow Trippy Code \n\u2192  https://linktr.ee/trippycodeofficial\n\n\ud83d\udc4d | Send Your Demo: \n\u2192 http://bit.ly/trippycodedemo\n\n\n\n\ud83c\udfba | RTTWLR\nhttps://www.facebook.com/officialrttwlr\nhttps://instagram.com/bencertt\n\n\ud83c\udfba | Patrick Slayer\nhttps://www.facebook.com/PatrickSlayer\n\n\n\nLabels:\nTrippy Code\nTake My Space\nTRIP & acid\nTRIP & dream\nTRIP & emotions\n\n! contact \u00bb http://bit.ly/contacttrippycode\n\n\n\n\u00a9 Dark Monkey Music. All rights reserved. [Trippy Code]\n\n\u00d7 Minimal Techno 2021\n\u00d7 Minimal 2021\n\u00d7 Techno 2021\n\u00d7 EDM Minimal 2021\n\u00d7 Minimal House 2021\n\u00d7 Dark Minimal\n\u00d7 Dark Techno 2021\n\u00d7 Psytrance 2021\n\u00d7 Prog trance 2021\n\u00d7 Progressive 2021\n\u00d7 Psychedelic 2021\n\u00d7 Minimal prog 2021\n\u00d7 Acid Techno 2021\n\u00d7 Minimal progressive 2021\n\u00d7 Coronita 2021\n\u00d7 Car Music 2021\n\u00d7 Bass Boosted 2021\n\n#darkmonkeymusic #trippycode #partymusic #chill",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 0,
+            "publishedAt": "2020-11-27T23:55:16Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "J2BA1VBwaiM"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/J2BA1VBwaiM/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/J2BA1VBwaiM/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/J2BA1VBwaiM/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/J2BA1VBwaiM/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/J2BA1VBwaiM/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Minimal Techno & Minimal House Mix 2021- Best Dark Monkeys #5 [Trippy Set] By Patrick Slayer",
+            "videoOwnerChannelId": "UCrcfRtdHb11YJEloTSaOYvw",
+            "videoOwnerChannelTitle": "Dark Monkey Music"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT1H17M30S",
+            "licensedContent": false,
+            "projection": "rectangular",
+            "regionRestriction": {
+                "blocked": [
+                    "AD",
+                    "AE",
+                    "AF",
+                    "AG",
+                    "AI",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AQ",
+                    "AR",
+                    "AS",
+                    "AT",
+                    "AU",
+                    "AW",
+                    "AX",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BL",
+                    "BM",
+                    "BN",
+                    "BO",
+                    "BQ",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BV",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CC",
+                    "CD",
+                    "CF",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CK",
+                    "CL",
+                    "CM",
+                    "CN",
+                    "CO",
+                    "CR",
+                    "CU",
+                    "CV",
+                    "CW",
+                    "CX",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "EH",
+                    "ER",
+                    "ES",
+                    "ET",
+                    "FI",
+                    "FJ",
+                    "FK",
+                    "FM",
+                    "FO",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GF",
+                    "GG",
+                    "GH",
+                    "GI",
+                    "GL",
+                    "GM",
+                    "GN",
+                    "GP",
+                    "GQ",
+                    "GR",
+                    "GS",
+                    "GT",
+                    "GU",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HM",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IM",
+                    "IN",
+                    "IO",
+                    "IQ",
+                    "IR",
+                    "IS",
+                    "IT",
+                    "JE",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KP",
+                    "KR",
+                    "KW",
+                    "KY",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MF",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MM",
+                    "MN",
+                    "MO",
+                    "MP",
+                    "MQ",
+                    "MR",
+                    "MS",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NC",
+                    "NE",
+                    "NF",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NU",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PF",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PM",
+                    "PN",
+                    "PR",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RE",
+                    "RO",
+                    "RS",
+                    "RU",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SD",
+                    "SE",
+                    "SG",
+                    "SH",
+                    "SI",
+                    "SJ",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SO",
+                    "SR",
+                    "SS",
+                    "ST",
+                    "SV",
+                    "SX",
+                    "SY",
+                    "SZ",
+                    "TC",
+                    "TD",
+                    "TF",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TK",
+                    "TL",
+                    "TM",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "UM",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VA",
+                    "VC",
+                    "VE",
+                    "VG",
+                    "VI",
+                    "VN",
+                    "VU",
+                    "WF",
+                    "WS",
+                    "YE",
+                    "YT",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ]
+            }
+        },
+        "etag": "wU5Hxdcooaqn5SesNiRJV7Q6gdA",
+        "id": "x6sunt9-Po8",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS41QTY1Q0UxMTVCODczNThE",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Tracklist:\n1.Boris Brejcha feat. Ann Clue - Roadtrip\n2.Boris Brejcha - Game Over \n3.Boris Brejcha - Purple Noise\n4.Boris Brejcha - Turn Over\n5.Boris Brejcha - Basilisk \n6.Boris Brejcha - Never Look Back \n7.Boris Brejcha - Night Owl  \n8.Boris Brejcha - Sad But True\n9.Boris Brejcha - Bleeding Heart\n10.Boris Brejcha - White Snake\n\nVideo: Cut episodes from Shaun the sheep:\n1 The Spider\n2.The big chase\n3.Championsheeps - Rings \n4.Helping Hound\n5.Hidden talents \n6.Babysitter bitzer \n7.Piano\n8.The genie\n9.The smelly farmer\n10.Men at Work\n11.Prickly Heat\n12.Dodgy Lodger \n13.Con qu\u1ea1 - Nh\u1eefng Ch\u00fa C\u1eebu Th\u00f4ng Minh\n14.Fleeced\n15.Film night\n16.Let's spray",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 1,
+            "publishedAt": "2020-08-18T22:18:33Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "x6sunt9-Po8"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/x6sunt9-Po8/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/x6sunt9-Po8/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/x6sunt9-Po8/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/x6sunt9-Po8/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/x6sunt9-Po8/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Boris Brejcha  (1 hour and 17 minutes my favorites) Vol. 2",
+            "videoOwnerChannelId": "UCM29lwn8XxdSoUPKHmAyY_Q",
+            "videoOwnerChannelTitle": "penny art"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": true,
+            "privacyStatus": "unlisted",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT1H6M41S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "5h8Gg__2n6fnL44sJ3pwq_ygPec",
+        "id": "jxpKbgHb37I",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS5EQUE1NTFDRjcwMDg0NEMz",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Boris Brejcha Style @ Art of Minimal Techno - Mad Tom by RTTWLR\n\ud83d\udfe2 Spotify Playlist: https://linktr.ee/trippyspotifyplaylist\n\n\n\u26ab\ufe0f Follow Art of Minimal Techno Trip\n\u2192 https://taplink.cc/artofminimaltechno\n\n\ud83c\udfb5 | POPULAR YOUTUBE PLAYLISTS\n\u2192 https://linktr.ee/playlistyoutube\n\n\ud83d\udc55 | Art of Minimal Techno Trip merch\n\u2192   http://bit.ly/artofminimal-merch\n\n\u25cf Support (Join the channel): \u2192 https://bit.ly/3nzK1YO\n(Loyalty badges next to your name in comments and live chat + custom emojis)\n\n\n\u26ab\ufe0f | Art of Minimal Techno Trip Owner by Trippy Code Records\n\n\ud83c\udf0e | Follow Trippy Code \n\u2192  https://linktr.ee/trippycodeofficial\n\n\ud83d\udc4d | Send Your Demo: \n\u2192 http://bit.ly/trippycodedemo\n\n\n\n\ud83c\udfba | RTTWLR\nhttps://www.facebook.com/officialrttwlr\n\n\nFull tracklist: https://www.patreon.com/posts/40520756\nTracklist: \n\nAdonis FR - Flying Turns\n\nCJ BORIKA - MeNoSleep\n\nFrancesco Bove - The past\n\nDigital Pulse - Impressum\n\nDigital Pulse & Laura Solar - The lights\n\nMarkus Volker - Sky breaker\n\nDigital Pulse-My Mind\n\nLeo Nanazzo - Curse\n\nY do I - eXotic\n\nY do I - Hyper String Theory\n\nPH0BIA x Vynek - Enough time  \n\nMarkus Volker - Kratos  \n\nDigital Pulse - Mirage \n\nDigital Pulse & Laura Solar - Its about go down \n\n\n\nLabels:\nTrippy Code\nTake My Space\nTRIP & acid\nTRIP & dream\nTRIP & emotions\n\n! contact \u00bb http://bit.ly/contacttrippycode\n\n\n\n\u00a9 Art of Minimal Techno Trip. All rights reserved. [Trippy Code]\n\n\u00d7 Melodic Techno 2021\n\u00d7 Minimal 2021\n\u00d7 Techno 2021\n\u00d7 Melodic House 2021\n\u00d7 Relax House 2021\n\u00d7 Progressive House 2021\n\u00d7 High Tech Minimal 2021\n\u00d7 Melodic 2021\n\u00d7 Deep House 2021\n\u00d7 Progressive 2021\n\u00d7 Dark Techno 2021\n\u00d7 Minimal Techno 2021\n\u00d7 Techno Minimal 2021\n\u00d7 Music for Study 2021\n\u00d7 Car Music 2021\n\u00d7 Chill 2021\n\u00d7 Electro\n\u00d7 Dub Techno\n\n#artofminimaltechno #trippycode #chill #techno #melodic #house #partymusic #music",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 2,
+            "publishedAt": "2020-08-16T20:54:15Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "jxpKbgHb37I"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/jxpKbgHb37I/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/jxpKbgHb37I/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/jxpKbgHb37I/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/jxpKbgHb37I/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/jxpKbgHb37I/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Boris Brejcha Style @ Art of Minimal Techno - Mad Tom by RTTWLR",
+            "videoOwnerChannelId": "UCDf6reK_hHcz0d7KWBhmPhA",
+            "videoOwnerChannelTitle": "Art of Electronic Trip"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT1H46M18S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "1yMdjOFsJylE9xIJXRJJUzvNvCA",
+        "id": "5Wa_CwRK9I4",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS41Mzk2QTAxMTkzNDk4MDhF",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Boris Brejcha & Art of Minimal Techno Favourites - Classic Cartoons by RTTWLR\n\ud83d\udd34\ud835\udc05\ud835\udc28\ud835\udc25\ud835\udc25\ud835\udc28\ud835\udc30 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11: https://linktr.ee/rttwlrmusic\n\ud83d\udfe2 \ud835\udc12\ud835\udc29\ud835\udc28\ud835\udc2d\ud835\udc22\ud835\udc1f\ud835\udc32 \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d: https://linktr.ee/trippyspotifyplaylist\n\n\n\u26ab\ufe0f Follow Art of Minimal Techno Trip\n\u2192 https://taplink.cc/artofminimaltechno\n\n\ud83c\udfb5 | POPULAR YOUTUBE PLAYLISTS\n\u2192 https://linktr.ee/playlistyoutube\n\n\ud83d\udc55 | Art of Minimal Techno Trip merch\n\u2192   http://bit.ly/artofminimal-merch\n\n\u25cf Support (Join the channel): \u2192 https://bit.ly/3nzK1YO\n(Loyalty badges next to your name in comments and live chat + custom emojis)\n\n\n\u26ab\ufe0f | Art of Minimal Techno Trip Owner by Trippy Code Records\n\n\ud83c\udf0e | Follow Trippy Code \n\u2192  https://linktr.ee/trippycodeofficial\n\n\ud835\udc12\ud835\udc1e\ud835\udc27\ud835\udc1d \ud835\udc32\ud835\udc28\ud835\udc2e\ud835\udc2b \ud835\udc1d\ud835\udc1e\ud835\udc26\ud835\udc28: https://www.ac1dgravity.com/send-demo\n\n\n\n\ud835\udc26\ud835\udc22\ud835\udc31\ud835\udc1e\ud835\udc1d \ud835\udc1b\ud835\udc32 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11 \n\ud835\udc42\ud835\udc64\ud835\udc5b\ud835\udc52\ud835\udc5f \ud835\udc4e\ud835\udc5b\ud835\udc51 \ud835\udc39\ud835\udc5c\ud835\udc62\ud835\udc5b\ud835\udc51\ud835\udc52\ud835\udc5f: \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d\ud835\udc5d\ud835\udc66 \ud835\udc36\ud835\udc5c\ud835\udc51\ud835\udc52, \ud835\udc34\ud835\udc5f\ud835\udc61 \ud835\udc5c\ud835\udc53 \ud835\udc40\ud835\udc56\ud835\udc5b\ud835\udc56\ud835\udc5a\ud835\udc4e\ud835\udc59 \ud835\udc47\ud835\udc52\ud835\udc50\u210e\ud835\udc5b\ud835\udc5c \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d, \ud835\udc37\ud835\udc4e\ud835\udc5f\ud835\udc58 \ud835\udc40\ud835\udc5c\ud835\udc5b\ud835\udc58\ud835\udc52\ud835\udc66 \ud835\udc40\ud835\udc62\ud835\udc60\ud835\udc56\ud835\udc50\nAll in One: https://linktr.ee/rttwlrmusic\nDiscord server: https://discord.gg/69nwEGnhXZ\nFacebook Group: https://www.facebook.com/groups/1234026496613956\nFacebook Page: https://www.facebook.com/officialrttwlr\nInstagram: https://www.instagram.com/rttwlrmusicq\nTiktok: https://www.tiktok.com/@rttwlr28\nSpotify playlist: https://linktr.ee/rttwlrspotify\n\n\ntracklist:\nBoris Brejcha - Dark Planet\nAnn Clue - Aerator\nBoris Brejcha - Applepaw\nVAND3ST - Breakout\nMr Phoenix - Karma\nBoris Brejcha - Push It\nT-ARIQ - LIFE GLITCH \nBoris Brejcha - Purple Noise\nBoris Brejcha - Anthurie\nAston Alba - Northwood\nAnn Clue - No Name \nAnn Clue & Boris Brejcha - Young And Stupid (Theydream Remix)\nBoris Brejcha - Das Ende der Welt\nBoris Brejcha - Mace\nkatze - Eko\nBoris Brejcha - It Start\u00b4s\nBoris Brejcha - Sandmann\nNew Horizons - Deniz Bul\nBoris Brejcha - Rock That Shit\nSAW - Alex Stein, Boris Brejcha, Victor Ruiz\nDeniz Bul - Killing You Softly\nBoris Brejcha & Deniz Bul - R U FCKNG SERIOUS (Remix Ann Clue) \nBoris Brejcha - You Make Me Sick\nDeniz Bul - This Is It\nGabs - Narcoleptic (Hannes Rasmus Remix)\nHashtag - Boris Brejcha\nAllen Dyer & Iron - Ergasm\nLuca Kallweit - Travel\n\n\n\nLabels:\nTrippy Code\nTake My Space\nTRIP & acid\nTRIP & dream\nTRIP & emotions\n\n! contact \u00bb http://bit.ly/contacttrippycode\n\n\n\n\u00a9 Art of Minimal Techno Trip. All rights reserved. [Trippy Code]\n\n\u00d7 Melodic Techno 2021\n\u00d7 Minimal 2021\n\u00d7 Techno 2021\n\u00d7 Melodic House 2021\n\u00d7 Relax House 2021\n\u00d7 Progressive House 2021\n\u00d7 High Tech Minimal 2021\n\u00d7 Melodic 2021\n\u00d7 Deep House 2021\n\u00d7 Progressive 2021\n\u00d7 Dark Techno 2021\n\u00d7 Minimal Techno 2021\n\u00d7 Techno Minimal 2021\n\u00d7 Music for Study 2021\n\u00d7 Car Music 2021\n\u00d7 Chill 2021\n\u00d7 Electro\n\u00d7 Dub Techno\n\n#artofminimaltechno #trippycode #chill #techno #melodic #house #partymusic #music",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 3,
+            "publishedAt": "2020-08-13T20:47:13Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "5Wa_CwRK9I4"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/5Wa_CwRK9I4/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/5Wa_CwRK9I4/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/5Wa_CwRK9I4/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/5Wa_CwRK9I4/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/5Wa_CwRK9I4/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Boris Brejcha & Art of Minimal Techno Favourites - Classic Cartoon High Trip by RTTWLR",
+            "videoOwnerChannelId": "UCDf6reK_hHcz0d7KWBhmPhA",
+            "videoOwnerChannelTitle": "Art of Electronic Trip"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT7M31S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "6fhhNRye2Em2RZ78yNF_UN8OO4E",
+        "id": "wRYNfaJ3v14",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS4zMDg5MkQ5MEVDMEM1NTg2",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Acid Resurrection EP\u00a0\nby\u00a0Teik Ar\u00f4 (\u30a2\u30ed)\n\nResonance on Facebook - https://www.facebook.com/ResonanceTechno9d4\nResonance on Instagram - https://www.instagram.com/resonancetcbx\n\n\nI hope you enjoy this video.  This has been uploaded for promotional purposes - I'll always try and include buy links where available, so if you like the track, show your support.  Please get in touch if you have any questions or concerns - ResonanceTechno9d4@gmail.com\n\nIf you like the channel, help keep the uploads coming - consider sending a donation to: \n\nhttps://paypal.me/hctbx?country.x=GB&locale.x=en_GB",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 4,
+            "publishedAt": "2020-07-02T18:44:23Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "wRYNfaJ3v14"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/wRYNfaJ3v14/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/wRYNfaJ3v14/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/wRYNfaJ3v14/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/wRYNfaJ3v14/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/wRYNfaJ3v14/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Teik Ar\u00f4 - Acid Resurrection Pt 2 (#Acid #Techno)",
+            "videoOwnerChannelId": "UC1fb5u5dZ5oeofSpEWNQvkQ",
+            "videoOwnerChannelTitle": "Resonance Techno"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT48M51S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "rXSFZ2L9fg7HcnIOD5MFNk8wRJE",
+        "id": "WddpRmmAYkg",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS5EMEEwRUY5M0RDRTU3NDJC",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Boris Brejcha Style @ Art of Minimal Techno Cartoon Tripping - The Mad Doctor by RTTWLR\n\ud83d\udd34\ud835\udc05\ud835\udc28\ud835\udc25\ud835\udc25\ud835\udc28\ud835\udc30 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11: https://linktr.ee/rttwlrmusic\n\ud83d\udfe2 \ud835\udc12\ud835\udc29\ud835\udc28\ud835\udc2d\ud835\udc22\ud835\udc1f\ud835\udc32 \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d: https://linktr.ee/trippyspotifyplaylist\n\nIn this mix, you'll get to hear some of the best ART \ud835\udc7b\ud835\udc6c\ud835\udc6a\ud835\udc6f\ud835\udc75\ud835\udc76 genre of popular songs! Diverse playlist featuring the latest minimal techno, melodic techno, progressive house, techno, high tech minimal genre tracks and remixes. The channel regularly uploads new content featuring mixes, live sets, and releases from popular and emerging techno artists. Additionally, the channel provides a platform for up-and-coming producers to showcase their skills in the techno music scene. With a loyal following and a commitment to delivering the best techno content is the go-to channel for fans of the genre.\n\n\ud835\udc12\ud835\udc29\ud835\udc28\ud835\udc2d\ud835\udc22\ud835\udc1f\ud835\udc32 \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d \ud83d\udc49 https://linktr.ee/trippyspotifyplaylist\n\ud835\udc18\ud835\udc28\ud835\udc2e\ud835\udc2d\ud835\udc2e\ud835\udc1b\ud835\udc1e \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d \ud83d\udc49 https://linktr.ee/playlistyoutube\n\n\n\u25bd \ud835\uddd6\ud835\uddfc\ud835\uddfb\ud835\uddfb\ud835\uddf2\ud835\uddf0\ud835\ude01 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 \ud835\uddd4\ud835\uddff\ud835\ude01 \ud835\uddfc\ud835\uddf3 \ud835\udde0\ud835\uddf6\ud835\uddfb\ud835\uddf6\ud835\uddfa\ud835\uddee\ud835\uddf9 \ud835\udde7\ud835\uddf2\ud835\uddf0\ud835\uddf5\ud835\uddfb\ud835\uddfc \ud835\udde7\ud835\uddff\ud835\uddf6\ud835\uddfd (\ud835\uddef\ud835\ude06 \ud835\udde7\ud835\uddff\ud835\uddf6\ud835\uddfd\ud835\uddfd\ud835\ude06 \ud835\uddd6\ud835\uddfc\ud835\uddf1\ud835\uddf2 \ud835\udde5\ud835\uddf2\ud835\uddf0\ud835\uddfc\ud835\uddff\ud835\uddf1\ud835\ude00)\n\ud835\udc6d\ud835\udc90\ud835\udc8d\ud835\udc8d\ud835\udc90\ud835\udc98 \ud835\udc96\ud835\udc94   (Downloads, Playlist, Social Media, Merch, Support etc..): \nhttps://taplink.cc/artofminimaltechno\n\n\ud835\udc12\ud835\udc1e\ud835\udc27\ud835\udc1d \ud835\udc32\ud835\udc28\ud835\udc2e\ud835\udc2b \ud835\udc1d\ud835\udc1e\ud835\udc26\ud835\udc28: https://www.ac1dgravity.com/send-demo\n\n\ud835\udc26\ud835\udc22\ud835\udc31\ud835\udc1e\ud835\udc1d \ud835\udc1b\ud835\udc32 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11 \n\ud835\udc42\ud835\udc64\ud835\udc5b\ud835\udc52\ud835\udc5f \ud835\udc4e\ud835\udc5b\ud835\udc51 \ud835\udc39\ud835\udc5c\ud835\udc62\ud835\udc5b\ud835\udc51\ud835\udc52\ud835\udc5f: \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d\ud835\udc5d\ud835\udc66 \ud835\udc36\ud835\udc5c\ud835\udc51\ud835\udc52, \ud835\udc34\ud835\udc5f\ud835\udc61 \ud835\udc5c\ud835\udc53 \ud835\udc40\ud835\udc56\ud835\udc5b\ud835\udc56\ud835\udc5a\ud835\udc4e\ud835\udc59 \ud835\udc47\ud835\udc52\ud835\udc50\u210e\ud835\udc5b\ud835\udc5c \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d, \ud835\udc37\ud835\udc4e\ud835\udc5f\ud835\udc58 \ud835\udc40\ud835\udc5c\ud835\udc5b\ud835\udc58\ud835\udc52\ud835\udc66 \ud835\udc40\ud835\udc62\ud835\udc60\ud835\udc56\ud835\udc50\nAll in One: https://linktr.ee/rttwlrmusic\nDiscord server: https://discord.gg/69nwEGnhXZ\nFacebook Group: https://www.facebook.com/groups/1234026496613956\nFacebook Page: https://www.facebook.com/officialrttwlr\nInstagram: https://www.instagram.com/rttwlrmusicq\nTiktok: https://www.tiktok.com/@rttwlr28\nSpotify playlist: https://linktr.ee/rttwlrspotify\n\nTracklist:\n0:00 Boris Brejcha - Sad But True\n05:27 Boris Brejcha - EVERYBODY WANTS TO GO TO HEAVEN (Remix D-Nox & Beckers)\n08:47 Smilla - Play (Worakls Remix)\n13:50 Boris Brejcha - Take My Space\n17:50 Victor Ruiz, Alex Stein - Consciousness\n20:53 Boris Brejcha - Turn Over\n27:00 Boris Brejcha & Deniz Bul - Out Of Brain\n31:12 Boris Brejcha - Black Beauty\n34:35 Boris Brejcha - Lonely Planet\n39:36 Francesco Bove - The past\n44:05 Boris Brejcha - Night Owl\n50:08 prism. - factory\n\nFull set here: https://www.patreon.com/posts/boris-brejcha-of-23768155\n\n\ncontact us \ud83d\udc49 https://www.trippycode.com/contact\n____________________________________\n\n\u00a9 Art of Minimal Techno Trip. All rights reserved. [Trippy Code]\n\nmelodic techno, progressive house, melodic house, high tech minimal, minimal techno,techno mix,techno live mix,techno remix,techno music,live techno,techno tiktok songs,remix techno mix,techno songs tiktok,best mix techno,techno music mix,hard techno,dark techno mix,techno mix 2024,techno music 2024,techno 2024,dark techno playlist,techno songs 2024,techno remixes of popular songs,remix 2023, art of minimal techno\n\n#artofminimaltechno #trippycode #borisbrejcha #music #cartoon",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 5,
+            "publishedAt": "2020-06-14T21:09:22Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "WddpRmmAYkg"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/WddpRmmAYkg/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/WddpRmmAYkg/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/WddpRmmAYkg/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/WddpRmmAYkg/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/WddpRmmAYkg/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Boris Brejcha Style @ Art of Minimal Techno Cartoon Tripping - The Mad Doctor by RTTWLR",
+            "videoOwnerChannelId": "UCDf6reK_hHcz0d7KWBhmPhA",
+            "videoOwnerChannelTitle": "Art of Electronic Trip"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT1H49M43S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "TwJAYxxa9hCvaS5cEUgz-qXvJGs",
+        "id": "MagELQywiGI",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS5GNjNDRDREMDQxOThCMDQ2",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Newest trip to Andromeda galaxy. Enjoy the best psy tracks. May, 2018.\n\nVisuals made with Milkdrop 2, using my own configuration of presets.\n\nTracklist:\n~Egorythmia - Phenomena\n~~https://www.beatport.com/track/phenomena-original-mix/10432085\n\n~Lifeforms, Symbolic - One of a Kind\n~~https://www.beatport.com/track/one-of-a-kind-original-mix/10375469\n\n~Mad Maxx, Impulser - Fundamental Resonance\n~~https://www.beatport.com/track/fundamental-resonance-original-mix/10439727\n\n~Ghost Rider, Effective - Accession\n~~https://www.beatport.com/track/accession-original-mix/10405895\n\n~The Delta - Travelling at the speed of thought (Xerox & Dark Soho Remix)\n~~https://www.beatport.com/track/travelling-at-the-speed-of-thought-xerox-and-dark-soho-remix/10444836\n\n~Earthspace, Imagine Mars - Transcend\n~~https://www.beatport.com/track/transcend-original-mix/10276917\n\n~Man Machine - Flying High\n~~https://www.beatport.com/track/flying-high-original-mix/10442166\n\n~Cosmic Tone, Static Movement - Experiment\n~~https://www.beatport.com/track/experiment-original-mix/10408223\n\n~Pura Vida, AZAX - Rockstar DJ\n~~https://www.beatport.com/track/rockstar-dj-original-mix/10406208\n\n~Mr. Peculiar, Sonic Species - Unleash the Beat (Antinomy Remix)\n~~https://www.beatport.com/track/unleash-the-beat-antinomy-remix/10303553\n\n~Mindfold - The Departed\n~~https://www.beatport.com/track/the-departed-original-mix/10395816\n\n~Shadow Chronicles - G.AI.A\n~~https://www.beatport.com/track/g-ai-a-original-mix/10375170\n\n~Timmy Trumpet, Symphonic, Vini Vici - 100 (feat. Symphonic)\n~~https://www.beatport.com/track/100-feat-symphonic-extended-mix/10324579\n\n~Lifeforms, Symbolic- We Are Awakening\n~~https://www.beatport.com/track/we-are-awakening-original-mix/10375470\n\n~Astrix, Vini Vici - Adhana\n~~https://www.beatport.com/track/adhana-original-mix/10044638\n\n~Ticon - Tripticon (Vertex Remix)\n~~https://www.beatport.com/track/tripticon-vertex-remix/10409962\n\n~Shadow Chronicles - Another Earth\n~~https://www.beatport.com/track/another-earth-original/10392492\n\n~Ritmo, Animato - Blend\n~~https://www.beatport.com/track/blend-original-mix/10313764\n\n~Mekkanikka - Spirit Molecule\n~~https://www.beatport.com/track/spirit-molecule-original-mix/10414428\n\n~Volcano, Avalon, Imagine Mars - Molecules\n~~https://www.beatport.com/track/molecules-original-mix/10349512\n\n~Neelix, Ghost Rider, Caroline Harrison - The Sun\n~~https://www.beatport.com/track/the-sun-extended-mix/10328149\n\nThumbnail by sniggitysnags: https://flic.kr/p/6MGqi7",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 6,
+            "publishedAt": "2020-06-11T22:58:19Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "MagELQywiGI"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/MagELQywiGI/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/MagELQywiGI/hqdefault.jpg",
+                    "width": 480
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/MagELQywiGI/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/MagELQywiGI/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Andromeda 2018 [Psytrance] [HD] Trippy Visuals",
+            "videoOwnerChannelId": "UCZDtk6UR_mo8yoHSObyNqVQ",
+            "videoOwnerChannelTitle": "Proli"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT1H26M9S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "XYyRLaWVd38sVDOK5egBXAXpZuM",
+        "id": "EVFUZ8DwqFc",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS45NDk1REZENzhEMzU5MDQz",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Boris Brejcha Style @ Art of Minimal Techno Cartoon Tripping - The Ducktators by RTTWLR\n\ud83d\udd34\ud835\udc05\ud835\udc28\ud835\udc25\ud835\udc25\ud835\udc28\ud835\udc30 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11: https://linktr.ee/rttwlrmusic\n\ud83d\udfe2 \ud835\udc12\ud835\udc29\ud835\udc28\ud835\udc2d\ud835\udc22\ud835\udc1f\ud835\udc32 \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d: https://linktr.ee/trippyspotifyplaylist\n\nIn this mix, you'll get to hear some of the best ART \ud835\udc7b\ud835\udc6c\ud835\udc6a\ud835\udc6f\ud835\udc75\ud835\udc76 genre of popular songs! Diverse playlist featuring the latest minimal techno, melodic techno, progressive house, techno, high tech minimal genre tracks and remixes. The channel regularly uploads new content featuring mixes, live sets, and releases from popular and emerging techno artists. Additionally, the channel provides a platform for up-and-coming producers to showcase their skills in the techno music scene. With a loyal following and a commitment to delivering the best techno content is the go-to channel for fans of the genre.\n\n\ud835\udc12\ud835\udc29\ud835\udc28\ud835\udc2d\ud835\udc22\ud835\udc1f\ud835\udc32 \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d \ud83d\udc49 https://linktr.ee/trippyspotifyplaylist\n\ud835\udc18\ud835\udc28\ud835\udc2e\ud835\udc2d\ud835\udc2e\ud835\udc1b\ud835\udc1e \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d \ud83d\udc49 https://linktr.ee/playlistyoutube\n\n\u25bd \ud835\uddd6\ud835\uddfc\ud835\uddfb\ud835\uddfb\ud835\uddf2\ud835\uddf0\ud835\ude01 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 \ud835\uddd4\ud835\uddff\ud835\ude01 \ud835\uddfc\ud835\uddf3 \ud835\udde0\ud835\uddf6\ud835\uddfb\ud835\uddf6\ud835\uddfa\ud835\uddee\ud835\uddf9 \ud835\udde7\ud835\uddf2\ud835\uddf0\ud835\uddf5\ud835\uddfb\ud835\uddfc \ud835\udde7\ud835\uddff\ud835\uddf6\ud835\uddfd (\ud835\uddef\ud835\ude06 \ud835\udde7\ud835\uddff\ud835\uddf6\ud835\uddfd\ud835\uddfd\ud835\ude06 \ud835\uddd6\ud835\uddfc\ud835\uddf1\ud835\uddf2 \ud835\udde5\ud835\uddf2\ud835\uddf0\ud835\uddfc\ud835\uddff\ud835\uddf1\ud835\ude00)\n\ud835\udc6d\ud835\udc90\ud835\udc8d\ud835\udc8d\ud835\udc90\ud835\udc98 \ud835\udc96\ud835\udc94   (Downloads, Playlist, Social Media, Merch, Support etc..): \nhttps://taplink.cc/artofminimaltechno\n\n\ud835\udc7b\ud835\udc93\ud835\udc8a\ud835\udc91\ud835\udc91\ud835\udc9a \ud835\udc6a\ud835\udc90\ud835\udc85\ud835\udc86: https://linktr.ee/trippycodeofficial\n\ud835\udc7a\ud835\udc96\ud835\udc83\ud835\udc8e\ud835\udc8a\ud835\udc95 \ud835\udc9a\ud835\udc90\ud835\udc96\ud835\udc93 \ud835\udc6b\ud835\udc86\ud835\udc8e\ud835\udc90: https://www.trippycode.com/senddemo\n\n\ud835\udc26\ud835\udc22\ud835\udc31\ud835\udc1e\ud835\udc1d \ud835\udc1b\ud835\udc32 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11 \n\ud835\udc42\ud835\udc64\ud835\udc5b\ud835\udc52\ud835\udc5f \ud835\udc4e\ud835\udc5b\ud835\udc51 \ud835\udc39\ud835\udc5c\ud835\udc62\ud835\udc5b\ud835\udc51\ud835\udc52\ud835\udc5f: \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d\ud835\udc5d\ud835\udc66 \ud835\udc36\ud835\udc5c\ud835\udc51\ud835\udc52, \ud835\udc34\ud835\udc5f\ud835\udc61 \ud835\udc5c\ud835\udc53 \ud835\udc40\ud835\udc56\ud835\udc5b\ud835\udc56\ud835\udc5a\ud835\udc4e\ud835\udc59 \ud835\udc47\ud835\udc52\ud835\udc50\u210e\ud835\udc5b\ud835\udc5c \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d, \ud835\udc37\ud835\udc4e\ud835\udc5f\ud835\udc58 \ud835\udc40\ud835\udc5c\ud835\udc5b\ud835\udc58\ud835\udc52\ud835\udc66 \ud835\udc40\ud835\udc62\ud835\udc60\ud835\udc56\ud835\udc50\nAll in One: https://linktr.ee/rttwlrmusic\nDiscord server: https://discord.gg/69nwEGnhXZ\nFacebook Group: https://www.facebook.com/groups/1234026496613956\nFacebook Page: https://www.facebook.com/officialrttwlr\nInstagram: https://www.instagram.com/rttwlrmusicq\nTiktok: https://www.tiktok.com/@rttwlr28\nSpotify playlist: https://linktr.ee/rttwlrspotify\n\nTracklist:\nBoris Brejcha - Dont Fall Asleep\nBoris Brejcha - Be F.L.A.M.E.\nBoris Brejcha - Purple Noise\nBoris Brejcha - Inside Myself\nAlberth - Empusa\nAnn Clue & Boris Brejcha - Acid Attack\nFaberlique - Clouds (Roman Degree Remix)\nBoris Brejcha - S.P.A.C.E.\nDeniz Bul - Love Me Up\nTheydream - Zero Sum\nBoris Brejcha - Moondancer\nBoris Brejcha - Basilisk \nAnn Clue & Boris Brejcha - Roadtrip\nBoris Brejcha - Paniklevel\nBoris Brejcha - The Superblast\nBoris Brejcha - Take My Space \nBoris Brejcha - In Memory of Love\nBoris Brejcha - Tonight, Freak Out\nBoris Brejcha - I Am The Joker (Comah, MadMal & R3ckzet Bootleg)\n\ncontact us \ud83d\udc49 https://www.trippycode.com/contact\n____________________________________\n\n\u00a9 Art of Minimal Techno Trip. All rights reserved. [Trippy Code]\n\nmelodic techno, progressive house, melodic house, high tech minimal, minimal techno,techno mix,techno live mix,techno remix,techno music,live techno,techno tiktok songs,remix techno mix,techno songs tiktok,best mix techno,techno music mix,hard techno,dark techno mix,techno mix 2024,techno music 2024,techno 2024,dark techno playlist,techno songs 2024,techno remixes of popular songs,remix 2023, art of minimal techno\n\n#artofminimaltechno #trippycode #music",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 7,
+            "publishedAt": "2020-06-11T22:21:34Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "EVFUZ8DwqFc"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/EVFUZ8DwqFc/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/EVFUZ8DwqFc/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/EVFUZ8DwqFc/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/EVFUZ8DwqFc/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/EVFUZ8DwqFc/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Boris Brejcha Style @ Art of Minimal Techno Cartoon Tripping - The Ducktators by RTTWLR",
+            "videoOwnerChannelId": "UCDf6reK_hHcz0d7KWBhmPhA",
+            "videoOwnerChannelTitle": "Art of Electronic Trip"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT1H43M7S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "v0x2p0d1ld87_9YWhgdDxAMKsNw",
+        "id": "lgjY-lVtJZA",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS5DQUNERDQ2NkIzRUQxNTY1",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Boris Brejcha Style @ Art of Minimal Techno Tripping - Mystery Disney by RTTWLR\n\ud83d\udd34\ud835\udc05\ud835\udc28\ud835\udc25\ud835\udc25\ud835\udc28\ud835\udc30 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11: https://linktr.ee/rttwlrmusic\n\ud83d\udfe2 \ud835\udc12\ud835\udc29\ud835\udc28\ud835\udc2d\ud835\udc22\ud835\udc1f\ud835\udc32 \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d: https://linktr.ee/trippyspotifyplaylist\n\n\n\u26ab\ufe0f Follow Art of Minimal Techno Trip\n\u2192 https://taplink.cc/artofminimaltechno\n\n\ud83c\udfb5 | POPULAR YOUTUBE PLAYLISTS\n\u2192 https://linktr.ee/playlistyoutube\n\n\ud83d\udc55 | Art of Minimal Techno Trip merch\n\u2192   http://bit.ly/artofminimal-merch\n\n\u25cf Support (Join the channel): \u2192 https://bit.ly/3nzK1YO\n(Loyalty badges next to your name in comments and live chat + custom emojis)\n\n\n\u26ab\ufe0f | Art of Minimal Techno Trip Owner by Trippy Code Records\n\n\ud83c\udf0e | Follow Trippy Code \n\u2192  https://linktr.ee/trippycodeofficial\n\n\ud83d\udc4d | Send Your Demo: \n\u2192 http://bit.ly/trippycodedemo\n\n\n\n\ud835\udc26\ud835\udc22\ud835\udc31\ud835\udc1e\ud835\udc1d \ud835\udc1b\ud835\udc32 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11 \n\ud835\udc42\ud835\udc64\ud835\udc5b\ud835\udc52\ud835\udc5f \ud835\udc4e\ud835\udc5b\ud835\udc51 \ud835\udc39\ud835\udc5c\ud835\udc62\ud835\udc5b\ud835\udc51\ud835\udc52\ud835\udc5f: \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d\ud835\udc5d\ud835\udc66 \ud835\udc36\ud835\udc5c\ud835\udc51\ud835\udc52, \ud835\udc34\ud835\udc5f\ud835\udc61 \ud835\udc5c\ud835\udc53 \ud835\udc40\ud835\udc56\ud835\udc5b\ud835\udc56\ud835\udc5a\ud835\udc4e\ud835\udc59 \ud835\udc47\ud835\udc52\ud835\udc50\u210e\ud835\udc5b\ud835\udc5c \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d, \ud835\udc37\ud835\udc4e\ud835\udc5f\ud835\udc58 \ud835\udc40\ud835\udc5c\ud835\udc5b\ud835\udc58\ud835\udc52\ud835\udc66 \ud835\udc40\ud835\udc62\ud835\udc60\ud835\udc56\ud835\udc50\nAll in One: https://linktr.ee/rttwlrmusic\nDiscord server: https://discord.gg/69nwEGnhXZ\nFacebook Group: https://www.facebook.com/groups/1234026496613956\nFacebook Page: https://www.facebook.com/officialrttwlr\nInstagram: https://www.instagram.com/rttwlrmusicq\nTiktok: https://www.tiktok.com/@rttwlr28\nSpotify playlist: https://linktr.ee/rttwlrspotify\n\n\nTracklist:\n00:00 Boris Brejcha - Bounce It \n01:40 Boris Brejcha - Everybody Wants To Go To Heaven (Deniz Bul Remix)\n5:42 Juren Vu - Yearning \n10:40 Ann Clue - Conscious\n14:28 Deniz Bul - Take Off\n18:37 MartinStuff - In Live\n22:20 Boris Brejcha - Devil\n27:09 Boris Brejcha - Killing Me \n32:24 xanoMusik - caterpillar\n34:21 Ann Clue & Boris Brejcha - Young and Stupid (Niax remix)\n38:56 Boris Brejcha - It Start\u00b4s\n42:29 Boris Brejcha - Losing Control\n48:04 Enio Prod - Pain\n51:37 Enio Prod - I'm not like others\n53:42 Boris Brejcha - Schaltzentrale (Joker Remake)\n01:00:10 Deniz Bul - Awake\n01:04:00 Boris Brejcha - Pillenk\u00e4fer\n01:07:00 Third Person - Resurrection\n01:12:20 Boris Brejcha - Night Owl\n01:17:00 Boris Brejcha, Alex Stein, Victor Ruiz - SAW  \n01:21:00 Boris Brejcha - The Darkest Night\n01:24:00 Benttum - Renaissance\n01:27:10 BDCS - Silent Hunter\n01:28:50 Boris Brejcha - I Get No Sleep\n01:32:46 Vendex - Obscurus\ufeff\n\n\n\nLabels:\nTrippy Code\nTake My Space\nTRIP & acid\nTRIP & dream\nTRIP & emotions\n\n! contact \u00bb http://bit.ly/contacttrippycode\n\n\n\n\u00a9 Art of Minimal Techno Trip. All rights reserved. [Trippy Code]\n\n\u00d7 Melodic Techno 2021\n\u00d7 Minimal 2021\n\u00d7 Techno 2021\n\u00d7 Melodic House 2021\n\u00d7 Relax House 2021\n\u00d7 Progressive House 2021\n\u00d7 High Tech Minimal 2021\n\u00d7 Melodic 2021\n\u00d7 Deep House 2021\n\u00d7 Progressive 2021\n\u00d7 Dark Techno 2021\n\u00d7 Minimal Techno 2021\n\u00d7 Techno Minimal 2021\n\u00d7 Music for Study 2021\n\u00d7 Car Music 2021\n\u00d7 Chill 2021\n\u00d7 Electro\n\u00d7 Dub Techno\n\n#artofminimaltechno #trippycode #chill #techno #melodic #house #partymusic #music\n#borisbrejcha",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 8,
+            "publishedAt": "2020-06-04T23:22:18Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "lgjY-lVtJZA"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/lgjY-lVtJZA/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/lgjY-lVtJZA/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/lgjY-lVtJZA/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/lgjY-lVtJZA/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/lgjY-lVtJZA/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Boris Brejcha Style @ Art of Minimal Techno Cartoon Tripping - Mystery Disney by RTTWLR",
+            "videoOwnerChannelId": "UCDf6reK_hHcz0d7KWBhmPhA",
+            "videoOwnerChannelTitle": "Art of Electronic Trip"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT3H39M57S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "h0tc3Q_hzAHWnf6Bh2lg7n1u2v0",
+        "id": "1vZcaf71kQs",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS41MzJCQjBCNDIyRkJDN0VD",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "WARNING: This video may potentially trigger seizures for people with photosensitive epilepsy. For those it's recommended to turn off the video and enjoy the music only.\n\nIf you enjoyed this mix, please share it with your friends, leave a comment & subscribe my channel!\nIn case you had an amazing journey with it, feel free to support me via Patreon! \ud83d\ude09\nhttps://patreon.com/TobiasBassline\nTHANK YOU! \u2764\ufe0f\n\n*** Tracklist below! ***\n\nDescription:\nHere ist my third Progressive Psytrance Mix of 2014. \n\nFew days ago I had the idea to create this mix and like so often it's a REALLY special one and also a REALLY long one! :) \nIt's overall 3 HOURS and 40 MINUTES and contains 30 tracks, produced between 1993-2008, which means they cover 15 years of Psychedelic Trance music!\n\nThe concept behind this mix is simple: \n\nTHE MOST HYPNOTIC MELODIES OF THE UNIVERSE, CAREFULLY SELECTED AND PUT TOGETHER IN A SINGLE MIX!\n\nSo it comes that this mix contains MOST OF MY ABSOLUTE ETERNAL HALL OF FAME FAVORITE TRACKS!!! \nMore than the half tracklist belongs them!\n\nso, if you know me and my mixes you can already imagine what you can expect here, but also imagine this:\nSome time ago I did a rough estimate and I've heard probably around 35.000-40.000 tracks in my life and this mix contains the imo very best tracks from these many thousand tracks!\n\nIf I need to describe this mix in a single word: EPIC! :)\n\nEnjoy the next flight with \"TB Spaceways\" :)\n\n\nVisuals created with MilkDrop 2 & Winamp!\n\nSubscribe:\nhttps://bit.ly/subscribe_tb\n\nDownload: \nhttps://bit.ly/mixes_tb\n\nOPEN FOR WORLDWIDE BOOKINGS!\nContact me if interested!\n\nFollow me!\nFacebook: https://facebook.com/TobiasBassline\nMixcloud: https://mixcloud.com/TobiasBassline\n\n\nTracklist:\n[0:00:00] Human Blue - Electric Harmony\nBUY: http://www.beatport.com/track/electric-harmonie-original-mix/646496\n[0:08:35] Blue Planet Corporation - Lubianka\nBUY: https://datrecords.bandcamp.com/track/lubianka\n[0:18:37] Human Blue - Electric Roundabout\nBUY: http://www.discogs.com/Human-Blue-Electric-Roundabout/release/35853\n[0:25:16] 12 Moons - Invisible Light\nBUY: http://www.discogs.com/Various-Spiral-Trax-Swedish-Goa-Trance-Progressive/release/430760\n[0:31:26] Human Blue - Sandal Wood\nBUY: http://www.beatport.com/track/sandal-wood-original-mix/702877\n[0:37:47] Antix - I Wanna Be (Emok Remix)\nBUY: http://www.discogs.com/Various-Pure-Bliss/release/267840\n[0:46:35] Human Blue - Dream Creator\nBUY: http://www.beatport.com/track/dream-creator-original-mix/702873\n[0:53:13] 12 Moons - Northern Star\nBUY: http://www.beatport.com/track/northern-star-original-mix/848321\n[1:00:31] Human Blue - Travelling\nBUY: http://www.discogs.com/Human-Blue-Ice/release/35801\n[1:07:40] Blue Planet Corporation - Genetic\nBUY: https://datrecords.bandcamp.com/track/genetic\n[1:13:09] 12 Moons - Sliding Particles\nBUY: http://www.discogs.com/Various-Order-Odonata-Vol-5/master/1853\n[1:20:08] Blue Vortex - Nimlies Snowparty\nBUY: http://www.beatport.com/track/nimlies-snowparty-original-mix/631959\n[1:27:47] 12 Moons - Beyond Infinity (Long Version)\nINFO: http://www.michaelandresen.se\n[1:37:26] Kalimax - Demons\nBUY: http://www.beatport.com/track/demons-original-mix/5991577\n[1:44:04] 12 Moons - Clairvoyance\nBUY: http://www.discogs.com/12-Moons-Invisible-Light-Clairvoyance/release/78963\n[1:51:50] Kalimax - Where Is The Party\nBUY: http://www.discogs.com/Various-Grand-Avenue/release/530129\n[1:59:44] Electrypnose - Still Looking For You\nBUY: http://electrypnose.com/music_tracks_db_details.php?id=458\n[2:05:20] S-Range - The Larger Plan\nBUY: http://www.discogs.com/Various-Endangered-Species/release/149968\n[2:12:04] SBK - Demosong (Live In Brazil)\nBUY: http://www.discogs.com/SBK-Dawny-Darko/release/1924134\n[2:18:45] Noma - Soon\nBUY: http://www.beatport.com/track/soon-original-mix/646497\n[2:26:32] S-Range - Out Of Range (Noma's Morning Glory Mix)\nBUY: http://www.discogs.com/Various-Spiral-Trax-Swedish-Goa-Trance-Progressive/release/430760\n[2:35:44] Talamasca - Time Simulation\nBUY: http://www.beatport.com/track/time-simulation-original-mix/926762\n[2:42:10] Noma - Avoid The Future\nBUY: http://www.discogs.com/Noma-Moonstomping-Avoid-The-Future/release/79321\n[2:51:04] 12 Moons - The Circle Movement\nBUY: http://www.discogs.com/Various-Night-And-Day-Progressive-Trance/release/67439\n[2:56:34] Prisoners Of The Sun - Polish Lips\nBUY: http://www.beatport.com/track/polish-lips-original-mix/5991807\n[3:04:20] Noma - Another Time\nBUY: http://www.junodownload.com/products/vibration-vol-3/1551669-02/?trackid=6\n[3:12:36] Blue Planet Corporation - Blue Pill\nBUY: http://www.discogs.com/Various-Lunar-Civilization/release/83307\n[3:19:27] 12 Moons - Zero Gravity (Remix 2)\nBUY: http://www.discogs.com/Twelve-Moons-Zero-Gravity/release/113564\n[3:24:14] Blue Planet Corporation - Overbloody Flood\nBUY: https://datrecords.bandcamp.com/track/overbloody-flood\n[3:31:54] Human Blue - Protonica\nBUY: http://www.beatport.com/track/protonica-original-mix/702878",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 9,
+            "publishedAt": "2020-06-04T22:45:04Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "1vZcaf71kQs"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/1vZcaf71kQs/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/1vZcaf71kQs/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/1vZcaf71kQs/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/1vZcaf71kQs/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/1vZcaf71kQs/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Tobias Bassline - Travelling To Eternity And Back [Progressive Psytrance Mix 2014]",
+            "videoOwnerChannelId": "UCY4K38bifejKdjpcBXVKk_Q",
+            "videoOwnerChannelTitle": "Tobias 'TB' Bassline"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": false,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT13M43S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "dhrYtgI3_0rwP3M6lwsXshUy6yE",
+        "id": "NhQLBqtqZpE",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS4xMkVGQjNCMUM1N0RFNEUx",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Captain Hook - Deep Into Nature is the seventh track from the new \"Captain Hook - Origin\" album released on Iboga Records in Nov. 29th, 2018. \nDeep into nature is a tribal hypnotic trance journey. It actually got me going for the classic Goa sound in some of the main leads, followed by a deep soft beat. At some point I\u2019ve lost track of time and let go of inhibitions completely, I\u2019ve recorded lairs and pads which combined into one entity of a 14 minutes track. I feel this track is my personal favorite at this point of time. Enjoy the trip!\n\n\u203c\ud83c\udfb5 CD, Downloads & Shirts: https://www.pledgemusic.com/projects/ibogarecords-captain-hook-origin\n3 x Vinyl: https://www.diggersfactory.com/vinyl/226413/captain-hook-origin\nDownloads: https://www.beatport.com/release/origin/2443413\n\n\u203c\ud83c\udfb5 Subscribe to Captain Hook - http://bit.ly/CaptainHookSubscribe \n\nVideo by TAS Visuals\nWebsite: https://www.tasvisuals.com\nFacebook: https://www.facebook.com/tasvision\nYouTube: https://www.youtube.com/tasvisuals\nInstagram: https://www.instagram.com/tas.visuals\n\nAlso check out:\nCaptain Hook @ Boom Festival 2022: \nhttps://www.youtube.com/watch?v=dQ_KgTp0Gg8\nFollow Captain Hook:\nFacebook: https://www.facebook.com/CaptainHookMusic\nSoundcloud: https://soundcloud.com/captain-hook\nInstagram: https://www.instagram.com/djcaptainhook\nMixcloud: https://www.mixcloud.com/CaptainHookOfficial\nBeatport: https://www.beatport.com/artist/captain-hook/159124\n\nCaptain Hook is the main musical project of Reshef Harari, a pioneering producer and DJ in the global Psychedelic Trance scene for over two decades. Renowned for pushing musical boundaries, his sound is a distinct fusion of vintage synthesis and modern production, blending the spiritual roots of Psytrance and Goa Trance with a cutting-edge approach. With six acclaimed albums on the legendary Iboga Records and a history of headlining the world's biggest electronic music festivals, including Boom Festival, Ozora Festival, Burning Man, Universo Paralello, Rainbow Serpent, Fusion Festival, and Antaris Festival, Captain Hook continues to be a leading force in the genre. His recent work includes the seminal album Origin, the collaborative project Alien Art with Ace Ventura, and the ambitious three-part Ouroboros remix series.\n\nThis channel is powered by Trancentral\nhttp://bit.ly/TrancentralSubscribe\n\n #CaptainHook #Psytrance #BoomFestival #PsychedelicTrance #BoomFestival2025 #AlchemyCircle #psy #PsytranceMix",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 10,
+            "publishedAt": "2020-05-23T23:27:31Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "NhQLBqtqZpE"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/NhQLBqtqZpE/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/NhQLBqtqZpE/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/NhQLBqtqZpE/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/NhQLBqtqZpE/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/NhQLBqtqZpE/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Captain Hook - Deep Into Nature [Visualization]",
+            "videoOwnerChannelId": "UCaKZ6x423w8iVka9Fhe4wEw",
+            "videoOwnerChannelTitle": "Captain Hook Official"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT6M23S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "VT6f4jjbcpTvyScoLUSCinFwLxg",
+        "id": "Wm8vcFn0bgY",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS4wOTA3OTZBNzVEMTUzOTMy",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Infected Mushroom - Friends On Mushrooms (Deluxe Edition) OUT NOW on DIM MAK\niTunes: http://bit.ly/1BMHeh0 I Amazon: http://amzn.to/1Is54kf\nSpotify: http://bit.ly/1Fp2Vtb\n\nThe Israeli mega-legends and psy-trance innovators Infected Mushroom are at it again with Friends On Mushrooms (Deluxe Edition) on Dim Mak Records. This release not only combines the three fan-favorite EPs Friends on Mushrooms Volumes 1 \u2013 3 into one epic album, but also offers two exclusive new tracks, \u201cKafkaf\u201d and \u201cKazabubu.\u201d Continuing the evolution of their groundbreaking musical journey, the sub-genre pioneers deliver hypnotic arrangement, complex layered melodies and synthetic rhythms in this mind-melting contribution.\n\nInfected Mushroom Facebook: https://www.facebook.com/infectedmush...\nInfected Mushroom Twitter: https://twitter.com/infected\nInfected Mushroom Instagram: http://instagram.com/infectedmushroom\nInfected Mushroom Soundcloud: https://soundcloud.com/infectedmushroom\n\nDim Mak Facebook: http://www.fb.com/dimmak\nDim Mak Twitter: http://twitter.com/dimmak\nDim Mak Instagram: http://instagram.com/dimmak\nYouTube Subscribe: http://bit.ly/1iIt8r4\n\nBy Any Means Necessary\n\nFor Dim Mak, community comes first. Since the label's inception in 1996, Dim Mak has thrived on a commitment to preserving a boundless, forward-thinking music collective. Dim Mak is a lifestyle brand encompassing records, events and apparel, all the while tapping into the vast network of artists that influence modern music culture in order to bring them to stages worldwide.",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 11,
+            "publishedAt": "2020-04-06T21:26:47Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "Wm8vcFn0bgY"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/Wm8vcFn0bgY/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/Wm8vcFn0bgY/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/Wm8vcFn0bgY/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/Wm8vcFn0bgY/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/Wm8vcFn0bgY/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Infected Mushroom - Kazabubu (Audio) | Dim Mak Records",
+            "videoOwnerChannelId": "UCrUT57KGEzrCrmLb4PRgluw",
+            "videoOwnerChannelTitle": "DIM MAK"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT9M15S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "je9SLfC0yi_k5SGtjh1bqU79trU",
+        "id": "xw3C03Ba8Dk",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS41MjE1MkI0OTQ2QzJGNzNG",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "\u2605 support your favourite samurai  for new dj gear / video editing \u2605\npaypal link  Click Here  https://www.paypal.me/ElectricSamurai \n25 euro/25 dollar for the December 2025 and all of my 2026 mixes\n\nCome join me at \nElectric Samurai https://www.instagram.com/electric_samurai_/\n\n\u2605 Electric Samurai  T-shirts\u2605\nhttps://electric-samurai.creator-spring.com/\n\nWARNING: this video contains flashing lights which may not be suitable for photosensitive epilepsy.\n\n\nSubscribe to Astrix channel: http://bit.ly/SubscribeAstrix \nDeep Jungle Walk live - https://www.youtube.com/watch?v=dDZt1mFz71I\nAstrix He.art full album - https://www.youtube.com/watch?v=dlaSdG5gMBY\n\nBuy here https://www.beatport.com/track/deep-jungle-walk-original-mix/7629261\n\nI made a video of one of my favorite tracks [japanese anime /old cartoons/trippy images]\n\nAstrix fourth studio album, \u201cHe.art\u201d was released on February 2016.\nReleased on Hommega Productions.\nbuy here https://www.beatport.com/release/he-art/1706618\n\nPikachu on Acid (1080p HD)\nhttps://www.youtube.com/watch?v=NKIWUqgIjq0\n\nAll's Fair At the Fair COLOR CLASSIC\nhttps://www.youtube.com/watch?v=rh8cLUgL8jg\n\nFleischer Cartoons - An Elephant Never Forgets\nhttps://www.youtube.com/watch?v=2xJR-ovOrDw\n\n#astrix #electricsamurai",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 12,
+            "publishedAt": "2020-04-06T21:24:09Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "xw3C03Ba8Dk"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/xw3C03Ba8Dk/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/xw3C03Ba8Dk/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/xw3C03Ba8Dk/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/xw3C03Ba8Dk/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/xw3C03Ba8Dk/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Astrix - Deep Jungle Walk [Hommega Productions]",
+            "videoOwnerChannelId": "UCd_jgU7sHv-fuoyYLkKp0BA",
+            "videoOwnerChannelTitle": "DJ Electric Samurai"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT53M33S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "p78gHmwJ6tPHJXaKgqw4Oe5Wkeg",
+        "id": "zSKF_YCsbCs",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS4wMTcyMDhGQUE4NTIzM0Y5",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Minimal Techno Mix 2018 EDM Minimal Mad Mickey by RTTWLR\n\ud83d\udd34\ud835\udc05\ud835\udc28\ud835\udc25\ud835\udc25\ud835\udc28\ud835\udc30 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11: https://linktr.ee/rttwlrmusic\n\ud83d\udfe2 \ud835\udc12\ud835\udc29\ud835\udc28\ud835\udc2d\ud835\udc22\ud835\udc1f\ud835\udc32 \ud835\udc0f\ud835\udc25\ud835\udc1a\ud835\udc32\ud835\udc25\ud835\udc22\ud835\udc2c\ud835\udc2d: https://linktr.ee/trippyspotifyplaylist\n\n\n\u26ab\ufe0f | Follow Dark Monkey Music\n\u2192 https://taplink.cc/darkmonkeymusic\n\n\ud83c\udfb5 | POPULAR YOUTUBE PLAYLISTS\n\u2192 https://linktr.ee/playlistyoutube\n\n\ud83d\udc55 | Dark Monkey merch: \n\u2192 http://bit.ly/darkmonkeymerch\n\n\u25cf Support (Join the channel): https://bit.ly/3kIHIAA\n(Loyalty badges next to your name in comments and live chat + custom emojis)\n\n\nSUPPORT+DOWNLOAD+TRACKLIST:\nhttps://www.patreon.com/posts/23817276\n\n\u26ab\ufe0f | Dark Monkey Music Owner by Trippy Code Records\n\n\ud83c\udf0e | Follow Trippy Code \n\u2192  https://linktr.ee/trippycodeofficial\n\n\ud835\udc12\ud835\udc1e\ud835\udc27\ud835\udc1d \ud835\udc32\ud835\udc28\ud835\udc2e\ud835\udc2b \ud835\udc1d\ud835\udc1e\ud835\udc26\ud835\udc28: https://www.ac1dgravity.com/send-demo\n\n\n\n\ud835\udc26\ud835\udc22\ud835\udc31\ud835\udc1e\ud835\udc1d \ud835\udc1b\ud835\udc32 \ud835\udc11\ud835\udc13\ud835\udc13\ud835\udc16\ud835\udc0b\ud835\udc11 \n\ud835\udc42\ud835\udc64\ud835\udc5b\ud835\udc52\ud835\udc5f \ud835\udc4e\ud835\udc5b\ud835\udc51 \ud835\udc39\ud835\udc5c\ud835\udc62\ud835\udc5b\ud835\udc51\ud835\udc52\ud835\udc5f: \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d\ud835\udc5d\ud835\udc66 \ud835\udc36\ud835\udc5c\ud835\udc51\ud835\udc52, \ud835\udc34\ud835\udc5f\ud835\udc61 \ud835\udc5c\ud835\udc53 \ud835\udc40\ud835\udc56\ud835\udc5b\ud835\udc56\ud835\udc5a\ud835\udc4e\ud835\udc59 \ud835\udc47\ud835\udc52\ud835\udc50\u210e\ud835\udc5b\ud835\udc5c \ud835\udc47\ud835\udc5f\ud835\udc56\ud835\udc5d, \ud835\udc37\ud835\udc4e\ud835\udc5f\ud835\udc58 \ud835\udc40\ud835\udc5c\ud835\udc5b\ud835\udc58\ud835\udc52\ud835\udc66 \ud835\udc40\ud835\udc62\ud835\udc60\ud835\udc56\ud835\udc50\nAll in One: https://linktr.ee/rttwlrmusic\nDiscord server: https://discord.gg/69nwEGnhXZ\nFacebook Group: https://www.facebook.com/groups/1234026496613956\nFacebook Page: https://www.facebook.com/officialrttwlr\nInstagram: https://www.instagram.com/rttwlrmusicq\nTiktok: https://www.tiktok.com/@rttwlr28\nSpotify playlist: https://linktr.ee/rttwlrspotify\n\n\n\nLabels:\nTrippy Code\nTake My Space\nTRIP & acid\nTRIP & dream\nTRIP & emotions\n\n! contact \u00bb http://bit.ly/contacttrippycode\n\n\n\n\u00a9 Dark Monkey Music. All rights reserved. [Trippy Code]\n\n\u00d7 Minimal Techno 2021\n\u00d7 Minimal 2021\n\u00d7 Techno 2021\n\u00d7 EDM Minimal 2021\n\u00d7 Minimal House 2021\n\u00d7 Dark Minimal\n\u00d7 Dark Techno 2021\n\u00d7 Psytrance 2021\n\u00d7 Prog trance 2021\n\u00d7 Progressive 2021\n\u00d7 Psychedelic 2021\n\u00d7 Minimal prog 2021\n\u00d7 Acid Techno 2021\n\u00d7 Minimal progressive 2021\n\u00d7 Coronita 2021\n\u00d7 Car Music 2021\n\u00d7 Bass Boosted 2021\n\n#darkmonkeymusic #trippycode #partymusic #chill",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 13,
+            "publishedAt": "2020-04-06T21:23:05Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "zSKF_YCsbCs"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/zSKF_YCsbCs/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/zSKF_YCsbCs/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/zSKF_YCsbCs/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/zSKF_YCsbCs/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/zSKF_YCsbCs/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Minimal Techno Mix 2018 EDM Minimal Mad Mickey by RTTWLR",
+            "videoOwnerChannelId": "UCrcfRtdHb11YJEloTSaOYvw",
+            "videoOwnerChannelTitle": "Dark Monkey Music"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT5M58S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "7a1888OdRoeSZHsZO9x3Ji_m_VE",
+        "id": "FHVD9ft_ANw",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS41NkI0NEY2RDEwNTU3Q0M2",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Follow Blastoyz On YouTube: https://bit.ly/BlastoyzSubscribe\n\nhttps://www.blastoyz.com\n\nFollow my new record label 'WELVRAVE': https://www.youtube.com/c/WELVRAVE\n\nListen & SAVE 'Mandala' On Spotify: http://bit.ly/Mandala_Spotify\nFollow Blastoyz On Spotify: http://bit.ly/BlastoyzSpotify\n\nFollow the WELVRAVE Playlist on Spotify:  https://open.spotify.com/playlist/72aMK8WL4jTTZ47Ccb44Mc?si=8e64355041a04837\n\n\u3013 Follow WELVRAVE RECORDS:\nhttps://instagram.com/welvrave\nhttps://soundcloud.com/welvrave\nhttps://facebook.com/welvrave\nhttps://twitter.com/welvrave\nhttps://www.welvrave.com\n\n\u3013 Follow Blastoyz:\nhttps://open.spotify.com/artist/6WLP1sraOcF3Gaxp7xBa4p?si=YuMDY3MDSmyA2r6YR7BA2g\nhttps://www.instagram.com/blastoyz\nhttps://www.youtube.com/blastoyzofficial\nhttps://www.facebook.com/kobiblastoyz\nhttps://www.soundcloud.com/kobiblastoyz\nhttps://www.blastoyz.com\n\u25b2\u25bc\n\n#Blastoyz #Mandala #PsyTrance\n\nMix & Mastering by: Blastoyz \nLabel: WELVRAVE Records & Nutek Records  \nArtwork & Visuals by: 'Planeto'\n\nCopyright @ Kobi Nigreker, Blastoyz, Oron Aiche, Planeto \u00a9 2018. Any illegal reproduction of this content will result in immediate legal action.",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 14,
+            "publishedAt": "2020-04-06T21:22:18Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "FHVD9ft_ANw"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/FHVD9ft_ANw/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/FHVD9ft_ANw/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/FHVD9ft_ANw/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/FHVD9ft_ANw/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/FHVD9ft_ANw/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Blastoyz - Mandala",
+            "videoOwnerChannelId": "UC5uuPC--CLX5oirmcxAjQfw",
+            "videoOwnerChannelTitle": "Blastoyz"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT1H18M",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "JeNdRy8jyk3g_kb-6ZAfcFzw2lA",
+        "id": "WE5MsnGXmN4",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS5ENDU4Q0M4RDExNzM1Mjcy",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "I HOPE YOU'LL ENJOY MY MAKING TRUE VISUAL TRIP DEBUT\n\nNEW Visual concert 2020: https://www.youtube.com/watch?v=i2tXE2j3HtA&t\n\n----------------------------------------------------------------------------------------------------------\nTracklist:\nZero Point - Inner State \nhttps://www.youtube.com/watch?v=-nJ7c2BuScw\n\nWe Share - Atomizers \nhttps://www.youtube.com/watch?v=PWSKSOwA0RY\n\nHuman Behaviour - Inner State\nhttps://www.youtube.com/watch?v=yfzmCl7WZQI\n\nSpiritual Science (Atomizers Remix) - Roger Rabbit, Egorythmia\nhttps://www.youtube.com/watch?v=zm3U9c9js7k\n\nForgive My Synths - Nitrodrop\nhttps://www.youtube.com/watch?v=bc6L8P1HGvQ\n\nRun for Cover - Roger Rabbit, Lifeforms\nhttps://www.youtube.com/watch?v=HyfVyQGNAuU\n\nImmerse (feat. Allaby) [Nertum RMX] - Zen Mechanics\nhttps://www.youtube.com/watch?v=wXeTQsE8VA0\n\nI Am the Sun Light (Atomizers Remix) - Zyce, Aquafeel\nhttps://www.youtube.com/watch?v=yt9lB_uVZOg\n\nWelcome to my Trip - Lupin, Owntrip\nhttps://www.youtube.com/watch?v=sWGzD-WBkMY\n\nScripta Manent - Inner State\nhttps://www.youtube.com/watch?v=DBHUT2vQ4tI\n\nProg Direction - Vandeta\nhttps://www.youtube.com/watch?v=VxicKSy0Hgs\n\nDeep Vibrations (Astrix Remix) - Vertical Mode\nhttps://www.youtube.com/watch?v=UEm1ryYD8z4",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 15,
+            "publishedAt": "2020-11-29T22:55:00Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "WE5MsnGXmN4"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/WE5MsnGXmN4/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/WE5MsnGXmN4/hqdefault.jpg",
+                    "width": 480
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/WE5MsnGXmN4/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/WE5MsnGXmN4/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Visual concert 2019 (psychedelic acid trance mix) 4K",
+            "videoOwnerChannelId": "UCdsB8nC9vw_aRmim_y8sy4w",
+            "videoOwnerChannelTitle": "Revival"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT42M15S",
+            "licensedContent": false,
+            "projection": "rectangular",
+            "regionRestriction": {
+                "blocked": [
+                    "AD",
+                    "AE",
+                    "AF",
+                    "AG",
+                    "AI",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AQ",
+                    "AR",
+                    "AS",
+                    "AT",
+                    "AU",
+                    "AW",
+                    "AX",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BL",
+                    "BM",
+                    "BN",
+                    "BO",
+                    "BQ",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BV",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CC",
+                    "CD",
+                    "CF",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CK",
+                    "CL",
+                    "CM",
+                    "CN",
+                    "CO",
+                    "CR",
+                    "CU",
+                    "CV",
+                    "CW",
+                    "CX",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "EH",
+                    "ER",
+                    "ES",
+                    "ET",
+                    "FI",
+                    "FJ",
+                    "FK",
+                    "FM",
+                    "FO",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GF",
+                    "GG",
+                    "GH",
+                    "GI",
+                    "GL",
+                    "GM",
+                    "GN",
+                    "GP",
+                    "GQ",
+                    "GR",
+                    "GS",
+                    "GT",
+                    "GU",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HM",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IM",
+                    "IN",
+                    "IO",
+                    "IQ",
+                    "IR",
+                    "IS",
+                    "IT",
+                    "JE",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KP",
+                    "KR",
+                    "KW",
+                    "KY",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MF",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MM",
+                    "MN",
+                    "MO",
+                    "MP",
+                    "MQ",
+                    "MR",
+                    "MS",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NC",
+                    "NE",
+                    "NF",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NU",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PF",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PM",
+                    "PN",
+                    "PR",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RE",
+                    "RO",
+                    "RS",
+                    "RU",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SD",
+                    "SE",
+                    "SG",
+                    "SH",
+                    "SI",
+                    "SJ",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SO",
+                    "SR",
+                    "SS",
+                    "ST",
+                    "SV",
+                    "SX",
+                    "SY",
+                    "SZ",
+                    "TC",
+                    "TD",
+                    "TF",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TK",
+                    "TL",
+                    "TM",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "UM",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VA",
+                    "VC",
+                    "VE",
+                    "VG",
+                    "VI",
+                    "VN",
+                    "VU",
+                    "WF",
+                    "WS",
+                    "YE",
+                    "YT",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ]
+            }
+        },
+        "etag": "gfuv0R7HEGXIwZGlfA-h1rGvzqk",
+        "id": "DSQqcIKm_3M",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS4yMDhBMkNBNjRDMjQxQTg1",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "\"Dystopia\" is an Aggressive Dark Techno / Industrial / Cyberpunk / Dark Electro Mix by Aim To Head.\n\nIf you like it please don't forget to SUBSCRIBE!\n\n\ud83c\udf55Check out the single tracks featured in our mixes on our channel 'Aim To Head Release'\nhttps://youtube.com/channel/UCAhGuBCzuMgH9yW5ezq8-EA \n\n\u2b07\ufe0fTRACKLIST\u2b07\ufe0f\n\n00:00 | Matteo Tura - Fall\n\n04:02 | GAZZ - First Step\n\n08:08 | Mois Blak - Umbra \n\n12:35 | Lyde - Augmentation \n\n16:05 | Neo Fresco - Net Neutrality \n\n19:27 | ASSALM - Chimera \n\n22:47 | Sierra - Unbroken \n\n25:51 | Revizia - Assault \n\n29:51 | F.O.O.L - Revenger \n\n33:28 | Unholy - Silver Grave \n\n38:10 | Mascarpone - Suicide \n\nSUBMISSIONS / SPONSORS\ne-mail: aimtoheadmusic@gmail.com\n\n\u00ae The rights of all materials in this video belong to their owners.\nThis video is for promotional and entertainment purposes only. Contact aimtoheadmusic@gmail.com for removal.\n\nFOLLOW US ON:\n\nInstagram: https://www.instagram.com/aimtoheadofficial/\n\nTwitter: https://twitter.com/AimToHead\n\nFacebook: https://www.facebook.com/aimtohead/\n\n#DarkTechno #Industrial #CyberPunk\n\nExtra Tags:\n\nDark techno, dark techno music, dark techno type music, dark techno mix, dark techno type beat, dark techno beat, dark techno instrumental, dark techno background music, aggressive dark techno, aggressive techno, aggressive techno music, aggressive techno type music, aggressive techno beat, aggressive techno instrumental, aggressive techno mix, aggressive techno playlist, techno music, techno mix, techno beat, techno instrumental, dark cyberpunk, dark cyberpunk music, dark cyberpunk mix, dark cyberpunk type beat, dark cyberpunk beat, cyberpunk music, cyberpunk instrumental, cyberpunk type beat, cyberpunk beat, cyberpunk beats, cyberpunk mix, cyberpunk playlist, techno cyberpunk, dark Industrial, dark Industrial music, dark Industrial type music, dark industrial beat, dark Industrial type beat, dark industrial instrumental, industrial, industrial music, industrial beat, industrial type beat, industrial beats, industrial instrumental, metalstep, dark metalstep, metalstep music, metalstep mix, metalstep playlist, dark music, dark electro music, dark electronic music, dark electro mix, dark electro beat, dark electro, dark background music, dark music mix, dark music playlist, techno cyberpunk, tech noir, techno noir, cyber punk,",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 16,
+            "publishedAt": "2020-12-12T22:24:34Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "DSQqcIKm_3M"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/DSQqcIKm_3M/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/DSQqcIKm_3M/hqdefault.jpg",
+                    "width": 480
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/DSQqcIKm_3M/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/DSQqcIKm_3M/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Dark Techno / Industrial / Cyberpunk Mix 'DYSTOPIA' | Dark Electro",
+            "videoOwnerChannelId": "UCyI1D9N2OvZif9a2JhV_nrA",
+            "videoOwnerChannelTitle": "Aim To Head Mix"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT5M14S",
+            "licensedContent": true,
+            "projection": "rectangular",
+            "regionRestriction": {
+                "blocked": [
+                    "IL"
+                ]
+            }
+        },
+        "etag": "BxMfaIZtx75qtMPHFKXxM2BoYzQ",
+        "id": "-WnzRqCK6Fs",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS5GM0Q3M0MzMzY5NTJFNTdE",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "directed by andrew thomas huang",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 17,
+            "publishedAt": "2020-12-13T00:03:42Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "-WnzRqCK6Fs"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/-WnzRqCK6Fs/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/-WnzRqCK6Fs/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/-WnzRqCK6Fs/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/-WnzRqCK6Fs/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/-WnzRqCK6Fs/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "bj\u00f6rk : mutual core",
+            "videoOwnerChannelId": "UCFbRdRGijPR4oBjQ0fVCSmw",
+            "videoOwnerChannelTitle": "bj\u00f6rk"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "etag": "9YP-6_0Nuvx_sXOuQ81ZtAhjzA0",
+        "id": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS45NzUwQkI1M0UxNThBMkU0",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "This video is unavailable.",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 18,
+            "publishedAt": "2021-11-14T00:44:52Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "nuVErbeZhaA"
+            },
+            "thumbnails": {},
+            "title": "Deleted video"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT3M39S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "saHfoGYY69Qzr9FJsT3UFOvENGw",
+        "id": "XpmhtWVhljg",
+        "kind": "youtube#video",
+        "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS43MTI1NDIwOTMwQjIxMzNG",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "Boris Brejcha - Never Stop Dancing feat. Ginger\nBoris Brejcha - Never Stop Dancing feat. Ginger by Ultra Music Available Now! https://ffm.to/neverstopdancing\nThe Latest & Greatest from Ultra Music\u00a0https://ffm.to/officialvideos\n\nFollow Boris Brejcha:\nFacebook: https://www.facebook.com/BorisBrejcha.Official\nIG: https://www.instagram.com/borisbrejcha/\nTwitter: https://twitter.com/BB_BORISBREJCHA\nhttps://music.apple.com/us/artist/boris-brejcha/202970860\nhttps://open.spotify.com/artist/6caPJFLv1wesmM7gwK1ACy\nhttps://soundcloud.com/boris-brejcha\n\nFollow Us:\r\nhttps://www.youtube.com/user/UltraRecords/?sub_confirmation=1\r\nhttps://www.ultramusic.com\r\nhttps://www.twitter.com/ultrarecords\r\nhttps://www.facebook.com/ultramusic\r\nhttps://www.youtube.com/ultratv\r\nhttps://instagram.com/ultrarecords\r\nhttps://soundcloud.com/ultrarecords\r\nhttps://open.spotify.com/user/ultramusicofficial",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 19,
+            "publishedAt": "2021-12-17T16:51:17Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "XpmhtWVhljg"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/XpmhtWVhljg/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/XpmhtWVhljg/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/XpmhtWVhljg/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/XpmhtWVhljg/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/XpmhtWVhljg/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Boris Brejcha - Never Stop Dancing feat. Ginger (Official Video) [Ultra Music]",
+            "videoOwnerChannelId": "UC4rasfm9J-X4jNl9SvXp8xA",
+            "videoOwnerChannelTitle": "Ultra Records"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": false,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "etag": "Adn3nY3pNMq06YlAnSrCj5FMdnI",
+        "id": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS5DQ0MyQ0Y4Mzg0M0VGOEYw",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+            "channelId": "UCAq6A1Z6odmL1FbI3WhVY0w",
+            "channelTitle": "Duffek Tam\u00e1s",
+            "description": "This video is unavailable.",
+            "playlistId": "PLSfXEqbVqKrnmkqS3Ont8fPvwugMfvMoe",
+            "position": 20,
+            "publishedAt": "2022-03-26T14:02:38Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "VdeBAzi83Jo"
+            },
+            "thumbnails": {},
+            "title": "Deleted video"
+        }
+    }
+]
