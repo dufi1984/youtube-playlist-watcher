@@ -5,6 +5,525 @@
             "contentRating": {},
             "definition": "hd",
             "dimension": "2d",
+            "duration": "PT8M16S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "164IKD7bROiQOGZTCBCxWVHaS9c",
+        "id": "vkgO_VRzYOA",
+        "kind": "youtube#video",
+        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5FRkU3NjdFNDBDMjFBNTlF",
+        "snippet": {
+            "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
+            "channelTitle": "Szab\u00f3 Gyula",
+            "description": "A melodic deep afro house track with warm vocals and atmospheric summer-night energy. \n\n#AfroHouse, #OrganicHouse, #MelodicHouse, #DeepHouse, #afrohousemusic \n\n\n\n\n\u00a9 2026 Human Tempo. All rights reserved.\nCreated where human imagination meets modern creation.\nOriginal music by Human Tempo.",
+            "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
+            "position": 0,
+            "publishedAt": "2026-09-05T09:42:59Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "vkgO_VRzYOA"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/vkgO_VRzYOA/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/vkgO_VRzYOA/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/vkgO_VRzYOA/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/vkgO_VRzYOA/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/vkgO_VRzYOA/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Stay the Same | Deep Afro House",
+            "videoOwnerChannelId": "UCTBJ6dpjtQ2lON_fwXGL3Lg",
+            "videoOwnerChannelTitle": "Human Tempo"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT8M45S",
+            "licensedContent": true,
+            "projection": "rectangular",
+            "regionRestriction": {
+                "allowed": [
+                    "AE",
+                    "AR",
+                    "AS",
+                    "AT",
+                    "AU",
+                    "AW",
+                    "AZ",
+                    "BA",
+                    "BD",
+                    "BE",
+                    "BG",
+                    "BH",
+                    "BM",
+                    "BO",
+                    "BR",
+                    "BY",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GE",
+                    "GF",
+                    "GH",
+                    "GP",
+                    "GR",
+                    "GT",
+                    "GU",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KH",
+                    "KR",
+                    "KW",
+                    "KY",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LI",
+                    "LK",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MK",
+                    "MP",
+                    "MQ",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NC",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PF",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PR",
+                    "PT",
+                    "PY",
+                    "QA",
+                    "RE",
+                    "RO",
+                    "RS",
+                    "RU",
+                    "SA",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SN",
+                    "SV",
+                    "TC",
+                    "TH",
+                    "TN",
+                    "TR",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "VE",
+                    "VI",
+                    "VN",
+                    "YE",
+                    "YT",
+                    "ZA",
+                    "ZW"
+                ]
+            }
+        },
+        "etag": "qkgRlKH9tanmRw-wU6lfMMptQIU",
+        "id": "rMYoLz7ga5U",
+        "kind": "youtube#video",
+        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS4xRUU4M0JFMUQ4QTA2MjVB",
+        "snippet": {
+            "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
+            "channelTitle": "Szab\u00f3 Gyula",
+            "description": "Provided to YouTube by DistroKid\n\nDeep Organic Afro \u00b7 Abram muk \u00b7 Muk \u00b7 Abram\n\nDeep Organic Afro\n\n\u2117 10704026 Records DK\n\nReleased on: 2026-03-21\n\nAuto-generated by YouTube.",
+            "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
+            "position": 1,
+            "publishedAt": "2026-09-05T09:30:31Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "rMYoLz7ga5U"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/rMYoLz7ga5U/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/rMYoLz7ga5U/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/rMYoLz7ga5U/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/rMYoLz7ga5U/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/rMYoLz7ga5U/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Deep Organic Afro",
+            "videoOwnerChannelId": "UCHwS9U0xQfbJPuV-13sv39g",
+            "videoOwnerChannelTitle": "Muk - Topic"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT3M12S",
+            "licensedContent": true,
+            "projection": "rectangular",
+            "regionRestriction": {
+                "allowed": [
+                    "AE",
+                    "AR",
+                    "AS",
+                    "AT",
+                    "AU",
+                    "AW",
+                    "AZ",
+                    "BA",
+                    "BD",
+                    "BE",
+                    "BG",
+                    "BH",
+                    "BM",
+                    "BO",
+                    "BR",
+                    "BY",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GE",
+                    "GF",
+                    "GH",
+                    "GP",
+                    "GR",
+                    "GT",
+                    "GU",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KH",
+                    "KR",
+                    "KW",
+                    "KY",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LI",
+                    "LK",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MK",
+                    "MP",
+                    "MQ",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NC",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PF",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PR",
+                    "PT",
+                    "PY",
+                    "QA",
+                    "RE",
+                    "RO",
+                    "RS",
+                    "RU",
+                    "SA",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SN",
+                    "SV",
+                    "TC",
+                    "TH",
+                    "TN",
+                    "TR",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "VE",
+                    "VI",
+                    "VN",
+                    "YE",
+                    "YT",
+                    "ZA",
+                    "ZW"
+                ]
+            }
+        },
+        "etag": "HStE5Fj02KN6dljSSTSIU-MWxag",
+        "id": "c98JbBmcnTE",
+        "kind": "youtube#video",
+        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS44OEI3NUQ0QTlFM0FCOUU4",
+        "snippet": {
+            "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
+            "channelTitle": "Szab\u00f3 Gyula",
+            "description": "Provided to YouTube by DistroKid\n\nOrganic Afro Deep house \u00b7 NOCTIV \u00b7 \u00f6m\u00fcr \u00b7 Devran\n\nSoul Echo (Deep Organic Afro House)\n\n\u2117 CentralBeatsOfficial\n\nReleased on: 2026-06-14\n\nAuto-generated by YouTube.",
+            "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
+            "position": 2,
+            "publishedAt": "2026-09-05T09:28:31Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "c98JbBmcnTE"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/c98JbBmcnTE/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/c98JbBmcnTE/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/c98JbBmcnTE/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/c98JbBmcnTE/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/c98JbBmcnTE/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "Organic Afro Deep house",
+            "videoOwnerChannelId": "UCRug34sBtpxaDY90_totHRQ",
+            "videoOwnerChannelTitle": "NOCTIV - Topic"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT3M35S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "hnd31TGm3nmsH55a1TMHxswaYzA",
+        "id": "-oyQOH8Ua20",
+        "kind": "youtube#video",
+        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS40M0Y4MEVDM0MxRTYxRERE",
+        "snippet": {
+            "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
+            "channelTitle": "Szab\u00f3 Gyula",
+            "description": "DIGIDI DIGIDI - DJ.ILHAM (Lyrics)\n\nLyrics : \n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nIn this car you don't exist\nDon't tell me what to do\nWhen you lose your keys and you crash into\n\nIn this life, I don't exist.\nBut don't tell me what to do\nYou look pretty young for someone with a PhD\n\nAre you really my dad\nYou're old and sad\n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nIn this life, you don't exist\nBut don't tell me what to do\nWhen you lose your mind and your liver fails, too\n\nIn this car, I don't exist\nDon't tell me what to do\nI like it in the dark and your house is haunted too\n\nAre you really my mom\nShe's pretty young\n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nI'm going to sleep, Bye-bye\nI going to sleep, Bye-bye",
+            "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
+            "position": 3,
+            "publishedAt": "2026-09-04T09:25:49Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "-oyQOH8Ua20"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/default.jpg",
+                    "width": 120
+                },
+                "fhd": {
+                    "height": 1080,
+                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/fhddefault.jpg",
+                    "width": 1920
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "DIGIDI DIGIDI - DJ.ILHAM (Lyrics)",
+            "videoOwnerChannelId": "UCZtoHl1p6R6_iLm2yjA9gew",
+            "videoOwnerChannelTitle": "Amazing Lyrics"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
             "duration": "PT1H26M24S",
             "licensedContent": false,
             "projection": "rectangular"
@@ -18,7 +537,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Deep House Mix 2026 \ud83d\ude98 Midnight Energy  Vocal House & Nu Disco Night Ride\nDeep House Mix 2026 \ud83d\ude98 Midnight Energy  Vocal House & Nu Disco Night Ride\nDeep House Mix 2026 \ud83d\ude98 Midnight Energy  Vocal House & Nu Disco Night Ride\n\n#DeepHouseMix \n#HouseMusic\n#ChillHouse\n\nWelcome to Afterdark House FM \u2014 your home for the best Deep House Mix 2026, Night Drive Vibes, Vocal House, Nu Disco, and late-night house music.\n\nThis channel is built for the moments when the city lights glow, the roads are empty, and all you need is the perfect soundtrack. Expect smooth deep house mixes, stylish vocal house, groovy nu disco, chill night drive music, and after-hours beats made for midnight cruising, relaxing, working, and escaping into the vibe.\n\nOn Afterdark House FM, you\u2019ll find:\n\u2728 Deep House Mixes\n\ud83c\udf03 Night Drive House Music\n\ud83c\udfa7 Vocal House & Nu Disco Grooves\n\ud83d\ude97 Late Night Driving Playlists\n\ud83c\udf19 Chill After Hours House Vibes\n\ud83d\udd25 Smooth, modern house music for every night mood\n\nIf you love deep house 2026, night drive deep house, late night house music, vocal deep house, and nu disco playlists, you\u2019re in the right place.\n\nSubscribe and ride with the rhythm of the city after dark.\nAfterdark House FM \u2014 where deep house meets the midnight road.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 0,
+            "position": 4,
             "publishedAt": "2026-08-28T13:47:47Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -88,7 +607,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Best of Deep House [2026] | Giza Night Drive VOL. 08 | Melodic & Atmospheric Smooth Mix | NAVHOUSE\n\nWelcome to Giza Night Drive VOL. 08, a new chapter in the NAVHOUSE journey where timeless Egyptian landscapes meet the finest sounds of Deep House, Melodic House, Progressive House, and Atmospheric Electronic Music.\n\nExperience a carefully curated mix featuring deep grooves, emotional melodies, cinematic soundscapes, smooth basslines, and hypnotic rhythms designed for night drives, late-night relaxation, focused work, studying, gaming, travel, and unforgettable sunset sessions.\n\nInspired by the mysterious beauty of the Great Pyramids of Giza and the endless desert beneath a sky full of stars, this mix creates a luxurious and immersive atmosphere that transports you beyond the ordinary.\n\nWhether you're driving through city lights, relaxing at home, or searching for the perfect soundtrack to your evening, Giza Night Drive VOL. 08 delivers a premium melodic experience from beginning to end.\n\n\ud83c\udfb5 Featuring:\n\u2022 Best Deep House 2026\n\u2022 Melodic House & Progressive House\n\u2022 Atmospheric House Music\n\u2022 Night Drive Mix\n\u2022 Chill House Vibes\n\u2022 Relaxing Electronic Music\n\u2022 Luxury Deep House Collection\n\u2022 Smooth Electronic Grooves\n\u2022 Emotional House Music\n\u2022 Cinematic Deep House Journey\n\nIf you enjoy artists and labels such as Ben B\u00f6hmer, Tinlicker, Lane 8, Marsh, Nora En Pure, Yotto, Sultan + Shepard, Massane, and melodic electronic music, this mix is made for you.\n\n\ud83d\udd25 Subscribe to NAVHOUSE for weekly Deep House journeys, luxury night drives, cinematic electronic music, and the best melodic mixes of 2026.\n\nKeywords: Deep House 2026, Best Deep House Mix, Melodic House, Progressive House, Atmospheric House, Night Drive Music, Chill House Mix, Electronic Music 2026, Relaxing House Music, Deep House Playlist, Luxury House Music, Sunset House Mix, Driving Music, NAVHOUSE.\n\n#DeepHouse #MelodicHouse #ProgressiveHouse #HouseMusic #NightDrive",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 1,
+            "position": 5,
             "publishedAt": "2026-08-06T14:12:25Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -158,7 +677,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Deep House Mix 2026 with emotional night drive vibes, featuring Vocal House and Nu Disco sounds.\n\nPerfect for driving at night, relaxing and deep moments. Let the music create a smooth and immersive atmosphere.\n\nWelcome to Deep Motion \u2014 where deep sounds meet minimalist black & white aesthetics.\n\n\ud83d\udd76\ufe0f Monochrome mood. Deep sounds. Pure memories.\n\n#DeepHouse #DeepHouseMix #VocalHouse #NuDisco #ChillHouse",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 2,
+            "position": 6,
             "publishedAt": "2026-08-04T12:15:08Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -350,7 +869,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Label Worx Limited\n\nBonita \u00b7 Sllash & Doppe\n\nBonita\n\n\u2117 Boom Boom Room\n\nReleased on: 2025-04-25\n\nProducer: Bogdan Dumitru Pauna\nProducer: Cristian Marcel Buica\nComposer: Bogdan Dumitru Pauna\nComposer: Cristian Marcel Buica\nMusic Publisher: Toolroom Publishing\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 3,
+            "position": 7,
             "publishedAt": "2026-07-18T15:04:30Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -415,7 +934,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Dieser Kanal ist ein Raum f\u00fcr Deep & Melodic House als Bewusstseinsfeld.\n\nDie Musik entsteht nicht, um zu unterhalten, sondern um zu tragen, zu \u00f6ffnen und innere Bewegung zu erm\u00f6glichen \u2013 beim Arbeiten, Fahren, Atmen, Sein.\n\nWenn dich diese Kl\u00e4nge begleiten, ber\u00fchren oder fokussieren, dann wirken sie.\n\nUnd wo Wirkung geschieht, darf Energie frei zur\u00fcckflie\u00dfen.\n\nDanke f\u00fcrs H\u00f6ren, Sp\u00fcren und Teilen.\n\nhttps://ko-fi.com/matthiasbrueckner\n\n\ud83c\udfa7 Neue Sessions & Tracks regelm\u00e4\u00dfig\n\ud83c\udf0c Musik f\u00fcr Tiefe, Flow und innere Weite",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 4,
+            "position": 8,
             "publishedAt": "2026-07-12T14:29:45Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -607,7 +1126,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Label Worx Limited\n\nLove You More (Radio Edit) \u00b7 Ron van den Beuken \u00b7 Crossedeyes \u00b7 Ryxelle\n\nLove You More\n\n\u2117 RACOON\n\nReleased on: 2026-07-03\n\nProducer: Dirk Maarten Pijpker\nProducer: Ron van den Beuken\nComposer: Dirk Maarten Pijpker\nComposer: Ron van den Beuken\nMusic Publisher: RACOON\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 5,
+            "position": 9,
             "publishedAt": "2026-07-07T18:44:57Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -672,7 +1191,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "ARTIST: Alex Kenji\nRELEASE DATE: 12-09-2025\nLABEL: Hotfingers\nCATALOG: HFS043A",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 6,
+            "position": 10,
             "publishedAt": "2026-07-04T15:25:03Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -732,7 +1251,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 7,
+            "position": 11,
             "publishedAt": "2026-05-26T19:08:16Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1045,7 +1564,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by OffStep\n\nStasera Non Sparire \u00b7 Aria Vale \u00b7 Pizza Dansa\n\nScrivo Una Lettera Senza Fine\n\n\u2117 Calliope Sound\n\nReleased on: 2026-04-29\n\nComposer Lyricist: Calliope Nata\nMusician: Pizza Dansa\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 8,
+            "position": 12,
             "publishedAt": "2026-05-26T18:46:36Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1237,7 +1756,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by DistroKid\n\nItalian Dance Mix 2026 \u00b7 Zehr vexor\n\nItalian Dance Mix 2026\n\n\u2117 12317864 Records DK\n\nReleased on: 2026-04-03\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 9,
+            "position": 13,
             "publishedAt": "2026-05-25T12:14:08Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1308,7 +1827,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\u201cNothing\u2019s Gonna Stop Us Now\u201d is one of Starship\u2019s biggest hits, famous for its 80s pop-rock sound and inspiring energy. A romantic anthem that defined the 80s and remains a global classic.\n\n\n\u2728Welcome to my remix channel: Andy Marley \u2728\n\nHere you'll find exclusive remixes of the best classics from the '80s and '90s, transformed into dance and house versions ready for the club.\n\nMy goal is to maintain the original essence of each song while giving it a modern and powerful energy.\n\n\ud83c\udfa7 G\u00e9neros que vas a encontrar:\n\u2022 Dance Remix  \n\u2022 House Remix  \n\u2022 Retro / 80s / 90s  \n\u2022 Synthwave  \n\u2022 Eurodance  \n\u2022 Pop Remix  \n\n\ud83d\udc96 Want to support my content?\nYou can buy me a coffee via PayPal.: \nhttps://www.paypal.com/paypalme/AndyM...\n\n\n\ud83d\udd14 Subscribe for more remixes!! / Suscribite para m\u00e1s remixes !!.\n\n\u25b6  Andy Marley :\n\u00bb\u00bb   / andymarleyok  \n\u00bb\u00bb    / andymarley  \n\nPlaylists \ud83c\udfb5\nREMIX \ud83d\udcbf\nhttps://www.youtube.com/watch?v=xrixlUQVz1A&list=PLYPp9syXR7zb0HqXbxtmrbtLGS_IsP-ge\n\n\n\n#remix  #Starship #NothingsGonnaStopUsNow #NothingsGonnaStopUsNowRemix \n#StarshipRemix #80sRemix #DanceRemix #HouseRemix #RetroRemix \n#ClassicRemix #80sDance #VintageRemix #AndyMarleyRemix #Remix2025\n\n\n\n\ud83c\udfb6 Artista original: Starship  \n\ud83c\udfb5 Canci\u00f3n: Nothing\u2019s Gonna Stop Us Now (1987) \n\n\u26a0\ufe0f This remix is \u200b\u200bfor entertainment purposes only. All rights belong to their respective owners.\n\n\n\n\ud83d\udce9 Contact for collaborations:\nedumai27@gmail.com\n\n\n\n\ud83c\udfb5  Viv\u00ed La Vida, Sent\u00ed La M\u00fasica \ud83c\udfb5\n===============================\n\ud83c\udfa7 THANK YOU FOR LISTENING \ud83e\udd29\ud83d\udc4d\n\n\n\n\n\n\nby Andy Marley\u2122 2025",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 10,
+            "position": 14,
             "publishedAt": "2026-05-25T11:15:21Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1368,7 +1887,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\ud83d\udd25 NEW ITALO DISCO 2026 \ud83d\udd25\n\ud83d\udcfb Francesco Bellini & Valeri Rossi - Italian Dance Mix 2026  Vol. 2 (Official Music Video) \ud83e\udea9\n\nNew Generation Italo Disco inspired by Francesco Napoli, Modern Talking, C.C. Catch, Bad Boys Blue and the golden 80s era.\n\nWelcome to a brand-new Italo Disco 2026 release.\n\nThis track brings back the real spirit of 80s synth-driven dance music, featuring analog style synths, melodic basslines and emotional retro vibes \u2014 combined with modern sound quality.\n\nIf you love Modern Talking, Sandra, Fancy, Savage, Ken Laszlo, Radiorama, Silent Circle, Francesco Napoli and classic Italo Disco sound, this is for you.\n\n\ud83c\udfa7 New Italo Disco 2026\n\ud83c\udfb9 80s Synth Style\n\ud83d\udcbf Radio Edit & Extended Version\n\ud83e\udd16 AI-powered production\n\ud83d\udce1 Retro Disco Radio Vibes\n\n\ud83d\udd14 Subscribe for more New Italo Disco every week.\n\n\ud83c\udfa7 Italian Dance Mix 2026 Vol. 2 \ud83d\udd25\n\nINTRO\nDan, dabadan \u2013 dabadan\nBabadan \u2013 bam bam bam bam\n\nTu, tu, tu, tu, tu, tu, tu, tu\nL'Italiano\n\nVERSE 1\nTu \u2013 stiamo qui, stiamo l\u00e0\nC'\u00e8 l\u2019amore \u2013 vieni qua\nDimmi s\u00ec \u2013 se ti va\nIl mio letto \u2013 forte gi\u00e0\n\nTu \u2013 pesi poco, lo sai\nCome gomma \u2013 leggera vai\nTu \u2013 perch\u00e9 non ci sei\nIo mi spoglio \u2013 dove sei\n\nHOOK\nHei ragazza \u2013 guarda me\nSei pi\u00f9 bella \u2013 pi\u00f9 che mai\nBaci lunghi \u2013 non ne dai\nDimmi solo: sei TU o no?\n\nVERSE 2\nTu \u2013 chi mi brucia sei tu\nSei la mia marcia in pi\u00f9\nUn po\u2019 pazza \u2013 come vuoi\nMa non sei \u2013 come lei\n\nSe mi ami \u2013 fallo dai\nIo ti canto \u2013 vedrai\nCome musica sarai\nE per sempre resterai\n\nCHORUS\nCanter\u00f2 \u2013 sveglier\u00f2\nChi sta sognando pi\u00f9 di me\nSiamo noi \u2013 io e te\nRagazza triste \u2013 vieni qui\n\nCanter\u00f2 \u2013 piover\u00e0\nIl vento poi si calmer\u00e0\nIl cielo blu \u2013 sorriderai\nE accanto a me tu resterai\n\nPOST-CHORUS\nTu, tu, tu \u2013 sei solo TU\nBalla ancora \u2013 di pi\u00f9, di pi\u00f9\nTu, tu, tu \u2013 resto con TU\nQuesta notte \u2013 solo noi due\n\nBREAK\nDan, dabadan \u2013 dabadan\nBabadan \u2013 bam bam bam bam\n\nDan, dabadan \u2013 dabadan\nBabadan \u2013 bam bam bam bam\n\nVERSE 3\nTu \u2013 non sarai mica tu\nCome sapone \u2013 vai gi\u00f9\nDimmi che \u2013 vuoi di pi\u00f9\nChe hai bisogno solo tu\n\nDa un\u2019ora \u2013 sei con me\nNon sei sogno \u2013 sei perch\u00e9\nNon miraggio \u2013 sei realt\u00e0\nDimmi adesso \u2013 resterai\n\nCHORUS\nCanter\u00f2 \u2013 sveglier\u00f2\nChi sta sognando pi\u00f9 di me\nSiamo noi \u2013 io e te\nRagazza triste \u2013 vieni qui\n\nCanter\u00f2 \u2013 piover\u00e0\nIl vento poi si calmer\u00e0\nIl cielo blu \u2013 sorriderai\nE accanto a me tu resterai\n\nHOOK\nLasciami cantare \u2013 dai\nCon la chitarra \u2013 vai\nLasciami cantare \u2013 piano\nSono L\u2019ITALIANO \ud83c\uddee\ud83c\uddf9\n\nBuongiorno Italia \u2013 amore\nSpaghetti \u2013 cuore\nRadio \u2013 nella mano\nCanta piano piano\n\nFINAL DROP\nTU \u2013 TU \u2013 TU \u2013 SEI TU\nBalla, balla \u2013 sempre pi\u00f9\n\nL\u2019ITALIANO \u2013 sono io\nCanta forte \u2013 amore mio\n\nTU \u2013 TU \u2013 TU \u2013 RESTA TU\nQuesta notte \u2013 solo noi due\n\nL\u2019ITALIANO \u2013 canta ancora\nFino all\u2019alba \u2013 senza paura\n\nOUTRO\nLasciami cantare\nPerch\u00e9 ne sono fiero\nSono l\u2019italiano\nUn italiano vero\n\n#italodisco #italodisco2026 #newitalodisco #modernitalodisco #italodiscomusic #italodiscostyle #italodiscofans #italodiscoforever #italodiscovibes\n\n#moderntalking #cccatch #badboysblue #thomasanders #dieterbohlen #sandra #fancy #savage #kenlaszlo #radiorama #silentcircle #joy #lianaross #grantmiller #brianice #ryanparis #gazebo #spagna #funfun #scotch #denharrow #francesconapoli \n\n#80smusic #80sdisco #80ssynth #80sstyle #80svibes #retro80s #retromusic #retrodance #retrovibes #retrodisco\n\n#synthpop #synthpopmusic #synthdisco #synthwave #synthmusic #electronicsmusic #electronicmusic #dancemusic #discomusic #euromusic #eurodisco\n\n#aimusic #aimusic2026 #airadio #newmusic2026 #newmusic #newretromusic #italohits #italodiscohit #viralmusic #music2026",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 11,
+            "position": 15,
             "publishedAt": "2026-05-21T20:23:06Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1433,7 +1952,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Italian Dance Mix 2026 - Francesco Bellini & Valeri Rossi | Modern Talking Vibes \ud83d\udcbf\u2728\nItalian Dance Mix 2026 - Francesco Bellini & Valeri Rossi | Modern Talking Vibes \ud83d\udcbf\u2728\nItalian Dance Mix 2026 - Francesco Bellini & Valeri Rossi | Modern Talking Vibes \ud83d\udcbf\u2728\n\nhttps://youtu.be/ET_hnPChkGw\n\nStep into the rhythm of Italian Dance Mix 2026 featuring Francesco Bellini & Valeri Rossi \u2014 a vibrant blend of modern Italo Disco, nostalgic 80s energy, and iconic Modern Talking vibes. This mix delivers smooth melodies, catchy synths, and romantic dance rhythms that bring back the golden era of Euro Disco with a fresh 2026 twist.\nPerfect for night drives, chill sessions, retro parties, or simply relaxing with timeless dance music. Let the fusion of classic Italo sound and modern production take you on an unforgettable musical journey.\n\n\ud83c\udfa7 In this mix:\nModern Italo Disco 2026\n80s Euro Disco inspired sound\nRomantic male & female vocal duets\nSmooth synthwave & nostalgic melodies\nDanceable beats with a vintage aesthetic\n\n\ud83d\udd25 If you love artists like Modern Talking, Savage, Bad Boys Blue, and contemporary Italo Disco producers \u2014 this mix is made for you.\n\n\ud83d\udc49 Don\u2019t forget to Like, Comment & Subscribe for more Italo Disco, Euro Dance, and Retro mixes every week!\n\n#ItaloDisco2026 #ModernTalkingVibes #EuroDisco #ItalianDance #DiscoMix #RetroVibes #Synthwave #DanceMusic #80sRevival",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 12,
+            "position": 16,
             "publishedAt": "2026-05-21T19:40:11Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1485,7 +2004,7 @@
         }
     },
     {
-        "etag": "F5hdZMKLqsS5JFDDXIJJufvppvI",
+        "etag": "41COAxInAzJv01rj-1_rKm-S6n8",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5FRUEzOUYxQTE4OEIyMTI3",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -1493,7 +2012,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 13,
+            "position": 17,
             "publishedAt": "2026-05-21T19:34:20Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1642,7 +2161,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Universal Music Group\n\nHeaven Must Be Missing An Angel (Remix) \u00b7 Tavares\n\nGreatest Hits\n\n\u2117 1976 Capitol Records, LLC\n\nReleased on: 1996-01-01\n\nRemixer: Ben Liebrand\nComposer Lyricist: Keni St. Lewis\nComposer Lyricist: Freddie Perren\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 14,
+            "position": 18,
             "publishedAt": "2026-05-17T15:02:04Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1694,76 +2213,6 @@
             "contentRating": {},
             "definition": "hd",
             "dimension": "2d",
-            "duration": "PT3M35S",
-            "licensedContent": true,
-            "projection": "rectangular"
-        },
-        "etag": "hnd31TGm3nmsH55a1TMHxswaYzA",
-        "id": "-oyQOH8Ua20",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS40M0Y4MEVDM0MxRTYxRERE",
-        "snippet": {
-            "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
-            "channelTitle": "Szab\u00f3 Gyula",
-            "description": "DIGIDI DIGIDI - DJ.ILHAM (Lyrics)\n\nLyrics : \n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nIn this car you don't exist\nDon't tell me what to do\nWhen you lose your keys and you crash into\n\nIn this life, I don't exist.\nBut don't tell me what to do\nYou look pretty young for someone with a PhD\n\nAre you really my dad\nYou're old and sad\n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nIn this life, you don't exist\nBut don't tell me what to do\nWhen you lose your mind and your liver fails, too\n\nIn this car, I don't exist\nDon't tell me what to do\nI like it in the dark and your house is haunted too\n\nAre you really my mom\nShe's pretty young\n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nSo Digidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\nDigidi Digidi Digidi Digidi Hey\n\nI'm going to sleep, Bye-bye\nI going to sleep, Bye-bye",
-            "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 15,
-            "publishedAt": "2026-09-04T09:25:49Z",
-            "resourceId": {
-                "kind": "youtube#video",
-                "videoId": "-oyQOH8Ua20"
-            },
-            "thumbnails": {
-                "default": {
-                    "height": 90,
-                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/default.jpg",
-                    "width": 120
-                },
-                "fhd": {
-                    "height": 1080,
-                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/fhddefault.jpg",
-                    "width": 1920
-                },
-                "high": {
-                    "height": 360,
-                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/hqdefault.jpg",
-                    "width": 480
-                },
-                "maxres": {
-                    "height": 720,
-                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/maxresdefault.jpg",
-                    "width": 1280
-                },
-                "medium": {
-                    "height": 180,
-                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/mqdefault.jpg",
-                    "width": 320
-                },
-                "standard": {
-                    "height": 480,
-                    "url": "https://i.ytimg.com/vi/-oyQOH8Ua20/sddefault.jpg",
-                    "width": 640
-                }
-            },
-            "title": "DIGIDI DIGIDI - DJ.ILHAM (Lyrics)",
-            "videoOwnerChannelId": "UCZtoHl1p6R6_iLm2yjA9gew",
-            "videoOwnerChannelTitle": "Amazing Lyrics"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
-        }
-    },
-    {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
             "duration": "PT7M29S",
             "licensedContent": false,
             "projection": "rectangular"
@@ -1777,7 +2226,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "For DJ Promotional use only! If you want me to take down this track, please feel free to message me and I will. No copyright infringement intended, I just wanted to promote this beautiful music.\n\n~\n\ud83d\udccdOFFICIAL WEBSITE - https://bit.ly/djanthonyb\n\n\ud83d\udccdMUSIC STUFF\nRecord Label (Discogs): https://bit.ly/3cB7wh7\nMixcloud (DJ Mixes): https://bit.ly/3xfTN7g",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 16,
+            "position": 19,
             "publishedAt": "2026-05-17T15:01:05Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1842,7 +2291,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Kato Feat. Jon - Turn The Lights Off [Official Video] HD \niTunes: https://itunes.apple.com/it/album/turn-the-lights-off-feat-jon-single/id348594096\n\nLike us on Facebook: http://facebook.com/timerec\nSubscribe to TimeRecTv!!! http://bit.ly/2fVwESX\nTime HEAVY ROTATION on Youtube: http://goo.gl/N2b511\nTime HEAVY ROTATION on Spotify: https://goo.gl/bkK2G0\n\nGet TIME RADIO on the app stores!!!\niOS: http://goo.gl/MmiV7J / Android: http://goo.gl/1diB9Q\nBlackBerry: http://goo.gl/9A478L\n\nFOLLOW US! Stay Connected:\nhttp://facebook.com/timerec\nhttp://www.timerec.it\nhttp://twitter.com/TimeRecordsIta\nhttp://google.com/+TimeRecords\nhttp://spoti.fi/13h6Dju\nhttp://instagram.com/timerecordsofficial#\nhttp://www.tsu.co/TIMERECORDS\nhttp://www.soundcloud.com/timerec",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 17,
+            "position": 20,
             "publishedAt": "2026-03-17T18:23:26Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -1907,7 +2356,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Download my original song 'Feeling Me' by Max Oazo | Official Video\n\u2716 https://maxoazo.fanlink.tv/feelingme \nEnjoy My Spotify \ud83d\udc9a Playlists: \n\u25ba This is Max Oazo: https://spoti.fi/2TGqY4l  \n\u25ba Fresh Summer Hits: https://spoti.fi/2Fi1KR9\n\u25ba Workout Music 2026 | Fitness & Gym Motivation @MAXOAZO https://spoti.fi/4jW2EUB\n\u25ba Roadtrip Music 2026 | Chill Out & Travel Music https://spoti.fi/42Yaozt\n\n\u270d\ufe0f For Booking & Questions follow Max Oazo's Official Pages:\nhttps://hypeddit.com/maxoazo\n\nFollow me on Youtube \u2764\ufe0f http://bit.ly/2HKUkEs\nTurn on \ud83d\udd14 notifications to stay updated with new songs!\n\n\ud83d\udccc Video suggestion \ud83d\ude0e\ud83d\udc4c\ud83d\udd25 The Weeknd - Open Hearts https://youtu.be/2v57CAmPWaw\n\u25b6 Once Upon A Time (Melodic Techno Remix) https://youtu.be/eAs7NGvjiiI\n\u25b6 Flowers https://youtu.be/Fbh3tDLcEoU\n\u25b6 Supergirl https://youtu.be/xwL0YeoREkc \n\u25b6 Next To You https://youtu.be/b3vykVGOSK8\n\u25b6 Diamonds https://youtu.be/e_KFchLiqAU\n\ud83d\udccc Playlist suggestion \ud83d\ude0e\ud83d\udc4c\ud83d\udd25 https://www.youtube.com/playlist?list=PL70tTskATvyk1o9M6Kwl7xqCO9805-5Vq\n-----------------------------------------------------------------\n\n\u2716  Follow Max Oazo:\nhttps://soundcloud.com/maxoazo\nhttps://facebook.com/maxoazomusic\nhttps://twitter.com/maxoazomusic\nhttps://youtube.com/maxoazomusic\nhttps://instagram.com/maxoazo\nhttps://open.spotify.com/artist/5uNCgXcFgj0OyipmIk8ZUi\n\n\u2716  Follow OWN MUSIC:\nhttps://facebook.com/ownmusiclabel\nhttps://instagram.com/ownmusiclabel\nhttps://soundcloud.com/ownmusiclabel \n\nMax Oazo Feeling Me (Lyrics)\n\nFeeling me baby\nGive it up, give it up\nThis could be something, ain't enough (Ain't enough)\nFeeling me baby\nGive it up, give it up\nThis could be something, ain't enough (Ain't enough)\nI know you been feeling me, baby\nWon't you give it up\nAnd we both know that this could be something\nBut that ain't enough\n'Cause when the leaves are falling down (Are falling down)\nI need to see you'll be around (Be around)\nI gotta know that you'll be there\nGive it up, give it up\nYou gotta show me that you care, ain't enough (Ain't enough)\nI gotta know that you'll be there\nGive it up, give it up\nYou gotta show me that you care, ain't enough (Ain't enough)\nFeeling me baby\nGive it up, give it up\nThis could be something, ain't enough (Ain't enough)\nFeeling me baby\nGive it up, give it up\nThis could be something, ain't enough(Ain't enough)\nI gotta know that you'll be there\nGive it up, give it up\nYou gotta show me that you care, ain't enough (Ain't enough)\nI gotta know that you'll be there, give it up\nYou gotta show me that you care, ain't enough\nI gotta know that you'll be there\nGive it up, give it up\n\n-----------------------------------------------------------------\nMax Oazo is a multi-talented producer, songwriter, and Dj. The versatility of his music touches genres of deep house, chill house, soft house, tropical, future house, pop, and dance.  \n\nHis songs include hits such as \"Feeling Me\", \u201cSupergirl\u201d, \u201cOnce Upon a Time\u201d, \u201cWhat Is Love\u201d, \u201cSet Me Free\u201d, \u201cStand By Me\u201d, \"Drops Of Dream\", \"Every Breath You Take\", \u201cWicked Game\u201d, \"Wonderful Life\", \"Because I Love You\", \"Close To Me\", \"Ain't No Sunshine\", \"Wanna Be With You\", \"Lullaby\", \"Airplane\", \"Tonight\", \"Conmigo\", \"Si Te Quedas\", \"Only Love Can Save Me Now\", \"Small Talk\", \"So It Goes\", \"Would You Wait For Me\", \"A Different Way\", \"With or Without You\", \"Lie To Me\", \"Loneliness\", \"Love\", \"Used To\", \"Walk Away\", \"Can't Get You Out Of My Head\", \"Right Here Waiting\", \"Not Meant To Be\", \"Airplane\", \"Get Back\", \"Believe\", Love Is On Fire\", \"Here For You\", \u201cOn The Dance Floor\", ''Got Everything\", \"Bottom Of The Sea\", \"Good Time\", \"Lovestruck\", \"Quiet City\" which have more than 200 million cumulative views on YouTube.\n------------------------------------------------------ \nCar music mix | Night Drive Mix | City Night Drive Mix | Best Hits 2026 | Mega Hits 2026 | Feeling Me Mix | Feeling Relaxed | Relaxing Music | House Relax | Music For Study | Music For Sleep | Jogging Playlist 2026 | Gym Motivation Music | Workout Music Mix 2026 | Summer Mix | Happy Music | Summer Workout Music | Deep House | Feeling Happy | Ibiza Summer Mix 2026 | Summer chill mix | Sunset Beach Music | Tropical Sunset Mix | Sunset Music Playlist | Summer Chill Vocal Mix | Best Summer Hits | Ibiza Party | Chill Out Music |\u0434\u0438\u043f \u0445\u0430\u0443\u0441 2026 | Dance Music | Tropical Deep House | travel music mix 2026 | Ibiza Beach | Beach Time | Summer Tropical House Mix | Summer Chill Mix | Best Summer Music | Ibiza Music | Summer Jams | Don't Worry Be Happy | Running Music Motivation | Fitness Music Playlist | Deep House & Chill Music | K\u043b\u0430\u0441\u0441\u043d\u0430\u044f \u043c\u0443\u0437\u044b\u043a\u0430| \u0417\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u044b\u0435 \u043f\u0435\u0441\u043d\u0438 | M\u0443\u0437\u044b\u043a\u0430 \u0432 M\u0430\u0448\u0438\u043d\u0443 | Drive Music Mix | Summer Music | Driving music mix | Road Trip music mix | Summer Time | \u590f\u5b63\u5bd2\u610f\u97f3\u4e50\u7ec4\u5408m | \u6d41\u884c\u6416\u6efe\u97f3\u6a02\u7684\u8d85\u7d1a\u7d44\u5408 | \u4ee5\u63a8\u52d5\u5728\u9053\u8def\u4e0a\u7684\u6c7d\u8eca\u6216\u5361\u8eca\n\n#feelingme #maxoazo #deephouse\n\n\u00a9 & P 2026 OWN MUSIC All rights are reserved. Unauthorized reproduction is a violation of applicable laws. In order to avoid copyright infringement, please do not upload this video on your channel.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 18,
+            "position": 21,
             "publishedAt": "2024-11-30T15:57:29Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2098,7 +2547,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by The Orchard Enterprises\n\nIf I Can't Have You (Club Mix) \u00b7 Sixth Finger \u00b7 Barry Alan Gibb \u00b7 Maurice Ernest Gibb \u00b7 Robin Hugh Gibb\n\nLounge Remixes, Vol. 4\n\n\u2117 2019 Music Brokers\n\nReleased on: 2022-10-07\n\nMusic  Publisher: Warner/Chappell Music, Inc, Universal Music Publishing Group, BMG Rights Management\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 19,
+            "position": 22,
             "publishedAt": "2024-11-19T18:42:25Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2163,7 +2612,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\"If I Can't Have You\" (Gryffin Remix): https://ShawnMendes.lnk.to/IICHYRemix\n\nCatch Shawn on tour this year: https://www.shawnmendesthetour.com/\n\nStream/buy Shawn Mendes: The Album now: https://IslandRecs.lnk.to/ShawnMendes\n\nFollow Shawn Mendes:\nTwitter: https://twitter.com/shawnmendes\nInstagram: https://www.instagram.com/shawnmendes\nFacebook: https://www.facebook.com/ShawnMendesO...\nWebsite: https://www.shawnmendesofficial.com\n\nFollow Gryffin:\nTwitter: www.twitter.com/gryffinofficial\nInstagram: www.instagram.com/gryffinofficial\nFacebook: www.facebook.com/gryffinofficial\nWebsite: www.gryffinofficial.com\n\n\n\n\n\u00a9 2019 Island Records, a division of UMG Recordings, Inc.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 20,
+            "position": 23,
             "publishedAt": "2024-11-19T18:36:59Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2353,7 +2802,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Warner Records\n\nTurn Up The Radio (Offer Nissim Remix Edit) [2022 Remaster] \u00b7 Madonna\n\nFinally Enough Love: 50 Number Ones\n\n\u2117 2022 UMG Recordings, Inc. Courtesy of Boy Toy, Inc. under exclusive license to Live Nation Worldwide, Inc. and Interscope Records under license from Universal Music Enterprises\n\nProducer: Madonna\nVocals: Madonna\nProducer: Martin Solveig\nMasterer: Mike Dean\nUnknown: Offer Nissim\nAssistant Mastering Engineer: Sean Solymar\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 21,
+            "position": 24,
             "publishedAt": "2024-10-30T18:39:53Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2424,7 +2873,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Features some of her greatest hits, including Like A Virgin, Ray of Light, Hung Up and more\n\n(c) 1983, 2024 Warner Bros, Interscope Records\n\nTracklist:\n00:00 Nothing Really Matters\n01:30 Up Down Suite/Bye Bye Baby\n02:00 Vogue/Break My Soul (Queens Remix)\n03:04 Vogue/Give it To Me/Vulgar\n04:22 Fever\n05:26 Express Yourself\n06:30 Lucky Star\n07:02 Holiday\n07:18 Borderline\n07:52 Like a Virgin/Rescue Me\n08:41 Causing a Commotion\n09:30 Into The Groove\n10:21 Like a Prayer\n11:20 Open Your Heart\n12:03 La Isla Bonita/Who's That Girl\n13:20 American Life\n13:38 Don't Tell Me/Keep It Together\n14:34 Medellin/What It Feels Like For a Girl/Frozen\n15:18 Frozen/Secret/Medellin\n16:12 Bedtime Story\n16:57 Justify My Love (Orbit Remix)\n18:16 Erotica/Where Life Begins/Human Nature\n19:21 Me Against the Music/4 Minutes/Slave 4 U/Dance 2Night\n21:30 Music\n22:34 Love Spent\n22:50 Crave\n24:15 Iconic/Illuminati/Papa Don't Preach\n25:03 Die Another Day/Gang Bang/Holy Water\n26:05 Living For Love\n28:25 American Pie\n28:58 Ray of Light\n30:14 Deeper and Deeper\n31:30 Jump/Sorry\n33:00 Beautiful Stranger/Hung Up\n35:00 God Control\n36:30 Everybody\n37:15 Material Girl\n37:30 Turn Up The Radio\n39:07 Celebration\n39:51 Hollywood\n40:06 Girl Gone Wild\n41:09 Give Me All Your Luvin'\n42:32 Bitch, I'm Madonna\n\ndl:\nhttps://www.mediafire.com/file/jjwnmoqljqpgwbs/Madonna_Megamix_2024.wav/file\nhttps://mega.nz/file/njgEDLbL#o6HU8cnRL0_aRf1V-t8GNGMunT1c47rs59JLrT2HVBA\n\nThanks for being so patient while I finished this up. It took a lot longer than I was expecting, but I'm really happy with it and I hope you are too! Enjoy!",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 22,
+            "position": 25,
             "publishedAt": "2024-10-25T19:14:37Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2616,7 +3065,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by ZYX Music\n\nPassion \u00b7 Gigi D'Agostino\n\nL'Amour Toujours\n\n\u2117 ZYX Music\n\nReleased on: 2000-01-10\n\nComposer: Di Agostino, L.\nComposer: Sandrini, P.\nMusic  Publisher: Media Songs\nMusic  Publisher: Warner Chappell\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 23,
+            "position": 26,
             "publishedAt": "2024-05-27T13:00:23Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2807,7 +3256,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by RCA Records Label\n\nYes Sir, I Can Boogie '99 (Radio Mix) \u00b7 Baccara 2000 \u00b7 Michael Yuniversal\n\nBaccara 2000\n\n\u2117 1999 Sony Music Entertainment Germany GmbH\n\nReleased on: 1999-08-09\n\nAssociated Performer: Baccara 2000 feat. Michael Yuniversal\nAssociated Performer: Baccara 2000\nAssociated Performer: Michael Yuniversal\nLyricist, Composer: Frank Dostal\nComposer, Lyricist: Rolf Soja\nProducer, Performance Arranger: Thorsten Br\u00f6tzmann\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 24,
+            "position": 27,
             "publishedAt": "2024-05-10T05:17:16Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2872,7 +3321,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "HQ: http://www.youtube.com/watch?v=Opxrm1sEQEM&&fmt=18\r\n\r\nAwesome sounds with a beautiful vocals of Jaren. Enjoy it!",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 25,
+            "position": 28,
             "publishedAt": "2024-05-08T18:04:48Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -2927,7 +3376,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Armin van Buuren's 8th studio album 'Feel Again' will be released on March 31 \ud83c\udfb6 \nPre-save (streaming) + pre-order (CD & download) is now available via https://AvB.lnk.to/FeelAgain\nSubscribe to Armada TV: http://bit.ly/SubscribeArmada\nClick the \ud83d\udd14 to stay updated with our new uploads!\n\nRight after summer, it's time for the full 'Mirage' album to take over. Inspired and influenced by many different types of music, 'Mirage' is more diverse than any other Armin album before. 'Mirage' is filled with musical fusions and surprising interpretations, from the orchestral masterpiece of title track 'Mirage', deep trance track 'I Don't Own You' and housy 'Feels So Good' to the eerie 'Take A Moment' and feel-good 'Drowning'. 16 tracks that highlight how Armin has matured as an artist.\n\nConnect with Armada Music\n\u25b6https://www.instagram.com/armadamusic\n\u25b6https://www.facebook.com/armadamusic\n\u25b6https://www.twitter.com/armada\n\u25b6https://www.soundcloud.com/armadamusic\n\u25b6https://www.armadamusic.com\n\n#ArmadaMusic\n#ArminvanBuuren\n#Unforgiveable",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 26,
+            "position": 29,
             "publishedAt": "2024-05-08T18:03:56Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3226,7 +3675,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Music video by Snoop Dogg vs. David Guetta performing Sweat (Snoop Dogg vs. David Guetta) [David Guetta Remix]. (P) (C) 2011 Capitol Records, LLC. All rights reserved. Unauthorized reproduction is a violation of applicable laws.  Manufactured by Capitol Records, LLC, 1750 North Vine Street, Hollywood, CA 90028.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 27,
+            "position": 30,
             "publishedAt": "2024-05-08T17:26:22Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3297,7 +3746,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Cher - All Or Nothing (Almighty Definitive Club Edit)\r\n\r\nThe third single from Cher's \"Believe\" album.\r\n\r\nChart Peaks:\r\n\r\nUnited Kingdom  #12\r\nUSA  #38 (Double A-Side with 'Dov'\u00e8 L'Amore')\r\nYugoslavia #10\r\nFrance #30",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 28,
+            "position": 31,
             "publishedAt": "2024-05-08T13:53:23Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3352,7 +3801,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Want more mashup? please support me! \nhttps://paypal.me/VAttila76\n\nHello everyone!\nUnfortunately, due to copyrighted music, I am not eligible to be part of the YouTube Partner Program, so I do not receive any revenue from YouTube after my videos are viewed.\n\nTherefore, I kindly ask anyone who can to support my channel!\nIf you would like to support the channel, you can do so through the link below.\n\nThank you very much if you do! https://paypal.me/VAttila76\n\n\nThe first self-edited video of my life :) If you like my video, please give it a like, and don't forget to subscribe to my channel, and press the bell to be notified of my latest videos! :) Have fun!\n\n\nHa tetszett a vide\u00f3m nyomj r\u00e1 l\u00e9ci egy Like-ot \u00e9s ne felejts el feliratkozni a csatorn\u00e1mra, \u00e9s a cseng\u0151t is nyomd meg, hogy mindig \u00e9rtes\u00fclj a leg\u00fajabb vide\u00f3imr\u00f3l! :)\nJ\u00f3 sz\u00f3rakoz\u00e1st!\n\nHa szeretn\u00e9d t\u00e1mogatni a csatorn\u00e1t, akkor az al\u00e1bbi linken kereszt\u00fcl megteheted! K\u00f6sz\u00f6n\u00f6m sz\u00e9pen, ha \u00edgy teszel!\nhttps://paypal.me/VAttila76\n\nThanks for watching! If You Enjoyed the Video... Don't Forget to LIKE, and SUBSCRIBE.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 29,
+            "position": 32,
             "publishedAt": "2024-02-07T19:28:56Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3399,7 +3848,7 @@
         }
     },
     {
-        "etag": "jqFvc8T9gm3L3G_V2mAkUI2thfQ",
+        "etag": "uOq8xjlkNLncI1pOqgVxETUZ2p8",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS4xODVDRjcwQzY3NkIxNjYz",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -3407,7 +3856,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 30,
+            "position": 33,
             "publishedAt": "2023-10-02T15:53:45Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3436,7 +3885,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Video Edit By Km Music\n\nDancers\n\nAnastasiia Kirilik\nElena Cruz-Nichipo\nVideo - Spot TIM - #HandMade\nVideo - Spot TIM - #Crew \nKlaudia Zygmunt\nSISSTA  DUO girls \nrebelindustry\nLeslie Malave\nHayley Toth\ngenousse\nValeev420\nCarena Ayala\n\nMusic\n\nTina Turner - Simply The Best  (Cover Remix)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 31,
+            "position": 34,
             "publishedAt": "2023-09-14T17:21:41Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3506,7 +3955,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 32,
+            "position": 35,
             "publishedAt": "2022-01-07T18:09:52Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3571,7 +4020,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\ud83d\udd25 Spotify - https://Shuffle.lnk.to/Music\n\u21aa\ufe0e Stream/Buy Song - https://open.spotify.com/track/5fRvePkRGdpn2nKacG7I6d?si=-WVMwg1bQjm0NY_w726ZrQ\n\nDancers\n\u2717 Jump_n_Pump Lu \nhttps://www.youtube.com/channel/UCI-OUv9TslocS5xkQiC45sw\n\u2717 Mary Grace O'Connor \nhttps://www.youtube.com/channel/UCGakIH0KY9kuqIdul3TnWQw\n\u2717 Shamyl \nhttps://www.youtube.com/channel/UCXtDiBmjbWr189oy6BGHa4Q\n\u2717 Sofia Sofia \nhttps://www.youtube.com/channel/UCOvhoVORR8CqsMYr9IJq-JQ\n\u2717 Ian & Natt \nhttps://www.youtube.com/channel/UCu2H4s2kB_gPs9o6Old2SWw\n\u2717 Leslie Malave \nhttps://www.youtube.com/channel/UC4wxOTGpU96UTQOiUulJpYA\n\nEurodance, which is also known as Eurohouse or Euro-NRG, is a genre of electronic dance music that originated in the late 1980s primarily in Europe. It combines elements from house, techno, Hi-NRG and especially Euro disco. Eurodance production has continued to evolve with a more modernized style that incorporates elements from electro and techno music.\n\n\u0415\u0432\u0440\u043e\u0434\u044d\u0301\u043d\u0441 \u2014 \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u043e\u0435 \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0435\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u043e\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0439 \u0442\u0430\u043d\u0446\u0435\u0432\u0430\u043b\u044c\u043d\u043e\u0439 \u043c\u0443\u0437\u044b\u043a\u0438, \u043f\u043e\u044f\u0432\u0438\u0432\u0448\u0435\u0435\u0441\u044f \u0432 \u043a\u043e\u043d\u0446\u0435 1980-\u0445 \u0433\u043e\u0434\u043e\u0432 \u0432 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0435 \u0441\u043b\u0438\u044f\u043d\u0438\u044f \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0445 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432 \u0435\u0432\u0440\u043e\u0434\u0438\u0441\u043a\u043e, \u0438\u0442\u0430\u043b\u043e-\u0434\u0438\u0441\u043a\u043e, \u0442\u0435\u0445\u043d\u043e, \u0445\u0438\u043f-\u0445\u0430\u0443\u0441\u0430 \u0438 \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u044b \u044d\u0439\u0441\u0438\u0434-\u0445\u0430\u0443\u0441\u0430.\n\n\u00a9\ufe0f We do not own the rights for the Song or the Dance. If any Creator is having issues, feel free to mail us directly at - Shuffledanceunited@gmail.com\n\n\u26a1\ufe0f Contact \u26a1\ufe0f \n\u2717 Shuffledanceunited@gmail.com\n\n#ShuffleDanceMusic #Shuffle #Cuttingshapes",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 33,
+            "position": 36,
             "publishedAt": "2022-01-07T17:09:18Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3636,7 +4085,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\ud83d\udd25 Spotify - https://Shuffle.lnk.to/Music\nStream/Buy Song - https://itunes.apple.com/us/album/yaa-yee-single/1375519004?l=de&ls=1&app=itunes\n\nDancers\n\u2717 Sofia Al\nhttps://www.youtube.com/channel/UCOvhoVORR8CqsMYr9IJq-JQ\n\u2717 Rebelindustry\nhttps://www.youtube.com/channel/UCvblbfR8in1TUulZKjgdBmw\n\u2717 Gabby J David\nhttps://www.youtube.com/channel/UCmLVlhkAuNoMvZepfAqzFJw\n\u2717 Elena Cruz-Nichipor\nhttps://www.youtube.com/channel/UCxUi_q9PdpohJ2rGXcR__ug\n\nEurodance, which is also known as Eurohouse or Euro-NRG, is a genre of electronic dance music that originated in the late 1980s primarily in Europe. It combines elements from house, techno, Hi-NRG and especially Euro disco. Eurodance production has continued to evolve with a more modernized style that incorporates elements from electro and techno music.\n\n\u0415\u0432\u0440\u043e\u0434\u044d\u0301\u043d\u0441 \u2014 \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u043e\u0435 \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0435\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u043e\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0439 \u0442\u0430\u043d\u0446\u0435\u0432\u0430\u043b\u044c\u043d\u043e\u0439 \u043c\u0443\u0437\u044b\u043a\u0438, \u043f\u043e\u044f\u0432\u0438\u0432\u0448\u0435\u0435\u0441\u044f \u0432 \u043a\u043e\u043d\u0446\u0435 1980-\u0445 \u0433\u043e\u0434\u043e\u0432 \u0432 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0435 \u0441\u043b\u0438\u044f\u043d\u0438\u044f \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0445 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432 \u0435\u0432\u0440\u043e\u0434\u0438\u0441\u043a\u043e, \u0438\u0442\u0430\u043b\u043e-\u0434\u0438\u0441\u043a\u043e, \u0442\u0435\u0445\u043d\u043e, \u0445\u0438\u043f-\u0445\u0430\u0443\u0441\u0430 \u0438 \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u044b \u044d\u0439\u0441\u0438\u0434-\u0445\u0430\u0443\u0441\u0430.\n\n\u00a9\ufe0f We do not own the rights for the Song or the Dance. If any Creator is having issues, feel free to mail us directly at - Shuffledanceunited@gmail.com\n\n\u26a1\ufe0f Contact \u26a1\ufe0f \n\u2717 Shuffledanceunited@gmail.com\n\n#ShuffleDanceMusic #Shuffle #Cuttingshapes",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 34,
+            "position": 37,
             "publishedAt": "2022-01-07T16:43:56Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -3954,7 +4403,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Label Worx Ltd\n\nFriendships (Original Mix) \u00b7 Pascal Letoublon\n\nFriendships\n\n\u2117 Suprafive Records\n\nReleased on: 2017-09-05\n\nComposer: Pascal Letoublon\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 35,
+            "position": 38,
             "publishedAt": "2022-01-07T16:42:26Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4019,7 +4468,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Available now on iTunes @ http://smarturl.it/PSY_7THALBUM\n\nAvailable on Spotify @ http://sptfy.com/PSY_7THALBUM\n\n#PSY #DADDY #\ub098\ud314\ubc14\uc9c0 #NapalBaji #7thALBUM #7\uc9d1\uc2f8\uc774\ub2e4\n\nMore about PSY@\nhttp://www.youtube.com/officialpsy\nhttp://www.facebook.com/officialpsy\nhttp://twitter.com/psy_oppa\nhttps://www.instagram.com/42psy42\nhttp://iTunes.com/PSY\nhttp://sptfy.com/PSY\nhttp://weibo.com/psyoppa",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 36,
+            "position": 39,
             "publishedAt": "2022-01-06T18:21:51Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4066,7 +4515,7 @@
         }
     },
     {
-        "etag": "ru9_kiknX9c0vW1Tsm6Tu23cBZM",
+        "etag": "ywIpH1o8nhyNUGHCDGHDkPzATGY",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5DRkY0QzQxNDhEODU4QUJE",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -4074,7 +4523,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is private.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 37,
+            "position": 40,
             "publishedAt": "2022-01-06T17:12:22Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4103,7 +4552,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Download & Stream: https://altramodamusic.lnk.to/z7mBpk\n\nJimmi Harvey delivers a soul infuse house beauty to follow up his recent releases on Toolroom Records. Chopping pianos with solid bass line adding to that some take it to church style vocals from Rion S makes for something that just grooves the soul and soothes the mind\n\nFollow Jimmi Harvey:\nhttps://www.instagram.com/jimmiharvey/\nhttps://www.facebook.com/jimmiharvey\n\nFollow Rion S:\nhttps://www.instagram.com/rion_s_music/\n\nFollow Altra Moda Music: \nhttps://www.instagram.com/altramodamusic/\nhttps://www.facebook.com/AltraModaMusic/\n\nVideo Credits:\nCamera: Amii Watson @amiiwatson \nDirector/Editor: Jimmi Harvey @jimmiharvey\nColor Grading: Cedric Letsch @cedricletsch\n\n#JimmiHarvey #RionS #OnAndOn",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 38,
+            "position": 41,
             "publishedAt": "2021-12-15T18:46:30Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4150,7 +4599,7 @@
         }
     },
     {
-        "etag": "XWuDPMKfDAKr-kr_L67e1zZ6ZFQ",
+        "etag": "9LPOOSsT5Jtc3q9UqrN-u1VevAQ",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5FMUU5ODU1MDE0RTk1Q0Ew",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -4158,7 +4607,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is private.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 39,
+            "position": 42,
             "publishedAt": "2021-11-04T21:57:52Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4187,7 +4636,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "facebook.com/4lexh\nsoundcloud.com/alexhumberstone",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 40,
+            "position": 43,
             "publishedAt": "2021-03-23T19:50:01Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4252,7 +4701,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\u25cfWelcome To My Deep Beat Channel.I am JayC from Istanbul,Turkey\n\u25cfIn My Channel You Can Find Different Mixes Of All Time Hits.\n\u25cfEnjoy My Shows Which Is Broadcasting Everyday.\n\u25cfPlease Feel Free To Comment.Thank You\n\ud83d\udd14Turn On To Get Notifications For New Uploads!\n\n\n\u25cf Sharing With The Audience What I Think Are The Greatest Records Of The \nMoment Or What I Think Are Timeless And Personal Classics Is Something \nThat Has Motivated Me Through The Years.I See My Job As Being A Big \nFilter And Relaxing Way To My Subscribers Life ..\n\n\u25cfYou Can Support Me By Clicking $ Sign\n\u25cfIf You Enjoy This Song/Mix, Please Give It A Like! \ud83d\udc4d\n\u25cfJoin Us Click The \ud83d\udd14 Bell And Subscribe\n\nFollow Me\n\u25fdYoutube 1   https://www.youtube.com/@DeepBeatJayC\n\u25fdYoutube 2    https://www.youtube.com/@deepbeatplus1084\n\n\u25cfYou Can Add To Your Playlist Or Just Follow The Link\n\u25fdGreat Singers Best:http://bit.ly/4kNI0oP\n\u25fdSingle Tracks :http://bit.ly/3IHYDF7 \n\u25fdFunky Disco House: http://bit.ly/3IGs9v0\n\u25fdVideoMixes AllTime: http://bit.ly/4lantLH\n\u2192Tracklist \u2122\n01 \u25cf    00:00 \u27a1 Louie Vega Featuring Anan\u00e9 & Tony Touch- Last Night A DJ Saved My Life \n02 \u25cf    04:40 \u27a1  Barry White - Can't Get Enough Of Your Love, Babe (The Remix Suite) \n03 \u25cf    09:15 \u27a1  Ministry Of Funk - Physical (Atraction House Mix)  \n04 \u25cf    14:45 \u27a1  Hercules & Love Affair 'Do You Feel The Same' (Purple Disco Machine Remix) \n05 \u25cf    20:30 \u27a1  Ministry Of Funk - Superheavy Funk (Original Mix) \n06 \u25cf    25:45 \u27a1  Two Door Cinema Club - Bad Decisions (Purple Disco Machine Remix) \n07 \u25cf    32:00 \u27a1  Purple Disco Machine - Devil in Me Feat. Joe Killington & Duane Harden (Extended Mix) \n08 \u25cf    36:45 \u27a1  Ministry Of Funk - Life (Original Mix) \n09 \u25cf    43:00 \u27a1  Fatboy Slim 'Praise You\u2019 (Purple Disco Machine Extended Remix) \n10 \u25cf    48:00 \u27a1  Ministry of Funk - Smooth (Original Mix) \n11 \u25cf    53:40 \u27a1  Camelphat & Elderbrook - Cola (Mousse T.'s Glitterbox Mix) \n12 \u25cf    58:40 \u27a1  Nora En Pure-Came Here For Love vs Saltwater(JAYC Extended Mash Up) \n13 \u25cf 1:06:00 \u27a1  Claptone - The Drums (Din Daa Daa) feat. George Kranz (Original Mix) \n14 \u25cf 1:11:15 \u27a1  Disco Incorporated - All Night Groove (Funky House Mix) \n15 \u25cf 1:16:20 \u27a1  Mousse T. feat. Cleah Melodie (JAYC Extended Mix) \n16 \u25cf 1:24:20 \u27a1  Purple Disco Machine - Body Funk \n17 \u25cf 1:29:50 \u27a1  Crazibiza ft. Dragonfly - Mystery (Original Mix) \n18 \u25cf 1:34:00 \u27a1  David Morales vs Sade - Shelter Me (David Morales Remix) \n19 \u25cf 1:42:45 \u27a1  Disco Incorporated - Disco Star (Funky Guitar Mix)  \n20 \u25cf 1:47:25 \u27a1  Ministry Of Funk - Lady (Soul Deep Mix) \n21 \u25cf 1:53:30 \u27a1  Calvin Harris feat Sam Smith-Promises ( JAYC Extended Mix) \n22 \u25cf 2:00:10 \u27a1  Hot Since 82 - Buggin' (feat. Jem Cooke) \n23 \u25cf 2:06:10 \u27a1  Eddie Thoneick, Kryder - The Chant (Cato Anaya Extended Remix)  \n24 \u25cf 2:11:00 \u27a1  Ce Ce Peniston - Finally 2019 (The Remix Suite)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 41,
+            "position": 44,
             "publishedAt": "2020-10-05T17:15:53Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4317,7 +4766,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Yep, this is the song\nNope, i dont have the rights, they belong to INgrooves.\n\n\nArtists -\nAdriatique :\nhttps://soundcloud.com/adriatique/\nhttps://www.facebook.com/adriatiqueof...\nhttps://www.youtube.com/user/adriatiq...\n\nThyladomid :\nhttps://soundcloud.com/thyladomid\nhttps://www.facebook.com/thyladomid.m...\nhttps://www.youtube.com/user/Thyladom...\n\n\n\u00a9 I have no rights on this song or image, if a producer or label or artist has an issue with any of the uploads, please get in contact at alexrutiaga@gmail.com and i will take it down immediately (it is only for promotions and entertainment purpose :))",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 42,
+            "position": 45,
             "publishedAt": "2020-08-07T18:23:34Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4382,7 +4831,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 43,
+            "position": 46,
             "publishedAt": "2020-08-07T07:31:28Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4574,7 +5023,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by DistroKid\n\nEvery Breath You Take (The Distance & Igi Remix) \u00b7 Camishe \u00b7 Max Oazo \u00b7 The Distance & Igi\n\nEvery Breath You Take (The Remixes)\n\n\u2117 OWN MUSIC\n\nReleased on: 2019-06-11\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 44,
+            "position": 47,
             "publishedAt": "2020-08-06T18:38:38Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4639,7 +5088,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "http://soundcloud.com/levantinee/",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 45,
+            "position": 48,
             "publishedAt": "2020-08-06T18:18:59Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -4705,7 +5154,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Sweet Dance Remix (2019).\nEnjoy Friends :-).",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 46,
+            "position": 49,
             "publishedAt": "2020-08-06T18:10:35Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5023,7 +5472,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Music video by Jamiroquai performing Cloud 9. (C) 2017 Jamiroquai Limited, under exclusive license to Virgin EMI Records, a division of Universal Music Operations Limited\n\nhttp://vevo.ly/leBovF",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 47,
+            "position": 50,
             "publishedAt": "2020-07-31T19:20:35Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5216,7 +5665,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "All the best Purple Disco Machine tracks including the latest.\n\nAll credit to the one and only Purple Disco Machine \ud83d\ude4f\ud83c\udffc \ud83d\udc97\n\nNote: Tempo is up a bit .. was feelin the energy at the time ..\n\nMixed By HouseFan",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 48,
+            "position": 51,
             "publishedAt": "2020-07-31T19:19:33Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5521,7 +5970,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Music video by Lady Gaga, Ariana Grande, Purple Disco Machine performing Rain On Me (Purple Disco Machine Remix/Audio).\u00a9 2020 Interscope Records",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 49,
+            "position": 52,
             "publishedAt": "2020-07-31T19:14:49Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5586,7 +6035,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "The official music video for Dua Lipa - Don't Start Now [ @PurpleDiscoMachine Remix]\n\nDon't Start Now is taken from Dua Lipa's second studio album 'Future Nostalgia' released in 2020, which featured the hit singles 'Don't Start Now', 'Physical', 'Break My Heart', 'Hallucinate' & 'Levitating'\n\nGet the album Future Nostalgia : https://dualipa.co/futurenostalgia\n\nSubscribe to the Dua Lipa channel for all the best and latest official music videos, behind the scenes and live performances. \nhttps://www.youtube.com/channel/UC-J-KZfRV8c13fOCkhXdLiQ?sub_confirmation=1\n\nSee more official videos from Dua Lipa here:\nhttps://www.youtube.com/playlist?list=PLNrotoZZ8BaoXT_LJuwEyESQlctWNDCwD\n\nListen to more from the album 'Future Nostalgia' :\nhttps://www.youtube.com/playlist?list=PLNrotoZZ8BaouNABcO_A9Xkn_Nkz0PT11\n\nFollow Dua Lipa:\nInstagram:  https://dualipa.co/instagram\nFacebook: http://dualipa.co/facebook\nTikTok: https://www.tiktok.com/@dualipaofficial\nTwitter: http://dualipa.co/twitter\nYouTube: https://dualipa.co/youtube\n\nAbout Dua Lipa:\nBorn and raised in London to Kosovar-Albanian parents Dua Lipa signed to Warner Records in 2015, releasing her self titled debut in 2017 which featured the hit singles, 'Be The One', 'IDGAF', 'Hotter Than Hell' & her first UK #1 hit 'New Rules'. \n\nCritical success soon followed as Dua Lipa picked up Brit Awards for 'Best Female Solo Artist' and 'Best British Breakthrough Act' as well as Grammy Awards for 'Best New Artist' and 'Best Dance Recording' for the track 'Electricity' in collaboration with Silk City.\n\nHer second internationally acclaimed studio album 'Future Nostalgia' was released in 2020 and included the hit singles 'Don't Start Now, 'Break My Heart', 'Hallucinate' and 'Levitating', with the remix album 'Club Future Nostalgia' following shortly after featuring guest appearances from 'Blackpink', 'Missy Elliott', 'Madonna' and 'Gwen Stefani'. \n\n#DuaLipa #DontStartNow #PurpleDiscoMachine \n#DuaRemix #FutureNostalgia",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 50,
+            "position": 53,
             "publishedAt": "2020-07-31T19:11:21Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5657,7 +6106,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "https://www.facebook.com/dimzach",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 51,
+            "position": 54,
             "publishedAt": "2020-07-31T18:53:00Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5722,7 +6171,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Eric Carmen - Hungry Eyes (DJ Chris O. Edit) Remix Bootleg\nDeep House Version 2018\n\nDownload im DJ-POOL: https://djpool.chris-o.net\nFREE DOWNLOAD: https://hypeddit.com/track/ve6nv4\n\nFacebook: https://facebook.com/deejaychriso\nSoundcloud: https://soundcloud.com/deejaychriso",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 52,
+            "position": 55,
             "publishedAt": "2020-07-31T18:46:19Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5787,7 +6236,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\u265b DeepHouseDealer - Your daily dose of deephouse.\n// Facebook : https://www.facebook.com/Deephousedealer-717892644982247/timeline/\n\nSupport the artist\nhttps://soundcloud.com/maxim-andreev\nhttps://www.facebook.com/max.andreev.3\nhttps://twitter.com/MaximAndreev\nhttp://www.last.fm/user/maximlm\nhttps://www.youtube.com/user/maximlm86\nSupport the artist\nhttps://soundcloud.com/maxim-andreev\nhttps://www.facebook.com/max.andreev.3\nhttps://twitter.com/MaximAndreev\nhttp://www.last.fm/user/maximlm\nhttps://www.youtube.com/user/maximlm86\nhttps://itunes.apple.com/ru/artist/maxim-andreev/id622700788\n\n\n\u25c8 Follow Armaganvideos\nhttps://www.facebook.com/armaganvideos\nhttp://youtube.com/armaganvideos\n\n\n\u00a9 Please note, I do not hold any ownership rights to the music on my channel nor am I a label or publisher. If you are a label or publisher, please ask me to take it down and I will. If there are any other problems let me know, otherwise enjoy the music, Cheers!\n\n\u00a9 For copyright issues, mail us here : deephousedealer1990@gmail.com",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 53,
+            "position": 56,
             "publishedAt": "2020-07-31T18:36:46Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5858,7 +6307,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 54,
+            "position": 57,
             "publishedAt": "2020-07-31T18:31:42Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5923,7 +6372,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Music video by Jennifer Lopez performing Dance Again (Solo Version) (Audio). (P) 2012 Epic Records, a division of Sony Music Entertainment",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 55,
+            "position": 58,
             "publishedAt": "2020-07-27T19:12:34Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -5988,7 +6437,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\u25baMrDeepSense - Quality music reach beautiful minds.\n\u2716Facebook: https://www.facebook.com/MrDeepSense\n\u2716Soundcloud: https://soundcloud.com/mrdeepsense\n\u2716Subscribe: \u202a\u202ahttps://goo.gl/b8dUZ \n\n\nLeeboy - Baby (Original Mix) [Undertechnical]\n\n\nBuy on Beatport: http://www.beatport.com/track/baby-original-mix/4585742\n\n\nTO OWNERS & COPYRIGHT HOLDERS:\nThis channel is created to promote magnificent songs, and as well, producers. Absolutely, NO COPYRIGHT INFRINGEMENT INTENDED. This CHANNEL CLAIMS NO RIGHTS OR OWNERSHIP over the contents posted. If you wish for a track to be removed, please let us know so we can remove it from our feed immediately.\n\n\n\u25baFollow Leeboy :\nMyspace: https://myspace.com/funkituppromotions\nTwitter: https://twitter.com/Leeboys\nSoundcloud: https://soundcloud.com/leeboyuk\n\n\n\u25baFollow Undertechnical Recordings :\nSoundcloud: https://soundcloud.com/undertechnical\nFacebook:  https://www.facebook.com/Undertechnical\n\n\u25baPhoto shot by: Nicholas Maggio\nTumblr: http://andthesearethedays.tumblr.com/\nWebsite: http://www.nicholasmaggio.com/",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 56,
+            "position": 59,
             "publishedAt": "2020-07-27T18:39:30Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6053,7 +6502,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Sting - Desert Rose Club Mix",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 57,
+            "position": 60,
             "publishedAt": "2020-07-27T18:18:36Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6108,7 +6557,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Captain Hollywood Project - More and More [Instrumental] Eurodance (1992)\n\n\"More and More\" is a platinum-selling hit recorded by the Germany-based 1990s Eurodance music project known as Captain Hollywood Project. It reached number 1 in Germany and was a top-5 hit in Austria, Belgium, Denmark, Israel, Italy, Norway, Sweden, and Switzerland.\n\nSUBSCRIBE: https://bit.ly/2VFW4pG\n\nMore: Michael Flatley - Lord of the dance | Finale  https://bit.ly/2X2TIl3",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 58,
+            "position": 61,
             "publishedAt": "2020-07-27T18:06:47Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6155,7 +6604,7 @@
         }
     },
     {
-        "etag": "z_qG7bDi6rKp9rqCCrbRyavzC-s",
+        "etag": "DI78sQt1xjzD459-zFXAQPan7bs",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5ENUI5OTFCQkYxNDUxQjQ3",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -6163,7 +6612,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 59,
+            "position": 62,
             "publishedAt": "2020-07-27T17:58:09Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6197,7 +6646,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "#AnotherNight #RealMcCoy #Reboot #DJRagion #VJAuX\nReal McCoy - Another Night (DJ Ragion Reboot) VJ AuX\nhttps://www.youtube.com/c/VJAux22\nhttps://www.youtube.com/@VJAuX-Quality\nhttps://www.youtube.com/@VJAuX_EurodancePartyShow\nhttps://www.youtube.com/c/VJAuXDANCE\nReal McCoy - Another Night (DJ Ragion Reboot) VJ AuX\nhttps://youtu.be/_x7kW3LwzPE\nWelcome to the new channel with Eurodance videos and music!\nhttps://youtu.be/WCASFyl9Nb0",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 60,
+            "position": 63,
             "publishedAt": "2020-07-27T17:55:12Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6244,7 +6693,7 @@
         }
     },
     {
-        "etag": "IhOpczE8bBMmjAMtPdq34ph4H-E",
+        "etag": "wX4RB2t3gcqZ7QcI3TiOfX5wmXg",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS43RjdBQTMwNUUwRTA1QkE3",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -6252,7 +6701,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 61,
+            "position": 64,
             "publishedAt": "2020-07-27T17:37:52Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6281,7 +6730,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 62,
+            "position": 65,
             "publishedAt": "2020-07-27T17:34:35Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6341,7 +6790,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "TRACKLIST :\n\n00:00 Queen - Bohemian Rhapsody (Dj Pato X alex spite)\n\n04:30 Big In Japan \u2013 The Bestseller Remix\n\n10:00 Survivor - Eye Of The Tiger (Matt Pop Mix) Dj Pato Edit\n\n14:44 Roger Waters - The Tide Is Turning (Rafael Lambert Remix)\n\n20:26 Juloboy - Died In Your Arms (Original Mix)\n\n26:20 The Show Must Go On (Robert McDrew Remix) \u2013 Dj Pato Edit\n\n29:26 Madonna \u2013 Frozen (Dj Kapral Remix)\n\n33:17 Elton John \u2013 Sacrifice (Dj Amor Remix)\n\n38:40 Voyage Voyage \u2013 Georges Airbullet remix\n\n42:57 Michael Jackson \u2013 Beat it (Dj Pepsi) \u2013 DJ pato Edit\n\n46:40 Eminem Ft Dido Stan ( Dj Pato Edit)\n\n50:31 Stumblin\u2019in \u2013 Ahmet kilic ( the distance and igi remix)\n\n56:12 Brave - I Just Called To Say I Love You ( Dj pato edit)\n\n59:09 Lyam Van Dyke \u2013 all that she wants ( Dj pato edit)\n\n01:01:42 Diana Ross - I will survive(Alex Samoylov Remix)\n\n\ud83d\udd0aDjPato Social Media \n\nSoundCloud: https://soundcloud.com/user-588739227\n\nInstagram: https://www.instagram.com/djpato.official\n\n==========================================================================\nIf you have any problem with copyright issues, or any question feel free to contact us via email and we will answer within 48 hours.\n------ djpatodeep@gmail.com -------\n\ndjregard #deephouse #80's #90's kygo tropicalhouse deephouse2018 remix 2018, Chill, Winter\nDeep House 2018, 2018, Nu Disco, Indie Dance, Deep House, Best Deep House, Deep House Mix, Deep House Vocal, Deep House Music, Chill Out, Chill Out Music, Chill Out Mix, #Deep House Lounge, Lounge Mix, New Mix, Remix, Mixes, DJ, Live, Deep House Remix, #Vocal Deep House, Deep House Mixes, Deep House Summer, #Summer Mix, Chill Out Summer, Deep Chill, House Music, Vocal, Tropical, Deep Mix, Deep Mix Nation, Music Video, Summer Party, Deep Zone, #Kygo, Kygo 2018, Ahmet Kilic Dj dropg vianney deep house, winter music christmas deep house, 80's, 90's, 70's, 80's deep house, 90's deep house, dj pato, celine dion,",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 63,
+            "position": 66,
             "publishedAt": "2020-07-27T09:34:11Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6406,7 +6855,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\ud83c\udf1f Stream / Download: https://EnormousTunes.lnk.to/InTheAir...\n\nNora En Pure & Lika Morgan - In the Air Tonight (Nora En Pure Remix)\n\n\u2192 Facebook: https://www.facebook.com/NoraEnPure\n\u2192 Instagram: https://www.instagram.com/noraenpure\n\u2192 Soundcloud: https://soundcloud.com/NoraEnPure\n\u2192 Twitter: https://twitter.com/NoraEnPure\n\nLika Morgan:\n\u2192 Facebook: https://www.facebook.com/ItsLikaMorgan\n\u2192 Soundcloud: https://soundcloud.com/likamorgan\n\u2192 Twitter: https://twitter.com/ItsLikaMorgan",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 64,
+            "position": 67,
             "publishedAt": "2020-07-27T06:13:58Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6477,7 +6926,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Diplo & SIDEPIECE - On My Mind (Purple Disco Machine Remix) (Official Audio)\n\nSubscribe to Diplo YouTube Channel - http://diplo.fm/YouTube\n\nStream/Download: https://higherground.ffm.to/onmymindpdmrmx\nShop Higher Ground Merch: https://shop.higherground.house \nFollow Higher Ground on Spotify: https://smarturl.it/HigherGroundPlaylist\n\nFOLLOW DIPLO:\nFacebook: https://www.facebook.com/diplo \nTwitter: https://twitter.com/DIPLO \nSoundCloud: https://soundcloud.com/diplo \nInstagram: https://www.instagram.com/diplo/ \n\nFOLLOW SIDEPIECE: \nFacebook: https://www.facebook.com/youasidepiece \nTwitter: https://twitter.com/youasidepiece \nSoundCloud: https://soundcloud.com/youasidepiece \nInstagram: https://www.instagram.com/youasidepiece/ \n\nFOLLOW PURPLE DISCO MACHINE\nFacebook: https://www.facebook.com/purplediscomachine\nTwitter: https://twitter.com/PurpleDiscoM\nSoundCloud: https://soundcloud.com/purplediscomachine\nInstagram: https://www.instagram.com/purple_disco_machine/\n\nFOLLOW HIGHER GROUND\nWeb: http://www.higherground.house \nFacebook: https://www.facebook.com/Thehigherground-105240197488238/ \nTwitter: https://twitter.com/thehigherground \nSoundCloud: https://soundcloud.com/thehigherground \nInstagram: https://www.instagram.com/thehigherground/ \nBandcamp: https://thehigherground.bandcamp.com \nYouTube: https://www.youtube.com/thehigherground\n\n#Diplo\n#OnMyMind\n#PurpleDiscoMachine",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 65,
+            "position": 68,
             "publishedAt": "2020-07-08T18:37:25Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -6791,7 +7240,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Beat Boutique\n\nI Do \u00b7 KaleidoCloud\n\nDeep House Lounge, Vol. 2 (Chill Out Mix)\n\n\u2117 Beat Boutique\n\nReleased on: 2018-11-08\n\n: Matteo Urani\nComposer: Matteo Urani\nLyricist: Matteo Urani\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 66,
+            "position": 69,
             "publishedAt": "2020-07-08T16:52:47Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -7105,7 +7554,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "YourDancefloorTV -- (Re)Discover your Dance greatest hits - YourDancefloorTV is your channel for all the best Dance music. Find your favorite tracks and artists and experience the best of Dance music. Subscribe for free to stay connected to our channel and easily access our video updates! - YourDancefloorTV: http://www.youtube.com/YourDancefloorTV",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 67,
+            "position": 70,
             "publishedAt": "2020-07-08T16:52:41Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -7165,7 +7614,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Kandi & Fitch - Spirit in the Sky (Sea Lounge Remix), listen and enjoy the high quality music.\n\n\u27a4 Free Download: http://bit.ly/2O9EnMA\n\n\u2764\ufe0f LIKE IT? SHARE IT!\n\n\u2705 Subscribe for more music: http://bit.ly/WGMusic\n\u279e Follow me on Twitter http://bit.ly/WGMusic-twitter\n\u279e Like me on Facebook: http://bit.ly/WGMusic-FB\n\u279e Google Plus: http://bit.ly/wgmusic-gplus\n\u279e Website: http://bit.ly/wgmusic-web\n\nTurn on the '\ud83d\udd14' to get notifications of new uploads!\n\n\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\n\n\ud83c\udfb5 Follow Kandi & Fitch:\n\u2022 https://www.facebook.com/kandiandfitch/\n\u2022 https://open.spotify.com/artist/2TxOG4hHZPfv02L7EunnU3\n\u2022 https://itunes.apple.com/us/artist/kandi-fitch/666562551\n\n\u27a5If you're the copyright owner and have an issue with any of the uploads, please contact me (wildgamerinfo@gmail.com) and i will delete it immediately. This also includes the artists of the images used.\n\n\ud83c\udfdd\ufe0f Wallpaper: https://whvn.cc/622758",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 68,
+            "position": 71,
             "publishedAt": "2020-07-08T16:52:34Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -7478,7 +7927,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Music video by Alcazar performing Don't You Want Me. (C) 2002 BMG Sweden AB",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 69,
+            "position": 72,
             "publishedAt": "2020-07-08T16:42:01Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -7796,7 +8245,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Music video by Alcazar performing This Is The World We Live In. (C) 2004 BMG Sweden AB",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 70,
+            "position": 73,
             "publishedAt": "2020-06-30T17:57:34Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -7867,7 +8316,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "New \nDua Lipa: Houdini 12 in Extended Mix\nhttps://youtu.be/eBXa7Coltz8",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 71,
+            "position": 74,
             "publishedAt": "2020-06-11T18:21:02Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -7932,7 +8381,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Listen, like and love this song on Spotify\nhttps://open.spotify.com/track/6cngV0Tcsqhwk2KrHNr0TI?si=Y4etx1UFQh6Ysf5phig7ZQ\n\nListen, like and love this song on Apple Music\nhttps://music.apple.com/be/album/forever-in-love/1171412193?i=1171412358&l=nl",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 72,
+            "position": 75,
             "publishedAt": "2020-05-26T10:29:10Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -7987,7 +8436,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "La storia di Shadrack, Mesac e Abed-nego!\n \nCanzone dal ritmo Swing degli anni 40 cantata da Louis Armstrong, Louis Prima e successivamente anche da Brook Benton. Ultimamente \u00e8 stata riportata alla rib\u00e0lta dal remix swing/hip hop utilizzato come sigla di apertura nel programma di Chiambretti \"Supermarket\".",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 73,
+            "position": 76,
             "publishedAt": "2020-05-19T15:01:36Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -8052,7 +8501,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Fragma - Toca\u00b4s Miracle (2008 Inpetto New Vocal Version) \nListen also here: https://open.spotify.com/album/0r8FFE2Sk4dcCpfjuc2XvE?si=mJ_8vNpJR5u2Iu0x1OOcFg\nhttps://music.apple.com/de/album/tocas-miracle-ep/1611153090\n\nFacebook: https://web.facebook.com/fragmaofficial\nInstagram: https://www.instagram.com/fragmaofficial/\nSpotify: https://open.spotify.com/artist/2t9efDsc10DtZpi4LP3BJJ?si=zv7ngg9bRxKtERe88cbjag\nBooking: https://www.mpm-music.de/project/fragma/",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 74,
+            "position": 77,
             "publishedAt": "2020-05-14T16:00:40Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -8370,7 +8819,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Above Board Distribution Limited\n\nCut Me Down (Kastis Torrau & Donatello feat Arnas D Remix) \u00b7 Sasha \u00b7 Krister Linder\n\nCut Me Down (Beatport and Burn Studios Remix Winners)\n\n\u2117 Last Night On Earth\n\nReleased on: 2011-09-19\n\nFeatured Artist: Krister Linder\nArtist: Sasha\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 75,
+            "position": 78,
             "publishedAt": "2020-05-04T13:48:36Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -8435,7 +8884,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Quelle: https://www.youtube.com/watch?v=dQsBxA2CcFc",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 76,
+            "position": 79,
             "publishedAt": "2020-04-11T08:11:45Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -8500,7 +8949,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Italo Disco Remix \n\n\nhttps://www.youtube.com/channel/UCFlugzDwS1R_A4ckXawT1Jg/videos",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 77,
+            "position": 80,
             "publishedAt": "2020-02-13T20:10:13Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -8813,7 +9262,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Provided to YouTube by Label Worx Limited\n\nMama Say Mama Sa \u00b7 Lookee \u00b7 Stefane\n\nADE 2018 V/A\n\n\u2117 Prison Entertainment\n\nReleased on: 2018-12-14\n\nProducer: Various Artists\nComposer: Various Artists\nMusic Publisher: Copyright Control\n\nAuto-generated by YouTube.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 78,
+            "position": 81,
             "publishedAt": "2020-02-10T19:37:49Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -8883,7 +9332,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "*Podoba\u0142o si\u0119? Zostaw \u0142apk\u0119 w g\u00f3r\u0119! \n\n*Zapraszam r\u00f3wnie\u017c do subskrypcji kana\u0142u po wi\u0119cej ciekawych materia\u0142\u00f3w! :D\n\n*Dzi\u0119kuj\u0119! \u017ce jeste\u015bcie :)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 79,
+            "position": 82,
             "publishedAt": "2020-02-10T19:34:34Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -8948,7 +9397,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Download it from here: -\n\nHit the \ud83d\udd14 to join the notification squad!\n\n\u25baFollow Drumnastics\nhttps://www.facebook.com/drumnastics\nhttps://soundcloud.com/drumnastics\nhttps://www.instagram.com/drumnasticsyt/\n\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\n\u25ba Follow Charlie Lane\nhttps://soundcloud.com/charlielanemus...\nhttps://www.facebook.com/CharlieLaneDJ\nhttps://twitter.com/Charlie_S_Lane\n\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\n\u266b Message for the Original creator of this song \u266a\n\nIf you are the original artist and you don't want me to have your work uploaded on my channel, please contact me, by my channel's email, send a message on YouTube or comment in the section below.\nWe will immediately remove it.\n\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\n\u27bc Permission acquired to use this remix.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 80,
+            "position": 83,
             "publishedAt": "2020-02-10T19:28:38Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9263,7 +9712,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Ti\u00ebsto, Jonas Blue & Rita Ora - Ritual (Official Video) \n\nStream/Download Ritual now: http://tsto.co/ritual\n\nDirector: Sophie Muller\nDirector of Photography: John Perez\n\nProduction Company: PRETTYBIRD UK\nExec Producer: Juliette Larthe\nProducer: Hannah May \nProduction Manager: Marian Mikhail\nProduction Coordinator: Benji Landman\n1st Assistant Director: Chris Kelly\n2nd Assistant Director: Lucy Kelly\nCamera Operator: Julian Pugh Cook\nProduction Designer: Alison Dominitz\nStylist: Karen Clarkson\nHair: Shon Ju\nMakeup: Marie Bruce\nChoreographer: Aaron Sillis\n\nDancers: Christin Olesen, Klo\u00e9 Dean, Paris Crossley, Dominant Namek, Dylan, Mayoral, Evion Hackett, Jacob Holme, Kaner Flex, Tanaya Martin, Theo Oloyade\n\nFocus Puller: Scott Williams\n2nd Assistant Cameras: Jomar Omeally, James Smith\nGaffer: Nathan Matthews \nElectricians: John Letsinger, Kai Blamey\nDesk Op: Christian Smith\nGrip: Jamie Monks\n2nd Grip: Ken Ashley Johnson\nCrane Technician: Adam Slater\nDIT: Ollie Martin\nAudio/Video Playback: Von Adams\nCamera Trainee: Steve Hatch\nRiggers: Mark Redmond, James Molloy\nWardrobe Assistant: Amy Holden-Brown\nHair Assistants: Chloe Frieda, Jiyoon Lee, Ross Kwarn, Liam Russell\nMakeup Assistants: Jan Chan, Billie McKenzie\nArt Department Runners: Tera Pechmannova, Joey-Philippe Dali, Jay Newby\nChoreographer Assistants: Shannelle \u2018Tali\u2019 Fergus, Glenn Hudson\n\nFollow Ti\u00ebsto\nhttp://www.Tiesto.com/\nFacebook: http://tsto.co/Facebook \nInstagram: http://tsto.co/Instagram \nTwitter: http://tsto.co/Twitter \nYouTube: http://tsto.co/YTSubscribe \nSoundcloud: http://tsto.co/Soundcloud\nWeibo: http://tsto.co/Weibo \n\nFollow Jonas Blue\nhttps://www.jonasblue.com/\nFacebook: https://www.facebook.com/JonasBlueMusic/\nInstagram: https://www.instagram.com/jonasblue/\nTwitter: https://twitter.com/jonasblue\nYouTube: https://www.youtube.com/channel/UCBIzPk0lne1w22jZR3LA36g\nSoundcloud: https://soundcloud.com/jonasblue\n\nFollow Rita Ora\nhttps://ritaora.com/\nFacebook: https://www.facebook.com/RitaOra/\nInstagram: https://www.instagram.com/ritaora/\nTwitter: https://twitter.com/ritaora\nYouTube: http://youtube.com/ritaora\nSoundcloud: https://soundcloud.com/ritaora",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 81,
+            "position": 84,
             "publishedAt": "2020-02-08T10:10:18Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9328,7 +9777,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "En este video mostramos  un entrenamiento tabata de cardio y abdomen en casa de 4 minutos el entrenamiento en circuito se basa en 20 segundos de acci\u00f3n con 10 segundos de descanso\nen total son 8 ejercicios para abdomen y cintura en modo TABATA.\n\nflutter kicks  2.mountain climbers cruzados  3.tuck crunches   4.basic jumprope \n5. planchas de lado a lado  6.giros rusos   7.scissors abs  8. double unders \n\n\u27a1\ufe0f Accede a nuestra Academia de Entrenamiento VFIT y aplica este metodo en tu vida\u2026 \ud83d\udc49\ud83c\udffc https://academia.vfitmx.com/tu-mejor-version \ud83d\udcaa\ud83c\udffc\ud83e\udef5\ud83c\udffc\n\nPara nuestras cuerdas  de alta velocidad \ud83d\udc49\ud83c\udffc  https://amzn.to/3qFiFHm\n\nCuerdas Rebordeadas \ud83d\udc49\ud83c\udffc  https://rb.gy/wjdk6 \n\nContacto Email : soporte@vfitmx.com \n\nVideo por Carlos Vidal IG: https://www.instagram.com/carlosvidal.film/\n\nColaboracion Mauricio Medellin IG https://www.instagram.com/maummedellin/\n\nGerardo's\nINSTAGRAM: https://www.instagram.com/gerardo_vfit/ \nFACEBOOK: https://www.facebook.com/viviendofit6/",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 82,
+            "position": 85,
             "publishedAt": "2020-02-02T15:01:04Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9646,7 +10095,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "All this years top hits remixed to a Workout Beat - Guaranteed to keep you moving!!!\nPerfect for Gym,Running,Spinning and Jogging!\nAvailable at all these great streaming sites :-\nhttps://www.amazon.co.uk/Big-Workout-Hits-2020-Remixed/dp/B07ZLVF9JV/ref=sr_1_1?keywords=big+workout+hits+2020&qid=1572876949&s=dmusic&sr=1-1\nhttps://open.spotify.com/album/73bXIsuw4ilhIe7eW35YAs?si=1iRrDwCpRqO5G-YHU9MoWA\nhttps://music.apple.com/gb/album/big-workout-hits-2020-remixed-for-fitness/1485044158\n\nTracklisting : -\n\nSenorita                                                        Workout Mix 120 bpm\nI Don't Care                                                        Workout Mix 130 bpm\nSummer Days                                                Workout Mix 130 bpm\nAll That I Want                                               Workout Mix 127 bpm\nBeautiful People                                               Workout Mix 130 bpm\nIf I Can\u2019t Have You                                       Workout Mix 124 bpm\nSucker                                                               Workout Mix 130 bpm\nNo Regrets                                                       Workout Mix 130 bpm\n7 Rings                                                               Workout Mix 140 bpm\nHappier                                                               Workout Mix 130 bpm\nIs this what you wanted                               Workout Mix 135 bpm\nPromises                                                       Workout Mix 126 bpm\nGirls Like You                                               Workout Mix 130 bpm\nRewrite the Stars                                               Workout Mix 130 bpm\nShotgun                                                               Workout Mix 130 bpm\nNothing Breaks like a heart                       Workout Mix 130 bpm\nStutter                                                               Workout Mix 130 bpm\nElectricity                                                       Workout Mix 120 bpm\nThank You,Next                                               Workout Mix 118 bpm\nSide Effects                                                       Workout Mix 120 bpm\nMothers Daughter                                       Workout Mix 110 bpm\nSOS                                                               Workout Mix 105 bpm\nNever Really Over                                        Workout Mix 105 bpm\n\nwww.superfitnessmusic.com",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 83,
+            "position": 86,
             "publishedAt": "2020-02-02T14:50:15Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9711,7 +10160,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Iscriviti al Canale: http://bit.ly/2nt01Pw\nEnjoy the best 90'S Dancemania Workout Program of all time \nDon't forget to subscribe!\nFor more videos click the link below:\nhttp://bit.ly/2EuGkyc\nhttp://bit.ly/2nwV7jX\nhttp://bit.ly/2s03ie1\nFollow us:\nfacebook: https://www.facebook.com/energyforfitness/\ninstagram: https://www.instagram.com/energy.man/\nsito web: http://www.energy4fitness.it/e4f/index.cfm\n\n\nTRACKLIST:\n01  -  Blue  -  00:00:00\n02  -  We Like To Party  -  00:04:07\n03  -  Ice Ice Baby  -  00:07:16\n04  -  Show Me Love  -  00:11:23\n05  -  U Can't Touch This  -  00:15:30\n06  -  Be My Lover  -  00:19:37\n07  -  Another Night  -  00:23:44\n08  -  What's Up  -  00:28:05\n09  -  Scatman  -  00:31:43\n10  -  Rhythm Is A Dancer  -  00:35:21\n11  -  Believe  -  00:39:28\n12  -  What Is Love  -  00:43:06\n13  -  More And More  -  00:46:29\n14  -  The Power  -  00:51:19\n15  -  Baby Baby  -  00:55:11\n\nChannel dedicated to those who love to take care of your body. The music for any type of fitness program.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 84,
+            "position": 87,
             "publishedAt": "2020-02-02T14:49:27Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9776,7 +10225,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Turn Me On by Riton & Oliver Heldens is available to Stream & Download now: https://lnk.to/TurnMeOnyd\n \nFollow Me\nInstagram: https://instagram.com/oliverheldens\nTwitter: https://twitter.com/oliverheldens\nFacebook: https://facebook.com/oliverheldens\nSoundcloud: https://soundcloud.com/oliverheldens\nSnap: https://snapchat.com/add/oliverheldens\n \nHeldeep Records:\nFacebook: https://facebook.com/heldeeprecords\nInstagram: https://instagram.com/heldeeprecords\nTwitter: https://twitter.com/heldeeprecords\nSoundcloud: https://soundcloud.com/heldeeprecords\n \nRiton:\nInstagram: https://www.instagram.com/RITONTIME\nTwitter: https://twitter.com/Ritontime\nFacebook: https://www.facebook.com/ritontime\nSoundcloud: https://soundcloud.com/ritontime\n \nVula:\nInstagram: https://www.instagram.com/vulavox\nTwitter: https://twitter.com/Vulavox\nFacebook: https://www.facebook.com/Vula-29825878788\n \nMusic video by Riton & Oliver Heldens performing Turn Me On (Official Audio). \n\u00a9 2019 Ministry of Sound Records.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 85,
+            "position": 88,
             "publishedAt": "2020-01-10T17:57:48Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9841,7 +10290,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "'Meduza, Becky Hill, Goodboys - Lose Control' is out now:\nhttps://umg.lnk.to/losecontrol\n\nSelected - Music on a new level.\n\u00bb Spotify: https://selected.lnk.to/spotify\n\u00bb Instagram: https://selected.lnk.to/instagram\n\u00bb Apple Music: https://selected.lnk.to/apple\n\u00bb Facebook: https://selected.lnk.to/facebook\n\n\u2718 Follow Meduza: \nhttps://www.instagram.com/meduzamusic\nhttps://www.facebook.com/MeduzaMusic\nhttps://twitter.com/MeduzaMusic\n\n\u2718 Follow Becky Hill: \nhttps://BeckyHill.lnk.to/Instagram\nhttps://BeckyHill.lnk.to/Twitter\nhttps://BeckyHill.lnk.to/Facebook\n\n\u2718 Follow Goodboys:\nhttps://www.facebook.com/goodboysoff\nhttps://twitter.com/goodboysoff\nhttps://www.instagram.com/goodboysoff\n\nPicture by Matteo Gueli:\nhttps://www.instagram.com/matteo.png/\nhttp://matteogueli.com/\n\nLyrics:\nWhy do I feel like im drowning?\nLike im running out of air\nAh-ha-ha\nWhy do I feel like im falling?\nWhen im no where near the edge \nAh-ha-ha\nJust let me know \nCan you be the one to hold \nAnd not let me go\nI need to know\nCould you be the one to call when I lose control \n\nI need your love (ah)\nI need your love (ah ah)\nI need your love (ah)\nI need your love (ah ah)\n\nI need your love (ah)\nI need your love (ah ah)\nI need your love (ah)\nI need your love (ah ah)\n\nCould you be the one to call when I lose control \nWhen I lose control\nWhen I lose control \nWhen I lose control \n(I need your love)\nWhen I lose control \nWhen I lose control \nWhen I lose control \nCould you be the one to call when I lose control \n\nI know I can be destructive \nAnd I can change the atmosphere\nAh-ha-ha\nAll I ask from you is patience \nSome patience\nSome patience\n\nJust let me know \nCan you be the one to hold \nAnd not let me go\nI need to know\nCould you be the one to call when I lose control \nWhen I lose control\nWhen I lose control \nWhen I lose control \n(I need your love)\nWhen I lose control \nWhen I lose control \nWhen I lose control \nCould you be the one to call when I lose control \n\nI need your love (ah)\nI need your love (ah ah)\nI need your love (ah)\nI need your love (ah ah)\n\nWhen I lose control\nWhen I lose control \nWhen I lose control \n(I need your love)\nWhen I lose control \nWhen I lose control \nWhen I lose control \nCould you be the one to call when I lose control",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 86,
+            "position": 89,
             "publishedAt": "2020-01-02T16:16:20Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9906,7 +10355,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "House Relax 2020. Relax, enjoy and share this Mix :-)\n\u2705 Subscribe and hit the bell '\ud83d\udd14' to get notifications for new uploads! \n\u2605 We're on SPOTIFY \u25ba https://goo.gl/MpujCT \n\n\u25ba \u25ba TRACKLIST:\n01. Jill Chestain - Siren (Highpass Edit) - 0:00 \n02. Pablo Gigliotti - Glad It's All Over (Outwave Remix Edit) - 3:07\n03. Tyra Givens - We All Need Someone (LVD Remix) - 6:10\n04. Brooke & Stonebridge - True (Calvin Adam Dub Edit) - 8:51\n05. Oliver Anders - Free to Feel - 12:24\n06. NoMad ft Nichole - Comment te dire Adieu (120 bpm Remix) - 15:41\n07. Skyfall 5 - Young (MW Deep Remix Edit) - 18:29\n08. Kawaii ft. Demetra Stanton - Everytime I See You - 21:54\n09. KaleidoCloud - I Do - 25:26 \n10. ArtSpace - Let You Down (LVD Deep Club Remix) - 28:13\n11. Bellagio ft Alma Rogers - Look Me in the Eyes - 32:13\n12. Genevieve Somers - Right Here - 37:44\n13. Brooke & Stonebridge - Don't Wanna Play No More - 40:33\n14. Greenery - Without You - 43:21\n15. Limelight - Sometimes - 46:46\n16. Aliki Westwood - Love Theraphy - 49:58\n17. Kandi & Fitch ft Jade Sommerville - To Be Free - 53:27\n\nThank you for watching! Please like and share if you enjoy.\nIf you like this video, please visit our channel to view our other videos and subscribe for updates.\n#DeepHouseMusic #ChillOutMix",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 87,
+            "position": 90,
             "publishedAt": "2019-12-27T19:34:09Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -9971,7 +10420,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Relax, enjoy and share this Mix!\n\u2705 Subscribe ChillHouseMix \u25ba http://bit.ly/1MNRgZn\n\u2605 We're on Spotify \u25ba https://goo.gl/MpujCT  \n\u2605 Turn on the '\ud83d\udd14' to get notifications for new uploads!\n\n\u25ba \u25ba TRACKLIST:\n01. LVD feat. Martin Stark - In The Air Tonight (Far Out Mix) - 0:00 \n02. Brooke & Stonebridge - Don't Wanna Play No More  - 4:21\n03. Sunclair - Used To - 7:08\n04. Eric Delgado - Barcelona Nights - 10:33\n05. SkyBar -  - 14:45\n06. Kawaii ft Eric Delgado - Feel Better (Kc Edit) - 16:46\n07. Demetra Stanton -  Touch My Body - 19:52\n08. Jill Chestain - Fly Me to a River (Extended Cut) - 23:01  \n09. Anja Maverick - Venus (J. M. Leroy Remix) - 26:47 \n10. Tyra Givens - Your Eyes - 29:33  \n11. Kandi & Fitch - Spirit In The Sky (Edit) - 32:42\n12. Joey Richmond - Luxury Traveller - 36:08\n13. Loungetronic ft Teresa Detta - Come and Dance - 40:00 \n14. Bellagio ft Alma Rogers - Look Me in the Eyes (Extended Mix) - 43:44\n15. KaleidoCloud - Lookin' for You - 49:30\n16. French Kiss - Libertango - 52:39 \n17. Shamika Cox - Silver Spirit - 57:38 \n\nThank you for watching! Please like and share if you enjoy.\nIf you like this video, please visit our channel to view our other videos and subscribe for updates.\n#DeepHouseMusic #ChillOutMix\n\nPhoto: https://unsplash.com/@yardi93",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 88,
+            "position": 91,
             "publishedAt": "2019-12-27T19:30:49Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10036,7 +10485,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Relax, enjoy and share this Mix!\n\u2705 Subscribe ChillHouseMix \u25ba http://bit.ly/1MNRgZn\n\u2605 We're on SPOTIFY \u25ba https://goo.gl/MpujCT \n\u25ba https://www.tiktok.com/@chillhousemix.bb\n\u25ba https://www.instagram.com/chillhousemix.bb/\n\u2605 Turn on the '\ud83d\udd14' to get notifications for new uploads!\n\n\u25ba \u25ba TRACKLIST:\n01. Kim McNichols - Can't Get You Out (Highpass Remix) - 0:00 \n02. Merrick Lowell & NoMad - No More Lies  - 5:01\n03. Sparkle B ft Donia - We'll Be One - 7:47\n04. Bellagio ft Joey Richmond - We Have a Dream - 10:30\n05. Sunclair - More and More (Highpass Remix) - 13:50\n06. Sarah Carlsson - Happy - 16:50\n07. Bleisure - Wind is my Leader - 19:52\n08. Kandi & Fitch - Rising Like the Sun - 22:22  \n09. KaleidoCloud - In This World (Paragliding Remix) - 25:30 \n10. Genevieve Somers - Right Here - 28:29  \n11. Rico Van Basten - Freelander - 31:11\n12. ArtSpace - Dreams Can Always Come True (instrumental) - 34:09\n13. Stargate - Wicked Game - 37:22 \n14. Alexis Mayer - Bette Davis Eyes (MW Deep Retouch) - 42:32\n15. Skyfall 5 ft. Chloe Van Doren - Walking in My Dreams Alone - 46:03\n16. Green Orange - Hymn (Dance Remix) - 49:28 \n17. Chloe Van Doren - Shades of Blue (Lust Mix) - 54:01 \n\n#DeepHouseMusic #ChillOutMix\n\nThank you for watching! Please like and share if you enjoy.\nIf you like this video, please visit our channel to view our other videos and subscribe for updates.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 89,
+            "position": 92,
             "publishedAt": "2019-12-27T19:29:04Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10101,7 +10550,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "The New Fragma Single with vocals by the beautiful Damae\r\n\r\nI don't own the music\r\nComment and rate!\r\n\r\nLyrics:\r\nThat look on your face your breathing at night\r\nI counted the days and the tears that I cried\r\nYou said that you loved me every word is a lie\r\nI wanted you near me and now its good-bye\r\n\r\nIm feeling so deeply Im feeling so wrong\r\nBetter believe me the loss made me strong\r\nNo way to deceive me Ive got to move on\r\nNow that youre gone its only...\r\n\r\nMemory, memory, memory\r\nIts all over the top now\r\nMemory, memory, memory\r\nAnd I need it to stop now\r\n\r\nA moment together is an hour alone\r\nA change of the weather means a hand on the phone\r\nOne second of hope is a week of regrets\r\nThe curse of the mind is that it never forgets\r\n\r\nIm feeling so deeply Im feeling so wrong\r\nBetter believe me the loss made me strong\r\nNo way to deceive me Ive got to move on\r\nNow that youre gone its only...\r\n\r\nMemory, memory, memory\r\nIts all over the top now\r\nMemory, memory, memory\r\nAnd I need it to stop now\r\n\r\nOwner: Kontor Records",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 90,
+            "position": 93,
             "publishedAt": "2019-03-02T08:22:05Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10156,7 +10605,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "photo/video: MAVRIN\nYouTube channel: http://bit.ly/2d0ko4w\nInsta: http://instagram.com/a_mavrin\n\nModels:\nTori Nova(@tori.nova2)\nhttps://www.youtube.com/channel/UCgNNG-ni5lrBaGV21E06QyQ\nViki Odintcova (@viki_odintcova) \nhttp://bit.ly/2cM7vbh\nGalina Dub (@galina_dub)\nhttp://bit.ly/2ppfxLD\nIrina Dreyt (@irina_dreyt)\nhttp://bit.ly/2ojp9G5\n\n\nPlaces:\nSri Lanka, Mauritius \n\nMusic:  Anton Ishutin \u2013 Kick It (Original Mix)\nhttps://soundcloud.com/antonishutin\n\n120bpm - Best Deep House & Nu disco Music Videos 2016 http://goo.gl/f34RCo\n\nFollow 120bpm \nFacebook: http://facebook.com/120beatspermin\nSoundcloud: https://soundcloud.com/120beatspm\nTwitter: https://twitter.com/120beatspermin\nVK: https://vk.com/music120bpm\n\nBusiness enquiries: promo@120bpm.org",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 91,
+            "position": 94,
             "publishedAt": "2019-03-02T08:13:29Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10221,7 +10670,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Voyage Voyage (AndreiD Remix)\n\n\nVideo By Roman Shonokhov:\nhttps://vk.com/shonokhov\nhttps://vimeo.com/shonokhov\n\nVideo By Magnate Creative:\nhttps://vimeo.com/magnatecreative\n\n\nVDJ Smile:\nfacebook: https://www.facebook.com/DJsmileFc\ninstagram: https://www.instagram.com/vdj_smile/\n\nContact us:  djsmile2017sound@gmail.com\n\n\u266b Hope you enjoyed. Let me see your feedback in the comments ;-)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 92,
+            "position": 95,
             "publishedAt": "2019-03-02T08:12:22Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10286,7 +10735,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Era - Ameno (The Scientist Remix)\n\n\nFollow The Scientist:\nhttps://www.facebook.com/francoisistacemusique/?modal=admin_todo_tour\nhttps://soundcloud.com/user-344836057\n\n\nVideo By Ryan Hattaway:\nhttp://www.mogulpictures.com/\nhttps://twitter.com/ryanhattaway\n\n\nVDJ Smile:\nfacebook: https://www.facebook.com/DJsmileFc\ninstagram: https://www.instagram.com/vdj_smile/\n\nContact us:  djsmile2017sound@gmail.com\n\n\u266b Hope you enjoyed. Let me see your feedback in the comments ;-)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 93,
+            "position": 96,
             "publishedAt": "2019-03-02T08:11:30Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10351,7 +10800,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\u25ba Subscribe: https://goo.gl/mSN9pn\n \nTracklist:\n01. Barry White - Let the music play - Eric Faria Remix \n\n\n\u25ba  Eric Faria \u266b\n\nhttps://soundcloud.com/djericfaria\nhttps://www.facebook.com/EricFariaOfficialPage\n\n\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\n\nAll the uploads on this channel are for the promotional purposes only! if you don't want your content here (that goes for music and picture) please feel free to contact me: endel@outlook.com and I WILL REMOVE VIDEO instantly! \n\n\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 94,
+            "position": 97,
             "publishedAt": "2019-02-21T19:17:15Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10416,7 +10865,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Majestic Casual - Experience music in a new way.\n\u00bb Facebook: http://on.fb.me/majesticfb\n\u00bb Twitter: http://bit.ly/majestictwitter\n\nOut on 9th December via Eskimo Recordings! :)\n\n\u2716 Follow Satin Jackets\nhttp://soundcloud.com/satinjackets\nhttp://www.facebook.com/satinjackets\nhttp://www.twitter.com/SatinJackets\n\n\u2716 Picture \u00a9 Sunnies by Charlie\nhttp://smarturl.it/m597u2",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 95,
+            "position": 98,
             "publishedAt": "2019-02-21T19:09:28Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10481,7 +10930,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "MOIN\u00c8 VS SPADA - Down (Official Video) Out Now!\nAdd to your collection: https://EgoMusic.lnk.to/MoineVsSpada_Down\n\nListen to more songs like this with our playlist!\nApple Music: https://itunes.apple.com/it/curator/ego/1405705875\nSpotify: http://spoti.fi/2qnkdCG\n\nFollow Ego on Facebook:\u00a0http://www.fb.com/EgoItaly\nSubscribe to EgoTV NOW:\u00a0http://bit.ly/1hzlXkS\n#ego \n#newmusic\n#Moin\u00e8vsSpada\n\nAfter \"Closer To Me\" and \"Fall\", Moin\u00e8 presents \"Down\" in collaboration with the great DJ & producer Spada, with several hits like Catchfire, Red Velvet Dress, Cool Enough, You & I, with over 50 million total plays on Spotify.\nThe deep voice of Noemi Catapano is led by a bass and electronic sounds that create a gloomy atmosphere, with the alternation of instruments such as the banjo and vocal effects that make the production unique and particular.\n\nFOLLOW MOIN\u00c8 \nhttps://www.facebook.com/Moineoff\nhttps://www.instagram.com/moineoff\n\nFollow Spada\nhttps://www.instagram.com/spadamusic/\nhttps://www.facebook.com/spadaofficial/\n\nDirected by Gabor, Marcell\u00f8 Baldini for Okeah (okeahdirector.com)\nStarring Zahra Banzi.\nDop, Color Correction: Michele Vairo.\n1st AC: Enrico Marco Buongiorno.\nStylist: Thais Brandao Montessori \nProduction assistant: Allegra Guasti",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 96,
+            "position": 99,
             "publishedAt": "2019-02-02T10:18:44Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10536,7 +10985,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "DOWNLOAD: http://smarturl.it/clubnight\nITUNES: http://smarturl.it/clubnightitunes\n\nSubscribe and stay motivated! http://bit.ly/1KcNYay\n\nTRACKLIST:\n1. Waiting for Love (Originally Made Famous by Avicii) \n2. Five More Hours (Originally Made Famous by Deorro & Chris Brown) \n3. Don't Look Down (Originally Made Famous by Martin Garrix feat. Usher) \n4. Where Are \u00dc Now (Originally Made Famous by Skrillex & Diplo feat. Justin Bieber) \n5. Freaks (Originally Made Famous by Timmy Trumpet & Savage) \n6. I'm an Albatraoz (Originally Made Famous by AronChupa) \n7. You Know You Like It (Originally Made Famous by DJ Snake & AlunaGeorge) \n8. Turn Down For What (Originally Made Famous by DJ Snake & Lil Jon) \n9. Delirious (Boneless) (Originally Made Famous by Steve Aoki, Chris Lake & Tujamo) \n10. Booyah (Originally Made Famous by Showtek feat. We Are Loud! & Sonny Wilson) \n11. Runaway (U & I) (Originally Made Famous by Gallants) \n12. Blame (Originally Made Famous by Calvin Harris feat. John Newman) \n13. Firestone (Originally Made Famous by Kygo feat. Conrad Sewell) \n14. Wasted (Originally Made Famous by Tiesto feat. Matthew Koma)\n\nBring the energy of a nightclub to YOUR next workout with Club Night Workout. A mix of 14 incredible tracks like \u201cFive More Hours\u201d and \u201cYou Know You Like It\u201d have been compiled and mixed to provide maximum energy. Download, sync and take this album on your next trip to the gym!",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 97,
+            "position": 100,
             "publishedAt": "2019-01-25T20:51:41Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10601,7 +11050,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Willcox - magyar DJ/producer, akire nem csak itthon, de k\u00fclf\u00f6ld\u00f6n is egyre t\u00f6bben figyelnek fel . Zen\u00e9i a top dj-k \u00e9s fesztiv\u00e1lok palett\u00e1j\u00e1n is megtal\u00e1lhat\u00f3ak ,t\u00f6bbek k\u00f6z\u00f6tt a Tomorrowland k\u00f6z\u00f6ns\u00e9g\u00e9t is mag\u00e1val ragadta...",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 98,
+            "position": 101,
             "publishedAt": "2019-01-13T12:23:53Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10666,7 +11115,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "HouseU Records 2017. Earth n Days - Got To Go (Original Mix)\nBeatport: http://bit.ly/2AevHxf\nTraxsource: http://bit.ly/2AuRumC\nItunes: http://apple.co/2ivb8oo\nSpotify: http://spoti.fi/2jk5Dtv\nDeezer: http://bit.ly/2kYMWvi\n\nInfo/Booking: earthndays@gmail.com\n\nFollow us:\nSoundcloud: http://bit.ly/2BmXefT\nFacebook: http://bit.ly/2CZsli3\nInstagram: http://bit.ly/2Bm9oWm",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 99,
+            "position": 102,
             "publishedAt": "2019-01-13T12:22:22Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10731,7 +11180,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Download: http://bit.ly/turkishbazaar\nHouseU Records 2018. Earth n Days - Turkish Bazaar\n\nOut on:\nBeatport: http://bit.ly/turkishbazaar\nTraxsource: http://bit.ly/2AlTzR4\nItunes: https://apple.co/2AoJpPA\nSpotify: https://spoti.fi/2Thth9l\nDeezer: http://bit.ly/2TlAIMY\n\nFollow us:\nSoundcloud: https://soundcloud.com/houseurec\nFacebook: https://www.facebook.com/houseurecords\nBeatport: https://bit.ly/2qChruF",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 100,
+            "position": 103,
             "publishedAt": "2019-01-13T12:18:07Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10786,7 +11235,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Available on iTunes:http://tiny.cc/pg09lw\n\nFollow us on Facebook: http://www.facebook.com/LMFLF\n\nCandi Staton has legacy beyond compare. Responsible for some of the most memorable and best loved soul records of all time, Staton has a voice that is currently captivating a new generation of music lovers just as it did when she first \"oooed\" and \"ahhed\" onto the music scene as a soul siren in the '70s.\n\nStaton's latest single is 'Hallelujah Anyway'; a timeless, feel-good soul record typical of Staton's overwhelmingly positive musical message, now released with remixes from Director's Cut and Larse.\n\nUnder their Director's Cut guise, Frankie Knuckles and Eric Kupper deliver two versions that pair Staton's inimitable vocal with Knuckle's legendary house chords with stunningly effective results.\n\nLarse meanwhile goes deep with a club-ready cut that demonstrates the versatility of Staton's vocal, sitting proudly over a beautifully melancholic piece of production....  One of 2012's hottest records and a classic already.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 101,
+            "position": 104,
             "publishedAt": "2018-06-30T18:50:14Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10851,7 +11300,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Extended Mix - Memi Vs. Baldas...\nhouseplanet.org\nOriginal name of remix: Girls Just Wanna Have F***",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 102,
+            "position": 105,
             "publishedAt": "2018-06-30T18:35:43Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10906,7 +11355,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "We do not own the copyright to this work. If you want the video to be deleted from this channel, please mail asters@skynet.be\n\nLegendary tune by Chris Isaak; Wicked game, remixed masterly by Adriatique and Thyladomid. Accompanied by selected visuals processed by MIck Wood for the purpose of enhancing the chillout experience.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 103,
+            "position": 106,
             "publishedAt": "2018-06-16T10:10:38Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -10971,7 +11420,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Christina Aguilera - Your Body (Country Club Martini Crew Dirty Radio)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 104,
+            "position": 107,
             "publishedAt": "2018-05-27T17:18:03Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11036,7 +11485,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Dua Lipa - IDGAF (Country Club Martini Crew Remix)\n\nStream/download the original: https://wbr.ec/idgaf\nDownload this remix: https://hypeddit.com/track/rrfjd5\n\nSpotted \u2022 FEEL THE MUSIC\n\n\u2192 Follow Dua Lipa:\nhttp://dualipa.com\nhttps://www.facebook.com/dualipaofficial\nhttps://twitter.com/dualipa\nhttps://www.instagram.com/dualipa\n\n\u2192 Follow Country Club Martini Crew:\nhttps://soundcloud.com/ccmc-music\nhttps://soundcloud.com/ccmcremixes\n\nPhoto:\nDajana Rads for Personal Issue magazine by Robert Wunsch\nhttp://www.robertwunsch.com\nhttps://www.instagram.com/robertwunsch\nhttps://www.instagram.com/dajanarads\nhttp://www.personalissue.com\n                                                                       \nFor copyright issues mail us here: \nspottedmusique@gmail.com",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 105,
+            "position": 108,
             "publishedAt": "2018-05-27T17:17:21Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11083,7 +11532,7 @@
         }
     },
     {
-        "etag": "AS5ONlkOc0anLwjssEoGCBjXCss",
+        "etag": "LpBdtyGn3IaKePZx-hYWj1g6uWY",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5DNkMwRUI2MkI4QkI4NDFG",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -11091,7 +11540,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 106,
+            "position": 109,
             "publishedAt": "2018-04-02T07:38:00Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11373,7 +11822,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Buy Lady Gaga \u201cMarry the Night Remixes\u201d EP- http://www.smarturl.it/MarryTheNightRemixes\nFollow Lady Gaga, buy the album on iTunes, and more http://bit.ly/m5Dr70",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 107,
+            "position": 110,
             "publishedAt": "2018-04-02T07:37:37Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11444,7 +11893,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 108,
+            "position": 111,
             "publishedAt": "2018-02-18T17:10:35Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11505,7 +11954,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\ud83e\udd70 Please subscribe and leave a comment and a thumbs up if you like this song!\n\n\ud83e\udd17 Help support this channel and get exclusive content on Patreon: https://bit.ly/316twL2\n\u2764\ufe0f\u200d Or support Beyond Radio on Paypal: https://paypal.me/pools/c/8tpSPFP0bT\n\ud83d\udcf8 Follow Beyond Radio on Instagram: https://www.instagram.com/beyondogram/\n\n\ud83c\udfb5 Download Phil Collins music on iTunes: https://itunes.apple.com/de/artist/phil-collins/153718\n\ud83c\udfb5 Stream 'Panski's music on Spotify: https://open.spotify.com/artist/6au2tFFIEY6IeOdw4Ulxgj?si=WldQhHa2QEWIJO1PsQNjtw\n\nBecome a fan of 'Panski\n\n\u25cf Soundcloud:  https://soundcloud.com/panskimusic\n\u25cf Facebook:  https://www.facebook.com/panskimusic\n\u25cf Twitter:  https://twitter.com/panskimusic\n\u25cf Instagram:  https://www.instagram.com/panskimusic/\n\u25cf ToneDen:  https://panskimusic.toneden.io/\n\u25cf Spotify:  https://open.spotify.com/artist/6au2tFFIEY6IeOdw4Ulxgj?si=WldQhHa2QEWIJO1PsQNjtw\n\nBecome a fan of John Skyfield\n\n\u25cf Facebook:  https://www.facebook.com/john.skyfield.7\n\u25cf Instagram:  https://www.instagram.com/johnskyfield/\n\u25cf Soundcloud:  https://soundcloud.com/johnskyfield\n\u25cf Spotify:  https://open.spotify.com/user/qkxqfl929qpsgechraheukcnp?si=DYhtuIsOR-i1nyddGerfKg\n\nCheck out Phil Collins on Facebook\nhttps://www.facebook.com/philcollins?ref=ts&fref=ts\n\n\u2728 Picture by  KatiaIva Arts\n\n\u25cf Deviantart:  http://katiaivaarts.deviantart.com/art/The-City-That-Never-Sleeps-492589257\n\u25cf Website:  http://www.mamzlso.book.fr/\n\u25cf Instagram:  https://www.instagram.com/katiaivaarts/\n\nFollow Beyond Radio\n\nSoundcloud\nhttps://soundcloud.com/thebeyondradio\n\nBeyond Radio on Facebook\nhttp://www.facebook.com/DHYoutube\n\nBeyond Photography\nhttps://www.facebook.com/BeyondsSs\n\nYoutube Backup Channel\nhttp://www.youtube.com/user/TheBeyondRadio\n\nEnjoy and have a nice day ;)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 109,
+            "position": 112,
             "publishedAt": "2018-02-18T16:45:32Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11570,7 +12019,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\ud83d\udfe2 Listen now on Spotify: https://spoti.fi/3XWl6Rc\n\n\n\ud83d\udd14 Turn on notifications to stay updated with new uploads!\n\nBuy us a coffee here: https://ko-fi.com/stimobeat \u2764\ufe0f\n\nFollow us on:\n\u2022 Instagram: stimobeat\n\u2022 Snapchat: stimobeat\n\u2022 Facebook: https://www.facebook.com/stimobeat\n\u2022 SoundCloud: https://soundcloud.com/stimobeat\n\nSubmit your tracks/photos here : \n\u2022 stimobeat.submission@gmail.com\n\n==============================\n\nFree download: https://www.toneden.io/stimobeat/post/the-police-every-step-you-take-deep-chills-remix\n\nArtist information:\n\n\u266b Deep Chills \u266b\nhttps://soundcloud.com/deep-chills\n\n\u266b The Police - Every Breath You Take (Deep Chills Remix) \u266b\n\n#thepolice #everybreathyoutake #stimobeat",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 110,
+            "position": 113,
             "publishedAt": "2018-02-18T16:44:28Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11635,7 +12084,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Contacto y contrataciones:\n    SPOTIFY \u261b https://open.spotify.com/playlist/45P454JwQcyFPyGaDN3I9s?si=8801WFdRTe-TcnPQ6vxxjQ\n    INSTAGRAM \u261b https://www.instagram.com/fabianfattorini\n    FACEBOOK \u261b https://facebook.com/djfabianfattorini\n    YOUTUBE \u261b https://www.youtube.com/fabianfattorini\n    MAIL \u261b info@fabianfattorini.com.ar",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 111,
+            "position": 114,
             "publishedAt": "2018-02-18T16:41:25Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11695,7 +12144,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "See ya there!\n\nMore Final DJs here:\n\nhttp://soundcloud.com/finaldjs\n\nPhoto Cred:\n\nhttp://vampire-zombie.deviantart.com/art/on-the-sky-353469213",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 112,
+            "position": 115,
             "publishedAt": "2018-02-18T16:36:29Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11766,7 +12215,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Paloma Faith \"Picking up the pieces\" Moto Blanco vocal mix\n\nCopyright owned by RCA records UK Limited 2012. This video was only uploaded as a \"promotional\" video for Moto Blanco",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 113,
+            "position": 116,
             "publishedAt": "2018-02-18T16:35:23Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11836,7 +12285,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 114,
+            "position": 117,
             "publishedAt": "2018-02-18T16:34:07Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11883,7 +12332,7 @@
         }
     },
     {
-        "etag": "chvCnIjxbKpcUii7-liyxkfdUyo",
+        "etag": "wjvDeleFNVcmdHGEXu2zBe_Clps",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS5DMkU4NTY1QUFGQTYwMDE3",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -11891,7 +12340,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 115,
+            "position": 118,
             "publishedAt": "2018-02-18T16:30:56Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11920,7 +12369,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 116,
+            "position": 119,
             "publishedAt": "2018-02-18T16:13:47Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -11985,7 +12434,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Producer Video MIX =This Version is FOR PROMOTIONAL USE ONLY. I do not own or claim to own the rights to the video",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 117,
+            "position": 120,
             "publishedAt": "2018-02-18T16:11:21Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12298,7 +12747,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Buy Body On Me (The Remixes) [feat. Chris Brown] http://smarturl.it/BOMRmxEP\nStream Body On Me (The Remixes) [feat. Chris Brown] http://smarturl.it/BOMRmxStrm\n\nFollow Rita Ora\nWebsite: http://www.ritaora.com\nTwitter: http://twitter.com/ritaora\nFacebook: http://facebook.com/ritaora\nInstagram: http://instagram.com/ritaora",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 118,
+            "position": 121,
             "publishedAt": "2018-02-18T16:09:33Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12363,7 +12812,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Infernal - From Paris To Berlin (Extended Version)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 119,
+            "position": 122,
             "publishedAt": "2018-02-18T16:01:42Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12423,7 +12872,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 120,
+            "position": 123,
             "publishedAt": "2018-02-18T15:42:58Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12485,7 +12934,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "https://www.youtube.com/user/tinanavy1\nBoney M - Ma Baker (Mega House Tinanavy1 Remix)\n#tinanavy1 #tinanavy1remix\n\n\nK3318\nD27720",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 121,
+            "position": 124,
             "publishedAt": "2018-02-18T15:38:29Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12550,7 +12999,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\u00b0",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 122,
+            "position": 125,
             "publishedAt": "2018-02-18T15:36:15Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12610,7 +13059,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "My 2015 remix of EBTG's \"Missing\" is OUT NOW!\nGrab your FREE copy here: https://soundcloud.com/tonineri/ebtg-missing-remix",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 123,
+            "position": 126,
             "publishedAt": "2018-02-18T15:36:04Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12670,7 +13119,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "\"Crazy\"\r\n\r\nIn a church by the face\r\nHe talks about the people going under\r\nOnly child know\r\nA man decides after seventy years\r\nThat what he goes there for\r\nIs to unlock the door\r\nWhile those around him criticize and sleep\r\nAnd through a fracture on that breaking wall\r\nI see you my friend and touch your face again\r\nMiracles will happen as we trip\r\nBut we're never gonna survive unless\r\nWe get a little crazy\r\nNo we're never gonna survive unless\r\nWe are a little\r\nCray cray crazy\r\nCrazy are the people walking through my head\r\nOne of them got a gun to shoot the other one\r\nAnd yet together they were friends at school\r\nGet it, get it, get it, yeah!\r\nIf all were there when we first took the pill\r\nThen maybe then maybe then maybe then maybe\r\nMiracles will happen as we speak\r\nBut we're never gonna survive unless\r\nWe get a little crazy\r\nNo we're never gonna survive unless\r\nWe are a little\r\nCrazy\r\nNo no we'll never survive unless we get a little bit\r\nA man decides to go along after seventy years\r\nOh darling\r\nIn a sky full of people only some want to fly\r\nIsn't that crazy\r\nIn a world full of people only some want to fly\r\nIsn't that crazy\r\nCrazy\r\nIn a heaven of people there's only some want to fly\r\nAin't that crazy\r\nOh babe Oh darlin'\r\nIn a world full of people there's only some want to fly\r\nIsn't that crazy\r\nIsn't that crazy Isn't that crazy Isn't that crazy\r\nOh\r\nBut we're never gonna survive unless we get a little crazy crazy\r\nNo we're never gonna to survive unless we are a little crazy\r\nBut we're never gonna survive unless we get a little crazy crazy\r\nNo we're never gonna to survive unless we are a little crazy\r\nNo no never survive unless we get a little bit\r\nAnd then you see things\r\nThe size of which you've never known before\r\nThey'll break it\r\nSomeday\r\nOnly child know\r\nThem things\r\nThe size\r\nOf which you've never known before\r\nSomeday",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 124,
+            "position": 127,
             "publishedAt": "2018-02-18T15:35:51Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12725,7 +13174,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Sun - Gone (Moto Blanco Dub Mix)",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 125,
+            "position": 128,
             "publishedAt": "2018-02-18T15:35:44Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12785,7 +13234,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video was only uploaded as a promotional video for Moto Blanco. https://www.facebook.com/motoblancouk",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 126,
+            "position": 129,
             "publishedAt": "2018-02-18T15:35:38Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12850,7 +13299,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Audio Remix:MOTO BLANCO\nVideo Remix:VJ GARY\nGreat remix of Adeles latest tune. Doesn't appear to be a video for it yet so i used some footage from \"The Graham Norton Show\" and some other home-made adele videos i found on YouTube. Enjoy! \nFor more details, visit www.vjgary.co.uk\nNo Copyright Infringement Intended",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 127,
+            "position": 130,
             "publishedAt": "2018-02-18T15:35:30Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12910,7 +13359,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "http://djmishary.blogspot.com/",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 128,
+            "position": 131,
             "publishedAt": "2018-02-18T15:35:23Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12957,7 +13406,7 @@
         }
     },
     {
-        "etag": "qdKyuzV0J-U3jUVZn0aNDtLgNP4",
+        "etag": "e028JcXJsHMb3Qy3BmmYzLy1UaI",
         "id": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS41MjE1MkI0OTQ2QzJGNzNG",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -12965,7 +13414,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 129,
+            "position": 132,
             "publishedAt": "2018-02-18T15:35:16Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -12994,7 +13443,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Whitney Houston - How Will I Know (Oliver Nelson Remix) available now!\niTunes: http://smarturl.it/HowWillIKnowRMX\nBeatport: http://www.beatport.com/release/how-will-i-know-oliver-nelson-remix/1453493\nCheck out \"How Will I Know (Oliver Nelson Remix)\" on our \"Dance All Day\" Spotify playlist! http://smarturl.it/DanceAllDay\n\nfrom Ultra Music\n\nSubscribe to Ultra Music  - http://www.youtube.com/subscription_center?add_user=ultrarecords\nSubscribe to UltraTV  - http://www.youtube.com/subscription_center?add_user=ultratv\n\nUltra Music is an American independent electronic music record label based in New York City. Ultra's current roster includes Benny Benassi, The Bloody Beetroots, Steve Aoki, Lil Jon, Above & Beyond, Hot Since 82, Faul, Chris Lake, Klingande, Bakermat, Carnage, Mr Probz, Flosstradamus, Hardwell, Henry Krinkle, Chris Malinchak, Storm Queen, Congorock, Adrian Lux, Axwell, TOKiMonsta, and others. Ultra has featured releases from the aforementioned artists and many others including Ti\u00ebsto, Avicii, Paul van Dyk, Paul Oakenfold, The Crystal Method, Sasha & John Digweed, and others.\n\nUltra Music Online:\nhttp://www.ultramusic.com\nhttp://www.twitter.com/ultrarecords\nhttp://www.facebook.com/ultramusic\nhttp://www.youtube.com/ultratv\nhttp://merch.ultramusic.com\nhttp://instagram.com/ultrarecords\nhttps://soundcloud.com/ultrarecords\nhttp://open.spotify.com/user/ultramusicofficial",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 130,
+            "position": 133,
             "publishedAt": "2018-02-18T15:35:04Z",
             "resourceId": {
                 "kind": "youtube#video",
@@ -13059,7 +13508,7 @@
             "channelTitle": "Szab\u00f3 Gyula",
             "description": "Nora En Pure - Tears In Your Eyes is OUT NOW on Spinnin' Deep! Like this track? Download on Beatport or add it to your favourite Spotify/Apple Music playlist by clicking HERE: https://noraenpure.lnk.to/TearsInYourEyes\n\nJoin our Spinnin' Records Top 100 Playlist \u25ba https://spinninrecords.lnk.to/top100!YT\n\nNora En Pure returns with a true future house gem! Tears In Your Eyes is a refined record that breathes joy and grace. The melodic synths and vivid strings, combined with the fantastic dark vocals are an amazing blend with the track\u2019s deep rhythms. This is music the way it should be! \n\nFollow Nora En Pure:\nhttp://soundcloud.com/NoraEnPure \nhttp://www.facebook.com/NoraEnPure \nhttp://www.noraenpure.com\n---\n\nThe Spinnin\u2019 Records YouTube channel is the home for all music videos of the world\u2019s leading dance record label!\n\nWe feature the latest music videos by Spinnin\u2019 artists like Oliver Heldens, Sam Feldt, KSHMR, Ummet Ozcan, Blasterjaxx, Merk & Kremont, Timmy Trumpet, Tujamo, Alok, Curbi, Mike Williams, Lucas & Steve and many, many more! Expect daily uploads of official music videos, lyric videos and artwork videos across genres like dance, house, electro house, future house, deep house, big room and trap.\n\nMake sure to subscribe to Spinnin' Records: http://bit.do/spinnintv \n..and turn on notifications to stay updated with all new uploads!\ud83d\udd14\n\nFollow Spinnin\u2019 Records:\nhttps://open.spotify.com/user/spinninrecordsofficial\nhttps://soundcloud.com/spinninrecords\nhttps://facebook.com/SpinninRecords\nhttps://instagram.com/spinninrecords\nhttps://twitter.com/SpinninRecords\nhttps://spinninrecords.com",
             "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
-            "position": 131,
+            "position": 134,
             "publishedAt": "2018-02-18T15:34:56Z",
             "resourceId": {
                 "kind": "youtube#video",
