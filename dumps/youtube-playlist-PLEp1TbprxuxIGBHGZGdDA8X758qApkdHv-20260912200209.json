@@ -195,23 +195,13 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT8M2S",
-            "licensedContent": true,
-            "projection": "rectangular"
-        },
-        "etag": "3vhRLBhgvR-IbDKplTHVk79u9Pg",
-        "id": "GdW3hLycpcs",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4SUdCSEdaR2REQThYNzU4cUFwa2RIdi5FQUY2Qzk4RUFDN0ZFRkZF",
+        "etag": "GyWKOWzj4gTTvTFlVZgjzrl2IJk",
+        "id": "UExFcDFUYnByeHV4SUdCSEdaR2REQThYNzU4cUFwa2RIdi5FQUY2Qzk4RUFDN0ZFRkZF",
+        "kind": "youtube#playlistItem",
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
-            "description": "Dsmt \u2013 Let It Be (Official Music)| Deep House | Emotional Chill Out Music | Heartfelt Song  | #LetItBe  #DeepHouse  #Dsmt   #EmotionalChillOut\n\nDive deep into the sound with \" Let It Be \" \u2014 the official music video for the new track that blends the soulful honesty of an emotional ballad with the hypnotic Let It Be of Deep House.\n\nThis song is the perfect soundtrack for those late nights and deeper connections. Set at a smooth 124 BPM, it captures the moment everything feels brand new, where all worries fade away and you simply ride the emotion.\n\nFrom the heartfelt lyrics of the verses (\"I didn't know what I was missing, 'Til you walked in out of the blue\") to the infectious, driving groove of the chorus (\"Let's just fade into the feeling right now, Burning like a deep house fire\"), this track is designed to make you move and feel.\n\nIf you're looking for the ultimate Chill Out, Vocal House, or Relaxing Electronic Music track for your playlist, stop scrolling.\n\n\ud83d\udd25 Social Handle\nYoutube - @dsumtUe  \n\nDon't forget to LIKE, SHARE, and SUBSCRIBE for more top-tier Deep House and EDM music!\n\n\ud83c\udff7\ufe0f Tags\nLet It Be  , Never Lose Again,  Deep House, Emotional House, Chill Out, Vocal House, New EDM Song 2025, 124 BPM, Electronic Dance Music, House Music 2025, Chill House Playlist, Relaxing Electronic Music, Club Music, Late Night Drive Music, Ballad Deep House, Official Music Video, Deep House Fire, Faded Lyrics, House Music India, Trending EDM, Feel Good Music, Best Vocal Deep House, Summer Vibes Music, Dance Music 2025, Hypnotic Groove, Emotional Chill, Music For Dancing, Top Electronic Hits, New Release Music, FEELING GOODrs Deep House, Out EDM, Nightlife Music, Gym Workout Playlist, Synth Pad Music, 4/4 Beat, Sub Bass Drop, Ride The Emotion, Melodic House, Deep House Ballad, Heartfelt EDM, Club , Let It Be \n\n#LetItBe , #emotionalechoes, #deep_house, #emotionalOut, #melodicvibes, #moodymusic, #sadOut, #darkOut, #late_night_vibes, #heartfeltbeats, #atmosphericmusic, #soulfulsounds, #chillvibesonly, #dreamyOut, #electronicmood, #deepvibes, #echoedfeelings, #musicemotion, #independentartist, #newmusicrelease",
+            "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxIGBHGZGdDA8X758qApkdHv",
             "position": 3,
             "publishedAt": "2026-04-20T15:29:54Z",
@@ -219,44 +209,8 @@
                 "kind": "youtube#video",
                 "videoId": "GdW3hLycpcs"
             },
-            "thumbnails": {
-                "default": {
-                    "height": 90,
-                    "url": "https://i.ytimg.com/vi/GdW3hLycpcs/default.jpg",
-                    "width": 120
-                },
-                "high": {
-                    "height": 360,
-                    "url": "https://i.ytimg.com/vi/GdW3hLycpcs/hqdefault.jpg",
-                    "width": 480
-                },
-                "maxres": {
-                    "height": 720,
-                    "url": "https://i.ytimg.com/vi/GdW3hLycpcs/maxresdefault.jpg",
-                    "width": 1280
-                },
-                "medium": {
-                    "height": 180,
-                    "url": "https://i.ytimg.com/vi/GdW3hLycpcs/mqdefault.jpg",
-                    "width": 320
-                },
-                "standard": {
-                    "height": 480,
-                    "url": "https://i.ytimg.com/vi/GdW3hLycpcs/sddefault.jpg",
-                    "width": 640
-                }
-            },
-            "title": "Let It Be (Official Music) | Deep House |  Emotional Chillout | Melodic Vocal House 2026 | Dsmt",
-            "videoOwnerChannelId": "UCKCXH-MC8J8NQCV5z99rRig",
-            "videoOwnerChannelTitle": "dsmt"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
+            "thumbnails": {},
+            "title": "Deleted video"
         }
     },
     {
