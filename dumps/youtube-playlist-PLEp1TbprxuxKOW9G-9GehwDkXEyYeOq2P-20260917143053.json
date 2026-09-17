@@ -53,7 +53,7 @@
             },
             "title": "BUDABAR Golden Sunset 2 | 40 Min Luxury Lounge Experience.",
             "videoOwnerChannelId": "UC5-X4899orWQ8jw1PqmQPKw",
-            "videoOwnerChannelTitle": "NOCORE.404 Music"
+            "videoOwnerChannelTitle": "NOCORE.404 "
         },
         "status": {
             "embeddable": true,
@@ -705,6 +705,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/qd2aiiej1Ms/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/qd2aiiej1Ms/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Dj Dado - Metropolis",
@@ -3124,23 +3129,13 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT4M5S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "FsIZBT-3wc7Tbbffk9Xmr_KC58I",
-        "id": "Ei2YpMT81DQ",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4zNjNFN0I4ODYzQTQ3QTg2",
+        "etag": "N2wqZg1dLFgS29ml4oNlHgth3xk",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4zNjNFN0I4ODYzQTQ3QTg2",
+        "kind": "youtube#playlistItem",
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
-            "description": "",
+            "description": "This video is unavailable.",
             "playlistId": "PLEp1TbprxuxKOW9G-9GehwDkXEyYeOq2P",
             "position": 32,
             "publishedAt": "2025-11-05T15:46:57Z",
@@ -3148,44 +3143,8 @@
                 "kind": "youtube#video",
                 "videoId": "Ei2YpMT81DQ"
             },
-            "thumbnails": {
-                "default": {
-                    "height": 90,
-                    "url": "https://i.ytimg.com/vi/Ei2YpMT81DQ/default.jpg",
-                    "width": 120
-                },
-                "high": {
-                    "height": 360,
-                    "url": "https://i.ytimg.com/vi/Ei2YpMT81DQ/hqdefault.jpg",
-                    "width": 480
-                },
-                "maxres": {
-                    "height": 720,
-                    "url": "https://i.ytimg.com/vi/Ei2YpMT81DQ/maxresdefault.jpg",
-                    "width": 1280
-                },
-                "medium": {
-                    "height": 180,
-                    "url": "https://i.ytimg.com/vi/Ei2YpMT81DQ/mqdefault.jpg",
-                    "width": 320
-                },
-                "standard": {
-                    "height": 480,
-                    "url": "https://i.ytimg.com/vi/Ei2YpMT81DQ/sddefault.jpg",
-                    "width": 640
-                }
-            },
-            "title": "Blank & Jones Sunset Coffee",
-            "videoOwnerChannelId": "UCqMIDJnic92bSlX4tzHvI9Q",
-            "videoOwnerChannelTitle": "Mr. Paradise \ud83c\udf34"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
+            "thumbnails": {},
+            "title": "Deleted video"
         }
     },
     {
