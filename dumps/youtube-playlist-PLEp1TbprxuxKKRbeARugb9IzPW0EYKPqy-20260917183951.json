@@ -2239,6 +2239,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/_mzcRJmSWUE/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/_mzcRJmSWUE/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Bikini - Neh\u00e9z a dolga a katon\u00e1nak",
@@ -2294,6 +2299,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/2ZTyNFiXaKI/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/2ZTyNFiXaKI/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Bikini- LEGYEK J\u00d3",
@@ -2404,6 +2414,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/hEEiwuFRm8I/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/hEEiwuFRm8I/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Bikini Mielott elmegyek",
@@ -2459,6 +2474,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/N0AV_4cZdB4/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/N0AV_4cZdB4/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Republic - Ha itt lenn\u00e9l velem",
@@ -2915,6 +2935,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/8EvybRLdFSc/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/8EvybRLdFSc/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Unique - Hiszed vagy sem",
