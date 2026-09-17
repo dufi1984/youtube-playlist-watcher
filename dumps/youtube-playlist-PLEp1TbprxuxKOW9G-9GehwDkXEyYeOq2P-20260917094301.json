@@ -53,7 +53,7 @@
             },
             "title": "BUDABAR Golden Sunset 2 | 40 Min Luxury Lounge Experience.",
             "videoOwnerChannelId": "UC5-X4899orWQ8jw1PqmQPKw",
-            "videoOwnerChannelTitle": "NOCORE.404 Music"
+            "videoOwnerChannelTitle": "NOCORE.404 "
         },
         "status": {
             "embeddable": true,
@@ -705,6 +705,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/qd2aiiej1Ms/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/qd2aiiej1Ms/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Dj Dado - Metropolis",
