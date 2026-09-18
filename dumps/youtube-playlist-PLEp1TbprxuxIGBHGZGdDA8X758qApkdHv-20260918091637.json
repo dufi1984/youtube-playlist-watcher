@@ -1479,6 +1479,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/z8oEUhXTloU/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/z8oEUhXTloU/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Chicane - Poppiholla (Official Video)",
@@ -4875,6 +4880,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/2VL6pLHrUVM/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/2VL6pLHrUVM/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Dinka - Elements (EDX 5un5hine Rmx)",

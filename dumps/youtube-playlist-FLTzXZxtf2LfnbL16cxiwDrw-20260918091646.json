@@ -31279,6 +31279,11 @@
                     "url": "https://i.ytimg.com/vi/WtejRvpwscY/hqdefault.jpg",
                     "width": 480
                 },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/WtejRvpwscY/maxresdefault.jpg",
+                    "width": 1280
+                },
                 "medium": {
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/WtejRvpwscY/mqdefault.jpg",
@@ -32429,6 +32434,11 @@
                     "url": "https://i.ytimg.com/vi/THeLVhU53ow/hqdefault.jpg",
                     "width": 480
                 },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/THeLVhU53ow/maxresdefault.jpg",
+                    "width": 1280
+                },
                 "medium": {
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/THeLVhU53ow/mqdefault.jpg",
@@ -32460,10 +32470,10 @@
             "definition": "sd",
             "dimension": "2d",
             "duration": "PT5M58S",
-            "licensedContent": true,
+            "licensedContent": false,
             "projection": "rectangular"
         },
-        "etag": "jX2vBb3fvJh4LUKqclQCu0HM6-4",
+        "etag": "GZr43Idj0m8-z5nXLlpi9L6hJCk",
         "id": "msgYRFXiP84",
         "kind": "youtube#video",
         "playlistItemId": "RkxUelhaeHRmMkxmbmJMMTZjeGl3RHJ3LjA1OThCOEIzMUM2RDYwODc",
@@ -33441,6 +33451,11 @@
                     "height": 360,
                     "url": "https://i.ytimg.com/vi/vAEwLvxHVVk/hqdefault.jpg",
                     "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/vAEwLvxHVVk/maxresdefault.jpg",
+                    "width": 1280
                 },
                 "medium": {
                     "height": 180,
@@ -36829,6 +36844,11 @@
                     "height": 360,
                     "url": "https://i.ytimg.com/vi/SSrCaX8ttuw/hqdefault.jpg",
                     "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/SSrCaX8ttuw/maxresdefault.jpg",
+                    "width": 1280
                 },
                 "medium": {
                     "height": 180,
@@ -46709,6 +46729,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/GkRVAeNI4H8/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/GkRVAeNI4H8/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Y - Traxx - Mystery Land (Sickboy Courtyard Remix)",
@@ -47397,6 +47422,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/CxfUI646JKY/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/CxfUI646JKY/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Y-Traxx - Mystery Land",
@@ -47815,6 +47845,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/vGAPxdhMMsg/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/vGAPxdhMMsg/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Cindy Lauper - Girls Just Wanna Have Fun - Extended Mix /House/.wmv",
@@ -61416,6 +61451,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/cishMd81oB4/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/cishMd81oB4/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Stellar Project - Get Up Stand Up (Official Video HQ)",
