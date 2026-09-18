@@ -11391,6 +11391,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/vGAPxdhMMsg/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/vGAPxdhMMsg/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Cindy Lauper - Girls Just Wanna Have Fun - Extended Mix /House/.wmv",
@@ -13210,6 +13215,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/H6pXzgIwKCA/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/H6pXzgIwKCA/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "SEAL - Crazy (Remix 2005) HQ",
@@ -13265,6 +13275,11 @@
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/IUI-KDrR0aw/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/IUI-KDrR0aw/sddefault.jpg",
+                    "width": 640
                 }
             },
             "title": "Sun - Gone (Moto Blanco Dub Mix)",
