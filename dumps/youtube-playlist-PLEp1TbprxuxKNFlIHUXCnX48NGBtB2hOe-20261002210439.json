@@ -26069,7 +26069,7 @@
     },
     {
         "contentDetails": {
-            "caption": "false",
+            "caption": "true",
             "contentRating": {},
             "definition": "hd",
             "dimension": "2d",
@@ -26083,7 +26083,7 @@
                 ]
             }
         },
-        "etag": "LvhI2Amv7x7VS3Nsll20IVQWomo",
+        "etag": "GxymrXjt0YpvH-6C0e8g9yIahPM",
         "id": "frv6FOt1BNI",
         "kind": "youtube#video",
         "playlistItemId": "UExFcDFUYnByeHV4S05GbElIVVhDblg0OE5HQnRCMmhPZS5GNzk2RTlDQTNCQzJCQzJG",
@@ -26140,7 +26140,7 @@
     },
     {
         "contentDetails": {
-            "caption": "false",
+            "caption": "true",
             "contentRating": {},
             "definition": "hd",
             "dimension": "2d",
@@ -26154,7 +26154,7 @@
                 ]
             }
         },
-        "etag": "pQsJxV1d5rVpgjL8VNbnFzylUWk",
+        "etag": "lAy1QyHAeLLDQJeCC_tHsIaUCkY",
         "id": "t1DWBKk5xHQ",
         "kind": "youtube#video",
         "playlistItemId": "UExFcDFUYnByeHV4S05GbElIVVhDblg0OE5HQnRCMmhPZS44QjNCNkRENjNFQTBEMUND",
