@@ -5748,19 +5748,10 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT59M58S",
-            "licensedContent": true,
-            "projection": "rectangular"
-        },
-        "etag": "yBvgEb9-o7myTM6-hm9IsefHu6Y",
-        "id": "yh7rK_VM1Rg",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4xNTZBNUQxMDZBQzFGMjkw",
+        "etag": "XOlyUKNNQbZHryEnzmF9RQMJBi8",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4xNTZBNUQxMDZBQzFGMjkw",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -5802,14 +5793,6 @@
             "title": "ENIGMA style, 2024, 2025 Albertvandeyk, kamro indilla, enya, leo rojas, era, Yanni, Lessien, New Age",
             "videoOwnerChannelId": "UCcPJdf-nBUnWZhJVG-PfVYA",
             "videoOwnerChannelTitle": "Albert Van Deyk"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
@@ -6779,19 +6762,10 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "sd",
-            "dimension": "2d",
-            "duration": "PT5M11S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "3MvMLcKOaX6y4GlY9csGjtkqXEc",
-        "id": "AzIH_k7O6lQ",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC40MDNEMzA0QTBFRThFMzBE",
+        "etag": "D0_1fFomqINFsyEs0raTO_DZ0DI",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC40MDNEMzA0QTBFRThFMzBE",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -6828,14 +6802,6 @@
             "title": "Dragon Lounge   Saigon Sundown",
             "videoOwnerChannelId": "UCXSDtOT7DNfgSreTjZX5Pvw",
             "videoOwnerChannelTitle": "gucci861933"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
@@ -6964,19 +6930,10 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT6M3S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "k30u-MSj17ZSyortWlJhgflm_Tc",
-        "id": "MROEmOVzDBI",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5CNTcxMDQ0NThBNzMxODYz",
+        "etag": "teuf_Jcvz9hrSy7eq13RRh-0vUs",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5CNTcxMDQ0NThBNzMxODYz",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7018,30 +6975,13 @@
             "title": "Dragon Lounge - Mahasamadhi (Oriental Mix)",
             "videoOwnerChannelId": "UCrv-gcLfkQFF05xoJMkgJsg",
             "videoOwnerChannelTitle": "finetunes Chillout Lounge"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT7M14S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "I4UnIVevUCI_6zw-kPjktwjFeTg",
-        "id": "5R4ZvxVsZrc",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5CNTZFOTNGQzZEODg1RUQx",
+        "etag": "3ANUFUnK3k0FqZB8aqVxA6HsJFY",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5CNTZFOTNGQzZEODg1RUQx",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7083,14 +7023,6 @@
             "title": "Magic Surfer - Believe In You ( Originakl Mix )",
             "videoOwnerChannelId": "UCaZePilA5Oty_RCpSoRuLpw",
             "videoOwnerChannelTitle": "Vastrev5"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
@@ -7154,19 +7086,10 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT5M12S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "1fP2ERyfkHgx-JOVM6SNoYCoeZA",
-        "id": "lGzxa1yYJoU",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC41OURENDc2NEM1MDI5Mjky",
+        "etag": "WXL-vb8ztRLrdkZmFd6B7ulqCGE",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC41OURENDc2NEM1MDI5Mjky",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7208,30 +7131,13 @@
             "title": "Frank Borell - Voice (Mystic Mix)",
             "videoOwnerChannelId": "UCu7BNl9EfNo14AyNERFdghw",
             "videoOwnerChannelTitle": "ChillOut Sounds"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "sd",
-            "dimension": "2d",
-            "duration": "PT5M41S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "Uz_JZ2sh-qx_kslyE1avFe9Cgm4",
-        "id": "wDXJCFG9SuQ",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4wNEU1MTI4NkZEMzVBN0JF",
+        "etag": "h6uPG_b3odf_pHnyWpM4XYhMb-w",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4wNEU1MTI4NkZEMzVBN0JF",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7263,30 +7169,13 @@
             "title": "Yonderboi - Pabadam (Paul Legere Mix)",
             "videoOwnerChannelId": "UCceMQtvu5r--qWyjo6oMFgw",
             "videoOwnerChannelTitle": "Lapantera79"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "sd",
-            "dimension": "2d",
-            "duration": "PT3M53S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "a4c5qdhMNaPWcgU1rDjk610E0NQ",
-        "id": "8qRIi2p6klk",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5GNjAwN0Y0QTFGOTVDMEMy",
+        "etag": "YoKRysOFe2ZFxIjuhIQbY_GpMC0",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5GNjAwN0Y0QTFGOTVDMEMy",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7323,30 +7212,13 @@
             "title": "10 - Domenic - Jolly Roger - 126 BPM",
             "videoOwnerChannelId": "UC_-SLqIOi3uMiYNKxACHDcA",
             "videoOwnerChannelTitle": "Officina Sonora Tube"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "sd",
-            "dimension": "2d",
-            "duration": "PT5M51S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "mEMR5pMWmh_i-sEQrRXCJAArC38",
-        "id": "COJiJ1pWAbU",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC41NTZEOThBNThFOUVGQkVB",
+        "etag": "ZP-G0nUzhgC2kyKqA5pL3TZBmt0",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC41NTZEOThBNThFOUVGQkVB",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7378,30 +7250,13 @@
             "title": "Espiritu+libertad (Viva Mix) [feat. Hela Delgado]",
             "videoOwnerChannelId": "UCgjbAoixlyUXMUcI_qFcdwg",
             "videoOwnerChannelTitle": "Dott. Raffaele Di Gioia"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "sd",
-            "dimension": "2d",
-            "duration": "PT5M19S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "3VZ-FQy8RqEjeJTNStIjvGyOqGY",
-        "id": "cTkOmFVFoLM",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4zMEQ1MEIyRTFGNzhDQzFB",
+        "etag": "XUV-JVsIgTXg8rpprshyHnW-dOQ",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4zMEQ1MEIyRTFGNzhDQzFB",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7438,30 +7293,13 @@
             "title": "Lori Sax - Late Night Chill Out",
             "videoOwnerChannelId": "UCUEtK4JupAdhHNBGUx-R8Gg",
             "videoOwnerChannelTitle": "Szabadi Lorand (Sax Machine)"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT4M",
-            "licensedContent": true,
-            "projection": "rectangular"
-        },
-        "etag": "mDjTqY7_tnCHtJ_5qMIQZmgWnAA",
-        "id": "XCIRxlwPA-I",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC44QzVGQUU2QjE2NDgxM0M4",
+        "etag": "hFwH-sr69HZpQLB2y1pQGj0VS9w",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC44QzVGQUU2QjE2NDgxM0M4",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7503,30 +7341,13 @@
             "title": "Gregory Esayan - Ararat [Silk Music]",
             "videoOwnerChannelId": "UCX4sShAQf01LYjYQhG2ZgKg",
             "videoOwnerChannelTitle": "Monstercat Silk"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": false,
-            "uploadStatus": "processed"
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT4M1S",
-            "licensedContent": true,
-            "projection": "rectangular"
-        },
-        "etag": "uoVsmvwOFcwN-jPYDs1xLjI4W6k",
-        "id": "ElwihdyaQjI",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5ENjI1QUI0MDI5NEQzODFE",
+        "etag": "GOWx_5NQtadgyy4pFZXY6ppBdXk",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5ENjI1QUI0MDI5NEQzODFE",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -7568,14 +7389,6 @@
             "title": "Gregory Esayan - One Way Ticket [Silk Music]",
             "videoOwnerChannelId": "UCX4sShAQf01LYjYQhG2ZgKg",
             "videoOwnerChannelTitle": "Monstercat Silk"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": false,
-            "uploadStatus": "processed"
         }
     },
     {
@@ -7957,19 +7770,10 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT7M18S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "xJw-Uzttw9GsTctIliVCZZZOpT4",
-        "id": "7ZWj_raQ_io",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4yQUJFNUVCMzVDNjcxRTlF",
+        "etag": "_6tHH5yTo_UUiGP5acEnPtcwcUU",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4yQUJFNUVCMzVDNjcxRTlF",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -8011,14 +7815,6 @@
             "title": "Magic Surfer  -  Velorian (Original Mix)",
             "videoOwnerChannelId": "UCqW866-8ZOTs9R2CGPap7pw",
             "videoOwnerChannelTitle": "Andy Prog"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
@@ -8106,145 +7902,10 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT4M53S",
-            "licensedContent": true,
-            "projection": "rectangular",
-            "regionRestriction": {
-                "allowed": [
-                    "AE",
-                    "AR",
-                    "AS",
-                    "AT",
-                    "AU",
-                    "AW",
-                    "AZ",
-                    "BA",
-                    "BD",
-                    "BE",
-                    "BG",
-                    "BH",
-                    "BM",
-                    "BO",
-                    "BR",
-                    "BY",
-                    "CA",
-                    "CH",
-                    "CL",
-                    "CO",
-                    "CR",
-                    "CY",
-                    "CZ",
-                    "DE",
-                    "DK",
-                    "DO",
-                    "DZ",
-                    "EC",
-                    "EE",
-                    "EG",
-                    "ES",
-                    "FI",
-                    "FR",
-                    "GB",
-                    "GE",
-                    "GF",
-                    "GH",
-                    "GP",
-                    "GR",
-                    "GT",
-                    "GU",
-                    "HK",
-                    "HN",
-                    "HR",
-                    "HU",
-                    "ID",
-                    "IE",
-                    "IL",
-                    "IN",
-                    "IQ",
-                    "IS",
-                    "IT",
-                    "JM",
-                    "JO",
-                    "JP",
-                    "KE",
-                    "KH",
-                    "KR",
-                    "KW",
-                    "KY",
-                    "KZ",
-                    "LA",
-                    "LB",
-                    "LI",
-                    "LK",
-                    "LT",
-                    "LU",
-                    "LV",
-                    "LY",
-                    "MA",
-                    "MK",
-                    "MP",
-                    "MQ",
-                    "MT",
-                    "MX",
-                    "MY",
-                    "NC",
-                    "NG",
-                    "NI",
-                    "NL",
-                    "NO",
-                    "NP",
-                    "NZ",
-                    "OM",
-                    "PA",
-                    "PE",
-                    "PF",
-                    "PG",
-                    "PH",
-                    "PK",
-                    "PL",
-                    "PR",
-                    "PT",
-                    "PY",
-                    "QA",
-                    "RE",
-                    "RO",
-                    "RS",
-                    "SA",
-                    "SE",
-                    "SG",
-                    "SI",
-                    "SK",
-                    "SN",
-                    "SV",
-                    "TC",
-                    "TH",
-                    "TN",
-                    "TR",
-                    "TW",
-                    "TZ",
-                    "UA",
-                    "UG",
-                    "US",
-                    "UY",
-                    "VE",
-                    "VI",
-                    "VN",
-                    "YE",
-                    "YT",
-                    "ZA",
-                    "ZW"
-                ]
-            }
-        },
-        "etag": "huFMplkZepk8F0RX21SYjm2Idro",
-        "id": "q-CThdwOBRk",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5DNkMwRUI2MkI4QkI4NDFG",
+        "etag": "jW93cQnFceEUYhwmRBc8S61IZto",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC5DNkMwRUI2MkI4QkI4NDFG",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -8286,14 +7947,6 @@
             "title": "No More I Love You's (Instrumental Version)",
             "videoOwnerChannelId": "UCkMVjy3jmSATTjhuvp5-TEw",
             "videoOwnerChannelTitle": "Hit Crew Masters - Topic"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
@@ -8873,19 +8526,10 @@
         }
     },
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT6M22S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "GvGXsEVkoU9EXk1RopBFGJvbbIo",
-        "id": "j38TJGUvdvE",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4yMDhBMkNBNjRDMjQxQTg1",
+        "etag": "E0QtK39MC9u9tvUG36n4Abq58ts",
+        "id": "UExFcDFUYnByeHV4S09XOUctOUdlaHdEa1hFeVllT3EyUC4yMDhBMkNBNjRDMjQxQTg1",
+        "kind": "youtube#playlistItem",
+        "no_details_available": true,
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
@@ -8927,14 +8571,6 @@
             "title": "FRANK BORELL /ABU DHABU  ( MASHUP) Highwyre",
             "videoOwnerChannelId": "UCiv7chE3TY3C5-99DlIyR7g",
             "videoOwnerChannelTitle": "HIGHWYRE"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
         }
     },
     {
