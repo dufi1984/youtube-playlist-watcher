@@ -13097,7 +13097,7 @@
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
-            "description": "DJ BoBo \"THE GREAT ADVENTURE\" \n\n03 Oct 2026 Budapest / MVM Dome Tickets:\nhttps://funcode.hu/hu/event/1950-dj-bobo\n\n17 Oct 2026 Ostrava / Ostravar Arena\nhttps://vstupenky.sixartticket.cz/site/#event-list-block\n\n24 Oct 2026 Bratislava / Tipos Arena\nhttps://vstupenky.sixartticket.cz/site/#event-list-block",
+            "description": "DJ BoBo \"THE GREAT ADVENTURE\" \n\n17 Oct 2026 Ostrava / Ostravar Arena\nhttps://vstupenky.sixartticket.cz/site/#event-list-block\n\n24 Oct 2026 Bratislava / Tipos Arena\nhttps://vstupenky.sixartticket.cz/site/#event-list-block",
             "playlistId": "PLEp1TbprxuxKNFlIHUXCnX48NGBtB2hOe",
             "position": 76,
             "publishedAt": "2020-07-11T12:07:01Z",
@@ -38963,10 +38963,10 @@
             "definition": "sd",
             "dimension": "2d",
             "duration": "PT3M54S",
-            "licensedContent": false,
+            "licensedContent": true,
             "projection": "rectangular"
         },
-        "etag": "02XqCmsEb4M73mtXndErfoJxuWE",
+        "etag": "Yg7GCAofB9dWTjR3rCMJUYilGFo",
         "id": "hdydipoUjkw",
         "kind": "youtube#video",
         "playlistItemId": "UExFcDFUYnByeHV4S05GbElIVVhDblg0OE5HQnRCMmhPZS41QTY1Q0UxMTVCODczNThE",
