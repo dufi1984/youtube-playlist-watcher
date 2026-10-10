@@ -38963,10 +38963,10 @@
             "definition": "sd",
             "dimension": "2d",
             "duration": "PT3M54S",
-            "licensedContent": false,
+            "licensedContent": true,
             "projection": "rectangular"
         },
-        "etag": "02XqCmsEb4M73mtXndErfoJxuWE",
+        "etag": "Yg7GCAofB9dWTjR3rCMJUYilGFo",
         "id": "hdydipoUjkw",
         "kind": "youtube#video",
         "playlistItemId": "UExFcDFUYnByeHV4S05GbElIVVhDblg0OE5HQnRCMmhPZS41QTY1Q0UxMTVCODczNThE",
