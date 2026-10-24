@@ -55159,7 +55159,7 @@
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
-            "description": "Add \"Titanium\u201d by David Guetta & Sia to your Playlist \u25b6 : https://davidguetta.lnk.to/titanium_\n\n\ud83d\udd14 Subscribe to be notified for new videos: https://davidguetta.lnk.to/YouTube\n\nFollow David Guetta:\nInstagram: https://www.instagram.com/davidguetta/\nTikTok: https://www.tiktok.com/@davidguetta\nTwitter: https://twitter.com/DavidGuetta\nFacebook: https://www.facebook.com/DavidGuetta/\nWebsite: https://davidguetta.com/\n\nMusic video by David Guetta performing Titanium. (P) & (C) 2012 What A Music Ltd, Under Exclusive Licence to Parlophone/Warner Music France, a Warner Music Group Company",
+            "description": "Watch the official music video for \u201cTitanium\u201d by David Guetta featuring Sia, the lead single from the special re-release of his landmark 2011 album Nothing but the Beat. Driven by a soaring electro-pop beat and Sia's powerful, emotional vocal performance, \u201cTitanium\u201d is an anthem of inner strength, resilience, and invincibility in the face of adversity.\n\nReleased as a single in 2011, \u201cTitanium\u201d reached No. 1 on the UK Singles Chart, climbed into the top 10 on the Billboard Hot 100, and achieved multi-platinum certifications worldwide. The track remains one of David Guetta and Sia\u2019s defining signature recordings, alongside electronic pop classics like \u201cMemories,\u201d \u201cWithout You,\u201d \u201cHey Mama,\u201d \u201cChandelier,\u201d and \u201cShe Wolf (Falling to Pieces).\u201d\n\nAdd \"Titanium\u201d by David Guetta & Sia to your Playlist \u25b6 : https://davidguetta.lnk.to/titanium_\n\n\ud83d\udd14 Subscribe to be notified for new videos: https://davidguetta.lnk.to/YouTube\n\nFollow David Guetta:\nInstagram: https://www.instagram.com/davidguetta/\nTikTok: https://www.tiktok.com/@davidguetta\nTwitter: https://twitter.com/DavidGuetta\nFacebook: https://www.facebook.com/DavidGuetta/\nWebsite: https://davidguetta.com/\n\nMusic video by David Guetta performing Titanium. (P) & (C) 2012 What A Music Ltd, Under Exclusive Licence to Parlophone/Warner Music France, a Warner Music Group Company\n\n#DavidGuetta #Sia",
             "playlistId": "FLTzXZxtf2LfnbL16cxiwDrw",
             "position": 334,
             "publishedAt": "2012-08-30T14:31:42Z",
@@ -55178,10 +55178,25 @@
                     "url": "https://i.ytimg.com/vi/JRfuAukYTKg/hqdefault.jpg",
                     "width": 480
                 },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/JRfuAukYTKg/maxresdefault.jpg",
+                    "width": 1280
+                },
                 "medium": {
                     "height": 180,
                     "url": "https://i.ytimg.com/vi/JRfuAukYTKg/mqdefault.jpg",
                     "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/JRfuAukYTKg/sddefault.jpg",
+                    "width": 640
+                },
+                "uhd": {
+                    "height": 2160,
+                    "url": "https://i.ytimg.com/vi/JRfuAukYTKg/uhddefault.jpg",
+                    "width": 3840
                 }
             },
             "title": "David Guetta - Titanium ft. Sia (Official Video)",
