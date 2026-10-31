@@ -6,10 +6,10 @@
             "definition": "hd",
             "dimension": "2d",
             "duration": "PT50M57S",
-            "licensedContent": true,
+            "licensedContent": false,
             "projection": "rectangular"
         },
-        "etag": "00MLNxaSumAHlGjwOKJcVzqDgIs",
+        "etag": "vby23NrwiSoQixnMVj1NjDR6csE",
         "id": "J2BA1VBwaiM",
         "kind": "youtube#video",
         "playlistItemId": "UExTZlhFcWJWcUtybm1rcVMzT250OGZQdnd1Z01mdk1vZS45RTgxNDRBMzUwRjQ0MDhC",
