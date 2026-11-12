@@ -13558,5 +13558,70 @@
             "publicStatsViewable": false,
             "uploadStatus": "processed"
         }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT2H3M53S",
+            "licensedContent": false,
+            "projection": "rectangular"
+        },
+        "etag": "-P1_1jlgwvmPLr9ZetRWOQ3KEp0",
+        "id": "lki1y2wa820",
+        "kind": "youtube#video",
+        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS43OTNDNTk0OUNGMDA1MUNG",
+        "snippet": {
+            "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
+            "channelTitle": "Szab\u00f3 Gyula",
+            "description": "'Taking You Higher Pt. 3' (Progressive House Mix)\n\n\u2b19  FAVOURITES ON SPOTIFY \u2b19\n\u21e5 http://mrsuicidesheep.com/favourites\n\nThe new 'Taking You Higher' is finally here! Any support is truly appreciated. \nDownload on iTunes... http://bit.ly/YJBeIg\nListen on Spotify... http://spoti.fi/1Cazg2Y\n\nHey everyone :) As a lot of you are aware, the 'Taking You Higher' series has been a big part of this channel for the past 3 years. The feelings I want to convey with these mixes are of euphoria and elation. It's about letting go of all your worries, following your dreams and truly taking you to a higher place. This is the first mix in the series that I have decided to release as a compilation. If you would like to support the artists and labels (as well as the series in general) that have been a part of making this possible, please consider supporting by either downloading it on iTunes or streaming it through Spotify, Google Play, Deezer or any other site. \n\nMixed by the very talented Aaron Static\nhttps://soundcloud.com/aaronstatic\nhttps://www.facebook.com/aaronstatic\n\nTracklist\n00:00 Gregory Esayan - Innerspace (Dan & Sam Intro Mix)\n08:38 Juventa - Move Into Light (feat. Erica Curran) (Teen Daze Remix)\n11:39 Simon J - Life Thru A Lens (Inners Remix)\n17:23 Soulforge - Dreamfast\n23:07 Nafis - Summer Feeling (Redubs At 5AM Remix)\n28:33 George Acosta - Beautiful (feat. Fisher)\n32:55 Gal Abutbul - Sunset\n38:08 Helvetic Nerds - Stormwatch (Chris Reece & Dinka Old Fashion Mix)\n45:39 Valer den Bit - Meteor 15 (ArcHouse Remix)\n52:38 Aeron Aether, Mango & Andre Frauenstein - Disappear (feat. Stefan Ludik)\n55:51 Nigel Good - Come Home (LTN Remix)\n59:09 Edu - Action Hero\n01:04:08 Jacob Henry - Hopeful Romantic (Johan Vilborg Remix)\n01:10:38 Dirty South - Your Heart (feat. Joel Gil) (Michael Brun Remix)\n01:14:59 Boomjinx & Soundprank - Pieces Of A Puzzle (Solarity Remix)\n01:21:15 Hazem Beltagui - She Came\n01:27:15 Vintage & Morelli - For You\n01:33:30 Our Stolen Theory - Warmest Day (Nigel Good Remix)\n01:39:23 Cosmic Gate & Andrew Bayer - Nothing Ever Lasts (Extended Intro Mix)\n01:45:39 Matt Lange - Sixty Six\n01:51:37 Claes Rosen - Starlight (Blood Groove & Kikis Remix)\n01:56:25 Jethimself - Canopy\n\nDownload mix for free on Soundcloud\nhttp://bit.ly/1vUOcxF\n\nPicture by Anthony Samaniego\nhttps://flic.kr/p/nQbsuA\nhttp://www.anthonysamaniego.com\n\n\u2b17 Sheepy Store \u2b17\n\u21e5 http://mrsuicidesheep.com/store\n\n\u2b16 Submit Music & Art \u2b16\n\u21e5 http://mrsuicidesheep.com/submit\n\n\u2b19 Sheepy Instagram \u2b19\n\u21e5 http://mrsuicidesheep.com/insta\n\n\u2b18 Spotify: Channel Uploads \u2b18\n\u21e5 http://mrsuicidesheep.com/channeluploads\n\n\u2b17 Spotify: Seeking Blue \u2b17\n\u21e5 http://mrsuicidesheep.com/skblueplaylist",
+            "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
+            "position": 135,
+            "publishedAt": "2026-11-10T08:52:14Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "lki1y2wa820"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/lki1y2wa820/default.jpg",
+                    "width": 120
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/lki1y2wa820/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/lki1y2wa820/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/lki1y2wa820/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/lki1y2wa820/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "'Taking You Higher Pt. 3' (Progressive House Mix)",
+            "videoOwnerChannelId": "UC5nc_ZtjKW1htCVZVRxlQAQ",
+            "videoOwnerChannelTitle": "MrSuicideSheep"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
     }
 ]
