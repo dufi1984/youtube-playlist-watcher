@@ -1,22 +1,12 @@
 [
     {
-        "contentDetails": {
-            "caption": "false",
-            "contentRating": {},
-            "definition": "hd",
-            "dimension": "2d",
-            "duration": "PT6M7S",
-            "licensedContent": false,
-            "projection": "rectangular"
-        },
-        "etag": "0F8xhcBu0SqXUveRPW8wlNYcCnY",
-        "id": "kQr-o4r-o_E",
-        "kind": "youtube#video",
-        "playlistItemId": "UExFcDFUYnByeHV4SWp3VzFLbmJENDlzU1U0dktwaWJicS4wQjIyQzlCRTVCNTlGOEJB",
+        "etag": "HHqyiUY6H7egKOndHJ4srf7RITs",
+        "id": "UExFcDFUYnByeHV4SWp3VzFLbmJENDlzU1U0dktwaWJicS4wQjIyQzlCRTVCNTlGOEJB",
+        "kind": "youtube#playlistItem",
         "snippet": {
             "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
             "channelTitle": "Szab\u00f3 Gyula",
-            "description": "ZAYLO \u2013 Still Thinking of You is a deep and emotional Afro Soul Pop song blending soulful vocals, smooth beats, and heartfelt melodies about love, memories, and someone you can\u2019t forget. Feel every beat, every word, and every emotion.\n\n\ud83c\udfb5 Afro Soul Pop\n\u2764\ufe0f Love \u2022 Vibes \u2022 Connection\n\u2728 Emotional & Addictive\n\n\u2728 Listen to more music:\n\n\u2022 Spotify: https://open.spotify.com/intl-pt/artist/1bDe5jmCjVkCGPhOjoiqit\n\n\u2022 Youtube Music: https://music.youtube.com/@ZAYLO-i6y?si=S2SeL45KYDl2grwI\n\n#AfroSoul #AfroPop #EmotionalMusic #SoulfulMusic #ZAYLO #StillThinkingOfYou #AfroSoulPop",
+            "description": "This video is private.",
             "playlistId": "PLEp1TbprxuxIjwW1KnbD49sSU4vKpibbq",
             "position": 0,
             "publishedAt": "2026-10-26T16:11:43Z",
@@ -24,44 +14,8 @@
                 "kind": "youtube#video",
                 "videoId": "kQr-o4r-o_E"
             },
-            "thumbnails": {
-                "default": {
-                    "height": 90,
-                    "url": "https://i.ytimg.com/vi/kQr-o4r-o_E/default.jpg",
-                    "width": 120
-                },
-                "high": {
-                    "height": 360,
-                    "url": "https://i.ytimg.com/vi/kQr-o4r-o_E/hqdefault.jpg",
-                    "width": 480
-                },
-                "maxres": {
-                    "height": 720,
-                    "url": "https://i.ytimg.com/vi/kQr-o4r-o_E/maxresdefault.jpg",
-                    "width": 1280
-                },
-                "medium": {
-                    "height": 180,
-                    "url": "https://i.ytimg.com/vi/kQr-o4r-o_E/mqdefault.jpg",
-                    "width": 320
-                },
-                "standard": {
-                    "height": 480,
-                    "url": "https://i.ytimg.com/vi/kQr-o4r-o_E/sddefault.jpg",
-                    "width": 640
-                }
-            },
-            "title": "ZAYLO - Still Thinking Of You",
-            "videoOwnerChannelId": "UChFkrtyMdSHR7oMh8g5Baeg",
-            "videoOwnerChannelTitle": "ZAYLO"
-        },
-        "status": {
-            "embeddable": true,
-            "license": "youtube",
-            "madeForKids": false,
-            "privacyStatus": "public",
-            "publicStatsViewable": true,
-            "uploadStatus": "processed"
+            "thumbnails": {},
+            "title": "Private video"
         }
     },
     {
