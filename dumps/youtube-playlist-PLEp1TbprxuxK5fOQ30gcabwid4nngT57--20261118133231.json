@@ -5057,8 +5057,8 @@
                 }
             },
             "title": "Every Breath You Take (The Distance & Igi Remix)",
-            "videoOwnerChannelId": "UCukqgBWODs7GV-d86b9f34A",
-            "videoOwnerChannelTitle": "Max Oazo - Topic"
+            "videoOwnerChannelId": "UCPOUQL9Lrc-4LS0uahzFs-Q",
+            "videoOwnerChannelTitle": "Camishe - Topic"
         },
         "status": {
             "embeddable": true,
@@ -13614,6 +13614,76 @@
             "title": "'Taking You Higher Pt. 3' (Progressive House Mix)",
             "videoOwnerChannelId": "UC5nc_ZtjKW1htCVZVRxlQAQ",
             "videoOwnerChannelTitle": "MrSuicideSheep"
+        },
+        "status": {
+            "embeddable": true,
+            "license": "youtube",
+            "madeForKids": false,
+            "privacyStatus": "public",
+            "publicStatsViewable": true,
+            "uploadStatus": "processed"
+        }
+    },
+    {
+        "contentDetails": {
+            "caption": "false",
+            "contentRating": {},
+            "definition": "hd",
+            "dimension": "2d",
+            "duration": "PT3M37S",
+            "licensedContent": true,
+            "projection": "rectangular"
+        },
+        "etag": "Ar0tZEcz7uVyYClc-Q_HVpFWP8E",
+        "id": "k4wOqi7yZ6w",
+        "kind": "youtube#video",
+        "playlistItemId": "UExFcDFUYnByeHV4SzVmT1EzMGdjYWJ3aWQ0bm5nVDU3LS4yNkZBOTQyMkYxQkQyMzc2",
+        "snippet": {
+            "channelId": "UCTzXZxtf2LfnbL16cxiwDrw",
+            "channelTitle": "Szab\u00f3 Gyula",
+            "description": "April Girl - Lift Me Up (Music Video)\n\nhttps://selectedbase.lnk.to/liftmeup\n\nFollow:\nhttps://www.instagram.com/aprilgrrrl/\n\nSpotify:\nhttps://open.spotify.com/track/7HUNC1ig40DG1V5Et3Nnts\n\n\ud83d\udce7 For all enquiries, please send an email to - lifepluslyrics@frubbleltd.com\n\nSubscribe and turn on notifications to see new videos first!  \ud83d\udd14\n\nLet us know what you think in the comments and thank you for watching \ud83d\ude4c",
+            "playlistId": "PLEp1TbprxuxK5fOQ30gcabwid4nngT57-",
+            "position": 136,
+            "publishedAt": "2026-11-17T18:39:07Z",
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "k4wOqi7yZ6w"
+            },
+            "thumbnails": {
+                "default": {
+                    "height": 90,
+                    "url": "https://i.ytimg.com/vi/k4wOqi7yZ6w/default.jpg",
+                    "width": 120
+                },
+                "fhd": {
+                    "height": 1080,
+                    "url": "https://i.ytimg.com/vi/k4wOqi7yZ6w/fhddefault.jpg",
+                    "width": 1920
+                },
+                "high": {
+                    "height": 360,
+                    "url": "https://i.ytimg.com/vi/k4wOqi7yZ6w/hqdefault.jpg",
+                    "width": 480
+                },
+                "maxres": {
+                    "height": 720,
+                    "url": "https://i.ytimg.com/vi/k4wOqi7yZ6w/maxresdefault.jpg",
+                    "width": 1280
+                },
+                "medium": {
+                    "height": 180,
+                    "url": "https://i.ytimg.com/vi/k4wOqi7yZ6w/mqdefault.jpg",
+                    "width": 320
+                },
+                "standard": {
+                    "height": 480,
+                    "url": "https://i.ytimg.com/vi/k4wOqi7yZ6w/sddefault.jpg",
+                    "width": 640
+                }
+            },
+            "title": "April Girl - Lift Me Up (Music Video)",
+            "videoOwnerChannelId": "UClTZwJ5JisRV0cbfJ_639Gw",
+            "videoOwnerChannelTitle": "life + lyrics"
         },
         "status": {
             "embeddable": true,
