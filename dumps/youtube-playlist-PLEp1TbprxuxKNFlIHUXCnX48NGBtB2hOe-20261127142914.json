@@ -2189,7 +2189,7 @@
     },
     {
         "contentDetails": {
-            "caption": "false",
+            "caption": "true",
             "contentRating": {},
             "definition": "hd",
             "dimension": "2d",
@@ -2197,7 +2197,7 @@
             "licensedContent": true,
             "projection": "rectangular"
         },
-        "etag": "tZgBDttWDOris2DhAMEyzcwHkxI",
+        "etag": "hMhBPFd9Wx_xDnQ57cKSTVSxFic",
         "id": "4Fc67yQsPqQ",
         "kind": "youtube#video",
         "playlistItemId": "UExFcDFUYnByeHV4S05GbElIVVhDblg0OE5HQnRCMmhPZS44OEI3NUQ0QTlFM0FCOUU4",
